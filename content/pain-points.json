@@ -1,0 +1,19 @@
+{
+  "sectionLabel": "The challenge",
+  "heading": "Upgrading shouldn't feel this stressful",
+  "subtext": "You've worked hard to get here. But between conflicting advice and complicated numbers, it's hard to know if you're making the right call.",
+  "items": [
+    {
+      "title": "Should we buy now or wait?",
+      "description": "Everyone has an opinion. Your parents say one thing, forums say another. It's hard to know what's actually right for your situation."
+    },
+    {
+      "title": "New launch or resale?",
+      "description": "Both have pros and cons. But without clear data, you're essentially guessing—and a wrong choice can cost you years of wealth building."
+    },
+    {
+      "title": "What if we overstretch?",
+      "description": "You want to give your family a better home, but not at the cost of financial stress. The CPF rules alone are confusing enough."
+    }
+  ]
+}

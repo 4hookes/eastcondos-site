@@ -1,0 +1,16 @@
+{
+  "logo": {
+    "src": "https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/692d34c31f60a1442c4c110c.png",
+    "alt": "EastCondos.sg Logo"
+  },
+  "links": [
+    { "label": "How It Works", "href": "#how-it-works" },
+    { "label": "About", "href": "#about" },
+    { "label": "Calculator", "href": "/calculator" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "cta": {
+    "label": "Get Free Checklist",
+    "href": "#cta"
+  }
+}

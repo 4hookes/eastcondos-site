@@ -1,0 +1,50 @@
+{
+  "sectionLabel": "The people behind",
+  "heading": "Meet Our Team",
+  "subtext": "A dedicated team of property specialists committed to your successful upgrade journey.",
+  "teamPhoto": {
+    "src": "https://eastcondos.sg/wp-content/uploads/2026/01/team-cutout.png",
+    "alt": "EastCondos team photo"
+  },
+  "members": [
+    {
+      "name": "Elfi",
+      "role": "HDB-to-Condo Specialist",
+      "tag": "Team Lead",
+      "oneLiner": "13 years helping East Singapore families upgrade with confidence.",
+      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/elfi-whatsapp-e1769140200941.avif",
+      "bio": "With 13 years of experience specializing in East Singapore property, Elfi has helped over 500 families successfully upgrade from HDB to condo. Her deep knowledge of Districts 15, 16, and 18 means she spots opportunities others miss—and protects families from costly mistakes. Elfi believes in honest advice, even if it means telling you to wait. Her reputation is built on trust, not quick sales, which is why 80% of her clients come from referrals.",
+      "phone": "+65 8841 5991",
+      "whatsapp": "https://wa.me/6588415991"
+    },
+    {
+      "name": "Jimmy",
+      "role": "Property Consultant",
+      "oneLiner": "Expert in market analysis and finding the perfect condo match.",
+      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Jimmy.avif",
+      "bio": "Jimmy brings sharp analytical skills and deep market knowledge to help families find their perfect condo match. He specializes in comparing new launches versus resale options, ensuring clients make informed decisions based on data—not emotions. With his eye for detail and negotiation expertise, Jimmy has helped numerous families secure properties at competitive prices while avoiding potential pitfalls.",
+      "email": "jimmy@eastcondos.sg"
+    },
+    {
+      "name": "Alyssa",
+      "role": "Client Relations Manager",
+      "oneLiner": "Ensuring smooth communication and support throughout your journey.",
+      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Alyssa.avif",
+      "bio": "Alyssa is the friendly voice that guides you through every step of your upgrade journey. She ensures seamless communication between all parties—lawyers, bankers, and agents—so you never feel lost in the process. Her dedication to client care means you'll always have someone to turn to with questions, concerns, or just for reassurance during what can be a stressful time.",
+      "email": "alyssa@eastcondos.sg"
+    },
+    {
+      "name": "Aaron",
+      "role": "Market Analyst",
+      "oneLiner": "Data-driven insights for smarter property decisions.",
+      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Aaron.avif",
+      "bio": "Aaron is our numbers expert, providing data-driven insights that help families make smarter property decisions. He tracks market trends, price movements, and development timelines across East Singapore to identify the best opportunities. His detailed analysis helps clients understand not just what they can afford today, but how their purchase will perform as a long-term investment.",
+      "email": "aaron@eastcondos.sg"
+    }
+  ],
+  "teamPageCta": {
+    "heading": "Ready to start your upgrade journey?",
+    "label": "Book a Free Call",
+    "href": "https://api.leadconnectorhq.com/widget/booking/9uMCZ6E5WFtfJKjiYByG"
+  }
+}

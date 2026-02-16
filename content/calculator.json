@@ -1,0 +1,49 @@
+{
+  "title": "Strategy Session",
+  "steps": [
+    {
+      "number": 1,
+      "title": "Tell me about yourself",
+      "intro": "I need these details to calculate your loan eligibility and grant tiers accurately."
+    },
+    {
+      "number": 2,
+      "title": "Current Situation",
+      "intro": "Understanding your current assets helps me plan your progression timeline."
+    },
+    {
+      "number": 3,
+      "title": "Your property goal",
+      "intro": ""
+    }
+  ],
+  "confirmation": {
+    "heading": "You're all set!",
+    "body": "Thank you for sharing your details. I'll personally review your situation and send your customised strategy video within 24 hours.",
+    "youtubeLabel": "Watch on YouTube — EastCondos.sg Channel",
+    "youtubeUrl": "https://youtube.com/@eastcondossg"
+  },
+  "propertyTypes": [
+    "HDB 3-Room",
+    "HDB 4-Room",
+    "HDB 5-Room",
+    "HDB Executive/Mansionette",
+    "Private Condo/Apt",
+    "Landed Property",
+    "First Time Buyer"
+  ],
+  "citizenshipOptions": ["Singapore Citizen", "PR", "Foreigner"],
+  "goalOptions": [
+    { "value": "own-stay", "label": "Own Stay — I want a home to live in" },
+    { "value": "investment", "label": "Investment — I'm looking for rental yield" },
+    { "value": "both", "label": "Both — Own stay with investment potential" }
+  ],
+  "timelineOptions": [
+    "ASAP",
+    "1-3 months",
+    "3-6 months",
+    "6-12 months",
+    "More than a year",
+    "Not sure yet"
+  ]
+}

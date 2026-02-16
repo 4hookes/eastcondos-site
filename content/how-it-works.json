@@ -1,0 +1,11 @@
+{
+  "sectionLabel": "The process",
+  "heading": "How we'll work together",
+  "subtext": "A clear path from 'thinking about it' to 'moved in happily.'",
+  "steps": [
+    { "number": 1, "title": "Get the checker", "description": "Understand your 'Safe Price' before we even talk." },
+    { "number": 2, "title": "Book a call", "description": "We'll review your situation—no pressure." },
+    { "number": 3, "title": "Get your roadmap", "description": "A personalized plan for your upgrade." },
+    { "number": 4, "title": "Move in", "description": "I handle the complexity. You enjoy." }
+  ]
+}

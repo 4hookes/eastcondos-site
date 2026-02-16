@@ -1,0 +1,16 @@
+{
+  "sectionLabel": "Your advisor",
+  "heading": "Hi, I'm Elfi",
+  "subtitle": "HDB-to-Condo Specialist, East Singapore",
+  "image": {
+    "src": "https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/68d9e2b64c35d6324e9f6e5c.png",
+    "alt": "Elfi - HDB-to-Condo Specialist"
+  },
+  "body": "For 13 years, I've helped Singapore families navigate the upgrade from HDB to condo. I chose to specialize in Districts 15, 16, and 18 because depth matters more than breadth. When you know every project, every street, every price movement—you spot opportunities others miss. More importantly, you protect families from mistakes that take years to recover from.",
+  "stats": [
+    { "value": "500+", "label": "Families helped" },
+    { "value": "13", "label": "yrs Experience" },
+    { "value": "80%", "label": "Referrals" }
+  ],
+  "cta": { "label": "Get the free checker", "href": "#cta" }
+}

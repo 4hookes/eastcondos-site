@@ -1,0 +1,23 @@
+{
+  "badge": "Trusted by 500+ Singapore families",
+  "heading": "Thinking of upgrading from HDB to condo?",
+  "subheading": "Let's make sure you get it right.",
+  "body": "It's the biggest financial move your family will make. You deserve a clear plan—not guesswork. I help East Singapore families upgrade with confidence, so you protect your CPF and build real wealth.",
+  "primaryCta": { "label": "Get the Free Checklist", "href": "#cta" },
+  "secondaryCta": { "label": "See how it works", "href": "#how-it-works" },
+  "ctaNote": "It's free, no strings attached!",
+  "stats": [
+    { "value": "13", "label": "Years experience" },
+    { "value": "80%", "label": "Referrals" },
+    { "value": "4.9★", "label": "Google" },
+    { "value": "500+", "label": "Families helped" },
+    { "value": "D15-18", "label": "East specialist" }
+  ],
+  "video": {
+    "thumbnail": "https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/690081f942187b2cf0d92527.png",
+    "alt": "Watch: A quick intro from Elfi",
+    "caption": "Watch: A quick intro from Elfi",
+    "duration": "90 seconds",
+    "subcaption": "Not sure where to start? This short video explains how I help families like yours."
+  }
+}

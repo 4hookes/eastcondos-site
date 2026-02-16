@@ -1,0 +1,23 @@
+{
+  "sectionLabel": "Why families choose me",
+  "heading": "I'm not just another agent. I'm your upgrade planner.",
+  "subtext": "I only work with HDB owners upgrading to condos in East Singapore. That focus means I can offer things most agents can't:",
+  "features": [
+    {
+      "title": "Ground-level knowledge you won't find online",
+      "description": "Off-market listings, which units to avoid, hyperlocal insights from 13 years in the East."
+    },
+    {
+      "title": "Seamless transitions, even without 5% deposit",
+      "description": "I'll structure your buy-before-sell timeline so you're never homeless or squeezed."
+    },
+    {
+      "title": "Honest advice—even if it means 'wait'",
+      "description": "If the numbers don't work, I'll tell you. My reputation is built on trust, not quick sales."
+    }
+  ],
+  "mapImage": {
+    "src": "https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/67533dc29f3792276cb08c79.png",
+    "alt": "East Singapore map showing Districts 15, 16, and 18"
+  }
+}
