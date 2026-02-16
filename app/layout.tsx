@@ -33,6 +33,28 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "RealEstateAgent",
+              "name": "EastCondos.sg - Elfi",
+              "description": "Expert HDB to condo upgrade planning for East Singapore families",
+              "url": "https://eastcondos.sg",
+              "telephone": "+6588415991",
+              "areaServed": {
+                "@type": "Place",
+                "name": "East Singapore (Districts 15, 16, 18)"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "SG",
+                "addressRegion": "East Singapore"
+              }
+            }),
+          }}
+        />
       </body>
     </html>
   );
