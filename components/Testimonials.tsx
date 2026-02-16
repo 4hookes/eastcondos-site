@@ -23,17 +23,17 @@ export default function Testimonials() {
           {data.items.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md p-8 border-l-4 border-gold hover:shadow-lg transition-shadow relative"
+              className="bg-white rounded-xl shadow-md p-8 border-l-4 border-sage hover:shadow-lg transition-shadow relative"
             >
               {/* Decorative Quote Mark */}
               <Quote
-                className="absolute top-6 right-6 w-12 h-12 text-gold opacity-20"
+                className="absolute top-6 right-6 w-12 h-12 text-sage opacity-20"
                 fill="currentColor"
               />
 
               {/* Client Info */}
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                <div className="w-12 h-12 bg-sage rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                   {item.initials}
                 </div>
                 <div>

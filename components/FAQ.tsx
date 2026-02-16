@@ -16,7 +16,7 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="bg-light-gray py-16 md:py-24"
+      className="bg-sage-light py-16 md:py-24"
       ref={ref}
     >
       <div className={`max-w-3xl mx-auto px-4 sm:px-6 fade-in-section ${isVisible ? 'is-visible' : ''}`}>

@@ -29,7 +29,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-navy">
               {aboutData.heading}
             </h2>
-            <p className="text-lg text-gold mt-2 italic">
+            <p className="text-lg text-sage mt-2 italic">
               {aboutData.subtitle}
             </p>
             <p className="text-body leading-relaxed mt-6">

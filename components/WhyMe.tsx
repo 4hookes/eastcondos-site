@@ -26,8 +26,8 @@ export default function WhyMe() {
             {data.features.map((feature, index) => (
               <div key={index} className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center">
-                    <Check className="w-6 h-6 text-gold" strokeWidth={2.5} />
+                  <div className="w-10 h-10 bg-sage/10 rounded-full flex items-center justify-center">
+                    <Check className="w-6 h-6 text-sage" strokeWidth={2.5} />
                   </div>
                 </div>
                 <div>

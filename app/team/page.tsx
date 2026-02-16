@@ -19,7 +19,7 @@ export default function TeamPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-navy py-16 text-center">
+      <section className="bg-sage-dark py-16 text-center">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {teamData.heading}
@@ -60,13 +60,13 @@ export default function TeamPage() {
                       {member.name}
                     </h2>
                     {member.tag && (
-                      <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full w-fit">
+                      <span className="inline-block px-3 py-1 bg-sage/10 text-sage text-xs font-semibold rounded-full w-fit">
                         {member.tag}
                       </span>
                     )}
                   </div>
 
-                  <p className="text-gold font-semibold text-lg mb-2">
+                  <p className="text-sage font-semibold text-lg mb-2">
                     {member.role}
                   </p>
 
@@ -118,7 +118,7 @@ export default function TeamPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-navy py-16 text-center">
+      <section className="bg-sage-dark py-16 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             {teamData.teamPageCta.heading}

@@ -9,7 +9,7 @@ export default function Hero() {
           {/* Left Column: Text Content */}
           <div>
             {/* Badge */}
-            <span className="inline-block px-4 py-1 bg-gold text-white text-sm font-medium rounded-full mb-6">
+            <span className="inline-block px-4 py-1 bg-sage text-white text-sm font-medium rounded-full mb-6">
               {heroData.badge}
             </span>
 

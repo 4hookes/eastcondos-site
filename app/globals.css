@@ -9,7 +9,7 @@ html {
 
 @layer base {
   body {
-    @apply text-body antialiased;
+    @apply text-body antialiased bg-cream;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,7 +19,7 @@ html {
 
 @layer components {
   .section-label {
-    @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold mb-3;
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-sage mb-3;
   }
 
   .section-heading {

@@ -10,7 +10,7 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       ref={ref}
-      className={`fade-in-section ${isVisible ? "is-visible" : ""} bg-light-gray`}
+      className={`fade-in-section ${isVisible ? "is-visible" : ""} bg-sage-light`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
         <div className="text-center">
@@ -23,7 +23,7 @@ export default function HowItWorks() {
           {data.steps.map((step, index) => (
             <div key={index} className="text-center relative">
               {/* Step Number */}
-              <div className="text-5xl font-bold text-gold mb-4">
+              <div className="text-5xl font-bold text-sage mb-4">
                 {step.number}
               </div>
 
@@ -37,7 +37,7 @@ export default function HowItWorks() {
 
               {/* Connecting Line (desktop only, not on last step) */}
               {index < data.steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] h-[2px] bg-gold/20" />
+                <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] h-[2px] bg-sage/20" />
               )}
             </div>
           ))}

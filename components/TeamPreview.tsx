@@ -10,7 +10,7 @@ export default function TeamPreview() {
   return (
     <section
       id="team"
-      className="bg-light-gray py-16 md:py-24"
+      className="bg-sage-light py-16 md:py-24"
       ref={ref}
     >
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 fade-in-section ${isVisible ? 'is-visible' : ''}`}>

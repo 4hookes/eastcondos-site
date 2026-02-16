@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function CalculatorPage() {
   return (
     <div>
-      <div className="bg-navy py-16 text-center">
+      <div className="bg-sage-dark py-16 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-white">Strategy Session</h1>
         <p className="text-gray-300 mt-3 text-lg">Get your personalized upgrade plan</p>
       </div>

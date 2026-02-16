@@ -8,11 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#1a1a2e",
+        sage: "#7C9885",
+        "sage-dark": "#5A7262",
+        "sage-light": "#F2F5F0",
+        cream: "#FAF8F5",
         gold: "#d4a853",
         "gold-light": "#e8c97a",
+        navy: "#2D3436",
         body: "#4a4a4a",
-        "light-gray": "#f8f9fa",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],

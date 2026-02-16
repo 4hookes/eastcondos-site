@@ -13,7 +13,7 @@ export default function PainPoints() {
     <section
       id="pain-points"
       ref={ref}
-      className={`fade-in-section ${isVisible ? "is-visible" : ""} bg-light-gray`}
+      className={`fade-in-section ${isVisible ? "is-visible" : ""} bg-sage-light`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
         <div className="text-center">
@@ -30,7 +30,7 @@ export default function PainPoints() {
                 key={index}
                 className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow"
               >
-                <Icon className="w-12 h-12 text-gold mb-4" strokeWidth={1.5} />
+                <Icon className="w-12 h-12 text-sage mb-4" strokeWidth={1.5} />
                 <h3 className="text-xl font-bold text-navy mb-3">
                   {item.title}
                 </h3>

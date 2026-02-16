@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy text-white py-8">
+    <footer className="bg-sage-dark text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between items-center gap-4">
           {/* Left Side */}
@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Right Side - Links */}
           <div className="flex gap-6 text-sm">
             <a
-              href="#"
+              href="/privacy"
               className="text-gray-300 hover:text-gold transition-colors duration-200"
             >
               Privacy Policy

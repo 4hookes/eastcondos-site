@@ -8,7 +8,7 @@ export default function CTA() {
   return (
     <section
       id="cta"
-      className="bg-navy py-20"
+      className="bg-sage-dark py-20"
       ref={ref}
     >
       <div className={`max-w-2xl mx-auto px-4 sm:px-6 text-center fade-in-section ${isVisible ? 'is-visible' : ''}`}>

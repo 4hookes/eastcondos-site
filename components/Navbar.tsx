@@ -36,7 +36,7 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-md" : "bg-white/90 backdrop-blur-sm"
+          isScrolled ? "bg-cream shadow-md" : "bg-cream/95 backdrop-blur-sm"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -100,7 +100,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Panel */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+          <div className="md:hidden bg-cream border-t border-gray-200 shadow-lg">
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
               {navData.links.map((link) => (
                 <a

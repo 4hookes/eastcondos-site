@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="antialiased">
+      <body className="antialiased bg-cream">
         <Navbar />
         <main>{children}</main>
         <Footer />
