@@ -24,7 +24,7 @@ export default function PainPoints() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {data.items.map((item, index) => {
-            const Icon = icons[index];
+            const Icon = icons[index] || HelpCircle;
             return (
               <div
                 key={index}

@@ -18,7 +18,7 @@ export default function CTA() {
         <p className="text-lg text-gray-300 mb-8">
           Download the checker and get clear on your numbers. No commitment, no pressure—just practical preparation.
         </p>
-        <a href="#cta" className="btn-primary">
+        <a href="/calculator" className="btn-primary">
           Get the free checker
         </a>
       </div>

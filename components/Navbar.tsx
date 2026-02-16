@@ -25,6 +25,9 @@ export default function Navbar() {
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // On subpages, navigate to homepage with hash
+        window.location.href = `/${href}`;
       }
     }
   };
@@ -33,7 +36,7 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+          isScrolled ? "bg-white shadow-md" : "bg-white/90 backdrop-blur-sm"
         }`}
       >
         <div className="container mx-auto px-4">

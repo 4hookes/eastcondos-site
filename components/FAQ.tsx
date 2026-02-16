@@ -50,7 +50,7 @@ export default function FAQ() {
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
                     isOpen
-                      ? 'max-h-40 opacity-100 mt-2 p-4'
+                      ? 'max-h-96 opacity-100 mt-2 p-4'
                       : 'max-h-0 opacity-0'
                   }`}
                 >
