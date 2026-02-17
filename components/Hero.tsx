@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import { Play } from "lucide-react";
 import heroData from "@/content/hero.json";
+import VideoModal from "./VideoModal";
 
 export default function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -62,9 +67,9 @@ export default function Hero() {
           {/* Right Column: Video Thumbnail */}
           <div>
             {/* Video Thumbnail with Play Button Overlay */}
-            <a
-              href="#"
-              className="relative block group"
+            <button
+              onClick={() => setIsVideoOpen(true)}
+              className="relative block group w-full"
               aria-label={heroData.video.caption}
             >
               <img
@@ -79,7 +84,7 @@ export default function Hero() {
                   <Play className="w-12 h-12 text-white fill-white" />
                 </div>
               </div>
-            </a>
+            </button>
 
             {/* Video Caption */}
             <div className="mt-4">
@@ -96,6 +101,13 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* TODO: Replace with actual EastCondos intro video URL */}
+      <VideoModal
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      />
     </section>
   );
 }
