@@ -22,7 +22,7 @@ export default function Footer() {
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms"
               className="text-gray-300 hover:text-gold transition-colors duration-200"
             >
               Terms
