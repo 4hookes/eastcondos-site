@@ -19,10 +19,10 @@
     },
     {
       "name": "Jimmy",
-      "role": "Property Consultant",
-      "oneLiner": "Expert in market analysis and finding the perfect condo match.",
+      "role": "Technology & AI Lead",
+      "oneLiner": "Building smart tools that give our clients a real edge.",
       "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Jimmy.avif",
-      "bio": "Jimmy brings sharp analytical skills and deep market knowledge to help families find their perfect condo match. He specializes in comparing new launches versus resale options, ensuring clients make informed decisions based on data—not emotions. With his eye for detail and negotiation expertise, Jimmy has helped numerous families secure properties at competitive prices while avoiding potential pitfalls.",
+      "bio": "Jimmy powers the tech behind EastCondos. He builds AI-driven tools that analyse market data, forecast price movements, and generate personalised strategy reports for every client. From automated property matching to custom affordability calculators, Jimmy ensures our team works faster and smarter—so you get insights that most agents simply can't offer. He's the reason our clients get their strategy videos within 24 hours, not 24 days.",
       "email": "jimmy@eastcondos.sg"
     },
     {
@@ -34,12 +34,12 @@
       "email": "alyssa@eastcondos.sg"
     },
     {
-      "name": "Aaron",
-      "role": "Market Analyst",
-      "oneLiner": "Data-driven insights for smarter property decisions.",
+      "name": "Azhar",
+      "role": "Listing & Buyer Specialist",
+      "oneLiner": "Matching the right buyers to the right homes, every time.",
       "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Aaron.avif",
-      "bio": "Aaron is our numbers expert, providing data-driven insights that help families make smarter property decisions. He tracks market trends, price movements, and development timelines across East Singapore to identify the best opportunities. His detailed analysis helps clients understand not just what they can afford today, but how their purchase will perform as a long-term investment.",
-      "email": "aaron@eastcondos.sg"
+      "bio": "Azhar is the person you want in your corner when it's time to sell your HDB or secure your next condo. He specialises in pricing strategy, preparing listings that attract serious buyers, and negotiating deals that protect your interests. On the buying side, Azhar's deep knowledge of East Singapore inventory means he often finds units before they hit the public market. His clients appreciate his calm, no-pressure approach and his knack for making complex transactions feel straightforward.",
+      "email": "azhar@eastcondos.sg"
     }
   ],
   "teamPageCta": {
