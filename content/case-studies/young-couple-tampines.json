@@ -1,0 +1,43 @@
+{
+  "slug": "young-couple-tampines",
+  "title": "From 4-Room HDB to Dream Condo in Tampines",
+  "headline": "Upgraded with $0 Cash Outlay",
+  "description": "How a young couple in their early 30s upgraded from a 4-Room HDB to a 3-bedroom condo in Tampines with zero cash outlay.",
+  "coverImage": "/images/case-studies/tampines-cover.jpg",
+  "ogImage": "/images/case-studies/tampines-og.jpg",
+  "category": "HDB Upgrader",
+  "stats": {
+    "savings": "$120K",
+    "timeline": "3 months",
+    "propertyType": "4-Room HDB → 3BR Condo"
+  },
+  "client": {
+    "name": "James & Sarah",
+    "profile": "Young couple, early 30s",
+    "initials": "JS",
+    "photo": ""
+  },
+  "sections": {
+    "challenge": "James and Sarah had been living in their 4-room HDB flat in Tampines for 7 years. With their first child on the way, they knew they needed more space — but assumed upgrading to a condo was out of reach. They worried about the cash outlay, the timing of selling and buying, and whether they could afford the monthly payments on a single income during Sarah's maternity leave.",
+    "solution": "Elfi ran a full financial analysis using their CPF balances, HDB valuation, and income projections. She identified a window where they could purchase first, secure a favourable condo unit, and then sell their HDB at peak demand season. She structured the timeline so the HDB sale proceeds covered the condo downpayment entirely — meaning zero cash out of pocket. She also connected them with a mortgage specialist who locked in a rate before the next rate hike.",
+    "results": "James and Sarah moved into their new 3-bedroom condo in Tampines within 3 months of their first meeting with Elfi. Their monthly mortgage payment increased by $1,600, but they gained 400 sq ft of living space, a pool, gym, and direct MRT access. The total savings from Elfi's timing strategy — selling at peak and buying before the rate hike — came to approximately $120,000 compared to if they had done it on their own timeline."
+  },
+  "testimonial": {
+    "quote": "We thought upgrading was years away. Elfi showed us the numbers and suddenly it was real. The best part? We didn't touch our savings at all.",
+    "attribution": "James T., Tampines"
+  },
+  "beforeAfter": {
+    "before": {
+      "property": "4-Room HDB",
+      "value": "$480,000",
+      "monthlyPayment": "$1,200",
+      "size": "90 sqm"
+    },
+    "after": {
+      "property": "3BR Condo",
+      "value": "$1,100,000",
+      "monthlyPayment": "$2,800",
+      "size": "130 sqm"
+    }
+  }
+}
