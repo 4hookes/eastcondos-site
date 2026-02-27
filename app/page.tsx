@@ -3,6 +3,8 @@ import PainPoints from "@/components/PainPoints";
 import WhyMe from "@/components/WhyMe";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
+import CaseStudyPreview from "@/components/CaseStudyPreview";
+import QuizBanner from "@/components/QuizBanner";
 import TeamPreview from "@/components/TeamPreview";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
@@ -34,6 +36,8 @@ export default function Home() {
       <WhyMe />
       <HowItWorks />
       <Testimonials />
+      <CaseStudyPreview />
+      <QuizBanner />
       <TeamPreview />
       <About />
       <FAQ />

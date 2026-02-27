@@ -1,0 +1,180 @@
+{
+  "title": "What's Your Upgrade Readiness Score?",
+  "subtitle": "Answer 10 quick questions to find out if you're ready to upgrade from HDB to condo.",
+  "startButton": "Start the Quiz",
+  "categoryWeights": {
+    "financial": 0.5,
+    "lifestyle": 0.3,
+    "knowledge": 0.2
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "financial",
+      "text": "How long have you owned your current HDB?",
+      "options": [
+        { "label": "Less than 5 years", "score": 2 },
+        { "label": "5–7 years", "score": 5 },
+        { "label": "8–10 years", "score": 8 },
+        { "label": "More than 10 years", "score": 10 }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "financial",
+      "text": "What's your estimated HDB market value?",
+      "options": [
+        { "label": "Below $400K", "score": 3 },
+        { "label": "$400K – $550K", "score": 6 },
+        { "label": "$550K – $700K", "score": 8 },
+        { "label": "Above $700K", "score": 10 }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "financial",
+      "text": "Do you have savings set aside beyond CPF for the upgrade?",
+      "options": [
+        { "label": "No savings yet", "score": 1 },
+        { "label": "Some, but under $30K", "score": 4 },
+        { "label": "$30K – $80K", "score": 7 },
+        { "label": "More than $80K", "score": 10 }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "financial",
+      "text": "What is your combined household monthly income?",
+      "options": [
+        { "label": "Below $7,000", "score": 2 },
+        { "label": "$7,000 – $12,000", "score": 5 },
+        { "label": "$12,000 – $18,000", "score": 8 },
+        { "label": "Above $18,000", "score": 10 }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "lifestyle",
+      "text": "Has your family size changed — or is it about to?",
+      "options": [
+        { "label": "No changes expected", "score": 3 },
+        { "label": "Expecting a child soon", "score": 8 },
+        { "label": "Kids growing up, need more space", "score": 9 },
+        { "label": "Downsizing — kids have moved out", "score": 7 }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "lifestyle",
+      "text": "How do you feel about your current living space?",
+      "options": [
+        { "label": "Love it, no complaints", "score": 2 },
+        { "label": "It's fine for now", "score": 4 },
+        { "label": "Starting to feel cramped", "score": 7 },
+        { "label": "We really need to move", "score": 10 }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "lifestyle",
+      "text": "What's your ideal timeline to upgrade?",
+      "options": [
+        { "label": "No rush — just exploring", "score": 2 },
+        { "label": "Within 1–2 years", "score": 6 },
+        { "label": "Within the next 12 months", "score": 8 },
+        { "label": "As soon as possible", "score": 10 }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "knowledge",
+      "text": "Do you know your MOP (Minimum Occupation Period) status?",
+      "options": [
+        { "label": "What's MOP?", "score": 1 },
+        { "label": "I think I know, but not sure", "score": 4 },
+        { "label": "Yes — haven't reached it yet", "score": 6 },
+        { "label": "Yes — already passed MOP", "score": 10 }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "knowledge",
+      "text": "Have you explored financing options for a condo purchase?",
+      "options": [
+        { "label": "Haven't started", "score": 1 },
+        { "label": "Done some online research", "score": 4 },
+        { "label": "Spoken to a bank or broker", "score": 7 },
+        { "label": "Already have in-principle approval", "score": 10 }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "knowledge",
+      "text": "Have you spoken to a property advisor about upgrading?",
+      "options": [
+        { "label": "No, not yet", "score": 1 },
+        { "label": "No, but I want to", "score": 4 },
+        { "label": "Yes, casually", "score": 7 },
+        { "label": "Yes, in detail with a plan", "score": 10 }
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "min": 80,
+      "max": 100,
+      "label": "You're Ready to Upgrade",
+      "summary": "Your finances, lifestyle needs, and knowledge are aligned. You're in a strong position to make the move.",
+      "color": "gold"
+    },
+    {
+      "min": 60,
+      "max": 79,
+      "label": "You're Almost There",
+      "summary": "You're close to being fully ready. A few areas need attention, but upgrading is well within reach.",
+      "color": "sage"
+    },
+    {
+      "min": 40,
+      "max": 59,
+      "label": "You're on the Right Track",
+      "summary": "You've made solid progress. With the right guidance, you could be ready sooner than you think.",
+      "color": "blue"
+    },
+    {
+      "min": 0,
+      "max": 39,
+      "label": "Start Planning Your Upgrade",
+      "summary": "It's early days, but that's okay. Starting to plan now puts you ahead of most people.",
+      "color": "navy"
+    }
+  ],
+  "insights": {
+    "financial": {
+      "high": "Your financial position is strong. You likely have the equity and savings to support an upgrade with minimal cash outlay.",
+      "mid": "Your finances are on the right track, but there are areas to strengthen. A detailed financial plan could reveal options you haven't considered.",
+      "low": "Building your financial foundation is the key priority. Focus on growing your CPF OA balance and setting aside savings for the upgrade."
+    },
+    "lifestyle": {
+      "high": "Your lifestyle needs clearly point toward more space and better amenities. The timing feels right for your family.",
+      "mid": "You're starting to feel the pull toward upgrading. Clarifying your must-haves will help you act when the time comes.",
+      "low": "You seem comfortable for now, but it's smart to plan ahead. Life changes can come faster than expected."
+    },
+    "knowledge": {
+      "high": "You've done your homework. You understand the process and are well-prepared to make informed decisions.",
+      "mid": "You know the basics, but there are important details that could save you significant money. A strategy session would fill the gaps.",
+      "low": "There's a lot to learn about the HDB-to-condo process, and that's completely normal. Most families start exactly where you are."
+    }
+  },
+  "report": {
+    "gateHeading": "Unlock Your Full Personalized Report",
+    "gateSubtext": "Get a detailed breakdown of your readiness in each category, personalized next steps, and an estimated timeline.",
+    "gateButton": "Get My Full Report",
+    "gateSecondary": "Or book a free strategy session",
+    "reportHeading": "Your Personalized Upgrade Report",
+    "nextStepsHeading": "Your Next 3 Steps",
+    "ctaHeading": "Ready to Take the Next Step?",
+    "ctaText": "Book a free strategy session with Elfi and get a personalized upgrade plan.",
+    "ctaButton": "Book a Free Strategy Session"
+  }
+}

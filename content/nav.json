@@ -5,12 +5,13 @@
   },
   "links": [
     { "label": "How It Works", "href": "#how-it-works" },
+    { "label": "Success Stories", "href": "/case-studies" },
     { "label": "About", "href": "#about" },
     { "label": "Calculator", "href": "/calculator" },
     { "label": "FAQ", "href": "#faq" }
   ],
   "cta": {
-    "label": "Get Free Checklist",
-    "href": "#cta"
+    "label": "Take the Quiz",
+    "href": "/quiz"
   }
 }
