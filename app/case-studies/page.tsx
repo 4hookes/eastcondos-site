@@ -54,6 +54,7 @@ export default function CaseStudiesPage() {
                   title={study.title}
                   headline={study.headline}
                   category={study.category}
+                  coverImage={study.coverImage}
                   stats={study.stats}
                   client={study.client}
                 />

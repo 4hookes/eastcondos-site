@@ -100,7 +100,22 @@ export default async function CaseStudyPage({
         </div>
       </section>
 
-      {/* 2. Stats bar */}
+      {/* 2. Cover Image */}
+      {study.coverImage && (
+        <section className="bg-cream">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 -mt-8">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img
+                src={study.coverImage}
+                alt={`${study.client.name} with Elfi — ${study.title}`}
+                className="w-full h-[300px] md:h-[450px] object-cover"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 3. Stats bar */}
       <section className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col md:flex-row gap-6 md:gap-0 md:divide-x md:divide-gray-200">

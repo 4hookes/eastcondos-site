@@ -3,8 +3,8 @@
   "title": "From 4-Room HDB to Dream Condo in Tampines",
   "headline": "Upgraded with $0 Cash Outlay",
   "description": "How a young couple in their early 30s upgraded from a 4-Room HDB to a 3-bedroom condo in Tampines with zero cash outlay.",
-  "coverImage": "/images/case-studies/tampines-cover.jpg",
-  "ogImage": "/images/case-studies/tampines-og.jpg",
+  "coverImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop&q=80",
+  "ogImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop&q=80",
   "category": "HDB Upgrader",
   "stats": {
     "savings": "$120K",

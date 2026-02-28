@@ -5,6 +5,7 @@ interface CaseStudyCardProps {
   title: string;
   headline: string;
   category: string;
+  coverImage?: string;
   stats: {
     savings: string;
     timeline: string;
@@ -22,6 +23,7 @@ export default function CaseStudyCard({
   title,
   headline,
   category,
+  coverImage,
   stats,
   client,
 }: CaseStudyCardProps) {
@@ -30,6 +32,17 @@ export default function CaseStudyCard({
       href={`/case-studies/${slug}`}
       className="group block bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
     >
+      {/* Cover image */}
+      {coverImage && (
+        <div className="h-48 overflow-hidden">
+          <img
+            src={coverImage}
+            alt={title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
+
       {/* Top section: sage-light bg with category badge + headline */}
       <div className="bg-sage-light px-6 pt-6 pb-5">
         <span className="inline-block px-3 py-1 bg-sage/20 text-sage text-xs font-semibold rounded-full mb-3">

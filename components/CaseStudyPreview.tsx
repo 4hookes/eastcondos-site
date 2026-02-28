@@ -35,6 +35,7 @@ export default function CaseStudyPreview() {
               title={story.title}
               headline={story.headline}
               category={story.category}
+              coverImage={story.coverImage}
               stats={story.stats}
               client={{
                 name: story.client.name,
