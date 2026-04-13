@@ -1,11 +1,31 @@
 {
-  "sectionLabel": "The process",
-  "heading": "How we'll work together",
-  "subtext": "A clear path from 'thinking about it' to 'moved in happily.'",
+  "sectionLabel": "THE JOURNEY",
+  "heading": "A structured 4-8 month path to your new home.",
+  "subtext": "Every date and every dollar projected before the process starts.",
   "steps": [
-    { "number": 1, "title": "Get the checker", "description": "Understand your 'Safe Price' before we even talk." },
-    { "number": 2, "title": "Book a call", "description": "We'll review your situation—no pressure." },
-    { "number": 3, "title": "Get your roadmap", "description": "A personalized plan for your upgrade." },
-    { "number": 4, "title": "Move in", "description": "I handle the complexity. You enjoy." }
+    {
+      "number": 1,
+      "title": "Qualify & Plan",
+      "description": "Full financial model — CPF limits, TDSR, closing costs, cash position. If you should wait, we tell you.",
+      "imagePlaceholder": "Financial planning session"
+    },
+    {
+      "number": 2,
+      "title": "Sell High",
+      "description": "Professional photography, multi-platform listings, automated buyer follow-ups. Maximum price, not fastest sale.",
+      "imagePlaceholder": "Professional property photography"
+    },
+    {
+      "number": 3,
+      "title": "Buy Smart",
+      "description": "Data-driven condo selection using 9 proprietary frameworks. 10+ comparable transactions analyzed per project.",
+      "imagePlaceholder": "Data analysis dashboard"
+    },
+    {
+      "number": 4,
+      "title": "Execute",
+      "description": "Timeline coordination, vendor management, loan and CPF processing. Keys in hand — no temporary housing.",
+      "imagePlaceholder": "Happy family with keys"
+    }
   ]
 }

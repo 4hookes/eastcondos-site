@@ -32,8 +32,8 @@ export default function QuizLeadGate({
 
   return (
     <div className="text-center animate-fadeIn">
-      <Lock className="w-10 h-10 text-gold mx-auto mb-4" />
-      <h2 className="text-2xl md:text-3xl font-bold text-navy font-serif mb-3">
+      <Lock className="w-10 h-10 text-amber mx-auto mb-4" />
+      <h2 className="text-2xl md:text-3xl font-bold text-charcoal font-serif mb-3">
         {heading}
       </h2>
       <p className="text-body mb-8 max-w-md mx-auto">{subtext}</p>
@@ -45,7 +45,7 @@ export default function QuizLeadGate({
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent"
             required
           />
         </div>
@@ -55,7 +55,7 @@ export default function QuizLeadGate({
             placeholder="Phone Number (optional)"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent"
           />
         </div>
         <button type="submit" className="btn-primary w-full text-lg py-3">
@@ -64,8 +64,8 @@ export default function QuizLeadGate({
       </form>
 
       <a
-        href="/calculator"
-        className="inline-block mt-4 text-sm text-gold hover:text-gold-light font-semibold"
+        href="/strategy-session"
+        className="inline-block mt-4 text-sm text-amber hover:text-amber-light font-semibold"
       >
         {secondaryLabel} &rarr;
       </a>

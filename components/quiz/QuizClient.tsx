@@ -132,10 +132,10 @@ export default function QuizClient() {
     <div className="max-w-xl mx-auto px-4 sm:px-6 py-12 md:py-20 min-h-[60vh]">
       {step === "landing" && (
         <div className="text-center animate-fadeIn">
-          <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <span className="text-3xl">🏠</span>
+          <div className="w-16 h-16 bg-amber/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-7 h-7 text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-navy font-serif mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-charcoal font-serif mb-4">
             {quizData.title}
           </h1>
           <p className="text-lg text-body mb-8 max-w-md mx-auto">

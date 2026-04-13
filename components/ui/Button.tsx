@@ -4,23 +4,26 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]",
+    "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-base font-semibold ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]",
     {
         variants: {
             variant: {
-                default: "bg-gold text-white hover:bg-gold-light shadow-md hover:shadow-lg",
-                secondary: "bg-navy text-white hover:bg-navy/90 shadow-md",
+                default:
+                    "bg-amber text-white hover:bg-amber-light shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200",
+                secondary:
+                    "bg-charcoal text-white hover:bg-charcoal-light shadow-md hover:shadow-lg",
                 outline:
-                    "border-2 border-navy text-navy bg-transparent hover:bg-navy hover:text-white",
-                ghost: "hover:bg-navy/10 text-navy",
-                link: "text-navy underline-offset-4 hover:underline",
-                premium: "bg-gradient-to-r from-navy to-slate-900 text-white shadow-lg hover:shadow-xl border border-white/10",
+                    "border-2 border-charcoal text-charcoal bg-transparent hover:bg-charcoal hover:text-white",
+                ghost: "hover:bg-charcoal/10 text-charcoal",
+                link: "text-charcoal underline-offset-4 hover:underline",
+                premium:
+                    "bg-gradient-to-r from-charcoal to-charcoal-light text-white border border-white/10 shadow-lg",
             },
             size: {
-                default: "h-11 px-6 py-2",
+                default: "h-12 px-6 py-2",
                 sm: "h-9 rounded-md px-3",
                 lg: "h-14 rounded-lg px-8 text-base",
-                icon: "h-11 w-11",
+                icon: "h-12 w-12",
             },
         },
         defaultVariants: {

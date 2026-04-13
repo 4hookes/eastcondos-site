@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function QuizPage() {
   return (
-    <section className="bg-cream min-h-screen">
+    <section className="bg-offwhite min-h-screen">
       <QuizClient />
     </section>
   );

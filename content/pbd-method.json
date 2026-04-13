@@ -1,0 +1,31 @@
+{
+  "sectionLabel": "THE PBD METHOD",
+  "heading": "This isn't guesswork — it's a system.",
+  "subtext": "9 proprietary frameworks give you a repeatable, data-driven system for making property decisions.",
+  "frameworks": [
+    {
+      "icon": "Target",
+      "title": "Property X-Ray",
+      "description": "Scores any condo across 11 weighted factors. Entry pricing and exit audience carry 80% of the decision."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Price Gap Analysis",
+      "description": "Identifies investable pricing gaps between new launches and comparable resale projects."
+    },
+    {
+      "icon": "Users",
+      "title": "Exit Audience Test",
+      "description": "Validates real buyer demand through transaction data, not narratives. No proven audience = weak investment."
+    },
+    {
+      "icon": "Scale",
+      "title": "The 50% Rule",
+      "description": "Only restructure a portfolio if the move increases total value by 50%+, accounting for transaction costs."
+    }
+  ],
+  "footerLink": {
+    "label": "Explore all 9 frameworks",
+    "href": "/process"
+  }
+}

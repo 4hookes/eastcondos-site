@@ -15,6 +15,24 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Note: redirects() is not applied during static export (`output: "export"`).
+  // These are active in `next dev` and on Vercel (which handles them at the edge).
+  // Client-side redirects in app/calculator/page.tsx and app/team/page.tsx
+  // provide the fallback for static hosting environments.
+  async redirects() {
+    return [
+      {
+        source: "/calculator",
+        destination: "/strategy-session",
+        permanent: true,
+      },
+      {
+        source: "/team",
+        destination: "/about",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

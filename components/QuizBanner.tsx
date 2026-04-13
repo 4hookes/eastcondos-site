@@ -1,28 +1,36 @@
 "use client";
 
-import { useInView } from "@/hooks/useInView";
-import { Sparkles } from "lucide-react";
+import { SectionWrapper } from "@/components/ui/SectionWrapper";
+import { Button } from "@/components/ui/Button";
 
 export default function QuizBanner() {
-  const { ref, isVisible } = useInView();
-
   return (
-    <section className="bg-gold py-12 md:py-16" ref={ref}>
-      <div className={`max-w-3xl mx-auto px-4 sm:px-6 text-center fade-in-section ${isVisible ? "is-visible" : ""}`}>
-        <Sparkles className="w-8 h-8 text-white mx-auto mb-4" />
-        <h2 className="text-2xl md:text-3xl font-bold text-white font-serif mb-3">
+    <SectionWrapper background="charcoal-gradient" id="quiz-banner" className="grain">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-serif font-normal text-white leading-tight tracking-[-0.02em]">
           Think you&apos;re ready to upgrade?
         </h2>
-        <p className="text-white/80 text-lg mb-6">
-          Take the 2-minute quiz and find out your Upgrade Readiness Score.
+        <p className="text-lg text-white/70 mt-4 leading-relaxed">
+          Take our 2-minute Upgrade Readiness Quiz. Get a personalized score
+          across financial, lifestyle, and knowledge readiness.
         </p>
-        <a
-          href="/quiz"
-          className="inline-flex items-center justify-center h-14 px-8 text-base font-semibold rounded-lg bg-white text-gold hover:bg-cream shadow-lg hover:shadow-xl transition-all active:scale-[0.98]"
-        >
-          Take the Quiz
-        </a>
+        <div className="mt-8">
+          <a href="/quiz">
+            <Button variant="default" size="lg">
+              Take the Quiz
+            </Button>
+          </a>
+        </div>
+        <p className="text-sm text-white/50 mt-4">
+          Free. No email required to start.
+        </p>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
+
+/*
+ * Usage:
+ * import QuizBanner from "@/components/QuizBanner";
+ * <QuizBanner />
+ */

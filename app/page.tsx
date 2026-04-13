@@ -1,14 +1,12 @@
 import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
 import PainPoints from "@/components/PainPoints";
-import WhyMe from "@/components/WhyMe";
+import TheDifference from "@/components/TheDifference";
 import HowItWorks from "@/components/HowItWorks";
-import Testimonials from "@/components/Testimonials";
-import CaseStudyPreview from "@/components/CaseStudyPreview";
+import Results from "@/components/Results";
+import PBDMethod from "@/components/PBDMethod";
 import QuizBanner from "@/components/QuizBanner";
-import TeamPreview from "@/components/TeamPreview";
-import About from "@/components/About";
-import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
+import FAQWithCTA from "@/components/FAQWithCTA";
 import faqData from "@/content/faq.json";
 
 export default function Home() {
@@ -20,28 +18,26 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": faqData.items.map((item) => ({
+            mainEntity: faqData.items.map((item) => ({
               "@type": "Question",
-              "name": item.question,
-              "acceptedAnswer": {
+              name: item.question,
+              acceptedAnswer: {
                 "@type": "Answer",
-                "text": item.answer,
+                text: item.answer,
               },
             })),
           }),
         }}
       />
       <Hero />
+      <TrustBar />
       <PainPoints />
-      <WhyMe />
+      <TheDifference />
       <HowItWorks />
-      <Testimonials />
-      <CaseStudyPreview />
+      <Results />
+      <PBDMethod />
       <QuizBanner />
-      <TeamPreview />
-      <About />
-      <FAQ />
-      <CTA />
+      <FAQWithCTA />
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function QuizProgress({ current, total }: QuizProgressProps) {
       </div>
       <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gold rounded-full transition-all duration-500 ease-out"
+          className="h-full bg-amber rounded-full transition-all duration-500 ease-out"
           style={{ width: `${percent}%` }}
         />
       </div>

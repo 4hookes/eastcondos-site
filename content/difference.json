@@ -1,0 +1,36 @@
+{
+  "sectionLabel": "WHY EASTCONDOS",
+  "heading": "Same 2% commission. Completely different service.",
+  "comparison": [
+    {
+      "label": "Approach",
+      "typical": "Shows properties first, asks budget second",
+      "eastcondos": "Runs full financial model before showing a single property"
+    },
+    {
+      "label": "Team",
+      "typical": "One person doing everything",
+      "eastcondos": "Dedicated listing specialists, client success manager, and advisory"
+    },
+    {
+      "label": "Method",
+      "typical": "This one looks good, let's go see it",
+      "eastcondos": "9 proprietary frameworks (PBD) backed by transaction data"
+    },
+    {
+      "label": "Process",
+      "typical": "Ad-hoc, reactive",
+      "eastcondos": "Structured 4-8 month journey with every date projected"
+    },
+    {
+      "label": "Data",
+      "typical": "Basic listing information",
+      "eastcondos": "10+ comparable transactions analyzed per project"
+    },
+    {
+      "label": "Honest advice",
+      "typical": "Pushes the sale regardless",
+      "eastcondos": "Tells you to wait when the numbers say wait"
+    }
+  ]
+}

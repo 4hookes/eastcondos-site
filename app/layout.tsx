@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Lato } from "next/font/google";
+import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,25 +10,20 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-});
-
-const lato = Lato({
-  variable: "--font-lato",
-  weight: ["300", "400", "700"],
+const dmSerif = DM_Serif_Display({
+  variable: "--font-dm-serif",
+  weight: "400",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "eastcondos.sg – Own Your Dream Condo with Elfi",
+  title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
   description:
-    "Expert HDB to condo upgrade planning for East Singapore families. 13 years experience, 500+ families helped. Get your free Zero-Cash Upgrade Checker for Districts 15, 16 & 18.",
+    "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence. 500+ families served, 80% referral rate.",
   openGraph: {
-    title: "eastcondos.sg – Own Your Dream Condo with Elfi",
+    title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
     description:
-      "Expert HDB to condo upgrade planning for East Singapore families. 13 years experience, 500+ families helped. Get your free Zero-Cash Upgrade Checker for Districts 15, 16 & 18.",
+      "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence.",
     type: "website",
     url: "https://eastcondos.sg",
   },
@@ -40,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} ${lato.variable}`}>
-      <body className="antialiased bg-cream font-sans">
+    <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
+      <body className="antialiased bg-offwhite font-sans">
         <Navbar />
         <main>{children}</main>
         <Footer />
@@ -52,19 +47,20 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
-              "name": "EastCondos.sg - Elfi",
-              "description": "Expert HDB to condo upgrade planning for East Singapore families",
-              "url": "https://eastcondos.sg",
-              "telephone": "+6588415991",
-              "areaServed": {
+              name: "EastCondos.sg - Elfi Abdullah",
+              description:
+                "Singapore's data-first condo investment advisory. Expert HDB to condo upgrade planning.",
+              url: "https://eastcondos.sg",
+              telephone: "+6588415991",
+              areaServed: {
                 "@type": "Place",
-                "name": "East Singapore (Districts 15, 16, 18)"
+                name: "East Singapore (Districts 14-18)",
               },
-              "address": {
+              address: {
                 "@type": "PostalAddress",
-                "addressCountry": "SG",
-                "addressRegion": "East Singapore"
-              }
+                addressCountry: "SG",
+                addressRegion: "East Singapore",
+              },
             }),
           }}
         />

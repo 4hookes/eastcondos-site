@@ -1,0 +1,42 @@
+{
+  "sectionLabel": "THE JOURNEY",
+  "heading": "How It Works",
+  "subtext": "A structured 4-8 month path from HDB to your new home.",
+  "overviewBody": "Most families try to manage the upgrade on their own — and end up with a gap period, a rushed purchase, or a condo that doesn't grow. We run a structured end-to-end process where every date and every dollar is projected before we start. You know exactly what to expect, and when.",
+  "timelineStat": "Typical timeline: 4–8 months",
+  "phases": [
+    {
+      "number": "01",
+      "title": "Qualify & Plan",
+      "description": "Before anything moves, we build a full financial model covering your CPF limits, TDSR/MSR qualification, closing costs, and net cash position after the sale. If the numbers say wait — we tell you. If you're ready, we give you a written upgrade roadmap with exact dates and financial projections so there are no surprises on completion day.",
+      "deliverable": "Written upgrade roadmap with timeline and financial projections",
+      "imagePlaceholder": "Financial planning session"
+    },
+    {
+      "number": "02",
+      "title": "Sell High",
+      "description": "We work with Tubear Photography for professional staging and photography that consistently drives 3–8% above estate average. Your listing goes live across PropertyGuru, 99.co, EdgeProp, and our private buyer database simultaneously. Automated follow-up sequences keep every enquiry warm so you never lose a serious buyer to slow response times.",
+      "deliverable": "Maximum sale price, not fastest sale",
+      "imagePlaceholder": "Professional property photography"
+    },
+    {
+      "number": "03",
+      "title": "Buy Smart",
+      "description": "We apply the PBD™ framework — a 9-point scoring system covering entry pricing, exit audience depth, rental floor, MRT proximity, school catchment, and future supply. Every shortlisted condo is benchmarked against 10+ recent comparable transactions. You receive a Property X-Ray report on each option so the decision is data-driven, not emotional.",
+      "deliverable": "Property X-Ray report with comparable transactions analysis",
+      "imagePlaceholder": "Data analysis dashboard"
+    },
+    {
+      "number": "04",
+      "title": "Execute",
+      "description": "We coordinate your HDB sale completion, condo purchase completion, and bridging loan timing so they align. Vendor management covers conveyancing lawyers, bankers, and CPF paperwork. We track every deadline and chase every party — you just show up to sign. Keys in hand, no temporary housing, no stress.",
+      "deliverable": "Keys in hand — no gap period, no temporary housing",
+      "imagePlaceholder": "Happy family receiving keys"
+    }
+  ],
+  "cta": {
+    "heading": "Start your journey",
+    "label": "Book a Strategy Session",
+    "href": "/strategy-session"
+  }
+}

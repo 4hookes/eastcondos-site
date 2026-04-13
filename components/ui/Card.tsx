@@ -6,16 +6,19 @@ const Card = React.forwardRef<
     React.HTMLAttributes<HTMLDivElement> & { variant?: "default" | "glass" | "glass-dark" }
 >(({ className, variant = "default", ...props }, ref) => {
     const variantStyles = {
-        default: "bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100",
-        glass: "bg-white/70 backdrop-blur-lg border border-white/40 shadow-xl",
-        "glass-dark": "bg-navy/90 backdrop-blur-lg border border-white/10 shadow-xl text-white",
+        default:
+            "bg-white shadow-[0_4px_20px_rgb(0,0,0,0.06)] border border-gray-100 rounded-2xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300",
+        glass:
+            "bg-white/70 backdrop-blur-lg border border-white/40 shadow-xl rounded-2xl",
+        "glass-dark":
+            "bg-charcoal/90 backdrop-blur-lg border border-white/10 text-white rounded-2xl",
     };
 
     return (
         <div
             ref={ref}
             className={cn(
-                "rounded-xl transition-all duration-300",
+                "transition-all duration-300",
                 variantStyles[variant],
                 className
             )}
@@ -44,7 +47,7 @@ const CardTitle = React.forwardRef<
     <h3
         ref={ref}
         className={cn(
-            "text-2xl font-serif font-bold leading-none tracking-tight text-navy",
+            "text-2xl font-serif font-normal leading-none tracking-tight text-charcoal",
             className
         )}
         {...props}
@@ -58,7 +61,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <p
         ref={ref}
-        className={cn("text-sm text-body/80 mt-2 leading-relaxed", className)}
+        className={cn("text-base text-gray-600 mt-2 leading-relaxed", className)}
         {...props}
     />
 ));

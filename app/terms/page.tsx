@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div>
-      <div className="bg-sage-dark py-16 text-center">
+      <div className="bg-charcoal py-16 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-white">
           Terms of Service
         </h1>
@@ -19,9 +19,9 @@ export default function TermsPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
-        <div className="prose prose-navy max-w-none space-y-8 text-body leading-relaxed">
+        <div className="text-charcoal [&_h2]:text-2xl [&_h2]:font-serif [&_h2]:mt-8 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-3 [&_p]:text-gray-600 [&_p]:leading-relaxed [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_li]:text-gray-600 [&_li]:mb-2 [&_a]:text-amber [&_a]:underline max-w-none space-y-8">
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               1. Agreement to Terms
             </h2>
             <p>
@@ -32,7 +32,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               2. Our Services
             </h2>
             <p>
@@ -54,7 +54,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               3. Strategy Session & Forms
             </h2>
             <p>
@@ -73,7 +73,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               4. Intellectual Property
             </h2>
             <p>
@@ -90,7 +90,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               5. Limitation of Liability
             </h2>
             <p>
@@ -123,7 +123,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               6. Third-Party Links
             </h2>
             <p>
@@ -137,7 +137,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               7. Governing Law
             </h2>
             <p>
@@ -149,30 +149,30 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-navy mb-4">
+            <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
               8. Contact
             </h2>
             <p>
               If you have questions about these Terms of Service, please contact
               us at:
             </p>
-            <div className="mt-3 bg-sage-light rounded-lg p-6">
-              <p className="font-semibold text-navy">Elfi Bin Abdullah</p>
-              <p>EastCondos.sg</p>
-              <p>
+            <div className="mt-3 bg-offwhite border border-gray-200 rounded-lg p-6 not-prose">
+              <p className="font-semibold text-charcoal mb-1">Elfi Bin Abdullah</p>
+              <p className="text-gray-600 mb-1">EastCondos.sg</p>
+              <p className="text-gray-600 mb-1">
                 Phone:{" "}
                 <a
                   href="tel:+6588415991"
-                  className="text-gold hover:text-gold-light"
+                  className="text-amber underline hover:opacity-80"
                 >
                   +65 8841 5991
                 </a>
               </p>
-              <p>
+              <p className="text-gray-600">
                 WhatsApp:{" "}
                 <a
                   href="https://wa.me/6588415991"
-                  className="text-gold hover:text-gold-light"
+                  className="text-amber underline hover:opacity-80"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

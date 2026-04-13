@@ -1,19 +1,22 @@
 {
-  "sectionLabel": "The challenge",
-  "heading": "Upgrading shouldn't feel this stressful",
-  "subtext": "You've worked hard to get here. But between conflicting advice and complicated numbers, it's hard to know if you're making the right call.",
+  "sectionLabel": "THE CHALLENGE",
+  "heading": "You've been researching for months. You're more confused than when you started.",
   "items": [
     {
-      "title": "Should we buy now or wait?",
-      "description": "Everyone has an opinion. Your parents say one thing, forums say another. It's hard to know what's actually right for your situation."
+      "title": "Overwhelmed by jargon",
+      "description": "ABSD, TDSR, MSR, CPF, MOP — every article you read adds three more acronyms to the pile."
     },
     {
-      "title": "New launch or resale?",
-      "description": "Both have pros and cons. But without clear data, you're essentially guessing—and a wrong choice can cost you years of wealth building."
+      "title": "Skeptical of agents",
+      "description": "You've heard the stories — agents pushing overpriced properties for higher commissions. How do you find one you can trust?"
     },
     {
-      "title": "What if we overstretch?",
-      "description": "You want to give your family a better home, but not at the cost of financial stress. The CPF rules alone are confusing enough."
+      "title": "Anxious about cash flow",
+      "description": "Can you really afford the monthly? What happens if your situation changes? The uncertainty keeps you up at night."
+    },
+    {
+      "title": "Confused by timelines",
+      "description": "Sell first or buy first? When does MOP end? When can you use CPF? The logistics feel impossible to untangle."
     }
   ]
 }
