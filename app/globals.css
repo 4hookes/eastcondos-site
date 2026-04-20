@@ -177,6 +177,131 @@
     border: none;
     margin: 1.5rem auto;
   }
+
+  /* ============================================
+     Editorial system — Monocle Spread
+     ============================================ */
+
+  /* Kicker: small uppercase amber label with leading hairline */
+  .kicker {
+    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep flex items-center gap-3.5;
+  }
+  .kicker::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: #B8902F;
+    flex-shrink: 0;
+  }
+  .kicker-plain {
+    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep;
+  }
+
+  /* Drop cap — first letter of editorial body */
+  .dropcap p:first-of-type::first-letter {
+    font-family: var(--font-dm-serif), serif;
+    font-size: 78px;
+    float: left;
+    line-height: 0.78;
+    padding: 8px 14px 0 0;
+    color: #B8902F;
+  }
+
+  /* Editorial headline — extra-large serif with negative tracking */
+  .headline-cover {
+    @apply font-serif font-normal text-charcoal;
+    font-size: clamp(3rem, 6.5vw, 5.6rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+  }
+  .headline-section {
+    @apply font-serif font-normal text-charcoal;
+    font-size: clamp(2.4rem, 4.4vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .headline-block {
+    @apply font-serif font-normal text-charcoal;
+    font-size: clamp(2rem, 3.6vw, 3.2rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  /* Standfirst — italic serif lede */
+  .standfirst {
+    @apply font-serif italic text-charcoal-light;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  /* Broadsheet grid — bordered cells like a newspaper data table */
+  .broadsheet {
+    @apply border-l border-charcoal;
+  }
+  .broadsheet > * {
+    @apply border-r border-b border-t border-charcoal;
+  }
+
+  /* Section opener for chapter heads */
+  .chapter-marker {
+    @apply text-[11px] uppercase tracking-[0.24em] text-amber-deep;
+  }
+  .chapter-marker b {
+    @apply block font-serif font-normal text-charcoal mt-2;
+    font-size: 36px;
+    text-transform: none;
+    letter-spacing: -0.02em;
+  }
+
+  /* Issue date / breadcrumb with trailing rule */
+  .issue-line {
+    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep flex items-center gap-3.5;
+  }
+  .issue-line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #1A1A2E;
+    opacity: 0.25;
+  }
+
+  /* Marginalia / sidebar list (TOC inside articles) */
+  .marginalia {
+    @apply text-[10px] uppercase tracking-[0.24em] text-amber-deep mb-3;
+  }
+  .marginalia-list {
+    @apply list-none text-[13px] leading-[1.75] text-body;
+  }
+  .marginalia-list li {
+    @apply flex justify-between border-b border-dotted border-[#c9bfa3] py-1.5;
+  }
+  .marginalia-list li b {
+    @apply font-medium;
+  }
+
+  /* Two-column editorial prose with drop-cap */
+  .prose-editorial {
+    @apply text-[18px] leading-[1.75] text-body;
+    column-count: 2;
+    column-gap: 48px;
+  }
+  .prose-editorial p + p {
+    margin-top: 18px;
+  }
+  @media (max-width: 900px) {
+    .prose-editorial {
+      column-count: 1;
+    }
+  }
+
+  /* Photo caption strip overlay */
+  .photo-caption {
+    @apply absolute left-0 right-0 -bottom-px bg-charcoal text-cream
+           px-4 py-3.5 flex justify-between text-[10px] uppercase tracking-[0.22em];
+  }
+  .photo-badge {
+    @apply absolute top-4 left-4 bg-amber text-charcoal text-[10px] uppercase tracking-[0.22em] font-semibold px-3.5 py-2;
+  }
 }
 
 /* ============================================
