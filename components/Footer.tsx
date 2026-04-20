@@ -10,11 +10,11 @@ export default function Footer() {
               aria-label="EastCondos.sg"
             >
               <span className="font-serif text-[32px] text-cream">EastCondos</span>
-              <span className="font-sans text-[10px] uppercase tracking-[0.24em] text-amber mt-1">
+              <span className="font-sans text-[12px] uppercase tracking-[0.22em] text-amber mt-1">
                 Property by Design
               </span>
             </a>
-            <p className="mt-6 text-sm leading-[1.7] text-cream/70 max-w-[36ch]">
+            <p className="mt-6 text-[15px] leading-[1.7] text-cream/70 max-w-[36ch]">
               A consultancy-first approach to the upgrade decision in
               Singapore&rsquo;s east. Specialising in Districts 14, 15, 16, 17,
               and 18 since 2013.
@@ -22,10 +22,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-[10px] uppercase tracking-[0.28em] text-amber mb-4">
+            <h6 className="text-[12px] uppercase tracking-[0.22em] text-amber mb-4">
               The Practice
             </h6>
-            <ul className="list-none space-y-2 text-sm text-cream/85">
+            <ul className="list-none space-y-2 text-[15px] text-cream/85">
               <li><a className="hover:text-amber" href="/process">Approach</a></li>
               <li><a className="hover:text-amber" href="/process#method">Method</a></li>
               <li><a className="hover:text-amber" href="/case-studies">Stories</a></li>
@@ -34,10 +34,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-[10px] uppercase tracking-[0.28em] text-amber mb-4">
+            <h6 className="text-[12px] uppercase tracking-[0.22em] text-amber mb-4">
               Tools
             </h6>
-            <ul className="list-none space-y-2 text-sm text-cream/85">
+            <ul className="list-none space-y-2 text-[15px] text-cream/85">
               <li><a className="hover:text-amber" href="/quiz">Readiness Quiz</a></li>
               <li><a className="hover:text-amber" href="/calculator">Calculator</a></li>
               <li><a className="hover:text-amber" href="/disclaimer-hdb-condo-meter-planner">HDB-Condo Meter</a></li>
@@ -45,10 +45,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-[10px] uppercase tracking-[0.28em] text-amber mb-4">
+            <h6 className="text-[12px] uppercase tracking-[0.22em] text-amber mb-4">
               Contact
             </h6>
-            <ul className="list-none space-y-2 text-sm text-cream/85">
+            <ul className="list-none space-y-2 text-[15px] text-cream/85">
               <li><a className="hover:text-amber" href="tel:+6588415991">+65 8841 5991</a></li>
               <li><a className="hover:text-amber" href="https://wa.me/6588415991" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a className="hover:text-amber" href="mailto:elfi@eastcondos.sg">elfi@eastcondos.sg</a></li>
@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between gap-3 pt-6 text-[11px] uppercase tracking-[0.18em] text-cream/50">
+        <div className="flex flex-col md:flex-row justify-between gap-3 pt-6 text-[12px] uppercase tracking-[0.18em] text-cream/50">
           <div>&copy; MMXXVI EastCondos.sg &middot; Property by Design&trade;</div>
           <div className="flex gap-6">
             <span>The Elfi Division &middot; ERA Singapore &middot; L3009250K</span>

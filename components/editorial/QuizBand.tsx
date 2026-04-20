@@ -3,7 +3,7 @@ export default function QuizBand() {
     <section className="grain bg-charcoal text-cream py-28 md:py-36 px-6 md:px-12 border-t-[6px] border-amber relative">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
-          <div className="text-[10px] uppercase tracking-[0.32em] text-amber mb-6">
+          <div className="text-[12px] uppercase tracking-[0.28em] text-amber mb-6 font-medium">
             Begin Here
           </div>
           <h3
@@ -30,13 +30,13 @@ export default function QuizBand() {
           <div className="mt-9 flex flex-wrap gap-8 items-center">
             <a
               href="/quiz"
-              className="bg-amber text-charcoal px-7 py-4 text-[12px] uppercase tracking-[0.22em] font-semibold hover:bg-amber-light hover:-translate-y-0.5 transition-all duration-200"
+              className="bg-amber text-charcoal px-7 py-4 text-[13px] uppercase tracking-[0.2em] font-semibold hover:bg-amber-light hover:-translate-y-0.5 transition-all duration-200"
             >
               Take the readiness quiz
             </a>
             <a
               href="/case-studies"
-              className="text-[12px] uppercase tracking-[0.18em] text-cream border-b border-amber pb-1.5 hover:text-amber"
+              className="text-[13px] uppercase tracking-[0.18em] text-cream border-b border-amber pb-1.5 hover:text-amber"
             >
               See a sample report
             </a>

@@ -184,7 +184,7 @@
 
   /* Kicker: small uppercase amber label with leading hairline */
   .kicker {
-    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep flex items-center gap-3.5;
+    @apply text-[13px] font-medium uppercase tracking-[0.22em] text-amber-deep flex items-center gap-3.5;
   }
   .kicker::before {
     content: "";
@@ -194,7 +194,7 @@
     flex-shrink: 0;
   }
   .kicker-plain {
-    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep;
+    @apply text-[13px] font-medium uppercase tracking-[0.22em] text-amber-deep;
   }
 
   /* Drop cap — first letter of editorial body */
@@ -244,7 +244,7 @@
 
   /* Section opener for chapter heads */
   .chapter-marker {
-    @apply text-[11px] uppercase tracking-[0.24em] text-amber-deep;
+    @apply text-[13px] uppercase tracking-[0.22em] text-amber-deep font-medium;
   }
   .chapter-marker b {
     @apply block font-serif font-normal text-charcoal mt-2;
@@ -255,7 +255,7 @@
 
   /* Issue date / breadcrumb with trailing rule */
   .issue-line {
-    @apply text-[11px] font-medium uppercase tracking-[0.24em] text-amber-deep flex items-center gap-3.5;
+    @apply text-[13px] font-medium uppercase tracking-[0.22em] text-amber-deep flex items-center gap-3.5;
   }
   .issue-line::after {
     content: "";
@@ -267,10 +267,10 @@
 
   /* Marginalia / sidebar list (TOC inside articles) */
   .marginalia {
-    @apply text-[10px] uppercase tracking-[0.24em] text-amber-deep mb-3;
+    @apply text-[12px] uppercase tracking-[0.22em] text-amber-deep mb-3 font-medium;
   }
   .marginalia-list {
-    @apply list-none text-[13px] leading-[1.75] text-body;
+    @apply list-none text-[14px] leading-[1.75] text-body;
   }
   .marginalia-list li {
     @apply flex justify-between border-b border-dotted border-[#c9bfa3] py-1.5;
@@ -297,10 +297,10 @@
   /* Photo caption strip overlay */
   .photo-caption {
     @apply absolute left-0 right-0 -bottom-px bg-charcoal text-cream
-           px-4 py-3.5 flex justify-between text-[10px] uppercase tracking-[0.22em];
+           px-4 py-3.5 flex justify-between text-[12px] uppercase tracking-[0.2em];
   }
   .photo-badge {
-    @apply absolute top-4 left-4 bg-amber text-charcoal text-[10px] uppercase tracking-[0.22em] font-semibold px-3.5 py-2;
+    @apply absolute top-4 left-4 bg-amber text-charcoal text-[12px] uppercase tracking-[0.2em] font-semibold px-3.5 py-2;
   }
 }
 

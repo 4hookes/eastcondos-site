@@ -1,7 +1,7 @@
 export default function CenterCTA() {
   return (
     <section className="bg-charcoal-light text-cream py-32 md:py-36 px-6 md:px-12 border-t-[6px] border-amber text-center">
-      <div className="text-[10px] uppercase tracking-[0.32em] text-amber mb-6">
+      <div className="text-[12px] uppercase tracking-[0.28em] text-amber mb-6 font-medium">
         Ready when you are
       </div>
       <h3
@@ -21,13 +21,13 @@ export default function CenterCTA() {
       <div className="mt-12 flex flex-wrap gap-8 justify-center items-center">
         <a
           href="/strategy-session"
-          className="bg-amber text-charcoal px-8 py-4 text-[12px] uppercase tracking-[0.22em] font-semibold hover:bg-amber-light hover:-translate-y-0.5 transition-all duration-200"
+          className="bg-amber text-charcoal px-8 py-4 text-[13px] uppercase tracking-[0.2em] font-semibold hover:bg-amber-light hover:-translate-y-0.5 transition-all duration-200"
         >
           Book a Strategy Session
         </a>
         <a
           href="/quiz"
-          className="text-[12px] uppercase tracking-[0.18em] text-cream border-b border-amber pb-1.5 hover:text-amber"
+          className="text-[13px] uppercase tracking-[0.18em] text-cream border-b border-amber pb-1.5 hover:text-amber"
         >
           Take the readiness quiz first
         </a>

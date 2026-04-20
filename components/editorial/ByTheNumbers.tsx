@@ -33,7 +33,7 @@ export default function ByTheNumbers() {
           <div className="font-serif text-[36px] tracking-[-0.02em]">
             By the numbers
           </div>
-          <div className="text-[11px] uppercase tracking-[0.22em] text-[#6B6B6B]">
+          <div className="text-[13px] uppercase tracking-[0.2em] text-[#6B6B6B]">
             2013 &mdash; 2026 &middot; Verified
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function ByTheNumbers() {
               key={s.lbl}
               className="p-7 border-r border-b border-charcoal"
             >
-              <div className="text-[10px] uppercase tracking-[0.24em] text-amber-deep mb-3.5">
+              <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium mb-3.5">
                 {s.lbl}
               </div>
               <div
@@ -57,7 +57,7 @@ export default function ByTheNumbers() {
                 {s.num}
                 <span className="text-amber-deep">{s.suffix}</span>
               </div>
-              <div className="mt-3.5 text-sm leading-[1.5] text-body max-w-[24ch]">
+              <div className="mt-3.5 text-[15px] leading-[1.55] text-body max-w-[24ch]">
                 {s.note}
               </div>
             </div>

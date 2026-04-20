@@ -56,7 +56,7 @@ export default function ManifestoGrid() {
               <h4 className="font-serif text-[24px] leading-tight tracking-[-0.01em] text-charcoal mb-3.5 max-w-[14ch]">
                 {b.title}
               </h4>
-              <p className="text-sm leading-[1.7] text-body">{b.body}</p>
+              <p className="text-[15px] leading-[1.7] text-body">{b.body}</p>
             </div>
           ))}
         </div>

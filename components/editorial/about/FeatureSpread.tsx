@@ -55,7 +55,7 @@ export default function FeatureSpread() {
             </p>
           </div>
 
-          <div className="mt-9 border-t border-charcoal pt-4 flex justify-between items-center text-[11px] uppercase tracking-[0.22em] text-[#6B6B6B]">
+          <div className="mt-9 border-t border-charcoal pt-4 flex justify-between items-center text-[13px] uppercase tracking-[0.2em] text-[#6B6B6B]">
             <span>
               <b className="text-charcoal font-medium">Elfi Abdullah</b>{" "}
               &middot; Founder &middot; The Elfi Division, ERA Singapore

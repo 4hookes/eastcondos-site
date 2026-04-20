@@ -56,17 +56,17 @@ export default function MethodGrid() {
                 <div className="font-serif text-[48px] leading-none tracking-[-0.04em] text-charcoal/30">
                   {s.no}
                 </div>
-                <div className="text-[10px] uppercase tracking-[0.24em] text-amber-deep">
+                <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium">
                   {s.when}
                 </div>
               </div>
               <h4 className="font-serif text-[26px] leading-tight tracking-[-0.01em] text-charcoal mb-3.5">
                 {s.title}
               </h4>
-              <p className="text-sm leading-[1.65] text-body">{s.body}</p>
-              <div className="mt-auto pt-5 border-t border-dotted border-[#c9bfa3] text-[11px] uppercase tracking-[0.18em] text-amber-deep">
+              <p className="text-[15px] leading-[1.65] text-body">{s.body}</p>
+              <div className="mt-auto pt-5 border-t border-dotted border-[#c9bfa3] text-[13px] uppercase tracking-[0.18em] text-amber-deep font-medium">
                 Deliverable
-                <b className="block font-serif font-normal text-charcoal text-[14px] normal-case tracking-normal mt-1">
+                <b className="block font-serif font-normal text-charcoal text-[16px] normal-case tracking-normal mt-1">
                   {s.deliverable}
                 </b>
               </div>

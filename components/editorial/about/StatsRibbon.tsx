@@ -11,7 +11,7 @@ export default function StatsRibbon() {
       <div className="max-w-broadsheet mx-auto grid grid-cols-1 md:grid-cols-4 border-l border-white/15">
         {STATS.map((s) => (
           <div key={s.lbl} className="px-8 py-2 border-r border-white/15">
-            <div className="text-[10px] uppercase tracking-[0.28em] text-amber mb-3.5">
+            <div className="text-[12px] uppercase tracking-[0.22em] text-amber mb-3.5 font-medium">
               {s.lbl}
             </div>
             <div
@@ -21,7 +21,7 @@ export default function StatsRibbon() {
               {s.num}
               <span className="text-amber">{s.suffix}</span>
             </div>
-            <div className="mt-2 text-[13px] text-cream/70 max-w-[24ch] leading-[1.5]">
+            <div className="mt-2 text-[15px] text-cream/70 max-w-[24ch] leading-[1.55]">
               {s.note}
             </div>
           </div>

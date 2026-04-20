@@ -32,7 +32,7 @@ export default function Navbar() {
     <>
       {/* Masthead — broadsheet header */}
       <header className="border-b-2 border-charcoal bg-cream relative">
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center px-6 md:px-12 py-4 text-[11px] uppercase tracking-[0.18em] text-charcoal gap-3 md:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center px-6 md:px-12 py-4 text-[13px] uppercase tracking-[0.16em] text-charcoal gap-3 md:gap-0">
           <div className="hidden md:flex gap-8">
             <span className="flex items-center">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-600 mr-2 align-middle animate-pulse" />
@@ -46,7 +46,7 @@ export default function Navbar() {
             aria-label="EastCondos.sg"
           >
             EastCondos
-            <span className="block font-sans text-[10px] tracking-[0.22em] uppercase mt-1">
+            <span className="block font-sans text-[12px] tracking-[0.2em] uppercase mt-1">
               The Property by Design Quarterly
             </span>
           </a>
@@ -78,14 +78,14 @@ export default function Navbar() {
         className="hidden md:block border-b border-charcoal bg-cream sticky top-0 z-40"
         aria-label="Table of contents"
       >
-        <div className="flex justify-between items-center px-12 py-3.5 text-[11px] uppercase tracking-[0.16em]">
+        <div className="flex justify-between items-center px-12 py-3.5 text-[13px] uppercase tracking-[0.16em]">
           <ul className="flex gap-9 list-none m-0 p-0">
             {TOC_LINKS.map((l) => (
               <li key={l.href} className="flex gap-2.5 items-center">
-                <span>{l.no}</span>
+                <span className="text-[12px]">{l.no}</span>
                 <a
                   href={l.href}
-                  className="font-serif text-[13px] tracking-normal text-amber-deep normal-case hover:text-charcoal transition-colors"
+                  className="font-serif text-[15px] tracking-normal text-amber-deep normal-case hover:text-charcoal transition-colors"
                 >
                   {l.label}
                 </a>

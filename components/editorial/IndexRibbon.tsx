@@ -10,7 +10,7 @@ export default function IndexRibbon() {
     <section className="bg-charcoal text-cream py-9 px-6 md:px-12">
       <div className="max-w-broadsheet mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
         <div>
-          <h6 className="text-[10px] uppercase tracking-[0.28em] text-amber mb-1.5">
+          <h6 className="text-[12px] uppercase tracking-[0.22em] text-amber mb-1.5">
             In this issue
           </h6>
           <div className="font-serif text-[24px] tracking-[-0.01em] leading-tight">
@@ -23,7 +23,7 @@ export default function IndexRibbon() {
             <div className="font-serif text-[18px] tracking-[-0.01em] leading-tight mt-1">
               {c.title}
             </div>
-            <div className="text-[10px] uppercase tracking-[0.22em] text-amber mt-2">
+            <div className="text-[12px] uppercase tracking-[0.2em] text-amber mt-2">
               {c.page}
             </div>
           </div>

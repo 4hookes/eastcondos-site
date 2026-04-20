@@ -32,7 +32,7 @@ export default function TeamGridEditorial() {
                 />
               </div>
               <div>
-                <div className="text-[10px] uppercase tracking-[0.24em] text-amber-deep mb-2.5">
+                <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium mb-2.5">
                   {("tag" in m ? m.tag : "") || m.role}
                 </div>
                 <h4 className="font-serif text-[28px] leading-tight tracking-[-0.01em] text-charcoal">
@@ -41,16 +41,16 @@ export default function TeamGridEditorial() {
                     {m.role}
                   </small>
                 </h4>
-                <p className="mt-3.5 text-sm leading-[1.7] text-body max-w-[36ch]">
+                <p className="mt-3.5 text-[15px] leading-[1.7] text-body max-w-[36ch]">
                   {m.oneLiner}
                 </p>
                 {("phone" in m && m.phone) && (
-                  <div className="mt-4 text-[11px] uppercase tracking-[0.22em] text-amber-deep">
+                  <div className="mt-4 text-[13px] uppercase tracking-[0.2em] text-amber-deep font-medium">
                     {m.phone}
                   </div>
                 )}
                 {("email" in m && m.email) && (
-                  <div className="mt-4 text-[11px] uppercase tracking-[0.22em] text-amber-deep">
+                  <div className="mt-4 text-[13px] uppercase tracking-[0.2em] text-amber-deep font-medium">
                     {m.email}
                   </div>
                 )}

@@ -15,7 +15,7 @@ export default function HeroCover() {
             for families in Singapore&rsquo;s east who only want to do this
             once.
           </p>
-          <div className="mt-9 text-[11px] uppercase tracking-[0.22em] text-[#6B6B6B]">
+          <div className="mt-9 text-[13px] uppercase tracking-[0.2em] text-[#6B6B6B]">
             By <b className="text-charcoal font-medium">Elfi Abdullah</b>
             &nbsp;&middot;&nbsp;13 years &middot; 500 families &middot; Districts
             14, 15, 16, 17, 18

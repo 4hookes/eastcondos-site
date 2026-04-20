@@ -71,7 +71,7 @@ export default function StoriesShelf() {
             />
           </div>
           <div>
-            <div className="text-[10px] uppercase tracking-[0.24em] text-amber-deep mb-4">
+            <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium mb-4">
               {FEATURE.meta}
             </div>
             <h3
@@ -93,7 +93,7 @@ export default function StoriesShelf() {
                   key={d.lbl}
                   className="px-4 py-3.5 border-r border-b border-charcoal"
                 >
-                  <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep">
+                  <div className="text-[12px] uppercase tracking-[0.2em] text-amber-deep font-medium">
                     {d.lbl}
                   </div>
                   <div className="mt-1.5 font-serif text-[24px] leading-none tracking-[-0.015em] text-charcoal">
@@ -104,7 +104,7 @@ export default function StoriesShelf() {
             </div>
             <a
               href="/case-studies"
-              className="mt-7 inline-block text-[11px] uppercase tracking-[0.22em] text-charcoal border-b border-amber pb-1 hover:text-amber-deep"
+              className="mt-7 inline-block text-[13px] uppercase tracking-[0.2em] text-charcoal border-b border-amber pb-1 hover:text-amber-deep font-medium"
             >
               Read full case study &rarr;
             </a>
@@ -114,13 +114,13 @@ export default function StoriesShelf() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {INDEX.map((c) => (
             <div key={c.title} className="pt-4 border-t border-charcoal">
-              <div className="text-[10px] uppercase tracking-[0.24em] text-amber-deep">
+              <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium">
                 {c.meta}
               </div>
               <h4 className="mt-2 font-serif text-[22px] leading-tight tracking-[-0.01em] text-charcoal max-w-[18ch]">
                 {c.title}
               </h4>
-              <div className="mt-3.5 text-[13px] text-body">
+              <div className="mt-3.5 text-[15px] text-body leading-[1.55]">
                 {c.summary}{" "}
                 <b className="font-serif font-normal text-amber-deep text-[18px] tracking-[-0.01em]">
                   {c.summaryBold}
