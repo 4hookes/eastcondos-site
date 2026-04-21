@@ -12,7 +12,7 @@ type QuizStep = "landing" | "question" | "score" | "gate" | "report";
 
 type CategoryKey = "financial" | "lifestyle" | "knowledge";
 
-function calculateScores(answers: Record<number, number>) {
+function calculateScores(answers: Record<number, { score: number; label: string; question: string }>) {
   const categories: Record<CategoryKey, { total: number; count: number }> = {
     financial: { total: 0, count: 0 },
     lifestyle: { total: 0, count: 0 },
@@ -23,7 +23,7 @@ function calculateScores(answers: Record<number, number>) {
     const answer = answers[q.id];
     if (answer !== undefined) {
       const cat = q.category as CategoryKey;
-      categories[cat].total += answer;
+      categories[cat].total += answer.score;
       categories[cat].count += 1;
     }
   });
@@ -88,13 +88,13 @@ function getNextSteps(categoryScores: Record<CategoryKey, number>): string[] {
 export default function QuizClient() {
   const [step, setStep] = useState<QuizStep>("landing");
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [answers, setAnswers] = useState<Record<number, { score: number; label: string; question: string }>>({});
 
   const handleStart = () => setStep("question");
 
-  const handleAnswer = (score: number) => {
-    const questionId = quizData.questions[currentQuestion].id;
-    const newAnswers = { ...answers, [questionId]: score };
+  const handleAnswer = (score: number, label: string) => {
+    const q = quizData.questions[currentQuestion];
+    const newAnswers = { ...answers, [q.id]: { score, label, question: q.text } };
     setAnswers(newAnswers);
 
     if (currentQuestion < quizData.questions.length - 1) {
