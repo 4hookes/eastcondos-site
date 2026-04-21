@@ -9,6 +9,7 @@ export default function StrategyForm() {
   const [showSpouse, setShowSpouse] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     age: "",
     citizenship: "",
     monthlyIncome: "",
@@ -28,6 +29,7 @@ export default function StrategyForm() {
     timeline: "",
     questions: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const updateField = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -38,6 +40,10 @@ export default function StrategyForm() {
       alert("Please enter your name to continue.");
       return;
     }
+    if (step === 1 && !formData.phone.trim()) {
+      alert("Please enter your WhatsApp number to continue.");
+      return;
+    }
     setStep(step + 1);
   };
 
@@ -45,9 +51,22 @@ export default function StrategyForm() {
     setStep(step - 1);
   };
 
-  const handleSubmit = () => {
-    // TODO: Wire up to GoHighLevel webhook endpoint
-    console.log(JSON.stringify(formData, null, 2));
+  const handleSubmit = async () => {
+    setSubmitting(true);
+    // Clean phone: strip non-digits, prepend 65 if 8 digits (Singapore local)
+    const rawPhone = formData.phone.replace(/\D/g, "");
+    const waNumber = rawPhone.length === 8 ? `65${rawPhone}` : rawPhone;
+
+    try {
+      await fetch("https://whatsapp.eastcondos.sg/api/strategy-sessions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, waNumber }),
+      });
+    } catch {
+      // Silently continue — user sees confirmation screen regardless
+    }
+    setSubmitting(false);
     setStep(4);
   };
 
@@ -134,6 +153,23 @@ export default function StrategyForm() {
                 onChange={(e) => updateField("name", e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent"
               />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-charcoal mb-1">
+                WhatsApp Number <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                required
+                value={formData.phone}
+                onChange={(e) => updateField("phone", e.target.value)}
+                placeholder="e.g. 91234567 or 6591234567"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                We&apos;ll send your session summary here 💬
+              </p>
             </div>
 
             <div>
@@ -492,8 +528,8 @@ export default function StrategyForm() {
             <button onClick={handleBack} className="btn-outline">
               Back
             </button>
-            <button onClick={handleSubmit} className="btn-primary">
-              Submit
+            <button onClick={handleSubmit} disabled={submitting} className="btn-primary disabled:opacity-60">
+              {submitting ? "Submitting..." : "Submit"}
             </button>
           </div>
         </div>
