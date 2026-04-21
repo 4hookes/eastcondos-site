@@ -27,6 +27,10 @@ export default function QuizLeadGate({
       alert("Please enter your name.");
       return;
     }
+    if (!phone.trim()) {
+      alert("Please enter your WhatsApp number to receive your full report.");
+      return;
+    }
     onSubmit({ name: name.trim(), phone: phone.trim() });
   };
 
@@ -52,11 +56,13 @@ export default function QuizLeadGate({
         <div>
           <input
             type="tel"
-            placeholder="Phone Number (optional)"
+            placeholder="WhatsApp Number *"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent"
+            required
           />
+          <p className="text-xs text-gray-500 mt-1 text-left">We&apos;ll send your full report here 💬</p>
         </div>
         <button type="submit" className="btn-primary w-full text-lg py-3">
           {buttonLabel}

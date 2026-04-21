@@ -104,9 +104,27 @@ export default function QuizClient() {
     }
   };
 
-  const handleLeadSubmit = (contact: { name: string; phone: string }) => {
-    // TODO: Wire to GoHighLevel webhook
-    console.log("Quiz lead:", contact, "Score:", calculateScores(answers));
+  const handleLeadSubmit = async (contact: { name: string; phone: string }) => {
+    const rawPhone = contact.phone.replace(/\D/g, "");
+    const waNumber = rawPhone.length === 8 ? `65${rawPhone}` : rawPhone;
+    const { totalScore, categoryScores } = calculateScores(answers);
+    const tier = getTier(totalScore);
+    try {
+      await fetch("https://whatsapp.eastcondos.sg/api/quiz-leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          waNumber,
+          name: contact.name,
+          totalScore,
+          categoryScores,
+          tierLabel: tier.label,
+          answers,
+        }),
+      });
+    } catch {
+      // silently continue — don't block user from seeing report
+    }
     setStep("report");
   };
 
