@@ -4,10 +4,11 @@
   "type": "flagship",
   "bucket": "Money & Financing",
   "subBucket": "Equity Building",
-  "title": "From $500K HDB to $1.8M condo in 5 years",
-  "subtitle": "A staircase-wealth playbook",
-  "standfirst": "Idris and Mira moved from a Punggol HDB to a $1.8M condo in two deliberate moves. Their income barely grew. The asset class did all the heavy lifting.",
+  "title": "How we turned a $500K Punggol HDB into a $1.8M condo — without growing our income",
+  "subtitle": "A staircase-wealth playbook, in two deliberate moves",
+  "standfirst": "Idris and Mira moved from a Punggol HDB to a $1.8M condo in five years. Their income barely grew. The asset class did all the heavy lifting.",
   "description": "How Idris and Mira used equity recycling to move from a Punggol HDB to a $1.8M condo in two moves — with minimal income growth.",
+  "editorialCredit": "Drawn from a consultation conducted by Elfi Abdullah, Division Director · ERA Singapore, 2025.",
   "hero": {
     "image": "",
     "caption": "Idris and Mira's second condominium, acquired at the precise expiry of the four-year Seller's Stamp Duty window.",
@@ -18,10 +19,35 @@
   "clients": {
     "names": "Idris & Mira",
     "location": "Punggol (starting point)",
-    "startingPoint": "Punggol 4-room HDB, ~$500K",
-    "incomeNote": "Minimal income growth over the period — wealth built through asset moves, not salary",
     "portrait": "",
     "portraitCaption": "Photographed at their current residence, 2026."
+  },
+  "clientDetails": [
+    "Married Singaporean couple, late 30s",
+    "Own-stay buyers",
+    "Starting point: Punggol 4-room HDB (~$500K)",
+    "Income: effectively flat over the 5-year period",
+    "No children at the time of their first move"
+  ],
+  "buyersBrief": [
+    "Move out of the HDB into a private condominium",
+    "Budget stretched by HDB sale profit + CPF balance",
+    "No rigid location preference — open to D19 and adjacent zones",
+    "Timeline: ready to move within 12 months of the first call",
+    "Open to both long-hold ownership and strategic resale at the right window",
+    "Willing to accept imperfect first unit to secure entry into the private market"
+  ],
+  "challenges": [
+    "Only ~$130K in liquid profit after the HDB sale",
+    "Feared that condo ownership was out of financial reach",
+    "Anxious about overextending on mortgage servicing",
+    "Concerned about buying the 'wrong' unit on the first move",
+    "Unsure how to time a future exit cleanly around SSD rules"
+  ],
+  "softCta": {
+    "text": "If you're sitting in a similar situation — HDB equity idle, unsure if the maths actually supports a move — run the numbers before a conversation. It takes five minutes and saves weeks of second-guessing.",
+    "ctaLabel": "Run the calculator",
+    "ctaHref": "/calculator"
   },
   "headlineStats": [
     { "value": "3.6x", "label": "Asset class growth" },
@@ -34,35 +60,48 @@
       "number": "01",
       "year": "2021",
       "title": "HDB → First Condo",
+      "chapterTitle": "The first call — getting onto the staircase",
       "image": "",
       "imageCaption": "The first condo — a ground-floor 3-bedder, the only unit within budget. Acquired 2021.",
       "imageAlt": "First condominium purchase, ground-floor unit",
+      "marketContext": "In 2021, Punggol 4-room HDBs were transacting in the $450K–$550K range, with freshly-MOP flats at the higher end. New condominiums in D19 (Hougang / Punggol / Sengkang) launched around $1,300–$1,500 psf — putting 3-bedders typically above $1.4M. Ground-floor units were the most accessible entry point.",
       "rows": [
         { "label": "Sold", "value": "Punggol 4-room HDB — ~$500K" },
         { "label": "Cash profit", "value": "~$130K" },
         { "label": "Bought", "value": "3-bedder condo (ground floor — only unit within budget)" },
         { "label": "Cash deployment", "value": "~50% of cash profits ($65K) for cash portion + stamp duty. Remainder to renovation." }
       ],
-      "keyDecision": "Didn't wait for the 'perfect' unit. Got into the condo market with what they could afford."
+      "keyDecision": "Didn't wait for the 'perfect' unit. Got into the condo market with what they could afford.",
+      "quote": {
+        "text": "The first condo didn't need to be perfect. It needed to be strategic. A ground-floor 3-bedder was the only one in budget — but it was enough to get them onto the asset-class staircase.",
+        "attribution": "Elfi"
+      }
     },
     {
       "number": "02",
       "year": "2025",
       "title": "First Condo → Second Condo",
+      "chapterTitle": "The SSD clock — why we waited exactly four years",
       "image": "",
       "imageCaption": "The second condo — $1.6M at purchase, now valued above $1.8M. Acquired 2025 at SSD expiry.",
       "imageAlt": "Second condominium purchase",
+      "marketContext": "By 2025, D19 3-bedder condos were transacting around $1,600–$1,900 psf. A $1.6M quantum secured a roughly 900–1,000 sqft three-bedder in newer, recently-completed developments. For context: comparable projects like Kingsford Waterbay, The Florence Residences, and Sengkang Grand Residences were moving in this band.",
       "rows": [
         { "label": "Trigger", "value": "4-year Seller's Stamp Duty (SSD) window expired" },
         { "label": "Sold first condo", "value": "Cashed out ~$350K profit" },
         { "label": "Bought", "value": "$1.6M condo" },
         { "label": "Cash deployment", "value": "Portion of $350K profit funded the cash portion of the next property" }
       ],
-      "keyDecision": "Exited precisely at SSD expiry. Recycled the profit into a stronger asset class."
+      "keyDecision": "Exited precisely at SSD expiry. Recycled the profit into a stronger asset class.",
+      "quote": {
+        "text": "Selling even a month early would have cost tens of thousands in stamp duty. The SSD window is a mathematical gift — you wait, you don't fight it.",
+        "attribution": "Elfi"
+      }
     }
   ],
   "currentPosition": {
     "year": "2026",
+    "marketContext": "As of early 2026, average psf across D19 condominiums sits in the $1,700–$2,200 band depending on age and MRT proximity. The couple's second condo now sits comfortably in the upper half of that range — tracking the market, not fighting it.",
     "rows": [
       { "label": "Property value", "value": "$1.8M+ (no listings in the block below $1.8M)" },
       { "label": "Asset class journey", "value": "$500K HDB → $1.8M condo in 5 years" },
@@ -78,6 +117,10 @@
     "Recycled the $350K profit into the next, stronger asset ($1.6M condo).",
     "Each move was a burst of wealth — not gradual appreciation, but a concentrated jump in asset class."
   ],
+  "closingQuote": {
+    "text": "Most HDB owners think upgrading is about affording a condo. It's actually about timing when you move the capital — not whether you can.",
+    "attribution": "Elfi"
+  },
   "result": [
     "$500K → $1.8M asset class in 5 years",
     "Two bursts of profit: $130K (HDB sale) → $350K (first condo sale)",
@@ -122,5 +165,23 @@
       "description": "Wealth didn't grow linearly at 3% per year. It grew in two sharp bursts — $130K and $350K — each triggered by a deliberate move, not passive appreciation."
     }
   ],
-  "takeaway": "If your HDB equity is sitting idle, you're not being safe — you're renting inflation on your own capital. One well-timed move can reset your trajectory for a decade."
+  "takeaway": "If your HDB equity is sitting idle, you're not being safe — you're renting inflation on your own capital. One well-timed move can reset your trajectory for a decade.",
+  "faqs": [
+    {
+      "q": "What is Staircase Wealth?",
+      "a": "Staircase Wealth is a PBD™ framework where each property sale funds the cash portion of the next, stronger property. Instead of saving cash to upgrade, you recycle equity. In this case, the HDB sale profit funded the first condo purchase, and the first condo's profit funded the second. No external cash injection was needed after the original HDB equity."
+    },
+    {
+      "q": "Why does SSD timing matter so much?",
+      "a": "Seller's Stamp Duty applies if you sell a private property within four years of purchase — 12% in year one, stepping down to 4% in year four. Selling even one month early can cost tens of thousands of dollars. If your plan involves a future move, SSD expiry is a hard timing constraint, not a soft preference."
+    },
+    {
+      "q": "Can you really upgrade without growing your income?",
+      "a": "Yes — if you use the asset class as the lever. This couple's income was effectively flat over the 5-year period. What grew was the asset they owned. Mortgage affordability was stretched carefully, not irresponsibly, and each move was financed by the previous sale. This only works if you structure the moves deliberately — it is not passive appreciation."
+    },
+    {
+      "q": "What's the minimum HDB equity needed to start a staircase move?",
+      "a": "There's no hard rule, but a useful benchmark is roughly $100K–$150K in cash profit after your HDB sale, plus sufficient CPF balance to cover the downpayment on a condo. If your numbers are close, run the calculator first — it takes five minutes and tells you exactly where you stand before you commit to a conversation."
+    }
+  ]
 }
