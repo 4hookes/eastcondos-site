@@ -1,0 +1,107 @@
+{
+  "slug": "case-27-staircase-wealth",
+  "caseNumber": "27",
+  "type": "flagship",
+  "bucket": "Money & Financing",
+  "subBucket": "Equity Building",
+  "title": "From $500K HDB to $1.8M condo in 5 years",
+  "subtitle": "A staircase-wealth playbook",
+  "standfirst": "Idris and Mira moved from a Punggol HDB to a $1.8M condo in two deliberate moves. Their income barely grew. The asset class did all the heavy lifting.",
+  "description": "How Idris and Mira used equity recycling to move from a Punggol HDB to a $1.8M condo in two moves — with minimal income growth.",
+  "coverImage": "",
+  "ogImage": "",
+  "clients": {
+    "names": "Idris & Mira",
+    "location": "Punggol (starting point)",
+    "startingPoint": "Punggol 4-room HDB, ~$500K",
+    "incomeNote": "Minimal income growth over the period — wealth built through asset moves, not salary"
+  },
+  "headlineStats": [
+    { "value": "3.6x", "label": "Asset class growth" },
+    { "value": "5 yrs", "label": "End-to-end timeline" },
+    { "value": "$480K", "label": "Total profit across 2 moves" },
+    { "value": "2", "label": "Deliberate wealth bursts" }
+  ],
+  "moves": [
+    {
+      "number": "01",
+      "year": "2021",
+      "title": "HDB → First Condo",
+      "rows": [
+        { "label": "Sold", "value": "Punggol 4-room HDB — ~$500K" },
+        { "label": "Cash profit", "value": "~$130K" },
+        { "label": "Bought", "value": "3-bedder condo (ground floor — only unit within budget)" },
+        { "label": "Cash deployment", "value": "~50% of cash profits ($65K) for cash portion + stamp duty. Remainder to renovation." }
+      ],
+      "keyDecision": "Didn't wait for the 'perfect' unit. Got into the condo market with what they could afford."
+    },
+    {
+      "number": "02",
+      "year": "2025",
+      "title": "First Condo → Second Condo",
+      "rows": [
+        { "label": "Trigger", "value": "4-year Seller's Stamp Duty (SSD) window expired" },
+        { "label": "Sold first condo", "value": "Cashed out ~$350K profit" },
+        { "label": "Bought", "value": "$1.6M condo" },
+        { "label": "Cash deployment", "value": "Portion of $350K profit funded the cash portion of the next property" }
+      ],
+      "keyDecision": "Exited precisely at SSD expiry. Recycled the profit into a stronger asset class."
+    }
+  ],
+  "currentPosition": {
+    "year": "2026",
+    "rows": [
+      { "label": "Property value", "value": "$1.8M+ (no listings in the block below $1.8M)" },
+      { "label": "Asset class journey", "value": "$500K HDB → $1.8M condo in 5 years" },
+      { "label": "Key insight", "value": "Income didn't grow dramatically. The asset class did all the heavy lifting." }
+    ]
+  },
+  "problem": "HDB owners who have completed MOP and want to upgrade but feel stuck — they think they need higher income or more savings to make a meaningful move into private property.",
+  "mistake": "Sit in the HDB, pay it off, feel \"safe\" — and miss the equity-building window entirely. Or wait for the \"perfect\" condo (high floor, good facing, ideal location) and never make the first move.",
+  "whatElfiDid": [
+    "Identified that the first move didn't need to be perfect — it needed to be strategic. A ground-floor 3-bedder was enough to get into the condo market and start building equity.",
+    "Structured the cash deployment: 50% of HDB profits into the condo purchase, the rest into renovation. No overextension.",
+    "Timed the exit from the first condo precisely at SSD expiry (4 years).",
+    "Recycled the $350K profit into the next, stronger asset ($1.6M condo).",
+    "Each move was a burst of wealth — not gradual appreciation, but a concentrated jump in asset class."
+  ],
+  "result": [
+    "$500K → $1.8M asset class in 5 years",
+    "Two bursts of profit: $130K (HDB sale) → $350K (first condo sale)",
+    "Each burst funded the next move — no external cash injection needed beyond the original HDB equity",
+    "Income stayed relatively flat — this was purely an asset-class play"
+  ],
+  "frameworks": [
+    {
+      "name": "Staircase Wealth / Equity Recycling",
+      "slug": "staircase-wealth",
+      "description": "Profits from each sale become the fuel for the next, stronger property. HDB profit → first condo → first condo profit → second condo."
+    },
+    {
+      "name": "Quantum Positioning",
+      "slug": "quantum-positioning",
+      "description": "Entry beats perfection. The first condo didn't need to be the dream home — the point was entering the condo market and starting the equity clock."
+    },
+    {
+      "name": "SSD Timing",
+      "slug": "ssd-timing",
+      "description": "Planned the exit around the 4-year SSD expiry. Selling even one month early would have cost thousands in stamp duty."
+    },
+    {
+      "name": "Leverage Amplification",
+      "slug": "leverage-amplification",
+      "description": "Used mortgage leverage to control assets worth far more than their cash position. $65K cash → controlled a condo that appreciated $350K."
+    },
+    {
+      "name": "Next Better Property",
+      "slug": "next-better-property",
+      "description": "Each move was deliberately into a stronger asset class, not a lateral move. The $1.6M condo is now worth $1.8M+ — the third burst is already building."
+    },
+    {
+      "name": "Burst Framework",
+      "slug": "burst-framework",
+      "description": "Wealth didn't grow linearly at 3% per year. It grew in two sharp bursts — $130K and $350K — each triggered by a deliberate move, not passive appreciation."
+    }
+  ],
+  "takeaway": "If your HDB equity is sitting idle, you're not being safe — you're renting inflation on your own capital. One well-timed move can reset your trajectory for a decade."
+}

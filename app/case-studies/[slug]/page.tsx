@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { TrendingUp, Clock, Home, Quote } from "lucide-react";
+import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
-import youngCoupleTampines from "@/content/case-studies/young-couple-tampines.json";
+import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
 
-type CaseStudy = typeof youngCoupleTampines;
+// ===== Case Study Registry =====
+// Every case study JSON is imported and added to this map.
+// Keep the keys in sync with content/case-studies/index.json → slugs
+type FlagshipCase = typeof case27;
 
-const caseStudyMap: Record<string, CaseStudy> = {
-  "young-couple-tampines": youngCoupleTampines,
+const caseStudyMap: Record<string, FlagshipCase> = {
+  "case-27-staircase-wealth": case27,
 };
 
 export async function generateStaticParams() {
@@ -23,14 +26,14 @@ export async function generateMetadata({
   const study = caseStudyMap[slug];
 
   if (!study) {
-    return { title: "Not Found – eastcondos.sg" };
+    return { title: "Not Found — EastCondos.sg" };
   }
 
   return {
-    title: `${study.title} – eastcondos.sg`,
+    title: `${study.title} — Case No. ${study.caseNumber} | EastCondos.sg`,
     description: study.description,
     openGraph: {
-      title: `${study.title} – eastcondos.sg`,
+      title: study.title,
       description: study.description,
       type: "article",
       url: `https://eastcondos.sg/case-studies/${slug}`,
@@ -46,10 +49,7 @@ export default async function CaseStudyPage({
 }) {
   const { slug } = await params;
   const study = caseStudyMap[slug];
-
-  if (!study) {
-    notFound();
-  }
+  if (!study) notFound();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -57,278 +57,360 @@ export default async function CaseStudyPage({
     headline: study.title,
     description: study.description,
     url: `https://eastcondos.sg/case-studies/${study.slug}`,
-    author: {
-      "@type": "Person",
-      name: "Elfi",
-      url: "https://eastcondos.sg/team",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "EastCondos.sg",
-      url: "https://eastcondos.sg",
-    },
+    author: { "@type": "Person", name: "Elfi Abdullah", url: "https://eastcondos.sg/about" },
+    publisher: { "@type": "Organization", name: "EastCondos.sg", url: "https://eastcondos.sg" },
   };
 
   return (
-    <>
+    <div className="bg-cream min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* 1. Hero */}
-      <section className="bg-charcoal py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <a
-            href="/case-studies"
-            className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-medium mb-8 transition-colors duration-200"
-          >
-            ← Back to Success Stories
-          </a>
-
-          <span className="inline-block px-3 py-1 bg-amber/20 text-white text-xs font-semibold rounded-full mb-4">
-            {study.category}
+      {/* ============ MASTHEAD ============ */}
+      <section className="border-b border-charcoal max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
+        <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-7">
+          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
+            Case No. {study.caseNumber} · {study.bucket}
           </span>
+        </div>
 
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-3 leading-tight">
-            {study.title}
-          </h1>
+        <h1
+          className="font-serif text-charcoal mb-4 sm:mb-6"
+          style={{
+            fontSize: "clamp(2.1rem, 5.6vw, 4.4rem)",
+            lineHeight: 1.02,
+            letterSpacing: "-0.028em",
+            maxWidth: "22ch",
+          }}
+        >
+          {study.title}
+        </h1>
 
-          <p className="text-2xl md:text-3xl font-serif font-bold text-amber">
-            {study.headline}
-          </p>
+        <p
+          className="font-serif italic text-charcoal text-[18px] sm:text-[24px] leading-snug mb-6 sm:mb-9"
+          style={{ maxWidth: "38ch" }}
+        >
+          {study.subtitle}
+        </p>
+
+        <p className="text-body text-[16px] sm:text-[18px] leading-relaxed max-w-[54ch]">
+          {study.standfirst}
+        </p>
+      </section>
+
+      {/* ============ HEADLINE STAT BAND ============ */}
+      <section className="bg-charcoal text-cream border-b border-charcoal">
+        <div className="max-w-broadsheet mx-auto grid grid-cols-2 md:grid-cols-4 border-l border-cream/15">
+          {study.headlineStats.map((s) => (
+            <div
+              key={s.label}
+              className="border-r border-b md:border-b-0 border-cream/15 px-5 sm:px-8 py-7 sm:py-10"
+            >
+              <div
+                className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] mb-2"
+                style={{ color: "rgba(242, 235, 219, 0.6)" }}
+              >
+                {s.label}
+              </div>
+              <div
+                className="font-serif text-amber leading-none"
+                style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", letterSpacing: "-0.02em" }}
+              >
+                {s.value}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* 2. Cover Image */}
-      {study.coverImage && (
-        <section className="bg-offwhite">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 -mt-8">
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img
-                src={study.coverImage}
-                alt={`${study.client.name} with Elfi — ${study.title}`}
-                className="w-full h-[300px] md:h-[450px] object-cover"
-              />
+      <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
+        {/* ============ CHAPTER 01 — Clients ============ */}
+        <ChapterMarker chapter="01" title="The Clients" />
+
+        <div className="bg-paper border border-charcoal p-6 sm:p-10 mb-14 sm:mb-20 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 items-start">
+          <div>
+            <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">Names</div>
+            <div
+              className="font-serif text-charcoal text-[26px] sm:text-[30px]"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              {study.clients.names}
+            </div>
+            <div className="text-[13px] sm:text-[14px] text-gray-600 mt-2 italic font-serif">
+              {study.clients.location}
             </div>
           </div>
-        </section>
-      )}
-
-      {/* 3. Stats bar */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-0 md:divide-x md:divide-gray-200">
-            <div className="flex items-center gap-3 md:pr-8">
-              <div className="w-10 h-10 bg-offwhite rounded-full flex items-center justify-center flex-shrink-0">
-                <TrendingUp className="w-5 h-5 text-gray-600" />
-              </div>
-              <div>
-                <p className="text-xs text-gray-600 font-semibold uppercase tracking-wide">
-                  Total Savings
-                </p>
-                <p className="text-xl font-bold text-charcoal">{study.stats.savings}</p>
-              </div>
+          <dl className="space-y-4 sm:space-y-5">
+            <div>
+              <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
+                Starting point
+              </dt>
+              <dd className="text-[16px] sm:text-[17px] text-charcoal">
+                {study.clients.startingPoint}
+              </dd>
             </div>
-
-            <div className="flex items-center gap-3 md:px-8">
-              <div className="w-10 h-10 bg-offwhite rounded-full flex items-center justify-center flex-shrink-0">
-                <Clock className="w-5 h-5 text-gray-600" />
-              </div>
-              <div>
-                <p className="text-xs text-gray-600 font-semibold uppercase tracking-wide">
-                  Timeline
-                </p>
-                <p className="text-xl font-bold text-charcoal">{study.stats.timeline}</p>
-              </div>
+            <div className="pt-4 border-t border-dotted border-[#c9bfa3]">
+              <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
+                Income note
+              </dt>
+              <dd className="text-[15px] sm:text-[16px] text-body font-serif italic">
+                {study.clients.incomeNote}
+              </dd>
             </div>
-
-            <div className="flex items-center gap-3 md:pl-8">
-              <div className="w-10 h-10 bg-offwhite rounded-full flex items-center justify-center flex-shrink-0">
-                <Home className="w-5 h-5 text-gray-600" />
-              </div>
-              <div>
-                <p className="text-xs text-gray-600 font-semibold uppercase tracking-wide">
-                  Upgrade
-                </p>
-                <p className="text-lg font-bold text-charcoal leading-tight">
-                  {study.stats.propertyType}
-                </p>
-              </div>
-            </div>
-          </div>
+          </dl>
         </div>
-      </section>
 
-      {/* 3. Story content */}
-      <section className="bg-offwhite py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          {/* Client avatar */}
-          <div className="flex items-center gap-3 mb-10">
-            {study.client.photo ? (
-              <img
-                src={study.client.photo}
-                alt={study.client.name}
-                className="w-12 h-12 rounded-full object-cover"
-              />
-            ) : (
-              <div className="w-12 h-12 bg-charcoal-light rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                {study.client.initials}
+        {/* ============ CHAPTER 02 — The Moves ============ */}
+        <ChapterMarker chapter="02" title="The Moves" />
+
+        <div className="space-y-8 sm:space-y-10 mb-10 sm:mb-14">
+          {study.moves.map((move) => (
+            <div key={move.number} className="border border-charcoal bg-cream">
+              <div className="flex items-baseline justify-between border-b border-charcoal px-6 sm:px-8 py-4 sm:py-5 bg-paper">
+                <div className="flex items-baseline gap-4 sm:gap-5">
+                  <span
+                    className="font-serif text-amber-deep"
+                    style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em" }}
+                  >
+                    Move {move.number}
+                  </span>
+                  <span className="text-[11px] uppercase tracking-[0.22em] text-gray-600">
+                    {move.year}
+                  </span>
+                </div>
+                <span
+                  className="font-serif italic text-charcoal text-[14px] sm:text-[18px] text-right"
+                  style={{ maxWidth: "24ch" }}
+                >
+                  {move.title}
+                </span>
               </div>
-            )}
-            <div>
-              <p className="font-bold text-charcoal">{study.client.name}</p>
-              <p className="text-sm text-body">{study.client.profile}</p>
-            </div>
-          </div>
-
-          <div className="space-y-10">
-            {/* Challenge */}
-            <div>
-              <h2 className="text-xl font-serif font-bold text-charcoal mb-3 flex items-center gap-2">
-                <span className="w-7 h-7 bg-charcoal-light rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-                  1
-                </span>
-                The Challenge
-              </h2>
-              <p className="text-body leading-relaxed pl-9">
-                {study.sections.challenge}
-              </p>
-            </div>
-
-            {/* Solution */}
-            <div>
-              <h2 className="text-xl font-serif font-bold text-charcoal mb-3 flex items-center gap-2">
-                <span className="w-7 h-7 bg-charcoal-light rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-                  2
-                </span>
-                The Solution
-              </h2>
-              <p className="text-body leading-relaxed pl-9">
-                {study.sections.solution}
-              </p>
-            </div>
-
-            {/* Results */}
-            <div>
-              <h2 className="text-xl font-serif font-bold text-charcoal mb-3 flex items-center gap-2">
-                <span className="w-7 h-7 bg-amber rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-                  3
-                </span>
-                The Results
-              </h2>
-              <p className="text-body leading-relaxed pl-9">
-                {study.sections.results}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Before/After */}
-      <section className="bg-white py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-serif font-bold text-charcoal mb-8 text-center">
-            Before &amp; After
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Before */}
-            <div className="bg-offwhite rounded-xl p-6 border border-gray-200">
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-3">
-                Before
-              </p>
-              <h3 className="text-xl font-bold text-charcoal mb-4">
-                {study.beforeAfter.before.property}
-              </h3>
-              <dl className="space-y-3">
-                <div className="flex justify-between">
-                  <dt className="text-sm text-body">Value</dt>
-                  <dd className="text-sm font-semibold text-charcoal">
-                    {study.beforeAfter.before.value}
-                  </dd>
-                </div>
-                <div className="flex justify-between border-t border-gray-200 pt-3">
-                  <dt className="text-sm text-body">Monthly Payment</dt>
-                  <dd className="text-sm font-semibold text-charcoal">
-                    {study.beforeAfter.before.monthlyPayment}
-                  </dd>
-                </div>
-                <div className="flex justify-between border-t border-gray-200 pt-3">
-                  <dt className="text-sm text-body">Size</dt>
-                  <dd className="text-sm font-semibold text-charcoal">
-                    {study.beforeAfter.before.size}
-                  </dd>
-                </div>
+              <dl className="divide-y divide-dotted divide-[#c9bfa3]">
+                {move.rows.map((row) => (
+                  <div
+                    key={row.label}
+                    className="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-1 sm:gap-6 px-6 sm:px-8 py-4"
+                  >
+                    <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
+                      {row.label}
+                    </dt>
+                    <dd className="text-[15px] sm:text-[16px] text-body leading-relaxed">
+                      {row.value}
+                    </dd>
+                  </div>
+                ))}
               </dl>
+              <div
+                className="px-6 sm:px-8 py-4 sm:py-5 bg-charcoal text-cream border-t border-charcoal"
+                style={{ borderLeft: "3px solid #D4A843" }}
+              >
+                <div
+                  className="text-[10px] uppercase tracking-[0.22em] mb-1.5"
+                  style={{ color: "rgba(242, 235, 219, 0.6)" }}
+                >
+                  Key decision
+                </div>
+                <div className="font-serif italic text-[15px] sm:text-[17px] leading-snug">
+                  {move.keyDecision}
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
 
-            {/* After */}
-            <div className="bg-charcoal rounded-xl p-6">
-              <p className="text-xs font-semibold uppercase tracking-widest text-amber mb-3">
-                After
-              </p>
-              <h3 className="text-xl font-bold text-white mb-4">
-                {study.beforeAfter.after.property}
+        {/* ============ Current Position ============ */}
+        <div
+          className="border border-charcoal bg-paper p-6 sm:p-9 mb-14 sm:mb-20"
+          style={{ borderLeft: "3px solid #D4A843" }}
+        >
+          <div className="flex items-center gap-3 sm:gap-4 mb-4">
+            <span className="w-5 sm:w-7 h-px bg-amber-deep" />
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
+              Current Position · {study.currentPosition.year}
+            </span>
+          </div>
+          <dl className="space-y-4">
+            {study.currentPosition.rows.map((row) => (
+              <div
+                key={row.label}
+                className="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-1 sm:gap-6 pb-3 border-b border-dotted border-[#c9bfa3] last:border-b-0 last:pb-0"
+              >
+                <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
+                  {row.label}
+                </dt>
+                <dd className="text-[15px] sm:text-[17px] text-charcoal leading-relaxed">
+                  {row.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        {/* ============ CHAPTER 03 — Problem ============ */}
+        <ChapterMarker chapter="03" title="The Problem" />
+        <p
+          className="font-serif italic text-charcoal text-[18px] sm:text-[22px] leading-snug mb-14 sm:mb-20 max-w-[46ch]"
+          style={{ letterSpacing: "-0.01em" }}
+        >
+          {study.problem}
+        </p>
+
+        {/* ============ CHAPTER 04 — Mistake ============ */}
+        <ChapterMarker chapter="04" title="The mistake most people make" />
+        <p className="text-body text-[16px] sm:text-[18px] leading-relaxed mb-14 sm:mb-20 max-w-[60ch]">
+          {study.mistake}
+        </p>
+
+        {/* ============ CHAPTER 05 — What Elfi Did ============ */}
+        <ChapterMarker chapter="05" title="What Elfi did" />
+        <ol className="mb-14 sm:mb-20 space-y-5 sm:space-y-6 max-w-[60ch]">
+          {study.whatElfiDid.map((step, i) => (
+            <li key={i} className="grid grid-cols-[40px_1fr] gap-4 sm:gap-5">
+              <span
+                className="font-serif text-amber-deep text-[22px] sm:text-[24px] leading-none pt-0.5"
+                style={{ letterSpacing: "-0.02em" }}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="text-body text-[16px] sm:text-[17px] leading-relaxed">{step}</span>
+            </li>
+          ))}
+        </ol>
+
+        {/* ============ CHAPTER 06 — Result ============ */}
+        <ChapterMarker chapter="06" title="The Result" />
+        <div className="bg-charcoal text-cream p-6 sm:p-10 mb-14 sm:mb-20">
+          <ul className="space-y-4 sm:space-y-5">
+            {study.result.map((r, i) => (
+              <li
+                key={i}
+                className="grid grid-cols-[22px_1fr] gap-4 pb-4 sm:pb-5 border-b last:border-b-0 last:pb-0"
+                style={{ borderColor: "rgba(242, 235, 219, 0.15)" }}
+              >
+                <span className="text-amber font-serif text-[18px] leading-none pt-1">◆</span>
+                <span className="text-[16px] sm:text-[17px] leading-relaxed">{r}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* ============ CHAPTER 07 — Frameworks Applied ============ */}
+        <ChapterMarker chapter="07" title="Frameworks applied" />
+        <p className="text-body text-[15px] sm:text-[16px] italic font-serif mb-6 sm:mb-8 max-w-[56ch]">
+          Every move in this case is an application of one or more PBD™ frameworks. Each framework
+          also appears across other cases in the bank.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mb-14 sm:mb-20">
+          {study.frameworks.map((f) => (
+            <div
+              key={f.slug}
+              className="bg-paper border border-charcoal p-5 sm:p-6 hover:bg-amber/10 transition-colors"
+            >
+              <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1.5">
+                PBD Framework
+              </div>
+              <h3
+                className="font-serif text-charcoal text-[19px] sm:text-[21px] mb-2"
+                style={{ letterSpacing: "-0.01em" }}
+              >
+                {f.name}
               </h3>
-              <dl className="space-y-3">
-                <div className="flex justify-between">
-                  <dt className="text-sm text-white/70">Value</dt>
-                  <dd className="text-sm font-semibold text-amber">
-                    {study.beforeAfter.after.value}
-                  </dd>
-                </div>
-                <div className="flex justify-between border-t border-white/10 pt-3">
-                  <dt className="text-sm text-white/70">Monthly Payment</dt>
-                  <dd className="text-sm font-semibold text-white">
-                    {study.beforeAfter.after.monthlyPayment}
-                  </dd>
-                </div>
-                <div className="flex justify-between border-t border-white/10 pt-3">
-                  <dt className="text-sm text-white/70">Size</dt>
-                  <dd className="text-sm font-semibold text-white">
-                    {study.beforeAfter.after.size}
-                  </dd>
-                </div>
-              </dl>
+              <p className="text-[13px] sm:text-[14px] text-body leading-relaxed">{f.description}</p>
             </div>
+          ))}
+        </div>
+
+        {/* ============ Takeaway ============ */}
+        {study.takeaway && (
+          <div className="border-t border-b border-charcoal py-10 sm:py-14 mb-12 sm:mb-16 text-center">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-5">
+              <span className="w-5 sm:w-8 h-px bg-amber-deep" />
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
+                The takeaway
+              </span>
+              <span className="w-5 sm:w-8 h-px bg-amber-deep" />
+            </div>
+            <p
+              className="font-serif italic text-charcoal text-[20px] sm:text-[28px] leading-snug max-w-[40ch] mx-auto"
+              style={{ letterSpacing: "-0.015em" }}
+            >
+              &ldquo;{study.takeaway}&rdquo;
+            </p>
+          </div>
+        )}
+
+        {/* ============ CTA ============ */}
+        <div className="bg-charcoal text-cream text-center py-10 sm:py-14 px-5 sm:px-10 border border-charcoal">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4">
+            <span className="w-5 sm:w-7 h-px bg-amber" />
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber">
+              Your turn
+            </span>
+          </div>
+          <h3
+            className="font-serif text-[24px] sm:text-[34px] mb-3 sm:mb-4"
+            style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}
+          >
+            Could a <em className="text-amber italic">staircase move</em> work for you?
+          </h3>
+          <p
+            className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
+            style={{ color: "rgba(242, 235, 219, 0.7)" }}
+          >
+            Run your numbers, then request a 7-minute discovery call. If the math supports a move,
+            we&apos;ll talk through how to structure it. If it doesn&apos;t, I&apos;ll tell you
+            straight.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <Link
+              href="/calculator"
+              className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
+            >
+              Run the calculator
+            </Link>
+            <Link
+              href="/discovery"
+              className="inline-block bg-transparent text-cream px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-cream hover:bg-cream hover:text-charcoal transition-colors"
+            >
+              Request a discovery call
+            </Link>
           </div>
         </div>
-      </section>
 
-      {/* 5. Testimonial */}
-      <section className="bg-offwhite py-12 md:py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <blockquote className="border-l-4 border-amber pl-6">
-            <div className="flex items-start gap-3 mb-4">
-              <Quote className="w-8 h-8 text-amber flex-shrink-0 mt-1" />
-              <p className="text-xl md:text-2xl font-serif italic text-charcoal leading-relaxed">
-                &ldquo;{study.testimonial.quote}&rdquo;
-              </p>
-            </div>
-            <footer className="pl-11">
-              <cite className="not-italic text-sm font-semibold text-gray-600">
-                — {study.testimonial.attribution}
-              </cite>
-            </footer>
-          </blockquote>
+        {/* ============ Back to bank ============ */}
+        <div className="mt-10 sm:mt-14 text-center">
+          <Link
+            href="/case-studies"
+            className="text-[12px] sm:text-[13px] uppercase tracking-[0.2em] text-amber-deep hover:text-charcoal transition-colors"
+          >
+            ← Back to the Case Study Bank
+          </Link>
         </div>
-      </section>
+      </main>
+    </div>
+  );
+}
 
-      {/* 6. CTA */}
-      <section className="bg-offwhite py-16 text-center">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-4">
-            Could this be your story?
-          </h2>
-          <p className="text-body text-lg mb-8 leading-relaxed">
-            Find out if you qualify for a zero-cash-outlay upgrade. Get a free
-            personalised strategy from Elfi today.
-          </p>
-          <a href="/strategy-session" className="btn-primary">
-            Get Your Free Strategy
-          </a>
-        </div>
-      </section>
-    </>
+// ===== Chapter marker helper =====
+function ChapterMarker({ chapter, title }: { chapter: string; title: string }) {
+  return (
+    <div className="flex items-baseline gap-4 sm:gap-5 mb-5 sm:mb-6">
+      <span
+        className="font-serif text-amber-deep leading-none"
+        style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}
+      >
+        Chapter {chapter}
+      </span>
+      <span className="flex-1 h-px bg-charcoal" />
+      <span
+        className="font-serif text-charcoal text-[18px] sm:text-[22px]"
+        style={{ letterSpacing: "-0.015em" }}
+      >
+        {title}
+      </span>
+    </div>
   );
 }
