@@ -93,9 +93,9 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="flex gap-6 text-[#6B6B6B]">
-            <a href="tel:+6588415991">+65 8841 5991</a>
+            <a href="tel:+6596667496">+65 9666 7496</a>
             <a
-              href="https://wa.me/6588415991"
+              href="https://wa.me/6596667496"
               target="_blank"
               rel="noopener noreferrer"
             >

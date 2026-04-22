@@ -156,21 +156,21 @@ export default function PrivacyPage() {
               <p className="text-gray-600 mb-1">
                 Phone:{" "}
                 <a
-                  href="tel:+6588415991"
+                  href="tel:+6596667496"
                   className="text-amber underline hover:opacity-80"
                 >
-                  +65 8841 5991
+                  +65 9666 7496
                 </a>
               </p>
               <p className="text-gray-600">
                 WhatsApp:{" "}
                 <a
-                  href="https://wa.me/6588415991"
+                  href="https://wa.me/6596667496"
                   className="text-amber underline hover:opacity-80"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  wa.me/6588415991
+                  wa.me/6596667496
                 </a>
               </p>
             </div>

@@ -49,8 +49,8 @@ export default function Footer() {
               Contact
             </h6>
             <ul className="list-none space-y-2 text-[15px] text-cream/85">
-              <li><a className="hover:text-amber" href="tel:+6588415991">+65 8841 5991</a></li>
-              <li><a className="hover:text-amber" href="https://wa.me/6588415991" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+              <li><a className="hover:text-amber" href="tel:+6596667496">+65 9666 7496</a></li>
+              <li><a className="hover:text-amber" href="https://wa.me/6596667496" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a className="hover:text-amber" href="mailto:elfi@eastcondos.sg">elfi@eastcondos.sg</a></li>
             </ul>
           </div>

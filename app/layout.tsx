@@ -51,7 +51,7 @@ export default function RootLayout({
               description:
                 "Singapore's data-first condo investment advisory. Expert HDB to condo upgrade planning.",
               url: "https://eastcondos.sg",
-              telephone: "+6588415991",
+              telephone: "+6596667496",
               areaServed: {
                 "@type": "Place",
                 name: "East Singapore (Districts 14-18)",
