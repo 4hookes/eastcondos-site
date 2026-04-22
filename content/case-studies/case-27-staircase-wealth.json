@@ -8,13 +8,20 @@
   "subtitle": "A staircase-wealth playbook",
   "standfirst": "Idris and Mira moved from a Punggol HDB to a $1.8M condo in two deliberate moves. Their income barely grew. The asset class did all the heavy lifting.",
   "description": "How Idris and Mira used equity recycling to move from a Punggol HDB to a $1.8M condo in two moves — with minimal income growth.",
+  "hero": {
+    "image": "",
+    "caption": "Idris and Mira's second condominium, acquired at the precise expiry of the four-year Seller's Stamp Duty window.",
+    "alt": "Exterior view of a contemporary Singapore private condominium"
+  },
   "coverImage": "",
   "ogImage": "",
   "clients": {
     "names": "Idris & Mira",
     "location": "Punggol (starting point)",
     "startingPoint": "Punggol 4-room HDB, ~$500K",
-    "incomeNote": "Minimal income growth over the period — wealth built through asset moves, not salary"
+    "incomeNote": "Minimal income growth over the period — wealth built through asset moves, not salary",
+    "portrait": "",
+    "portraitCaption": "Photographed at their current residence, 2026."
   },
   "headlineStats": [
     { "value": "3.6x", "label": "Asset class growth" },
@@ -27,6 +34,9 @@
       "number": "01",
       "year": "2021",
       "title": "HDB → First Condo",
+      "image": "",
+      "imageCaption": "The first condo — a ground-floor 3-bedder, the only unit within budget. Acquired 2021.",
+      "imageAlt": "First condominium purchase, ground-floor unit",
       "rows": [
         { "label": "Sold", "value": "Punggol 4-room HDB — ~$500K" },
         { "label": "Cash profit", "value": "~$130K" },
@@ -39,6 +49,9 @@
       "number": "02",
       "year": "2025",
       "title": "First Condo → Second Condo",
+      "image": "",
+      "imageCaption": "The second condo — $1.6M at purchase, now valued above $1.8M. Acquired 2025 at SSD expiry.",
+      "imageAlt": "Second condominium purchase",
       "rows": [
         { "label": "Trigger", "value": "4-year Seller's Stamp Duty (SSD) window expired" },
         { "label": "Sold first condo", "value": "Cashed out ~$350K profit" },
@@ -75,31 +88,37 @@
     {
       "name": "Staircase Wealth / Equity Recycling",
       "slug": "staircase-wealth",
+      "iconName": "staircase-wealth",
       "description": "Profits from each sale become the fuel for the next, stronger property. HDB profit → first condo → first condo profit → second condo."
     },
     {
       "name": "Quantum Positioning",
       "slug": "quantum-positioning",
+      "iconName": "quantum-positioning",
       "description": "Entry beats perfection. The first condo didn't need to be the dream home — the point was entering the condo market and starting the equity clock."
     },
     {
       "name": "SSD Timing",
       "slug": "ssd-timing",
+      "iconName": "ssd-timing",
       "description": "Planned the exit around the 4-year SSD expiry. Selling even one month early would have cost thousands in stamp duty."
     },
     {
       "name": "Leverage Amplification",
       "slug": "leverage-amplification",
+      "iconName": "leverage-amplification",
       "description": "Used mortgage leverage to control assets worth far more than their cash position. $65K cash → controlled a condo that appreciated $350K."
     },
     {
       "name": "Next Better Property",
       "slug": "next-better-property",
+      "iconName": "next-better-property",
       "description": "Each move was deliberately into a stronger asset class, not a lateral move. The $1.6M condo is now worth $1.8M+ — the third burst is already building."
     },
     {
       "name": "Burst Framework",
       "slug": "burst-framework",
+      "iconName": "burst-framework",
       "description": "Wealth didn't grow linearly at 3% per year. It grew in two sharp bursts — $130K and $350K — each triggered by a deliberate move, not passive appreciation."
     }
   ],

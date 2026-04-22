@@ -3,6 +3,16 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
 import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
+import PhotoBlock from "@/components/PhotoBlock";
+import FrameworkIcon from "@/components/FrameworkIcon";
+
+type IconName =
+  | "staircase-wealth"
+  | "quantum-positioning"
+  | "ssd-timing"
+  | "leverage-amplification"
+  | "next-better-property"
+  | "burst-framework";
 
 // ===== Case Study Registry =====
 // Every case study JSON is imported and added to this map.
@@ -127,40 +137,67 @@ export default async function CaseStudyPage({
       </section>
 
       <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
+        {/* ============ HERO IMAGE ============ */}
+        {study.hero && (
+          <div className="mb-14 sm:mb-20">
+            <PhotoBlock
+              src={study.hero.image}
+              alt={study.hero.alt || study.title}
+              caption={study.hero.caption}
+              label="Cover photograph"
+              aspect="16 / 9"
+            />
+          </div>
+        )}
+
         {/* ============ CHAPTER 01 — Clients ============ */}
         <ChapterMarker chapter="01" title="The Clients" />
 
-        <div className="bg-paper border border-charcoal p-6 sm:p-10 mb-14 sm:mb-20 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 md:gap-10 items-start">
-          <div>
-            <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">Names</div>
-            <div
-              className="font-serif text-charcoal text-[26px] sm:text-[30px]"
-              style={{ letterSpacing: "-0.02em" }}
-            >
-              {study.clients.names}
-            </div>
-            <div className="text-[13px] sm:text-[14px] text-gray-600 mt-2 italic font-serif">
-              {study.clients.location}
+        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-5 sm:gap-8 mb-14 sm:mb-20 items-start">
+          <div className="order-2 md:order-1">
+            <PhotoBlock
+              src={study.clients.portrait}
+              alt={`Portrait of ${study.clients.names}`}
+              caption={study.clients.portraitCaption}
+              label="Portrait"
+              aspect="3 / 4"
+            />
+          </div>
+
+          <div className="order-1 md:order-2 bg-paper border border-charcoal p-6 sm:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-5 md:gap-8 items-start">
+              <div>
+                <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">Names</div>
+                <div
+                  className="font-serif text-charcoal text-[24px] sm:text-[28px]"
+                  style={{ letterSpacing: "-0.02em" }}
+                >
+                  {study.clients.names}
+                </div>
+                <div className="text-[13px] sm:text-[14px] text-gray-600 mt-2 italic font-serif">
+                  {study.clients.location}
+                </div>
+              </div>
+              <dl className="space-y-4 sm:space-y-5">
+                <div>
+                  <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
+                    Starting point
+                  </dt>
+                  <dd className="text-[15px] sm:text-[16px] text-charcoal">
+                    {study.clients.startingPoint}
+                  </dd>
+                </div>
+                <div className="pt-4 border-t border-dotted border-[#c9bfa3]">
+                  <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
+                    Income note
+                  </dt>
+                  <dd className="text-[14px] sm:text-[15px] text-body font-serif italic">
+                    {study.clients.incomeNote}
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
-          <dl className="space-y-4 sm:space-y-5">
-            <div>
-              <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
-                Starting point
-              </dt>
-              <dd className="text-[16px] sm:text-[17px] text-charcoal">
-                {study.clients.startingPoint}
-              </dd>
-            </div>
-            <div className="pt-4 border-t border-dotted border-[#c9bfa3]">
-              <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1">
-                Income note
-              </dt>
-              <dd className="text-[15px] sm:text-[16px] text-body font-serif italic">
-                {study.clients.incomeNote}
-              </dd>
-            </div>
-          </dl>
         </div>
 
         {/* ============ CHAPTER 02 — The Moves ============ */}
@@ -188,21 +225,35 @@ export default async function CaseStudyPage({
                   {move.title}
                 </span>
               </div>
-              <dl className="divide-y divide-dotted divide-[#c9bfa3]">
-                {move.rows.map((row) => (
-                  <div
-                    key={row.label}
-                    className="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-1 sm:gap-6 px-6 sm:px-8 py-4"
-                  >
-                    <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
-                      {row.label}
-                    </dt>
-                    <dd className="text-[15px] sm:text-[16px] text-body leading-relaxed">
-                      {row.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr]">
+                {/* photo on the left */}
+                <div className="border-b md:border-b-0 md:border-r border-charcoal">
+                  <PhotoBlock
+                    src={move.image}
+                    alt={move.imageAlt || move.title}
+                    caption={move.imageCaption}
+                    label={`Move ${move.number}`}
+                    aspect="4 / 3"
+                    className="border-0"
+                  />
+                </div>
+                {/* details on the right */}
+                <dl className="divide-y divide-dotted divide-[#c9bfa3]">
+                  {move.rows.map((row) => (
+                    <div
+                      key={row.label}
+                      className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-1 sm:gap-5 px-5 sm:px-7 py-3.5"
+                    >
+                      <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
+                        {row.label}
+                      </dt>
+                      <dd className="text-[14px] sm:text-[15px] text-body leading-relaxed">
+                        {row.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
               <div
                 className="px-6 sm:px-8 py-4 sm:py-5 bg-charcoal text-cream border-t border-charcoal"
                 style={{ borderLeft: "3px solid #D4A843" }}
@@ -309,16 +360,25 @@ export default async function CaseStudyPage({
               key={f.slug}
               className="bg-paper border border-charcoal p-5 sm:p-6 hover:bg-amber/10 transition-colors"
             >
-              <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1.5">
-                PBD Framework
+              <div className="flex items-start gap-4 sm:gap-5">
+                <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 border border-charcoal bg-cream flex items-center justify-center">
+                  <FrameworkIcon name={f.iconName as IconName} size={28} className="text-amber-deep" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-1.5">
+                    PBD Framework
+                  </div>
+                  <h3
+                    className="font-serif text-charcoal text-[19px] sm:text-[21px] mb-2"
+                    style={{ letterSpacing: "-0.01em" }}
+                  >
+                    {f.name}
+                  </h3>
+                  <p className="text-[13px] sm:text-[14px] text-body leading-relaxed">
+                    {f.description}
+                  </p>
+                </div>
               </div>
-              <h3
-                className="font-serif text-charcoal text-[19px] sm:text-[21px] mb-2"
-                style={{ letterSpacing: "-0.01em" }}
-              >
-                {f.name}
-              </h3>
-              <p className="text-[13px] sm:text-[14px] text-body leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>
