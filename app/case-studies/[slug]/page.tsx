@@ -144,23 +144,33 @@ export default async function CaseStudyPage({
       </section>
 
       <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
-        {/* ============ HERO IMAGE ============ */}
-        {study.hero && (
-          <div className="mb-14 sm:mb-20">
-            <PhotoBlock
-              src={study.hero.image}
-              alt={study.hero.alt || study.title}
-              caption={study.hero.caption}
-              label="Cover photograph"
-              aspect="16 / 9"
-            />
-          </div>
-        )}
-
-        {/* ============ CLIENT + PORTRAIT ============ */}
+        {/* ============ CLIENTS BLOCK ============ */}
         <ChapterMarker chapter="01" title="The Clients" />
-        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-5 sm:gap-8 mb-12 sm:mb-16 items-start">
-          <div className="order-2 md:order-1">
+        <div className="bg-paper border border-charcoal p-6 sm:p-8 mb-12 sm:mb-16">
+          <div className="grid grid-cols-[1fr_130px] sm:grid-cols-[1fr_140px] gap-5 sm:gap-7 items-start">
+            <div>
+              <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-3">
+                Client Details
+              </div>
+              <div
+                className="font-serif text-charcoal text-[22px] sm:text-[26px] mb-1"
+                style={{ letterSpacing: "-0.02em" }}
+              >
+                {study.clients.names}
+              </div>
+              <div className="text-[13px] text-gray-600 mb-5 italic font-serif">
+                {study.clients.location}
+              </div>
+              <ul className="space-y-2 sm:space-y-2.5 pt-4 border-t border-dotted border-[#c9bfa3]">
+                {study.clientDetails.map((d, i) => (
+                  <li key={i} className="flex gap-3 text-[14px] sm:text-[15px] text-body leading-relaxed">
+                    <span className="text-amber-deep flex-shrink-0 pt-0.5">·</span>
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Small portrait thumbnail — editorial artifact, not hero */}
             <PhotoBlock
               src={study.clients.portrait}
               alt={`Portrait of ${study.clients.names}`}
@@ -168,28 +178,6 @@ export default async function CaseStudyPage({
               label="Portrait"
               aspect="3 / 4"
             />
-          </div>
-          <div className="order-1 md:order-2 bg-paper border border-charcoal p-6 sm:p-8">
-            <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-3">
-              Client Details
-            </div>
-            <div
-              className="font-serif text-charcoal text-[22px] sm:text-[26px] mb-1"
-              style={{ letterSpacing: "-0.02em" }}
-            >
-              {study.clients.names}
-            </div>
-            <div className="text-[13px] text-gray-600 mb-5 italic font-serif">
-              {study.clients.location}
-            </div>
-            <ul className="space-y-2 sm:space-y-2.5 pt-4 border-t border-dotted border-[#c9bfa3]">
-              {study.clientDetails.map((d, i) => (
-                <li key={i} className="flex gap-3 text-[14px] sm:text-[15px] text-body leading-relaxed">
-                  <span className="text-amber-deep flex-shrink-0 pt-0.5">·</span>
-                  <span>{d}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 
@@ -261,32 +249,34 @@ export default async function CaseStudyPage({
                   {move.title}
                 </span>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr]">
-                <div className="border-b md:border-b-0 md:border-r border-charcoal">
-                  <PhotoBlock
-                    src={move.image}
-                    alt={move.imageAlt || move.title}
-                    caption={move.imageCaption}
-                    label={`Move ${move.number}`}
-                    aspect="4 / 3"
-                    className="border-0"
-                  />
+              <div className="p-5 sm:p-7">
+                {/* Small thumbnail floated right — editorial artifact, not card hero */}
+                <div className="grid grid-cols-1 sm:grid-cols-[1fr_200px] gap-5 sm:gap-7 items-start">
+                  <dl className="divide-y divide-dotted divide-[#c9bfa3] order-2 sm:order-1">
+                    {move.rows.map((row) => (
+                      <div
+                        key={row.label}
+                        className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 py-3 first:pt-0 last:pb-0"
+                      >
+                        <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
+                          {row.label}
+                        </dt>
+                        <dd className="text-[14px] sm:text-[15px] text-body leading-relaxed">
+                          {row.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <div className="order-1 sm:order-2 w-full max-w-[200px] mx-auto sm:mx-0">
+                    <PhotoBlock
+                      src={move.image}
+                      alt={move.imageAlt || move.title}
+                      caption={move.imageCaption}
+                      label={`Move ${move.number}`}
+                      aspect="4 / 3"
+                    />
+                  </div>
                 </div>
-                <dl className="divide-y divide-dotted divide-[#c9bfa3]">
-                  {move.rows.map((row) => (
-                    <div
-                      key={row.label}
-                      className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-1 sm:gap-5 px-5 sm:px-7 py-3.5"
-                    >
-                      <dt className="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] text-amber-deep pt-1">
-                        {row.label}
-                      </dt>
-                      <dd className="text-[14px] sm:text-[15px] text-body leading-relaxed">
-                        {row.value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
               </div>
               <div
                 className="px-6 sm:px-8 py-4 sm:py-5 bg-charcoal text-cream border-t border-charcoal"

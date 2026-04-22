@@ -46,15 +46,15 @@ export default function PhotoBlock({
           <div className="absolute inset-0 flex items-center justify-center bg-paper">
             {/* top-left tag (label) */}
             {label && (
-              <div className="absolute top-3 left-3 text-[10px] uppercase tracking-[0.22em] text-amber-deep">
+              <div className="absolute top-2 left-2 text-[8px] sm:text-[9px] uppercase tracking-[0.22em] text-amber-deep">
                 {label}
               </div>
             )}
-            {/* center glyph */}
-            <div className="flex flex-col items-center justify-center gap-3 opacity-60 text-charcoal">
+            {/* center glyph — small, subtle */}
+            <div className="flex flex-col items-center justify-center gap-1.5 opacity-50 text-charcoal">
               <svg
-                width="36"
-                height="36"
+                width="22"
+                height="22"
                 viewBox="0 0 40 40"
                 fill="none"
                 stroke="currentColor"
@@ -67,29 +67,15 @@ export default function PhotoBlock({
                 <circle cx="20" cy="21" r="6" />
                 <path d="M31 14 H32" />
               </svg>
-              <span className="text-[10px] uppercase tracking-[0.22em] text-charcoal/60">
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.22em] text-charcoal/50 text-center px-2">
                 {tag}
               </span>
             </div>
-            {/* soft diagonal corner rule */}
-            <svg
-              className="absolute bottom-3 right-3 text-amber-deep/50"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              aria-hidden="true"
-            >
-              <path d="M2 22 L22 2" />
-              <path d="M14 2 L22 2 L22 10" />
-            </svg>
           </div>
         )}
       </div>
       {caption && (
-        <figcaption className="px-4 sm:px-5 py-3 text-[12px] sm:text-[13px] italic font-serif text-gray-600 border-t border-dotted border-[#c9bfa3] leading-snug">
+        <figcaption className="px-3 sm:px-3.5 py-2 sm:py-2.5 text-[10px] sm:text-[11px] italic font-serif text-gray-600 border-t border-dotted border-[#c9bfa3] leading-snug">
           {caption}
         </figcaption>
       )}
