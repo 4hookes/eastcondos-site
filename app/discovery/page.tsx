@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import styles from "./discovery.module.css";
 
-const WHATSAPP_NUMBER = "6588415991";
+const WHATSAPP_NUMBER = "6596667496";
 
 type GoalKey =
   | ""
