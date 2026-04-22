@@ -1,0 +1,63 @@
+/* Form-specific styles — inputs, selects, textarea */
+
+.input,
+.select,
+.textarea {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px; /* prevents iOS auto-zoom */
+  padding: 12px 14px;
+  background: #FAFAF8;
+  border: 1px solid #1A1A2E;
+  color: #1A1A2E;
+  width: 100%;
+  letter-spacing: 0;
+}
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: 2px solid #D4A843;
+  outline-offset: -1px;
+}
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%231A1A2E' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px 8px;
+  padding-right: 36px;
+}
+.textarea {
+  min-height: 96px;
+  resize: vertical;
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.5;
+}
+
+.warning {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  background: #FFF7E5;
+  border-left: 2px solid #B8902F;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #5A4A1A;
+}
+.warning strong {
+  font-family: var(--font-dm-serif), serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #1A1A2E;
+}
+
+@media (max-width: 380px) {
+  .input,
+  .select,
+  .textarea {
+    font-size: 15px;
+    padding: 11px 12px;
+  }
+}

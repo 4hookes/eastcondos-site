@@ -355,10 +355,10 @@ export default function CalculatorPage() {
             the table because they don&apos;t know these exist.
           </p>
           <Link
-            href="/strategy-session"
+            href="/discovery"
             className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
           >
-            Book a consultation
+            Request a 7-min discovery call
           </Link>
         </div>
       </main>
