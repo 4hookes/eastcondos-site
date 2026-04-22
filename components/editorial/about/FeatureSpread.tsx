@@ -18,7 +18,6 @@ export default function FeatureSpread() {
           />
           <div className="photo-caption">
             <span>Elfi Abdullah &middot; Founder</span>
-            <span className="text-amber">Photographed in Katong, March 2026</span>
           </div>
         </div>
 
