@@ -1,0 +1,175 @@
+{
+  "slug": "your-hdb-looks-young-inside-its-old",
+  "title": "Your HDB Looks Young. Inside, It's Old.",
+  "titleHtml": "Your HDB Looks <em>Young</em>. Inside, It's <em>Old</em>.",
+  "standfirst": "The premium you're sitting on was a Black Swan gift. It's already fading. And if you're below 45, the window to act is still open — but not forever.",
+  "kicker": "THE COVER STORY · APRIL 2026",
+  "publishDate": "2026-04-24",
+  "readingTimeMinutes": 9,
+  "ogImage": "/og/journal/your-hdb-looks-young-inside-its-old.jpg",
+  "coverImage": "/images/journal/your-hdb-looks-young-inside-its-old/hero.jpg",
+  "coverImageAlt": "A Singapore HDB public housing block in East Singapore, freshly repainted in cream and soft peach, bathed in late-afternoon golden light",
+  "coverImageCaption": "An East Singapore HDB block in late-afternoon light. The paint is new. The building is thirty years old.",
+  "excerpt": "HDB resale prices just dropped for the first time in 7 years. Most owners don't realize their flat is 30+ years old. If you're under 45, there's a window — and a play — most upgraders miss.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Market Trends",
+  "framework": {
+    "name": "The Younger-Borrower Play",
+    "id": "younger-borrower-play"
+  },
+  "seo": {
+    "metaTitle": "Your HDB Looks Young. Inside, It's Old. — The Younger-Borrower Play",
+    "metaDescription": "HDB resale prices just dropped for the first time in 7 years. If your flat is 30+ years old and you're under 45, The Younger-Borrower Play gives you a window most upgraders miss.",
+    "keywords": [
+      "HDB price peak Singapore",
+      "HDB lease decay upgrade",
+      "HDB upgrader 45 years old",
+      "younger borrower loan Singapore",
+      "COVID HDB premium"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/your-hdb-looks-young-inside-its-old"
+  },
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "Your HDB has a lot of botox.\n\nIf you walked through your block today, you probably wouldn't think it's 30 years old. The paint is fresh. The lift works. The void deck is clean. HDB maintains its buildings so well that most owners genuinely forget the age of the flat they're sitting in.\n\nBut the 99-year clock doesn't care about fresh paint. And the price your flat is worth today — that's also young on the outside, old on the inside.\n\nThis article is for HDB upgraders sitting on a flat they bought 20-25 years ago, now in their mid-30s to early 40s, watching the market and wondering whether to move. Here's the honest data — what the COVID premium actually was, why it's fading now, and the window most people don't realize they're still inside."
+    },
+    { "type": "heading", "level": 2, "number": "1", "text": "What COVID Did to Your HDB Price" },
+    {
+      "type": "prose",
+      "content": "Between 2020 and 2023, HDB resale prices in Singapore climbed approximately 30%. That wasn't organic demand. That was a supply shock.\n\nDuring the pandemic, BTO construction delayed by 12-18 months. New flats didn't enter the market on schedule. At the same time, more families wanted their own space — couples accelerating BTO plans, parents separating from multi-gen households, remote work making home-size decisions urgent. Demand surged. Supply collapsed. Prices exploded.\n\nThis is the textbook definition of a Black Swan — a one-time, unpredictable event that distorts prices outside the normal range. Supply shocks aren't market trends. They're luck.\n\nAnd the gift from that luck is now sitting inside your flat's valuation.\n\nIf you bought your HDB in 2000 for $300,000, and today it's worth $700,000, a meaningful portion of that gain came from 2020-2023. Strip out the Black Swan period, and the trajectory looks very different.\n\nThe question is: what happens when the Black Swan passes?"
+    },
+    { "type": "heading", "level": 2, "number": "2", "text": "The Triple Whammy Is Already Here" },
+    {
+      "type": "prose",
+      "content": "Here's where it stops being a prediction and starts being visible in HDB's own data."
+    },
+    { "type": "heading", "level": 3, "text": "The first drop in seven years." },
+    {
+      "type": "prose",
+      "content": "In Q1 2026, HDB's Resale Price Index dropped 0.1% quarter-on-quarter. It's a small number. But it's the first decline since Q2 2019 — seven years of uninterrupted climb, now reversing.\n\nAnd if you dig one level deeper, the story gets worse for most upgraders. 4-room flats — which make up 45% of all resale volume — fell 0.7% in the same quarter. The segment most upgraders sit in is falling seven times faster than the headline.\n\nThe index looks soft. The 4-room segment is already weak."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        { "number": "-0.1", "suffix": "%", "label": "Q1 2026 HDB RPI", "note": "First drop in 7 years" },
+        { "number": "-0.7", "suffix": "%", "label": "4-room resale Q1 2026", "note": "45% of resale volume" },
+        { "number": "30", "suffix": "%", "label": "HDB price climb 2020-2023", "note": "Black Swan premium" }
+      ]
+    },
+    { "type": "heading", "level": 3, "text": "The million-dollar flats mask the truth." },
+    {
+      "type": "prose",
+      "content": "A small slice of the market — roughly 7% of volume — is still setting records. 145 flats sold for over $1 million in March 2026 alone. Sounds strong, right?\n\nHere's the catch: 90% of those million-dollar flats are concentrated in three mature estates — Toa Payoh, Bukit Merah, Queenstown. Not in East Singapore. Not in Bedok, Tampines, Pasir Ris, or Eunos.\n\nThe top of the market is propping up the index. The rest is softening. If you're an East upgrader reading the headline RPI, you're reading the wrong number."
+    },
+    { "type": "heading", "level": 3, "text": "The BTO flood." },
+    {
+      "type": "prose",
+      "content": "On top of the softening prices, a wave of supply is coming back. Many of those flats are in your area. When your neighbour's BTO clears MOP and hits the resale market, they're either your competitor (if you're selling) or your buyer's alternative (if you're sitting tight)."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 4,
+      "stats": [
+        { "number": "13,480", "label": "MOP flats 2026", "note": "+93% vs 2025" },
+        { "number": "15,000", "label": "MOP flats 2027" },
+        { "number": "19,500", "label": "MOP flats 2028" },
+        { "number": "48,000", "label": "Total 3-year supply", "note": "Hitting resale" }
+      ]
+    },
+    { "type": "heading", "level": 3, "text": "Plus lease decay, happening quietly." },
+    {
+      "type": "prose",
+      "content": "If your flat is 30-35 years old, you have 64-69 years left on a 99-year lease. You're not at the bank-financing-risk threshold yet (that's around 60 years remaining), but you're on a one-way clock. Every year you wait, your buyer's bank gives them a smaller loan — which pushes your asking price down.\n\nThree forces at once. More supply. Softening prices in your exact segment. Lease decay tightening the screw.\n\nThis is the real age catching up with the painted face."
+    },
+    { "type": "dotted-divider" },
+    { "type": "heading", "level": 2, "number": "3", "text": "The Younger-Borrower Play" },
+    {
+      "type": "image",
+      "src": "/images/journal/your-hdb-looks-young-inside-its-old/chapter-3.jpg",
+      "alt": "Golden-hour light through the louvered window of an older Singapore HDB flat, with a modern condominium tower softly out of focus beyond the glass",
+      "caption": "From inside the old flat, the newer building is always visible. The window to act on it isn't.",
+      "credit": "The Journal · Chapter 3",
+      "aspect": "16 / 9"
+    },
+    {
+      "type": "prose",
+      "content": "Most HDB upgrader content stops at the bad news and leaves you with \"good luck.\" That's not useful. Let me show you the move most of my clients use to act inside their window, even when the bank math looks tight at first glance.\n\nIn my playbook, I call it The Younger-Borrower Play. It combines a bank-offered loan structure with a CPF optimization move that most upgraders don't know is available to them.\n\nHere's how it works.\n\nIn Singapore, a home loan's maximum tenor is capped at the older borrower's age. The standard rule is: loan tenor ends at age 65, or 30 years maximum, whichever is shorter. If you apply for the loan jointly with your spouse, the bank takes the age of the older borrower and caps the tenor accordingly.\n\nSo if you're 45 and your spouse is 35, a joint application still gets you only a 20-year tenor (because the bank anchors to your age, 45, and 65 minus 45 is 20). That means high monthly installments that can easily crush the deal."
+    },
+    {
+      "type": "pull-quote",
+      "text": "Your younger spouse applies for the loan alone — as sole borrower. You, the older spouse, don't go on the loan at all."
+    },
+    {
+      "type": "prose",
+      "content": "Instead, you co-own the condo by using your CPF for the down payment and being named on the title deed.\n\nBecause the bank sees only the younger borrower on the loan, it calculates the tenor against her age alone. A 35-year-old spouse secures a 30-year loan. The condo is held jointly — both names on the title — but the loan structure belongs to one person.\n\nThe result: a 45-year-old pays the monthly installment of a 30-year-old.\n\nSame property. Same price. Same couple. Just a different loan structure that most upgraders don't realize is available to them.\n\nThis isn't a loophole. It's standard bank practice in Singapore. The reason most upgraders don't use it is they apply jointly by default — and never ask about the alternative."
+    },
+    { "type": "heading", "level": 2, "number": "4", "text": "The 45-Year Line" },
+    {
+      "type": "prose",
+      "content": "The window isn't arbitrary. It's a function of how bank loans actually work.\n\nHere's what the monthly looks like on a $1.5M condo loan at 1.5% interest, 75% LTV, across different age and structure scenarios:"
+    },
+    {
+      "type": "data-table",
+      "kicker": "MONTHLY INSTALLMENT BY AGE & STRUCTURE",
+      "headers": ["Your age", "Structure", "Max tenor", "Monthly"],
+      "rows": [
+        ["30", "Solo", "30 years", "~$5,176"],
+        ["35", "Solo", "30 years", "~$5,176"],
+        ["40", "Solo", "25 years", "~$5,996"],
+        ["45", "Solo", "20 years", "$7,222"],
+        ["45", "Younger-Borrower Play (35yr spouse)", "30 years", "$5,176"],
+        ["50", "Solo", "15 years", "~$9,288"],
+        ["55", "Solo", "10 years", "~$13,472"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "prose",
+      "content": "The pattern is clear. Up to age 45, The Younger-Borrower Play can pull your monthly back down to a 30-year-equivalent. Past 45, the math changes quickly. By 50, you're looking at 15-year tenors solo, which nearly doubles the monthly compared to a 30-year structure.\n\nThe premium was luck. The Younger-Borrower Play window is a function of age.\n\nOne caveat: the play depends on your younger spouse being under 35 at application. If your spouse is 40 and you're 45, the play still helps but less dramatically — the tenor would anchor to 25 years instead of 30. The bigger the age gap between spouses, the more runway the play gives you."
+    },
+    { "type": "heading", "level": 2, "number": "5", "text": "The Playbook — This Month" },
+    {
+      "type": "prose",
+      "content": "If you recognize yourself in this article — flat is 30+ years old, you're under 45, you've been watching the market — here's what to do in the next 30 days."
+    },
+    { "type": "heading", "level": 3, "text": "Step 1: Pull your lease." },
+    { "type": "prose", "content": "Log into HDB's My HDBPage and note your remaining lease years. If you're under 65 years remaining, lease decay is starting to influence your buyer's financing. Track this number — it matters for pricing strategy." },
+    { "type": "heading", "level": 3, "text": "Step 2: Check your current valuation." },
+    { "type": "prose", "content": "Use HDB's Check Resale Flat Prices tool. Don't look at asking prices — look at actual transacted prices in the last 6 months for your block and flat type." },
+    { "type": "heading", "level": 3, "text": "Step 3: Compare to the Q4 2025 peak." },
+    { "type": "prose", "content": "Q4 2025 was the top — the last quarter before the RPI turned. Estimate where your flat sat at that peak. If it's now 5-10% below, you're already living with an unrealized correction. That's the botox wearing off." },
+    { "type": "heading", "level": 3, "text": "Step 4: Run The Younger-Borrower Play math." },
+    { "type": "prose", "content": "Talk to a bank, a broker, or a property advisor about what your monthly would look like with your younger spouse as sole borrower. Compare it to a joint application — the gap is often significant. Then compare to staying in the HDB. Include the opportunity cost of the HDB premium continuing to fade." },
+    { "type": "heading", "level": 3, "text": "Step 5: Stack the timeline." },
+    { "type": "prose", "content": "A parallel sell-HDB-buy-condo transaction has its own timing rules. Start with the end state — when do you want to move in? Work backwards to when the OTP needs to be exercised, when the HDB needs to be sold, when the loan needs to be approved.\n\nThe goal isn't to rush. The goal is to move with a map." },
+    { "type": "dotted-divider" },
+    { "type": "heading", "level": 2, "number": "6", "text": "The Pattern" },
+    {
+      "type": "prose",
+      "content": "In 13 years watching East Singapore, I've worked with over 500 families through the upgrade decision.\n\nOne pattern has held across almost every one of them."
+    },
+    {
+      "type": "founder-quote",
+      "label": "FROM THE PRACTICE · 13 YEARS · 500 FAMILIES",
+      "text": "The families who came out ahead weren't the ones who timed the market perfectly. They were the ones who moved while the market was still warm — who made a decision inside their own window of age, financing, and premium, rather than waiting for \"the right time.\"",
+      "cite": "— Elfi Abdullah"
+    },
+    {
+      "type": "prose",
+      "content": "The families who regret the most weren't the ones who bought the wrong condo. They were the ones who kept waiting. Waited for another Black Swan. Waited for rates to drop. Waited for their HDB to hit a new record. Waited until their age crossed the line and The Younger-Borrower Play no longer worked.\n\nThe premium was luck. The window is yours.\n\nYour HDB looks young. Inside, it's old. The data from Q1 2026 is telling you the real age is starting to show.\n\nIf you're 30+ flat, under 45, watching this quietly — the math is screaming at you.\n\nDon't wait for the face to drop."
+    },
+    {
+      "type": "cta-card",
+      "kicker": "A 10-MINUTE CLARITY CALL",
+      "body": "If you'd like to see The Younger-Borrower Play applied to your specific numbers, request a 10-minute Clarity Call. No pitch, no pressure — I'll show you what your actual monthly would look like under both structures, and whether the window works for your household.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>OG Preview — Your HDB Looks Young</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --cream: #F2EBDB;
+    --paper: #EFE7D2;
+    --charcoal: #1A1A2E;
+    --amber: #D4A843;
+    --amber-deep: #B8902F;
+    --body: #374151;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #666;
+    font-family: "Inter", system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    color: #fff;
+  }
+  .instructions {
+    max-width: 1200px;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #333;
+    padding: 16px 20px;
+    border-left: 3px solid var(--amber);
+  }
+  .instructions code {
+    background: #222;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .instructions b { color: var(--amber); }
+
+  /* ==== THE OG CARD — exactly 1200 × 630 ==== */
+  .og-card {
+    width: 1200px;
+    height: 630px;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+    /* subtle paper-grain gradient */
+    background-image:
+      radial-gradient(ellipse 900px 500px at 50% 35%, rgba(255,255,255,0.5) 0%, transparent 70%),
+      linear-gradient(180deg, #F2EBDB 0%, #EFE7D2 100%);
+  }
+
+  /* Hairline top border */
+  .og-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: var(--charcoal);
+  }
+
+  /* ==== TOP: masthead strip ==== */
+  .top-strip {
+    position: absolute;
+    top: 6px; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 56px 0;
+    border-bottom: 1px solid rgba(26,26,46,0.15);
+    padding-bottom: 22px;
+  }
+  .brand {
+    font-family: "DM Serif Display", serif;
+    font-size: 26px;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .brand-sub {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    opacity: 0.55;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+  .issue {
+    text-align: right;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--amber-deep);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .issue .issue-no { color: var(--charcoal); opacity: 0.7; }
+
+  /* ==== CENTER: kicker + headline ==== */
+  .center {
+    position: absolute;
+    top: 150px;
+    left: 56px;
+    right: 56px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--amber-deep);
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .kicker::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: var(--amber-deep);
+  }
+
+  .headline {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 1.02;
+    letter-spacing: -0.028em;
+    color: var(--charcoal);
+    max-width: 22ch;
+  }
+  .headline em {
+    font-style: italic;
+    color: var(--amber-deep);
+  }
+
+  .standfirst {
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--charcoal);
+    opacity: 0.75;
+    margin-top: 28px;
+    max-width: 52ch;
+    letter-spacing: -0.005em;
+  }
+
+  /* ==== BOTTOM: charcoal strip ==== */
+  .bottom-strip {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: var(--charcoal);
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 56px;
+  }
+  .bottom-strip::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--amber);
+  }
+  .byline {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .byline-role {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(242,235,219,0.55);
+    font-weight: 500;
+    margin-top: 7px;
+  }
+  .bottom-right {
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--amber);
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  .bottom-right .domain {
+    color: var(--cream);
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* ==== Screenshot helpers ==== */
+  .ruler {
+    font-family: monospace;
+    font-size: 11px;
+    color: #ccc;
+    display: flex;
+    gap: 24px;
+  }
+  .ruler span { color: var(--amber); }
+</style>
+</head>
+<body>
+  <div class="instructions">
+    <b>How to screenshot this at exact 1200 × 630:</b><br/>
+    1. Open in Chrome → right-click the cream card → <b>Inspect</b><br/>
+    2. Select the <code>.og-card</code> element in the Elements panel<br/>
+    3. Cmd+Shift+P → type <code>Capture node screenshot</code> → Enter<br/>
+    4. Save the result as <code>public/og/journal/your-hdb-looks-young-inside-its-old.jpg</code> (convert PNG→JPG in Preview if needed, quality ~85 to stay under 1MB for WhatsApp)<br/><br/>
+    <b>Alternative (macOS):</b> Cmd+Shift+4, drag over just the card. Chrome shows dimensions as you drag — release at 1200×630.
+  </div>
+
+  <div class="ruler">
+    <span>Exact size: 1200 × 630 px</span>
+    <span>Font: DM Serif Display + Inter</span>
+    <span>Bg: #F2EBDB cream</span>
+  </div>
+
+  <div class="og-card">
+    <!-- TOP: masthead -->
+    <div class="top-strip">
+      <div>
+        <div class="brand">EastCondos</div>
+        <div class="brand-sub">The Property by Design Quarterly</div>
+      </div>
+      <div class="issue">
+        Vol. XIII &middot; No. 04<br/>
+        <span class="issue-no">The Journal</span>
+      </div>
+    </div>
+
+    <!-- CENTER: headline -->
+    <div class="center">
+      <div class="kicker">The Cover Story &middot; April 2026</div>
+      <h1 class="headline">
+        Your HDB Looks <em>Young</em>.<br/>
+        Inside, It's <em>Old</em>.
+      </h1>
+      <p class="standfirst">
+        The premium you're sitting on was a Black Swan gift. It's already fading &mdash; and the window to act is still open.
+      </p>
+    </div>
+
+    <!-- BOTTOM: charcoal strip -->
+    <div class="bottom-strip">
+      <div>
+        <div class="byline">Elfi Abdullah</div>
+        <div class="byline-role">Founder &middot; Division Director, ERA Singapore</div>
+      </div>
+      <div class="bottom-right">
+        <span class="domain">eastcondos.sg</span>
+        9 min read &middot; Journal
+      </div>
+    </div>
+  </div>
+</body>
+</html>

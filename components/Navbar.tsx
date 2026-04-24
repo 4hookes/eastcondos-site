@@ -8,8 +8,9 @@ const TOC_LINKS = [
   { no: "02", label: "Method", href: "/process#method" },
   { no: "03", label: "Stories", href: "/case-studies" },
   { no: "04", label: "Calculator", href: "/calculator" },
-  { no: "05", label: "Quiz", href: "/quiz" },
-  { no: "06", label: "About", href: "/about" },
+  { no: "05", label: "Journal", href: "/journal" },
+  { no: "06", label: "Quiz", href: "/quiz" },
+  { no: "07", label: "About", href: "/about" },
 ];
 
 export default function Navbar() {

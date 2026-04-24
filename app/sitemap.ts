@@ -1,9 +1,20 @@
 import type { MetadataRoute } from "next";
+import journalIndex from "@/content/journal/index.json";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://eastcondos.sg";
+
+  const journalArticleEntries: MetadataRoute.Sitemap = journalIndex.slugs.map(
+    (slug) => ({
+      url: `${baseUrl}/journal/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })
+  );
+
   return [
     {
       url: baseUrl,
@@ -23,6 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/journal`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    ...journalArticleEntries,
     {
       url: `${baseUrl}/discovery`,
       lastModified: new Date(),
