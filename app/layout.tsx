@@ -17,6 +17,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://eastcondos.sg"),
   title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
   description:
     "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence. 500+ families served, 80% referral rate.",
