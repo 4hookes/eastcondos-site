@@ -7,10 +7,11 @@ const TOC_LINKS = [
   { no: "01", label: "Approach", href: "/process" },
   { no: "02", label: "Method", href: "/process#method" },
   { no: "03", label: "Stories", href: "/case-studies" },
-  { no: "04", label: "Calculator", href: "/calculator" },
+  { no: "04", label: "Safety Meter", href: "/safety-meter" },
   { no: "05", label: "Journal", href: "/journal" },
-  { no: "06", label: "Quiz", href: "/quiz" },
-  { no: "07", label: "About", href: "/about" },
+  { no: "06", label: "Calculator", href: "/calculator" },
+  { no: "07", label: "Quiz", href: "/quiz" },
+  { no: "08", label: "About", href: "/about" },
 ];
 
 export default function Navbar() {

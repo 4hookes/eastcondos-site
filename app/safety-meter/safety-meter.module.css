@@ -1,0 +1,235 @@
+/* Safety Meter — bespoke styles shared across wizard steps + verdict */
+
+/* Price input — large typed S$ field */
+.priceInput {
+  position: relative;
+  border: 1px solid #1A1A2E;
+  background: #F2EBDB;
+  padding: 18px 18px 18px 50px;
+}
+.priceInput::before {
+  content: "S$";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-dm-serif), serif;
+  color: #B8902F;
+  font-size: 26px;
+}
+.priceInput input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: var(--font-dm-serif), serif;
+  font-size: 32px;
+  color: #1A1A2E;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 640px) {
+  .priceInput { padding: 22px 22px 22px 58px; }
+  .priceInput::before { font-size: 32px; }
+  .priceInput input { font-size: 40px; }
+}
+
+/* Compact number input (S$ prefix) */
+.numberInput {
+  position: relative;
+  border: 1px solid #1A1A2E;
+  background: #F2EBDB;
+  padding: 12px 14px 12px 40px;
+}
+.numberInput::before {
+  content: attr(data-prefix);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-dm-serif), serif;
+  color: #B8902F;
+  font-size: 18px;
+}
+.numberInput.noPrefix { padding-left: 14px; }
+.numberInput.noPrefix::before { content: ""; }
+.numberInput input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: var(--font-dm-serif), serif;
+  font-size: 22px;
+  color: #1A1A2E;
+  letter-spacing: -0.01em;
+}
+
+/* Chip button */
+.chip {
+  background: #F2EBDB;
+  border: 1px solid #1A1A2E;
+  padding: 10px 14px;
+  font-family: var(--font-dm-serif), serif;
+  font-size: 15px;
+  color: #1A1A2E;
+  cursor: pointer;
+  transition: all 180ms;
+  min-width: 64px;
+  text-align: center;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.chip:hover { background: #1A1A2E; color: #F2EBDB; }
+.chip.active { background: #1A1A2E; color: #F2EBDB; }
+.chip.custom {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: #6B6B6B;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 12px;
+}
+
+/* Toggle switch (for solo/couple, CPF yes/no) */
+.toggleSwitch {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: #F2EBDB;
+  border: 1px solid #1A1A2E;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  padding: 0;
+}
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 22px; height: 22px;
+  background: #1A1A2E;
+  transition: transform 0.2s, background 0.2s;
+}
+.toggleSwitchOn { background: #D4A843; }
+.toggleSwitchOn::after { transform: translateX(22px); background: #1A1A2E; }
+
+/* Range slider */
+.range {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+}
+.range::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #1A1A2E;
+}
+.range::-moz-range-track {
+  height: 2px;
+  background: #1A1A2E;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px; height: 22px;
+  background: #D4A843;
+  border: 1px solid #1A1A2E;
+  border-radius: 0;
+  margin-top: -11px;
+  cursor: pointer;
+}
+.range::-moz-range-thumb {
+  width: 20px; height: 20px;
+  background: #D4A843;
+  border: 1px solid #1A1A2E;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* Gauge arc animation */
+.gauge {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 12px;
+}
+.gauge svg { width: 100%; height: auto; display: block; overflow: visible; }
+.gaugeTrack { fill: none; stroke: #2D2D44; stroke-width: 12; }
+.gaugeFill {
+  fill: none;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 2.2s cubic-bezier(0.22, 1, 0.36, 1),
+              stroke 0.4s ease 1.6s;
+  stroke: #2D2D44;
+}
+.gauge.animate .gaugeFill {
+  stroke-dashoffset: var(--fill-offset);
+  stroke: var(--fill-color);
+}
+.gaugeNeedleG {
+  transform-origin: 120px 120px;
+  transform: rotate(-90deg);
+  transition: transform 2.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.gauge.animate .gaugeNeedleG { transform: rotate(var(--needle-rot)); }
+
+/* Calculating overlay */
+.calcOverlay {
+  position: absolute;
+  inset: 0;
+  background: #1A1A2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  opacity: 1;
+  transition: opacity 500ms ease 1s;
+}
+.calcOverlayRevealed { opacity: 0; pointer-events: none; }
+.calcDots { display: flex; gap: 6px; }
+.calcDots span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #D4A843;
+  opacity: 0.3;
+  animation: calcPulse 1.2s infinite;
+}
+.calcDots span:nth-child(2) { animation-delay: 0.2s; }
+.calcDots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes calcPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+/* Gate form lock */
+.gateInput {
+  border: 1px solid #1A1A2E;
+  background: transparent;
+  padding: 12px 14px;
+  font-family: var(--font-dm-serif), serif;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  color: #1A1A2E;
+}
+.gateInput:focus { outline: 2px solid #D4A843; outline-offset: -1px; }
+
+/* Locked preview fade */
+.lockedFade {
+  position: relative;
+}
+.lockedFade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(239,231,210,0) 0%, rgba(239,231,210,0.6) 55%, rgba(239,231,210,0.95) 100%);
+  pointer-events: none;
+}

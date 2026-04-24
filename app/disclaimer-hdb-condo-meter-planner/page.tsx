@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
@@ -20,6 +21,12 @@ export default function DisclaimerMeterPlannerPage() {
           <p className="text-gray-300 text-lg md:text-xl font-light tracking-wide animate-fade-in-up delay-100">
             Important information regarding your use of this tool.
           </p>
+          <Link
+            href="/safety-meter"
+            className="inline-block mt-6 text-amber text-[11px] uppercase tracking-[0.22em] border-b border-amber/40 pb-0.5 hover:border-amber transition-colors"
+          >
+            ← Back to the Safety Meter
+          </Link>
         </div>
       </div>
 
