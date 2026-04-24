@@ -1,0 +1,1 @@
+export const CALCULATOR_LAST_UPDATED = "2026-04-25";

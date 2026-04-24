@@ -28,6 +28,12 @@ export type JournalBlock =
       credit?: string;
       aspect?: string;
       label?: string;
+    }
+  | {
+      type: "faq";
+      kicker?: string;
+      heading?: string;
+      items: Array<{ question: string; answer: string }>;
     };
 
 export default function JournalArticleRenderer({ body }: { body: JournalBlock[] }) {
@@ -60,9 +66,74 @@ function renderBlock(block: JournalBlock, idx: number) {
       return <CtaCardBlock {...block} />;
     case "image":
       return <ImageBlock {...block} />;
+    case "faq":
+      return <FaqBlock {...block} />;
     default:
       return null;
   }
+}
+
+function FaqBlock({
+  kicker,
+  heading,
+  items,
+}: {
+  kicker?: string;
+  heading?: string;
+  items: Array<{ question: string; answer: string }>;
+}) {
+  return (
+    <section
+      className="my-12 sm:my-16 border-t border-b border-charcoal py-10 sm:py-14"
+      aria-label="Frequently asked questions"
+    >
+      {kicker && (
+        <div className="flex items-center gap-3 sm:gap-4 mb-4">
+          <span className="w-5 sm:w-7 h-px bg-amber-deep" />
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep font-medium">
+            {kicker}
+          </span>
+        </div>
+      )}
+      {heading && (
+        <h2
+          className="font-serif text-charcoal mb-8 sm:mb-10"
+          style={{
+            fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
+            lineHeight: 1.1,
+            letterSpacing: "-0.02em",
+          }}
+        >
+          {heading}
+        </h2>
+      )}
+      <dl className="space-y-7 sm:space-y-9">
+        {items.map((it, i) => (
+          <div
+            key={i}
+            className="pb-6 sm:pb-8 border-b border-dotted border-[#c9bfa3] last:border-b-0 last:pb-0"
+          >
+            <dt
+              className="font-serif text-charcoal mb-3"
+              style={{
+                fontSize: "clamp(1.15rem, 1.9vw, 1.4rem)",
+                lineHeight: 1.2,
+                letterSpacing: "-0.015em",
+              }}
+            >
+              {it.question}
+            </dt>
+            <dd
+              className="text-body leading-[1.75]"
+              style={{ fontSize: "clamp(15px, 1.5vw, 17px)" }}
+            >
+              {it.answer}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  );
 }
 
 function HeadingBlock({

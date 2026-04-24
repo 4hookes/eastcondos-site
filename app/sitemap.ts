@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...journalArticleEntries,
     {
+      url: `${baseUrl}/guides/east-singapore-hdb-upgrader`,
+      lastModified: new Date("2026-04-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/discovery`,
       lastModified: new Date(),
       changeFrequency: "monthly",

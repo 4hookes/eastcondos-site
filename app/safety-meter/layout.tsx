@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+const LAST_UPDATED = "2026-04-25";
+
 export const metadata: Metadata = {
   title: "HDB to Condo Safety Meter — Can you actually afford the upgrade? | EastCondos",
   description:
@@ -10,6 +12,9 @@ export const metadata: Metadata = {
       "Bank approval is easy. Surviving the payments is the real test. Find your upgrader archetype in 60 seconds.",
     type: "website",
     url: "https://eastcondos.sg/safety-meter",
+  },
+  other: {
+    "article:modified_time": LAST_UPDATED,
   },
 };
 

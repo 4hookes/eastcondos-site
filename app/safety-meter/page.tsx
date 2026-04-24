@@ -4,7 +4,10 @@ import { useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { BuyerBio, HdbInputs, TargetInputs, VerdictResult } from "@/lib/safetyMeter";
 import { computeVerdict, maxLoan, netCashProceeds } from "@/lib/safetyMeter";
+import LastUpdated from "@/components/editorial/LastUpdated";
 import { StepRail } from "./components/StepRail";
+
+const SAFETY_METER_LAST_UPDATED = "2026-04-25";
 import { BioStep } from "./components/BioStep";
 import { HdbStep } from "./components/HdbStep";
 import { TargetStep } from "./components/TargetStep";
@@ -110,9 +113,14 @@ export default function SafetyMeterPage() {
         >
           Can you <em className="text-amber-deep italic">actually</em> afford the upgrade?
         </h1>
-        <p className="font-serif italic text-charcoal text-[15px] sm:text-[18px] leading-snug max-w-[42ch] mx-auto mt-3 text-gray-500">
+        <p className="font-serif italic text-charcoal text-[15px] sm:text-[18px] leading-snug max-w-[42ch] mx-auto mt-3 mb-5 text-gray-500">
           Bank approval is easy. Surviving the payments is the real test.
         </p>
+        <LastUpdated
+          date={SAFETY_METER_LAST_UPDATED}
+          align="center"
+          note="Scoring reflects TDSR, MSR and LTV rules current on this date"
+        />
       </section>
 
       {/* ===== Step rail ===== */}

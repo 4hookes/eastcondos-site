@@ -47,21 +47,97 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "RealEstateAgent",
-              name: "EastCondos.sg - Elfi Abdullah",
-              description:
-                "Singapore's data-first condo investment advisory. Expert HDB to condo upgrade planning.",
-              url: "https://eastcondos.sg",
-              telephone: "+6596667496",
-              areaServed: {
-                "@type": "Place",
-                name: "East Singapore (Districts 14-18)",
-              },
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "SG",
-                addressRegion: "East Singapore",
-              },
+              "@graph": [
+                {
+                  "@type": "RealEstateAgent",
+                  "@id": "https://eastcondos.sg/#organization",
+                  name: "EastCondos.sg",
+                  alternateName: "The Elfi Division · ERA Singapore",
+                  description:
+                    "Singapore's data-first condo investment advisory. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18).",
+                  url: "https://eastcondos.sg",
+                  telephone: "+6596667496",
+                  priceRange: "$$$",
+                  founder: {
+                    "@type": "Person",
+                    name: "Elfi Abdullah",
+                    jobTitle: "Division Director, ERA Singapore",
+                    url: "https://eastcondos.sg/about",
+                  },
+                  areaServed: [
+                    { "@type": "AdministrativeArea", name: "District 14, Singapore (Geylang, Eunos, Paya Lebar)" },
+                    { "@type": "AdministrativeArea", name: "District 15, Singapore (Katong, Joo Chiat, Marine Parade)" },
+                    { "@type": "AdministrativeArea", name: "District 16, Singapore (Bedok, Upper East Coast, Siglap)" },
+                    { "@type": "AdministrativeArea", name: "District 17, Singapore (Changi, Loyang, Pasir Ris)" },
+                    { "@type": "AdministrativeArea", name: "District 18, Singapore (Tampines, Pasir Ris)" },
+                  ],
+                  address: {
+                    "@type": "PostalAddress",
+                    addressCountry: "SG",
+                    addressRegion: "East Singapore",
+                  },
+                  knowsAbout: [
+                    "HDB to condo upgrade planning",
+                    "Singapore property investment advisory",
+                    "Property by Design (PBD) methodology",
+                    "ABSD and SSD timing strategy",
+                    "CPF optimization for property purchase",
+                    "Singapore loan structuring (TDSR, MSR, LTV)",
+                  ],
+                  slogan: "We run your numbers before we show you a single property.",
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "EastCondos Advisory Services",
+                    itemListElement: [
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "HDB-to-Condo Upgrade Advisory",
+                          serviceType: "Property investment advisory",
+                          description:
+                            "End-to-end planning for HDB owners upgrading to a private condominium in East Singapore — numbers, timeline, financing structure, property selection.",
+                          areaServed: {
+                            "@type": "Place",
+                            name: "East Singapore (Districts 14–18)",
+                          },
+                          provider: { "@id": "https://eastcondos.sg/#organization" },
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Property Portfolio Review",
+                          serviceType: "Property investment advisory",
+                          description:
+                            "A data-first review of your current property position using the Property by Design (PBD™) 11-factor framework — entry pricing, exit audience, financing runway, and portfolio fit.",
+                          provider: { "@id": "https://eastcondos.sg/#organization" },
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Clarity Call",
+                          serviceType: "Consultation",
+                          description:
+                            "A 10-minute call to apply the Property by Design (PBD™) framework to your specific numbers and timeline. No pitch, no pressure.",
+                          provider: { "@id": "https://eastcondos.sg/#organization" },
+                        },
+                      },
+                    ],
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://eastcondos.sg/#website",
+                  url: "https://eastcondos.sg",
+                  name: "EastCondos.sg",
+                  publisher: { "@id": "https://eastcondos.sg/#organization" },
+                  inLanguage: "en-SG",
+                },
+              ],
             }),
           }}
         />

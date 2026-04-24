@@ -56,20 +56,40 @@ export default async function CaseStudyPage({
   const study = caseStudyMap[slug];
   if (!study) notFound();
 
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const canonicalUrl = `https://eastcondos.sg/case-studies/${study.slug}`;
+  const publishDate = (study as { publishDate?: string }).publishDate;
+  const dateModified = (study as { dateModified?: string }).dateModified || publishDate;
+  const wasUpdated = Boolean(
+    publishDate && dateModified && dateModified !== publishDate
+  );
+
+  const articleSchema = {
     "@type": "Article",
     headline: study.title,
     description: study.description,
-    url: `https://eastcondos.sg/case-studies/${study.slug}`,
+    url: canonicalUrl,
+    ...(publishDate ? { datePublished: publishDate } : {}),
+    ...(dateModified ? { dateModified } : {}),
     author: { "@type": "Person", name: "Elfi Abdullah", url: "https://eastcondos.sg/about" },
     publisher: { "@type": "Organization", name: "EastCondos.sg", url: "https://eastcondos.sg" },
-    // Schema.org FAQPage embedded for SEO
-    mainEntity: study.faqs?.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
+    mainEntityOfPage: canonicalUrl,
+  };
+
+  const faqSchema =
+    study.faqs && study.faqs.length > 0
+      ? {
+          "@type": "FAQPage",
+          mainEntity: study.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": faqSchema ? [articleSchema, faqSchema] : [articleSchema],
   };
 
   return (
@@ -115,6 +135,27 @@ export default async function CaseStudyPage({
           <p className="text-[12px] sm:text-[13px] italic font-serif text-gray-600 pt-4 border-t border-dotted border-[#c9bfa3] max-w-[60ch]">
             {study.editorialCredit}
           </p>
+        )}
+
+        {(publishDate || wasUpdated) && (
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4 pt-3 text-[11px] sm:text-[12px] text-gray-600">
+            {publishDate && (
+              <span className="uppercase tracking-[0.18em] text-amber-deep">
+                Published {formatDate(publishDate)}
+              </span>
+            )}
+            {wasUpdated && dateModified && (
+              <>
+                <span className="hidden sm:inline text-amber-deep">·</span>
+                <span
+                  className="uppercase tracking-[0.18em] text-charcoal"
+                  title={`Last updated ${formatDate(dateModified)}`}
+                >
+                  Updated {formatDate(dateModified)}
+                </span>
+              </>
+            )}
+          </div>
         )}
       </section>
 
@@ -547,6 +588,15 @@ export default async function CaseStudyPage({
       </main>
     </div>
   );
+}
+
+function formatDate(iso: string) {
+  const d = new Date(iso);
+  return d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 }
 
 // ===== Chapter marker helper =====

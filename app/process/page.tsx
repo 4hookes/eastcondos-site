@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import processData from "@/content/process.json";
+import LastUpdated from "@/components/editorial/LastUpdated";
+
+const LAST_UPDATED = "2026-04-25";
 
 export const metadata: Metadata = {
   title: "How It Works | EastCondos.sg",
@@ -13,6 +16,9 @@ export const metadata: Metadata = {
       "A structured 4-8 month path from HDB to your new condo. See every phase of the EastCondos upgrade process.",
     type: "website",
     url: "https://eastcondos.sg/process",
+  },
+  other: {
+    "article:modified_time": LAST_UPDATED,
   },
 };
 
@@ -28,9 +34,10 @@ export default function ProcessPage() {
           <h1 className="text-5xl md:text-6xl font-serif font-normal text-white leading-tight mb-6">
             {processData.heading}
           </h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed mb-6">
             {processData.subtext}
           </p>
+          <LastUpdated date={LAST_UPDATED} align="center" tone="onDark" />
         </div>
       </section>
 

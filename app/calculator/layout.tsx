@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CALCULATOR_LAST_UPDATED } from "./meta";
 
 export const metadata: Metadata = {
   title: "Loan Eligibility Calculator — How Much Can You Borrow? | EastCondos.sg",
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
       "Free Singapore loan calculator. Three answers, one calculation — your max loan for private property, HDB loan, and HDB bank loan.",
     type: "website",
     url: "https://eastcondos.sg/calculator",
+  },
+  other: {
+    "article:modified_time": CALCULATOR_LAST_UPDATED,
   },
 };
 
