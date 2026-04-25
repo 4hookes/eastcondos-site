@@ -52,6 +52,24 @@ const guides = [
     updatedDate: "2026-04-25",
     cluster: "Transaction Mechanics",
   },
+  {
+    no: "03",
+    slug: "d15-vs-d16-vs-d18",
+    title: "D15 vs D16 vs D18 — Comparing East Singapore Districts for HDB Upgraders",
+    standfirst:
+      "Three districts. Three different exit audiences. The 2026 comparative read on D15 (Marine Parade / Katong / Joo Chiat), D16 (Bedok / Tanah Merah / Bayshore), and D18 (Tampines / Pasir Ris) for upgraders deciding where to go next.",
+    covers: [
+      "Why each district attracts a different kind of upgrader",
+      "What $1.5M, $2M, and $2.5M actually buys you in each district today",
+      "Who buys it from you in 7–10 years — the exit audience by district",
+      "The Thomson-East Coast Line effect on D15 and D16",
+      "Supply pipeline — and the contrarian read on D18",
+      "Which district keeps the most options open for an East Singapore HDB upgrader?",
+    ],
+    readingTime: 14,
+    updatedDate: "2026-04-25",
+    cluster: "District Selection",
+  },
 ];
 
 function formatDate(iso: string) {
