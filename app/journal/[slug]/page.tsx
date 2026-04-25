@@ -4,6 +4,7 @@ import Link from "next/link";
 import indexData from "@/content/journal/index.json";
 import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
 import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
+import waitingTrap from "@/content/journal/the-waiting-trap.json";
 import JournalArticleRenderer, {
   type JournalBlock,
 } from "@/components/editorial/JournalArticleRenderer";
@@ -37,6 +38,7 @@ type JournalArticle = {
 const articleMap: Record<string, JournalArticle> = {
   "your-hdb-looks-young-inside-its-old": hdbBotox as JournalArticle,
   "yesterdays-launch-price-earlier-phase-play": earlierPhasePlay as JournalArticle,
+  "the-waiting-trap": waitingTrap as JournalArticle,
 };
 
 export async function generateStaticParams() {

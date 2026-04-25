@@ -3,6 +3,7 @@ import Link from "next/link";
 import indexData from "@/content/journal/index.json";
 import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
 import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
+import waitingTrap from "@/content/journal/the-waiting-trap.json";
 
 type JournalSummary = {
   slug: string;
@@ -18,7 +19,7 @@ type JournalSummary = {
   framework?: { name: string; id: string };
 };
 
-const articles: JournalSummary[] = [earlierPhasePlay as JournalSummary, hdbBotox as JournalSummary];
+const articles: JournalSummary[] = [waitingTrap as JournalSummary, earlierPhasePlay as JournalSummary, hdbBotox as JournalSummary];
 
 export const metadata: Metadata = {
   title: `${indexData.heading} — The Journal · EastCondos.sg`,

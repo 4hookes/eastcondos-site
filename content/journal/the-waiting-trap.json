@@ -1,0 +1,169 @@
+{
+  "slug": "the-waiting-trap",
+  "title": "The Waiting Trap",
+  "titleHtml": "The <em>Waiting</em> Trap",
+  "standfirst": "You're waiting for prices to drop. The market is doing something else — and the longer you wait, the more it costs you. Here is the math nobody walks you through.",
+  "kicker": "THE WAITING TRAP · APRIL 2026",
+  "publishDate": "2026-04-25",
+  "readingTimeMinutes": 10,
+  "ogImage": "/images/journal/the-waiting-trap/hero.jpg",
+  "coverImage": "/images/journal/the-waiting-trap/hero.jpg",
+  "coverImageAlt": "An East Singapore evening skyline showing HDB blocks in the foreground and condo towers in the distance, separated by the last golden light of dusk",
+  "coverImageCaption": "The view from a fifteenth-floor HDB in East Singapore. The condos in the distance keep getting taller. The flat behind the camera is getting older. Both happen quietly.",
+  "excerpt": "The HDB price index just dropped for the first time in seven years. You're waiting for more. But every year you wait, your HDB depreciates and the condo you want appreciates — both sides of the same trade moving against you. Here's the math nobody walks you through.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "HDB Upgrade Journey",
+  "framework": {
+    "name": "The Waiting Trap",
+    "id": "the-waiting-trap"
+  },
+  "seo": {
+    "metaTitle": "The Waiting Trap — Why HDB Upgraders Stay Stuck (And What It Costs)",
+    "metaDescription": "You're waiting for prices to drop. The math says you're paying for the wait. The cost of holding your HDB while condo prices drift up — explained for HDB upgraders in 2026.",
+    "keywords": [
+      "HDB upgrader waiting Singapore",
+      "Singapore property correction 2026",
+      "HDB to condo timing",
+      "cost of waiting property Singapore",
+      "2025 property peak Singapore",
+      "HDB upgrader decision paralysis"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/the-waiting-trap"
+  },
+  "relatedSlugs": [
+    "your-hdb-looks-young-inside-its-old",
+    "yesterdays-launch-price-earlier-phase-play"
+  ],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "You're waiting.\n\nYou've been watching the market for six months. Maybe a year. Maybe longer. The HDB resale price index just ticked down for the first time in seven years. New launch pricing feels stretched. Resale condos feel expensive. And you're holding off — convinced that if you wait long enough, the market will hand you a better entry than anything available today.\n\nThis article is for the HDB upgrader stuck in that exact position. You are not lazy. You are not indecisive. You are doing what feels rational — protecting yourself from buying at a peak you suspect is fragile.\n\nBut here is the question almost nobody answers honestly: what does waiting actually cost?\n\nNot in the abstract. In real dollars. Every month you wait, against the upside you might capture from a correction that may or may not come. When you put the two sides side by side, the math is rarely what people expect. And once you see it clearly, the question changes — from \"should I wait for prices to drop\" to \"do I understand what I'm betting on?\"\n\nThis is the Waiting Trap. It is closing on more upgraders right now than at any other point in the last decade — because the market is doing something most buyers don't yet have a mental model for."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "7",
+          "suffix": " yrs",
+          "label": "Last meaningful HDB drop",
+          "note": "Time since the last visible decline in the resale price index, before this cycle"
+        },
+        {
+          "number": "Q4 '25",
+          "label": "The recent peak",
+          "note": "Singapore private property index hit its most recent high in the last quarter of 2025"
+        },
+        {
+          "number": "3–4",
+          "suffix": "% / yr",
+          "label": "Long-run condo drift",
+          "note": "Typical annual private property appreciation across normal Singapore cycles"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "What You Are Actually Waiting For"
+    },
+    {
+      "type": "prose",
+      "content": "When upgraders say \"I'm waiting for the market to come down,\" they almost always mean one of three different things — and they don't always know which one.\n\nThe first is the soft hope: prices will fall by 5 to 10%, giving them a clearer entry point. This is what most upgraders mean when they say it out loud.\n\nThe second is the hard hope: a Black Swan event — a deep recession, a policy shock, a global financial crisis — that drops prices by 20% or more. This is what they're really protecting against, even if they don't say it out loud.\n\nThe third is the indefinite hope: they're not waiting for any specific level. They're waiting for clarity. For confidence. For a feeling that the moment is right.\n\nEach of these has very different odds. Each carries a very different cost. The trap closes when you don't separate them — when you say \"I'm waiting\" without being honest with yourself about which version of waiting you're actually doing.\n\nNone of these are wrong things to want. But they need to be named. Because the longer you sit in the indefinite version of waiting, the more the silent costs accumulate without ever being weighed against the upside you're hoping for."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "What the 2025 Peak Actually Was"
+    },
+    {
+      "type": "prose",
+      "content": "Singapore's private property market hit its most recent peak in the fourth quarter of 2025. Since then, the headline price index has come off slightly — not dramatically, not consistently across all segments, but visibly enough that buyers have noticed. Many upgraders saw that small downward tick and concluded a real correction was beginning.\n\nIt's worth being clear about what that peak actually was — and what it wasn't.\n\nIt was the top of an extended run-up driven by strong wage growth, a tight rental market, and unusually robust demand for new launches. It was not a speculative bubble in the way Singapore experienced in 2007 or 2013. The fundamentals — household income, employment, household formation — never disconnected from the prices the way they did in those earlier cycles.\n\nThe softening since the peak has been concentrated in segments where supply was heaviest and where pricing stretched furthest. The most resilient parts of the market — well-located projects in mature districts, smaller unit sizes, products with strong rental yield — have barely moved.\n\nIf you are waiting for the kind of correction that creates a new and better entry point, you are waiting for a very specific kind of market dislocation. The current movement is not that dislocation. Which means your waiting strategy needs to be honest about what would have to actually happen for you to be vindicated — and how likely that is from where we sit today."
+    },
+    {
+      "type": "pull-quote",
+      "text": "You are not waiting for the market. You are waiting for an event you can't name.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "The Math of Waiting — Two Sides of One Trade"
+    },
+    {
+      "type": "prose",
+      "content": "When an HDB upgrader waits, they are running two trades at the same time. Most people don't realise it.\n\nTrade one is their HDB. Every year they hold it, the lease shortens by twelve months, the building ages, and the COVID-era premium that lifted their valuation continues to fade. The flat is depreciating in real terms even when the headline index looks flat. We covered this in the previous dispatch — the HDB that looks young is older than its valuation suggests.\n\nTrade two is the condo they would buy. If the private market drifts upward at the long-term average — call it 3 to 4 percent a year — then every year of waiting adds tens of thousands of dollars to a target purchase price. Even if the condo market flattens or softens slightly, you would need a 5 to 6 percent decline to offset two years of HDB depreciation on the other side of the trade.\n\nThese two trades are not separate. They are bolted together. The HDB you are sitting in and the condo you want to buy are on opposite sides of the same transaction — when one moves against you, the other often does too. When you wait, you are betting that both will move in your favour at the same time. That has rarely been the case in Singapore property cycles. They tend to move together, in the same direction, with similar magnitudes."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Illustrative scenario · 4-room HDB upgrader · 3-bedroom condo target",
+      "headers": ["Position", "Act in 2026 (today)", "Wait until 2028", "Difference"],
+      "rows": [
+        ["HDB sale value", "$750,000", "$720,000", "−$30,000"],
+        ["Condo entry price", "$1,200,000", "$1,272,000", "+$72,000"],
+        ["Real cost of the wait", "—", "—", "−$102,000"]
+      ],
+      "highlightRowIndex": 2
+    },
+    {
+      "type": "prose",
+      "content": "These are illustrative numbers — not a forecast. The point is the structure, not the precise figures. A modest HDB depreciation combined with a modest condo appreciation produces a six-figure cost over two years, in a scenario where nothing dramatic happens. No Black Swan. No correction. Just two markets moving the way they have moved in most years over the past two decades.\n\nFor the wait to break even, the condo market needs to fall, the HDB market needs to hold up, and both need to time it correctly relative to your transaction. That is a very specific outcome to bet six figures on."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "Why a Real Correction Probably Is Not Coming"
+    },
+    {
+      "type": "prose",
+      "content": "This is the part that is uncomfortable to say plainly.\n\nThe kind of correction that would justify a multi-year wait — a 15 to 20 percent drop in private property prices — would require a specific combination of conditions to align. A sustained rise in unemployment. A meaningful tightening of credit beyond what we have seen. A reversal in foreign demand. A policy decision that prices are too high and that the government will actively bring them down rather than simply moderate the rate of increase.\n\nNone of these conditions are currently present in any meaningful form. Could they appear? Yes. Have they appeared in the past? Yes — twice in the last twenty years, in 2008 and around 2014. But the base-rate probability of waiting two years and being rewarded with a 15%-plus correction, looking at the data from those cycles, sits in the single digits.\n\nThe probability of waiting two years and seeing the market drift sideways or upward is much, much higher.\n\nYou are allowed to bet on the small probability. Some buyers will be vindicated, the way some buyers were vindicated in 2009 or 2015. But you should know that's the bet you are making — not a market call, but a low-probability event call. The Waiting Trap is what happens when you make this bet without realising you are making it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "Why People Stay Stuck — The Trap Mechanics"
+    },
+    {
+      "type": "prose",
+      "content": "If the math is this clear, why do so many upgraders sit in the same position for years on end?\n\nBecause the cost of waiting is silent. Nothing visibly happens when you do nothing. Your HDB does not suddenly drop in value. The condo prices do not tick up on a screen you check every morning. The cost compounds in the background while the obvious risks — buying at a peak, locking in too soon, regretting the decision the day after the keys are handed over — feel loud and immediate.\n\nInaction feels safe. Action feels exposed.\n\nThis is the trap. Not the market itself — the way humans process loss. We feel the pain of a wrong decision much more sharply than the cost of an opportunity quietly missed. So we wait. The waiting feels like protection, even when the data shows it is doing the opposite. And every month that passes without anything dramatic happening reinforces the feeling that the strategy is working.\n\nThe way out is not to act recklessly. The way out is to make the cost of waiting equally visible — equal in weight to the cost of acting. Once both sides of the ledger are clear in your head, the decision is no longer waiting versus acting in the abstract. It becomes a trade-off you can actually weigh, with numbers, against your specific situation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "6",
+      "text": "What Being Ready to Act Actually Looks Like"
+    },
+    {
+      "type": "prose",
+      "content": "Being ready to act does not mean having complete confidence that prices will rise from here. Nobody has that confidence. Anyone who claims they do is selling you something.\n\nIt means three things, in this order.\n\nFirst — you have looked at your specific numbers. Your HDB valuation today, your CPF, your loan eligibility, your timeline, your buffer for the in-between months. Not generic market commentary. Your own situation, on paper.\n\nSecond — you have a clear hypothesis on the unit you would actually buy. Not a wishlist, not a rough idea. A specific shortlist with specific reasoning. Why this district. Why this size. Why this price band. Why this development over the three others nearby.\n\nThird — you have decided in advance what would change your mind. If new policy launches. If interest rates shift sharply. If your own job or family situation moves. You have written down the conditions under which continuing to wait becomes the correct choice — not as a hope, but as a defined trigger you would actually act on.\n\nThis is the difference between waiting and being patient. Waiting is hoping the market rescues you. Patience is having a clear plan and executing it when the conditions match. The trap closes on people in the first group. It rarely closes on people in the second."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On the Waiting Trap",
+      "text": "The cost of waiting is silent. The cost of buying is loud. That asymmetry is why so many upgraders stay stuck for years — and why the small group who break out of it tend to look back and wonder what they were waiting for.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "From Trapped to Decided",
+      "body": "If you've been waiting for the market to give you a clearer signal — a Clarity Call is where we map your specific numbers against the actual market data, separate the math from the noise, and identify whether you should keep waiting or whether the cost of waiting has already exceeded the upside you're hoping to capture.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
