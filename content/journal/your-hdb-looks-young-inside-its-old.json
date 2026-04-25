@@ -5,6 +5,7 @@
   "standfirst": "The premium you're sitting on was a Black Swan gift. It's already fading. And if you're below 45, the window to act is still open — but not forever.",
   "kicker": "THE COVER STORY · APRIL 2026",
   "publishDate": "2026-04-24",
+  "dateModified": "2026-04-25",
   "readingTimeMinutes": 9,
   "ogImage": "/images/journal/your-hdb-looks-young-inside-its-old/hero.jpg",
   "coverImage": "/images/journal/your-hdb-looks-young-inside-its-old/hero.jpg",
@@ -163,6 +164,33 @@
     {
       "type": "prose",
       "content": "The families who regret the most weren't the ones who bought the wrong condo. They were the ones who kept waiting. Waited for another Black Swan. Waited for rates to drop. Waited for their HDB to hit a new record. Waited until their age crossed the line and The Younger-Borrower Play no longer worked.\n\nThe premium was luck. The window is yours.\n\nYour HDB looks young. Inside, it's old. The data from Q1 2026 is telling you the real age is starting to show.\n\nIf you're 30+ flat, under 45, watching this quietly — the math is screaming at you.\n\nDon't wait for the face to drop."
+    },
+    {
+      "type": "faq",
+      "kicker": "QUICK ANSWERS",
+      "heading": "Common questions about this play",
+      "items": [
+        {
+          "question": "How much did HDB resale prices climb during COVID?",
+          "answer": "Between 2020 and 2023, HDB resale prices in Singapore climbed approximately 30%. The move was driven by a supply shock — BTO construction delayed by 12–18 months while demand surged from remote work and multi-generational separations. The COVID premium is a one-time distortion, not a trend."
+        },
+        {
+          "question": "Is the HDB market actually cooling in 2026?",
+          "answer": "Yes. In Q1 2026, HDB's Resale Price Index dropped 0.1% quarter-on-quarter — the first decline since Q2 2019. The 4-room segment, which is 45% of all resale volume, fell 0.7% in the same quarter. On top of that, 48,000 flats hit MOP across 2026–2028, adding meaningful resale supply."
+        },
+        {
+          "question": "How does The Younger-Borrower Play work?",
+          "answer": "In a joint home-loan application in Singapore, the bank anchors the maximum tenor to the older borrower's age (loan ends at 65, capped at 30 years). If the younger spouse applies as sole borrower instead, the tenor is calculated against her age alone. The couple still co-owns the condo via CPF and title deed, but the loan structure belongs to one person — which can pull the monthly back down to a 30-year-equivalent even when the older spouse is 45."
+        },
+        {
+          "question": "Why does the window close around age 45?",
+          "answer": "Bank loan tenors in Singapore are capped at age 65 or 30 years, whichever is shorter. Up to age 45, The Younger-Borrower Play can still produce a 30-year tenor via a younger spouse. Past 45, even with the play the math tightens — at 50 you're looking at roughly 15-year solo tenors, which nearly doubles the monthly versus a 30-year structure. The window is a function of age, not market timing."
+        },
+        {
+          "question": "My HDB was just repainted — how old is it really?",
+          "answer": "HDB maintains its buildings meticulously, which is why most owners forget their flat's actual age. Check your remaining lease via HDB's My HDBPage. If you have 64–69 years left on a 99-year lease, your flat is 30–35 years old — and every year the remaining lease shrinks, the bank loan your buyer can secure gets smaller, which pushes your asking price down."
+        }
+      ]
     },
     {
       "type": "cta-card",

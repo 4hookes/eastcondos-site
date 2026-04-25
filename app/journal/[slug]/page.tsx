@@ -16,6 +16,7 @@ type JournalArticle = {
   standfirst: string;
   kicker: string;
   publishDate: string;
+  dateModified?: string;
   readingTimeMinutes: number;
   ogImage: string;
   coverImage?: string;
@@ -89,13 +90,16 @@ export default async function JournalArticlePage({
   const article = articleMap[slug];
   if (!article) notFound();
 
-  const jsonLd = {
+  const dateModified = article.dateModified || article.publishDate;
+
+  const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.excerpt,
     url: article.seo.canonicalUrl,
     datePublished: article.publishDate,
+    dateModified,
     author: {
       "@type": "Person",
       name: article.author.name,
@@ -107,12 +111,41 @@ export default async function JournalArticlePage({
       url: "https://eastcondos.sg",
     },
     image: article.ogImage,
+    mainEntityOfPage: article.seo.canonicalUrl,
   };
 
   // Auto-derive TOC from level-2 headings
   const toc = article.body
     .filter((b): b is Extract<JournalBlock, { type: "heading" }> => b.type === "heading" && b.level === 2)
     .map((h) => ({ number: h.number, text: h.text }));
+
+  // Collect FAQ items across any faq blocks → emit a single FAQPage graph node
+  const faqItems = article.body.flatMap((b) =>
+    b.type === "faq" ? b.items : []
+  );
+
+  const jsonLd =
+    faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@graph": [
+            articleSchema,
+            {
+              "@type": "FAQPage",
+              mainEntity: faqItems.map((it) => ({
+                "@type": "Question",
+                name: it.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: it.answer,
+                },
+              })),
+            },
+          ],
+        }
+      : articleSchema;
+
+  const wasUpdated = dateModified !== article.publishDate;
 
   return (
     <div className="bg-cream min-h-screen">
@@ -167,6 +200,17 @@ export default async function JournalArticlePage({
           <span className="uppercase tracking-[0.18em] text-amber-deep">
             {article.readingTimeMinutes} min read
           </span>
+          {wasUpdated && (
+            <>
+              <span className="hidden sm:inline text-amber-deep">·</span>
+              <span
+                className="uppercase tracking-[0.18em] text-charcoal"
+                title={`Last updated ${formatDate(dateModified)}`}
+              >
+                Updated {formatDate(dateModified)}
+              </span>
+            </>
+          )}
         </div>
       </section>
 

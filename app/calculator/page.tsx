@@ -3,6 +3,8 @@
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
 import styles from "./calculator.module.css";
+import LastUpdated from "@/components/editorial/LastUpdated";
+import { CALCULATOR_LAST_UPDATED } from "./meta";
 
 // ===== Math helpers =====
 const fmt = (n: number) => {
@@ -117,10 +119,15 @@ export default function CalculatorPage() {
         >
           How much can you <em className="text-amber-deep italic">borrow?</em>
         </h1>
-        <p className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug max-w-[42ch] mx-auto">
+        <p className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug max-w-[42ch] mx-auto mb-6 sm:mb-8">
           Three answers, one calculation. Your maximum loan for private property, HDB with HDB
           loan, and HDB with bank loan — all in one view.
         </p>
+        <LastUpdated
+          date={CALCULATOR_LAST_UPDATED}
+          align="center"
+          note="TDSR, MSR, LTV and stress-test rates reflect MAS rules current on this date"
+        />
       </section>
 
       {/* ===== Main ===== */}
