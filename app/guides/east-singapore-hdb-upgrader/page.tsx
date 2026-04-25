@@ -25,7 +25,7 @@ const faqs: Array<{ question: string; answer: string }> = [
   {
     question: "Do I need to sell my HDB before I buy a condo?",
     answer:
-      "Not necessarily. Many upgraders buy first, then sell — but this triggers Additional Buyer's Stamp Duty (ABSD) for Singapore Citizens owning a second property, which is refundable only if the first property is sold within 6 months of the condo purchase (or within the TOP date for new launches, subject to conditions). The timing decision depends on your cash position, your risk tolerance for a gap period, and the specific ABSD refund window that applies. This is one of the most important structural calls in the whole upgrade, which is why we sequence it first in every consultation.",
+      "For most Singapore Citizen upgraders, sell-first is the default — and the trigger that matters is the moment your HDB buyer exercises the OTP, not when the sale completes. Once that's done, you can OTP a private condo immediately and pay 0% ABSD as a Singapore Citizen buying your first additional property. Buy-first is a real fallback structure (with a 6-month ABSD remission window) but it's only the right call when a specific unit can't wait. Full mechanics in our buy-or-sell-first guide.",
   },
   {
     question: "Which East Singapore districts should I target if I'm upgrading?",
@@ -426,13 +426,20 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
             The sell-then-buy vs buy-then-sell decision.
           </h3>
           <Prose>
-            If you sell your HDB first, you&rsquo;ll likely need interim accommodation
-            and you take on market risk on the condo purchase. If you buy the condo
-            first, you pay Additional Buyer&rsquo;s Stamp Duty (ABSD) up front and
-            then claim it back after your HDB sale completes — provided you&rsquo;re
-            inside the refund window. Each path has a distinct timeline, tax exposure,
-            and financing profile. It is not a personality test; it is a structural
-            decision with real dollars attached. Sequence it early.
+            For most Singapore Citizen upgraders, sell-first is the default — once your
+            HDB buyer exercises the OTP, you can OTP a private condo immediately at 0%
+            ABSD. Buy-first is a real fallback (with a 6-month ABSD remission window)
+            but it&rsquo;s the right call only in narrow situations where a specific
+            unit can&rsquo;t wait. Each path has a distinct timeline, tax exposure, and
+            financing profile — full mechanics, including why the &ldquo;OTP
+            exercised&rdquo; trigger matters more than &ldquo;completion,&rdquo; in our{" "}
+            <Link
+              href="/guides/buy-or-sell-first"
+              className="text-amber-deep underline underline-offset-2 hover:text-charcoal"
+            >
+              buy-or-sell-first sequencing guide
+            </Link>
+            .
           </Prose>
 
           {/* ========== Q5 ========== */}

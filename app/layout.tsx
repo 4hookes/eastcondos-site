@@ -58,12 +58,7 @@ export default function RootLayout({
                   url: "https://eastcondos.sg",
                   telephone: "+6596667496",
                   priceRange: "$$$",
-                  founder: {
-                    "@type": "Person",
-                    name: "Elfi Abdullah",
-                    jobTitle: "Division Director, ERA Singapore",
-                    url: "https://eastcondos.sg/about",
-                  },
+                  founder: { "@id": "https://eastcondos.sg/#elfi" },
                   areaServed: [
                     { "@type": "AdministrativeArea", name: "District 14, Singapore (Geylang, Eunos, Paya Lebar)" },
                     { "@type": "AdministrativeArea", name: "District 15, Singapore (Katong, Joo Chiat, Marine Parade)" },
@@ -136,6 +131,43 @@ export default function RootLayout({
                   name: "EastCondos.sg",
                   publisher: { "@id": "https://eastcondos.sg/#organization" },
                   inLanguage: "en-SG",
+                },
+                {
+                  "@type": "Person",
+                  "@id": "https://eastcondos.sg/#elfi",
+                  name: "Elfi Abdullah",
+                  givenName: "Elfi",
+                  familyName: "Abdullah",
+                  jobTitle: "Division Director",
+                  description:
+                    "Founder of EastCondos.sg and Division Director at ERA Singapore. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18). Creator of the Property by Design (PBD™) framework.",
+                  url: "https://eastcondos.sg/about",
+                  worksFor: { "@id": "https://eastcondos.sg/#organization" },
+                  knowsAbout: [
+                    "HDB to condo upgrade planning",
+                    "Singapore property investment advisory",
+                    "Property by Design (PBD™) methodology",
+                    "ABSD and SSD timing strategy",
+                    "CPF optimization for Singapore property purchase",
+                    "Singapore loan structuring (TDSR, MSR, LTV)",
+                    "East Singapore property market (Districts 14–18)",
+                  ],
+                  hasCredential: [
+                    {
+                      "@type": "EducationalOccupationalCredential",
+                      credentialCategory: "license",
+                      name: "CEA (Council for Estate Agencies) Registered Salesperson",
+                      recognizedBy: {
+                        "@type": "GovernmentOrganization",
+                        name: "Council for Estate Agencies, Singapore",
+                      },
+                    },
+                  ],
+                  award: [
+                    "13 years in Singapore residential real estate",
+                    "500+ families advised",
+                    "80% client referral rate",
+                  ],
                 },
               ],
             }),

@@ -48,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/guides/buy-or-sell-first`,
+      lastModified: new Date("2026-04-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/discovery`,
       lastModified: new Date(),
       changeFrequency: "monthly",
