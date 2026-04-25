@@ -9,7 +9,7 @@ const TOC_LINKS = [
   { no: "03", label: "Stories", href: "/case-studies" },
   { no: "04", label: "Safety Meter", href: "/safety-meter" },
   { no: "05", label: "Journal", href: "/journal" },
-  { no: "06", label: "Guides", href: "/guides/east-singapore-hdb-upgrader" },
+  { no: "06", label: "Guides", href: "/guides" },
   { no: "07", label: "Calculator", href: "/calculator" },
   { no: "08", label: "Quiz", href: "/quiz" },
   { no: "09", label: "About", href: "/about" },
