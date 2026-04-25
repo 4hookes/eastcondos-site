@@ -2,8 +2,8 @@
   "sectionLabel": "The Journal",
   "heading": "Long-form dispatches on East Singapore property.",
   "subtext": "Data-driven essays on HDB-to-condo upgrade timing, market cycles, and the PBD™ frameworks at work behind the numbers. Written by Elfi Abdullah — published as the market reveals itself.",
-  "slugs": ["your-hdb-looks-young-inside-its-old"],
-  "featuredSlug": "your-hdb-looks-young-inside-its-old",
+  "slugs": ["yesterdays-launch-price-earlier-phase-play", "your-hdb-looks-young-inside-its-old"],
+  "featuredSlug": "yesterdays-launch-price-earlier-phase-play",
   "topicClusters": [
     { "id": "market-trends", "label": "Market Trends" },
     { "id": "hdb-upgrade-journey", "label": "HDB Upgrade Journey" },
