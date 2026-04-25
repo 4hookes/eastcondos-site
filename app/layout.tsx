@@ -80,6 +80,10 @@ export default function RootLayout({
                     "Singapore loan structuring (TDSR, MSR, LTV)",
                   ],
                   slogan: "We run your numbers before we show you a single property.",
+                  sameAs: [
+                    "https://www.youtube.com/channel/UCglVDJ8Y7rKc0WlqdLGOc5Q",
+                    "https://www.facebook.com/eastcondossg",
+                  ],
                   hasOfferCatalog: {
                     "@type": "OfferCatalog",
                     name: "EastCondos Advisory Services",
@@ -167,6 +171,9 @@ export default function RootLayout({
                     "13 years in Singapore residential real estate",
                     "500+ families advised",
                     "80% client referral rate",
+                  ],
+                  sameAs: [
+                    "https://www.instagram.com/elfi.abd",
                   ],
                 },
               ],
