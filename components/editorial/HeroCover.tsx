@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function HeroCover() {
   return (
     <section className="relative bg-cream">
@@ -23,19 +21,19 @@ export default function HeroCover() {
         </div>
 
         <div className="relative">
-          <span className="photo-badge">In Conversation</span>
-          <Image
-            src="https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/68d9e2b64c35d6324e9f6e5c.png"
-            alt="Elfi Abdullah, founder of EastCondos.sg"
-            width={800}
-            height={1000}
-            priority
-            unoptimized
-            className="w-full aspect-[4/5] object-cover"
-            style={{ filter: "contrast(1.04) saturate(0.92)" }}
-          />
+          <span className="photo-badge">The Approach</span>
+          <div className="w-full aspect-[4/5] overflow-hidden">
+            <img
+              src="/images/homepage/hero.png"
+              alt="Financial projection document — running the numbers before showing a property"
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+              style={{ filter: "contrast(1.04) saturate(0.92)" }}
+            />
+          </div>
           <div className="photo-caption">
-            <span>Elfi Abdullah &middot; Founder</span>
+            <span>Numbers first &middot; Always</span>
           </div>
         </div>
       </div>

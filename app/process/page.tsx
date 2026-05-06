@@ -103,9 +103,21 @@ export default function ProcessPage() {
 
               {/* Image side */}
               <div className={`flex-1 w-full ${!isEven ? "md:order-1" : ""}`}>
-                <div className="w-full aspect-[4/3] bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl flex items-center justify-center text-gray-400 text-sm">
-                  {phase.imagePlaceholder}
-                </div>
+                {phase.image ? (
+                  <img
+                    src={phase.image}
+                    alt={phase.imageAlt || phase.imagePlaceholder}
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full aspect-[4/3] object-cover rounded-2xl shadow-md"
+                  />
+                ) : (
+                  <div className="w-full aspect-[4/3] bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl flex items-center justify-center text-gray-400 text-sm">
+                    {phase.imagePlaceholder}
+                  </div>
+                )}
               </div>
             </div>
           </SectionWrapper>

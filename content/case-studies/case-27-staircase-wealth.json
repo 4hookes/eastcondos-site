@@ -12,16 +12,16 @@
   "description": "How Idris and Mira used equity recycling to move from a Punggol HDB to a $1.8M condo in two moves — with minimal income growth.",
   "editorialCredit": "Drawn from a consultation conducted by Elfi Abdullah, Division Director · ERA Singapore, 2025.",
   "hero": {
-    "image": "",
+    "image": "/images/case-studies/case-27-move-2.png",
     "caption": "Idris and Mira's second condominium, acquired at the precise expiry of the four-year Seller's Stamp Duty window.",
     "alt": "Exterior view of a contemporary Singapore private condominium"
   },
-  "coverImage": "",
-  "ogImage": "",
+  "coverImage": "/images/case-studies/case-27-move-2.png",
+  "ogImage": "/images/case-studies/case-27-move-2.png",
   "clients": {
     "names": "Idris & Mira",
     "location": "Punggol (starting point)",
-    "portrait": "",
+    "portrait": "/images/case-studies/case-27-portrait.png",
     "portraitCaption": "Photographed at their current residence, 2026."
   },
   "clientDetails": [
@@ -63,7 +63,7 @@
       "year": "2021",
       "title": "HDB → First Condo",
       "chapterTitle": "The first call — getting onto the staircase",
-      "image": "",
+      "image": "/images/case-studies/case-27-move-1.png",
       "imageCaption": "The first condo — a ground-floor 3-bedder, the only unit within budget. Acquired 2021.",
       "imageAlt": "First condominium purchase, ground-floor unit",
       "marketContext": "In 2021, Punggol 4-room HDBs were transacting in the $450K–$550K range, with freshly-MOP flats at the higher end. New condominiums in D19 (Hougang / Punggol / Sengkang) launched around $1,300–$1,500 psf — putting 3-bedders typically above $1.4M. Ground-floor units were the most accessible entry point.",
@@ -84,7 +84,7 @@
       "year": "2025",
       "title": "First Condo → Second Condo",
       "chapterTitle": "The SSD clock — why we waited exactly four years",
-      "image": "",
+      "image": "/images/case-studies/case-27-move-2.png",
       "imageCaption": "The second condo — $1.6M at purchase, now valued above $1.8M. Acquired 2025 at SSD expiry.",
       "imageAlt": "Second condominium purchase",
       "marketContext": "By 2025, D19 3-bedder condos were transacting around $1,600–$1,900 psf. A $1.6M quantum secured a roughly 900–1,000 sqft three-bedder in newer, recently-completed developments. For context: comparable projects like Kingsford Waterbay, The Florence Residences, and Sengkang Grand Residences were moving in this band.",

@@ -11,8 +11,7 @@ const FEATURE = {
     { lbl: "Equity Released", v: "$312k" },
     { lbl: "New Mortgage", v: "1.8% \u00b7 30y" },
   ],
-  image:
-    "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=900&q=80",
+  image: "/images/homepage/stories-cover.png",
 };
 
 const INDEX = [
