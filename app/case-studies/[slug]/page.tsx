@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
 import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
+import case28 from "@/content/case-studies/case-28-scarcity-tax.json";
 import PhotoBlock from "@/components/PhotoBlock";
 import FrameworkIcon from "@/components/FrameworkIcon";
 
@@ -12,12 +13,17 @@ type IconName =
   | "ssd-timing"
   | "leverage-amplification"
   | "next-better-property"
-  | "burst-framework";
+  | "burst-framework"
+  | "scarcity-tax"
+  | "four-week-rule"
+  | "bounced-buyer-spillover"
+  | "pattern-recognition";
 
 type FlagshipCase = typeof case27;
 
 const caseStudyMap: Record<string, FlagshipCase> = {
   "case-27-staircase-wealth": case27,
+  "case-28-scarcity-tax": case28 as unknown as FlagshipCase,
 };
 
 export async function generateStaticParams() {

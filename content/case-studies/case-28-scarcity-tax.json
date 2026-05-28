@@ -1,0 +1,203 @@
+{
+  "slug": "case-28-scarcity-tax",
+  "caseNumber": "28",
+  "type": "flagship",
+  "publishDate": "2026-05-28",
+  "dateModified": "2026-05-28",
+  "bucket": "Strategy & Pattern Recognition",
+  "subBucket": "Post-Launch Market Behaviour",
+  "title": "The scarcity tax — why I made them wait three weeks after Pinery",
+  "subtitle": "A young couple almost bought the wrong 3-bedder in 72 hours. Patience cost them nothing and saved them everything.",
+  "standfirst": "Three days after Pinery Residences sold over 90 percent on launch day, every 3-bedroom resale listing in Tampines vanished from PropertyGuru. The one that remained was road-facing, west sun, and overpriced. Lutfi and Yati almost bought it. Here is what waiting twenty-one days actually got them — and the same pattern, banked on the other side of the market.",
+  "description": "How a young couple avoided panic-buying a road-facing condo after a popular Tampines launch swept the resale market, and how the same pattern paid a Parc Esta seller $55K above asking weeks after Emerald of Katong.",
+  "editorialCredit": "Drawn from a consultation conducted by Elfi Abdullah, Division Director · ERA Singapore, May 2026.",
+  "hero": {
+    "image": "",
+    "caption": "Tampines Avenue 10, where the only available three-bedroom listing in the days after Pinery's launch sat road-facing in the afternoon sun.",
+    "alt": "Streetscape along Tampines Avenue 10"
+  },
+  "coverImage": "",
+  "ogImage": "",
+  "clients": {
+    "names": "Lutfi & Yati",
+    "location": "Tampines (intended)",
+    "portrait": "",
+    "portraitCaption": "Photographed shortly after they collected the keys, 2026."
+  },
+  "clientDetails": [
+    "Married Singaporean couple, early 30s",
+    "Own-stay buyers, no children at the time",
+    "Sold their HDB; cash from the sale ready to deploy",
+    "Combined household income meant a comfortable 3-bedder budget — no overstretch needed",
+    "Open on project, but firm on Tampines for the lifestyle radius"
+  ],
+  "buyersBrief": [
+    "A three-bedroom condominium in Tampines",
+    "Inward-facing preferred; willing to consider all layouts on viewing",
+    "Reasonable proximity to MRT and family schools they had in mind",
+    "Quantum ceiling that left runway for renovation, not stretched to the last dollar",
+    "Open to older resale or newer development, as long as the unit itself was right",
+    "Timeline: ready to commit within three months of starting the search"
+  ],
+  "challenges": [
+    "Pinery Residences launched in their target catchment and sold over 90% on Day 1",
+    "Within 72 hours, every viable Tampines 3-bedder resale listing had been pulled from PropertyGuru",
+    "The single remaining listing was road-facing onto Tampines Avenue 10, west sun, and priced above the prevailing transacted range",
+    "Their gut said 'this is the only option left, buy now' — the classic scarcity reflex",
+    "No reliable signal, at that moment, telling them whether the supply blackout was permanent or temporary"
+  ],
+  "softCta": {
+    "text": "If you're in the middle of a launch week and the resale supply you were tracking has dried up overnight, run the numbers calmly before you act. It takes five minutes and tells you whether you're seeing a real shortage or a temporary one.",
+    "ctaLabel": "Run the calculator",
+    "ctaHref": "/calculator"
+  },
+  "headlineStats": [
+    { "value": "~90%", "label": "Pinery sell-through, Day 1" },
+    { "value": "21 days", "label": "Until supply returned" },
+    { "value": "Inward", "label": "Not road-facing" },
+    { "value": "+$55K", "label": "Same pattern, sell side (Parc Esta)" }
+  ],
+  "moves": [
+    {
+      "number": "01",
+      "year": "2026",
+      "title": "The Spook — when fifty listings became one",
+      "chapterTitle": "Move 01 · The Spook",
+      "image": "",
+      "imageCaption": "Tampines Avenue 10, late April 2026. The only three-bedroom resale listing in the area faced this road — west sun, traffic noise, overpriced.",
+      "imageAlt": "Tampines Avenue 10, late afternoon",
+      "marketContext": "Pinery Residences launched in April 2026 in the Tampines catchment and sold over 90% of its units on Day 1. The bounced-buyer pool — households who'd cheque'd in but didn't get an allocation — is estimated to be in the high hundreds. Within three days, the visible 3-bedroom resale inventory in Tampines on PropertyGuru collapsed from comfortable choice to a single listing.",
+      "rows": [
+        { "label": "Target", "value": "3-bedder condominium in Tampines" },
+        { "label": "Trigger event", "value": "Pinery Residences launch (~90% sold Day 1)" },
+        { "label": "Visible 3-bedder resale supply", "value": "Collapsed within 72 hours" },
+        { "label": "The one remaining listing", "value": "Road-facing Tampines Avenue 10, west sun, above prevailing transacted range" },
+        { "label": "Their instinct", "value": "'This is the only option left — we have to buy now.'" }
+      ],
+      "keyDecision": "Recognise the spook for what it is — a supply-side echo from the launch, not a permanent market shift. Don't act on it.",
+      "quote": {
+        "text": "Half the condos along Tampines Avenue 10 should be avoided anyway — dust, noise, west sun. The fact that the only thing 'available' that week was the worst-facing unit on the street is not a sign of scarcity. It's a sign of timing.",
+        "attribution": "Elfi"
+      }
+    },
+    {
+      "number": "02",
+      "year": "2026",
+      "title": "The Wait — thirteen years of pattern recognition in one conversation",
+      "chapterTitle": "Move 02 · The Wait",
+      "image": "",
+      "imageCaption": "Parc Esta, Sims Avenue. A unit that sat for eight months — then sold in days, above asking, after Emerald of Katong's launch swept the district.",
+      "imageAlt": "Parc Esta exterior, District 14",
+      "marketContext": "Emerald of Katong launched on 15–16 November 2024 in District 15 and sold 98.7% of its 846 units in two days — 4.3 times oversubscribed, with 3,629 cheques collected. That left roughly 2,800 bounced households, the bulk of whom rotated into adjacent resale stock in Districts 14, 15, and 16 over the following weeks. The pattern is documented across every major launch of the past five years: post-launch demand spillover compresses adjacent resale supply for three to four weeks, with a longer absorption tail running two to three months.",
+      "rows": [
+        { "label": "The receipt", "value": "Parc Esta · 912 Sims Avenue #03-56 · 915 sqft" },
+        { "label": "Months marketed", "value": "Eight months. Negligible serious viewings." },
+        { "label": "Catalyst", "value": "Emerald of Katong launch · Nov 2024 · 98.7% sold in 2 days" },
+        { "label": "Outcome", "value": "Multiple offers within weeks · sold 27 Jan 2025 at $2,317 psf — $55K above asking" },
+        { "label": "Why it matters here", "value": "The same pattern compressing your search supply is, at that very moment, closing other people's deals above asking. Don't compete — wait it out." }
+      ],
+      "keyDecision": "Tell them what was happening, calmly. Show them the receipt. Set the four-week clock. Don't pressure them either way.",
+      "quote": {
+        "text": "I've watched this pattern play out a dozen times. The bounced buyers from a popular launch don't disappear — they sweep into resale within days. Three to four weeks later, the new listings come back. The buyers who panic in those first weeks pay three taxes: the scarcity tax, the fear tax, the panic tax.",
+        "attribution": "Elfi"
+      }
+    },
+    {
+      "number": "03",
+      "year": "2026",
+      "title": "The Resolution — what twenty-one days of patience bought them",
+      "chapterTitle": "Move 03 · The Resolution",
+      "image": "",
+      "imageCaption": "The three-bedder Lutfi and Yati eventually secured — same street, inward-facing, better layout, well-priced.",
+      "imageAlt": "Inward-facing three-bedroom unit, Tampines",
+      "marketContext": "By the third week after the launch, listings began returning to the platforms — sellers who'd been holding back to gauge the post-launch market, plus a fresh batch of motivated owners. The roadside listing was still there. Its price had not moved.",
+      "rows": [
+        { "label": "Wait time", "value": "Three weeks (21 days)" },
+        { "label": "Supply returned", "value": "Multiple 3-bedder listings re-emerged across Tampines" },
+        { "label": "What they bought", "value": "A 3-bedder along Tampines Avenue 10 — inward-facing, better layout, well-priced" },
+        { "label": "What they avoided", "value": "Road-facing, west sun, above prevailing range — the only thing 'available' three weeks earlier" },
+        { "label": "Scarcity tax paid", "value": "Zero" }
+      ],
+      "keyDecision": "Buy when the market is rational, not when it is reacting. Twenty-one days of patience is the cheapest form of advisory you will ever buy.",
+      "quote": {
+        "text": "The unit they almost bought is still on the market today. The unit they actually bought is now their home.",
+        "attribution": "Elfi"
+      }
+    }
+  ],
+  "currentPosition": {
+    "year": "2026",
+    "marketContext": "As of mid-2026, the bounced-buyer absorption from the Pinery launch has fully normalised, and transacted PSF across Tampines is moving in line with the broader Singapore resale market. The road-facing unit Lutfi and Yati nearly bought is still listed at the same asking price as April.",
+    "rows": [
+      { "label": "Property bought", "value": "Inward-facing 3-bedder · Tampines Avenue 10" },
+      { "label": "Wait cost", "value": "21 days. Nothing else." },
+      { "label": "Estimated scarcity tax avoided", "value": "Conservatively five-figure premium, plus the structural cost of living with the wrong product for a decade" },
+      { "label": "Key insight", "value": "The supply blackout was a 21-day event. The wrong unit would have been a 10-year decision." }
+    ]
+  },
+  "problem": "Buyers in active search lose their bearings in the days immediately after a popular new launch in their area. Supply visibly collapses. The instinct is to act on the only thing left. The instinct is wrong.",
+  "mistake": "Treat post-launch supply scarcity as a permanent market signal — and pull the trigger on the worst-fitting unit on the shelf, at the worst possible price, because it feels like the last chance.",
+  "whatElfiDid": [
+    "Recognised the pattern within minutes of the couple flagging the panic — same supply-side echo seen after every major launch of the past five years.",
+    "Showed them the receipt: the Parc Esta sale at $55K above asking, weeks after Emerald of Katong's launch — proof that the same mechanic was, at that very moment, closing other people's deals on the seller side.",
+    "Quantified the bounced-buyer pool for Pinery and explained why the absorption window runs three to four weeks, not three to four months.",
+    "Set expectations clearly: this is a 21-day wait, not an indefinite hold. If the market does not reset by week four, we revisit.",
+    "Refused to add urgency on the buy side. No 'consider the road-facing one as a backup.' The wrong unit is the wrong unit at any price."
+  ],
+  "closingQuote": {
+    "text": "Calculations are the floor of property advisory — and I give those tools away free on this site. What you actually pay an advisor for is pattern recognition. After thirteen years and five hundred families, the same patterns play out again and again. The buyer who waits four weeks pays no scarcity tax.",
+    "attribution": "Elfi"
+  },
+  "result": [
+    "Three-bedder secured along Tampines Avenue 10 — inward-facing, better layout, well-priced",
+    "Scarcity tax avoided: zero premium paid on a panic-driven purchase",
+    "Structural avoidance: did not lock in a decade of road noise, dust, and west-sun exposure",
+    "The roadside listing they almost bought remains on the market at the same price",
+    "Lutfi and Yati now refer other young couples — the most reliable signal an advisor can earn"
+  ],
+  "frameworks": [
+    {
+      "name": "The Scarcity Tax",
+      "slug": "scarcity-tax",
+      "iconName": "scarcity-tax",
+      "description": "The premium paid when post-launch supply blackouts trick buyers into believing the last visible listing is the last opportunity. Almost always temporary, almost always worth waiting out."
+    },
+    {
+      "name": "The 4-Week Rule",
+      "slug": "four-week-rule",
+      "iconName": "four-week-rule",
+      "description": "Don't buy resale in the first four weeks after a popular new launch in your area. The bounced-buyer demand will compress supply, then release it. Patience costs nothing."
+    },
+    {
+      "name": "Bounced-Buyer Spillover",
+      "slug": "bounced-buyer-spillover",
+      "iconName": "bounced-buyer-spillover",
+      "description": "Households who cheque in but don't secure a unit at a popular launch don't vanish — they rotate into adjacent resale stock within days, compressing visible supply for three to four weeks."
+    },
+    {
+      "name": "Pattern Recognition over Calculation",
+      "slug": "pattern-recognition",
+      "iconName": "pattern-recognition",
+      "description": "Calculations are commodity. The advisory edge is recognising market patterns that calculators cannot price in — supply behaviour, launch ripple effects, the tax of acting on temporary scarcity."
+    }
+  ],
+  "takeaway": "Twenty-one days of patience is the cheapest form of property advisory you will ever buy.",
+  "faqs": [
+    {
+      "q": "What is the 'scarcity tax'?",
+      "a": "It's the premium buyers pay when they treat a temporary, post-launch dip in resale supply as a permanent signal. After a popular new launch, the bounced-buyer demand sweeps into adjacent resale within days — visible supply collapses, the remaining listings often raise prices, and panicked buyers pay above the prevailing transacted range for whatever is left. The 'tax' is the difference between that panic price and what the same buyer would have paid two to four weeks later, when supply normalises."
+    },
+    {
+      "q": "How long does post-launch supply compression usually last?",
+      "a": "For popular launches with strong sell-through, the most acute compression lasts about three to four weeks. The longer absorption tail — where elevated demand keeps pressure on prices across the wider district — runs roughly two to three months. The Emerald of Katong example in this case is consistent with that pattern: the most aggressive squeeze was the first few weeks, with continued spillover into nearby resale (Tembusu Grand, Grand Dunman, The Continuum, Parc Esta) over the following months."
+    },
+    {
+      "q": "Does the 4-Week Rule apply to every launch?",
+      "a": "No. The rule applies to launches that are clearly popular by Day 1 metrics — typically 70% or above sell-through, oversubscription, and visible buyer queues. Slower launches don't generate enough bounced-buyer demand to materially compress nearby resale supply. The mechanic depends on a real pool of displaced buyers; without that pool, there's no spillover."
+    },
+    {
+      "q": "How do I know if I'm paying the scarcity tax right now?",
+      "a": "Three signals together. One: there was a popular new launch in your target area within the last three weeks. Two: the resale listings you were tracking have noticeably thinned. Three: the listings that remain are priced above the recent transacted range or are the worst-fitting units (worst facing, worst floor, worst orientation). If all three are true, you're likely in a scarcity-tax window. Wait."
+    }
+  ]
+}

@@ -2,10 +2,11 @@
   "sectionLabel": "The Stories",
   "heading": "Real clients. Real numbers.",
   "subtext": "A case study bank from 13 years of advising East Singapore families through HDB-to-private upgrades, second properties, and investment structuring. Names changed. Numbers are real.",
-  "slugs": ["case-27-staircase-wealth"],
+  "slugs": ["case-27-staircase-wealth", "case-28-scarcity-tax"],
   "featuredSlug": "case-27-staircase-wealth",
   "buckets": [
     { "id": "money-financing", "label": "Money & Financing", "icon": "circle" },
+    { "id": "strategy-pattern-recognition", "label": "Strategy & Pattern Recognition", "icon": "compass" },
     { "id": "timeline", "label": "Timeline & Coordination", "icon": "clock" },
     { "id": "property-selection", "label": "Property Selection", "icon": "home" },
     { "id": "negotiation-execution", "label": "Negotiation & Execution", "icon": "handshake" }

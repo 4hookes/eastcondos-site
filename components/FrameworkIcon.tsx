@@ -10,7 +10,11 @@ type IconName =
   | "ssd-timing"
   | "leverage-amplification"
   | "next-better-property"
-  | "burst-framework";
+  | "burst-framework"
+  | "scarcity-tax"
+  | "four-week-rule"
+  | "bounced-buyer-spillover"
+  | "pattern-recognition";
 
 export default function FrameworkIcon({
   name,
@@ -119,6 +123,74 @@ export default function FrameworkIcon({
           <path d="M32 8 L27 13" />
           <path d="M13 27 L8 32" />
           <circle cx="20" cy="20" r="4" fill="currentColor" stroke="none" />
+        </svg>
+      );
+
+    // A price tag with an upward spike — the premium paid in panic
+    case "scarcity-tax":
+      return (
+        <svg {...common}>
+          {/* price tag body */}
+          <path d="M8 14 L20 6 L34 14 L34 30 L8 30 Z" />
+          {/* tag hole */}
+          <circle cx="20" cy="12" r="1.5" fill="currentColor" stroke="none" />
+          {/* upward spike inside — the tax premium */}
+          <path d="M14 26 L20 16 L26 26" />
+          <path d="M17 19 L20 16 L23 19" />
+        </svg>
+      );
+
+    // Four week-bars, the first one struck through (the wait)
+    case "four-week-rule":
+      return (
+        <svg {...common}>
+          {/* four week bars */}
+          <rect x="6" y="14" width="6" height="14" />
+          <rect x="14" y="14" width="6" height="14" />
+          <rect x="22" y="14" width="6" height="14" />
+          <rect x="30" y="14" width="6" height="14" />
+          {/* week labels — small ticks above */}
+          <path d="M9 11 L9 13" />
+          <path d="M17 11 L17 13" />
+          <path d="M25 11 L25 13" />
+          <path d="M33 11 L33 13" />
+          {/* slash through week 1 — the wait */}
+          <path d="M4 32 L14 10" strokeWidth="1.8" />
+        </svg>
+      );
+
+    // A filled cluster with arrows bouncing outward — sold-out launch spilling demand
+    case "bounced-buyer-spillover":
+      return (
+        <svg {...common}>
+          {/* sold-out core */}
+          <rect x="15" y="15" width="10" height="10" fill="currentColor" stroke="none" />
+          {/* spillover arrows in four directions */}
+          <path d="M14 14 L7 7" />
+          <path d="M10 7 L7 7 L7 10" />
+          <path d="M26 14 L33 7" />
+          <path d="M30 7 L33 7 L33 10" />
+          <path d="M14 26 L7 33" />
+          <path d="M10 33 L7 33 L7 30" />
+          <path d="M26 26 L33 33" />
+          <path d="M30 33 L33 33 L33 30" />
+        </svg>
+      );
+
+    // Three repeating wave-peaks connected by a flowing line — the pattern recurring
+    case "pattern-recognition":
+      return (
+        <svg {...common}>
+          {/* connecting baseline */}
+          <path d="M4 30 L36 30" opacity="0.35" />
+          {/* three repeating peaks of equal shape */}
+          <path d="M6 28 L11 12 L16 28" />
+          <path d="M14 28 L20 12 L25 28" />
+          <path d="M23 28 L29 12 L34 28" />
+          {/* small recognition dot at each peak apex */}
+          <circle cx="11" cy="12" r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="12" r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="29" cy="12" r="1.2" fill="currentColor" stroke="none" />
         </svg>
       );
 

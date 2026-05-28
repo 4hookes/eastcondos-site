@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
 import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
+import case28 from "@/content/case-studies/case-28-scarcity-tax.json";
 
 export const metadata: Metadata = {
   title: `${indexData.heading} — EastCondos.sg`,
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
 
 export default function CaseStudiesPage() {
   const featured = case27;
+  const secondary = case28;
 
   return (
     <div className="bg-cream min-h-screen">
@@ -138,6 +140,83 @@ export default function CaseStudiesPage() {
           </div>
         </Link>
 
+        {/* ===== Secondary feature — Latest issue ===== */}
+        <div className="mt-16 sm:mt-20">
+          <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+            <span className="w-5 sm:w-7 h-px bg-amber-deep" />
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
+              Latest issue · {secondary.bucket}
+            </span>
+          </div>
+          <h2
+            className="font-serif text-charcoal mb-6 sm:mb-8"
+            style={{ fontSize: "clamp(1.7rem, 3vw, 2.4rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+          >
+            Also in the bank.
+          </h2>
+
+          <Link
+            href={`/case-studies/${secondary.slug}`}
+            className="block border border-charcoal bg-paper hover:bg-amber/10 transition-colors group"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr]">
+              {/* Left — story */}
+              <div className="p-6 sm:p-9 md:border-r border-charcoal border-b md:border-b-0">
+                <div className="text-[10px] uppercase tracking-[0.28em] text-amber-deep mb-3 sm:mb-4">
+                  Case No. {secondary.caseNumber} · {secondary.bucket}
+                </div>
+                <h3
+                  className="font-serif text-charcoal mb-3 sm:mb-4 group-hover:text-amber-deep transition-colors"
+                  style={{
+                    fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)",
+                    lineHeight: 1.1,
+                    letterSpacing: "-0.02em",
+                  }}
+                >
+                  {secondary.title}
+                </h3>
+                <p
+                  className="font-serif italic text-charcoal text-[15px] sm:text-[17px] leading-snug mb-5 sm:mb-6"
+                  style={{ maxWidth: "40ch" }}
+                >
+                  {secondary.subtitle}
+                </p>
+                <span className="inline-block text-[11px] sm:text-[12px] uppercase tracking-[0.2em] text-amber-deep font-medium">
+                  Read the full case →
+                </span>
+              </div>
+
+              {/* Right — numbers */}
+              <div className="bg-charcoal text-cream p-6 sm:p-9">
+                <div
+                  className="text-[10px] uppercase tracking-[0.28em] mb-4 sm:mb-5"
+                  style={{ color: "rgba(242, 235, 219, 0.6)" }}
+                >
+                  The numbers
+                </div>
+                <div className="grid grid-cols-2 gap-5 sm:gap-7">
+                  {secondary.headlineStats.slice(0, 4).map((s) => (
+                    <div key={s.label}>
+                      <div
+                        className="text-[9px] sm:text-[10px] uppercase tracking-[0.22em] mb-1.5"
+                        style={{ color: "rgba(242, 235, 219, 0.55)" }}
+                      >
+                        {s.label}
+                      </div>
+                      <div
+                        className="font-serif text-amber leading-none"
+                        style={{ fontSize: "clamp(1.3rem, 2.2vw, 1.7rem)", letterSpacing: "-0.02em" }}
+                      >
+                        {s.value}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
         {/* ===== Bucket placeholders (more cases coming) ===== */}
         <div className="mt-16 sm:mt-20 border-t border-charcoal pt-10 sm:pt-14">
           <div className="flex items-center gap-3 sm:gap-4 mb-5">
@@ -173,7 +252,7 @@ export default function CaseStudiesPage() {
           </div>
 
           <p className="text-center mt-10 sm:mt-12 text-[13px] sm:text-[14px] text-gray-600 italic font-serif max-w-[46ch] mx-auto">
-            26 more case studies from the bank are being prepared for publication. Each is reviewed
+            More case studies from the bank are being prepared for publication. Each is reviewed
             personally before it goes live — no templated copy, no fabricated numbers.
           </p>
         </div>
