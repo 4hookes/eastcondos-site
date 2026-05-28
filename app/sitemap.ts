@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import journalIndex from "@/content/journal/index.json";
+import caseStudiesIndex from "@/content/case-studies/index.json";
 
 export const dynamic = "force-static";
 
@@ -12,6 +13,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })
+  );
+
+  const caseStudyEntries: MetadataRoute.Sitemap = caseStudiesIndex.slugs.map(
+    (slug) => ({
+      url: `${baseUrl}/case-studies/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })
   );
 
@@ -28,12 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/case-studies/case-27-staircase-wealth`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+    ...caseStudyEntries,
     {
       url: `${baseUrl}/journal`,
       lastModified: new Date(),

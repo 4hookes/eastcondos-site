@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
-import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
-import case28 from "@/content/case-studies/case-28-scarcity-tax.json";
+import staircaseWealth from "@/content/case-studies/staircase-wealth.json";
+import theScarcityTax from "@/content/case-studies/the-scarcity-tax.json";
 
 export const metadata: Metadata = {
   title: `${indexData.heading} — EastCondos.sg`,
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 };
 
 export default function CaseStudiesPage() {
-  const featured = case27;
-  const secondary = case28;
+  const featured = staircaseWealth;
+  const secondary = theScarcityTax;
 
   return (
     <div className="bg-cream min-h-screen">
@@ -90,7 +90,7 @@ export default function CaseStudiesPage() {
                 className="text-[10px] uppercase tracking-[0.28em] mb-3 sm:mb-4"
                 style={{ color: "rgba(242, 235, 219, 0.6)" }}
               >
-                Case No. {featured.caseNumber} · {featured.bucket}
+                {featured.bucket}
               </div>
               <div className="grid grid-cols-2 gap-5 sm:gap-7">
                 {featured.headlineStats.slice(0, 4).map((s) => (
@@ -163,7 +163,7 @@ export default function CaseStudiesPage() {
               {/* Left — story */}
               <div className="p-6 sm:p-9 md:border-r border-charcoal border-b md:border-b-0">
                 <div className="text-[10px] uppercase tracking-[0.28em] text-amber-deep mb-3 sm:mb-4">
-                  Case No. {secondary.caseNumber} · {secondary.bucket}
+                  {secondary.bucket}
                 </div>
                 <h3
                   className="font-serif text-charcoal mb-3 sm:mb-4 group-hover:text-amber-deep transition-colors"
@@ -222,14 +222,14 @@ export default function CaseStudiesPage() {
           <div className="flex items-center gap-3 sm:gap-4 mb-5">
             <span className="w-5 sm:w-7 h-px bg-amber-deep" />
             <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-              The Bank · Coming in issues
+              Browse · By challenge
             </span>
           </div>
           <h2
             className="font-serif text-charcoal mb-8 sm:mb-10 max-w-[24ch]"
             style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
           >
-            The full case study bank, organised by challenge.
+            Cases, organised by the challenge they solved.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">

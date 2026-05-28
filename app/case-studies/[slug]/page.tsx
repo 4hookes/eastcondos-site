@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
-import case27 from "@/content/case-studies/case-27-staircase-wealth.json";
-import case28 from "@/content/case-studies/case-28-scarcity-tax.json";
+import staircaseWealth from "@/content/case-studies/staircase-wealth.json";
+import theScarcityTax from "@/content/case-studies/the-scarcity-tax.json";
 import PhotoBlock from "@/components/PhotoBlock";
 import FrameworkIcon from "@/components/FrameworkIcon";
 
@@ -19,11 +19,11 @@ type IconName =
   | "bounced-buyer-spillover"
   | "pattern-recognition";
 
-type FlagshipCase = typeof case27;
+type FlagshipCase = typeof staircaseWealth;
 
 const caseStudyMap: Record<string, FlagshipCase> = {
-  "case-27-staircase-wealth": case27,
-  "case-28-scarcity-tax": case28 as unknown as FlagshipCase,
+  "staircase-wealth": staircaseWealth,
+  "the-scarcity-tax": theScarcityTax as unknown as FlagshipCase,
 };
 
 export async function generateStaticParams() {
@@ -41,7 +41,7 @@ export async function generateMetadata({
   if (!study) return { title: "Not Found — EastCondos.sg" };
 
   return {
-    title: `${study.title} — Case No. ${study.caseNumber} | EastCondos.sg`,
+    title: `${study.title} — EastCondos.sg`,
     description: study.description,
     openGraph: {
       title: study.title,
@@ -110,7 +110,7 @@ export default async function CaseStudyPage({
         <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-7">
           <span className="w-5 sm:w-8 h-px bg-amber-deep" />
           <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            Case No. {study.caseNumber} · {study.bucket}
+            {study.bucket}
           </span>
         </div>
 

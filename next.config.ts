@@ -28,6 +28,16 @@ const nextConfig: NextConfig = {
         destination: "/about",
         permanent: true,
       },
+      {
+        source: "/case-studies/case-27-staircase-wealth",
+        destination: "/case-studies/staircase-wealth",
+        permanent: true,
+      },
+      {
+        source: "/case-studies/case-28-scarcity-tax",
+        destination: "/case-studies/the-scarcity-tax",
+        permanent: true,
+      },
     ];
   },
 };
