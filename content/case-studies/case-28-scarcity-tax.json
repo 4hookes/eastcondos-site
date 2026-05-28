@@ -16,13 +16,13 @@
     "caption": "Tampines Avenue 10, where the only available three-bedroom listing in the days after Pinery's launch sat road-facing in the afternoon sun.",
     "alt": "Streetscape along Tampines Avenue 10"
   },
-  "coverImage": "",
-  "ogImage": "",
+  "coverImage": "/images/case-studies/case-28-lutfi-yati.jpg",
+  "ogImage": "https://eastcondos.sg/images/og/case-28-scarcity-tax-og.jpg",
   "clients": {
     "names": "Lutfi & Yati",
     "location": "Tampines (intended)",
-    "portrait": "",
-    "portraitCaption": "Photographed shortly after they collected the keys, 2026."
+    "portrait": "/images/case-studies/case-28-lutfi-yati.jpg",
+    "portraitCaption": "Lutfi and Yati with Elfi shortly after they collected the keys, 2026."
   },
   "clientDetails": [
     "Married Singaporean couple, early 30s",
@@ -107,9 +107,9 @@
       "year": "2026",
       "title": "The Resolution — what twenty-one days of patience bought them",
       "chapterTitle": "Move 03 · The Resolution",
-      "image": "",
-      "imageCaption": "The three-bedder Lutfi and Yati eventually secured — same street, inward-facing, better layout, well-priced.",
-      "imageAlt": "Inward-facing three-bedroom unit, Tampines",
+      "image": "/images/case-studies/case-28-lutfi-yati.jpg",
+      "imageCaption": "Lutfi and Yati with Elfi after they collected the keys — a 3-bedder along Tampines Avenue 10, inward-facing, well-priced.",
+      "imageAlt": "Lutfi and Yati with Elfi Abdullah after collecting their condo keys",
       "marketContext": "By the third week after the launch, listings began returning to the platforms — sellers who'd been holding back to gauge the post-launch market, plus a fresh batch of motivated owners. The roadside listing was still there. Its price had not moved.",
       "rows": [
         { "label": "Wait time", "value": "Three weeks (21 days)" },
