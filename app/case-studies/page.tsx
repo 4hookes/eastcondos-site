@@ -11,6 +11,20 @@ export const metadata: Metadata = {
     description: indexData.subtext,
     type: "website",
     url: "https://eastcondos.sg/case-studies",
+    images: [
+      {
+        url: "https://eastcondos.sg/images/og/case-studies-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Elfi Abdullah with clients at EastCondos.sg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${indexData.heading} — EastCondos.sg`,
+    description: indexData.subtext,
+    images: ["https://eastcondos.sg/images/og/case-studies-og.jpg"],
   },
 };
 
