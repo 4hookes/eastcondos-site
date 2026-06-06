@@ -1,0 +1,154 @@
+{
+  "slug": "buy-the-blueprint",
+  "title": "Buy the Blueprint",
+  "titleHtml": "Buy the <em>Blueprint</em>",
+  "standfirst": "A half-built neighbourhood looks like a risk. It isn't. It's a plan you can read — for free — before anyone else prices it in. This is how you buy the town instead of just the condo.",
+  "kicker": "BUYING THE BLUEPRINT · JUNE 2026",
+  "publishDate": "2026-06-06",
+  "readingTimeMinutes": 7,
+  "ogImage": "/images/journal/buy-the-blueprint/hero.jpg",
+  "coverImage": "/images/journal/buy-the-blueprint/hero.jpg",
+  "coverImageAlt": "A dusk aerial of a maturing residential estate in Singapore — condominium towers, pools and greenery, with more plots still being built around the edges",
+  "coverImageCaption": "A town mid-build. The mall is open, the MRT is running, and the empty plots around it are already spoken for on a plan anyone can read.",
+  "excerpt": "When you buy a new launch in a half-built area, you're not buying a condo — you're buying the government's plan to finish the whole town. Here's how to read that plan before it's priced in, using Lentor as the live example.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "New Launch Analysis",
+  "framework": {
+    "name": "Buy the Blueprint",
+    "id": "buy-the-blueprint"
+  },
+  "seo": {
+    "metaTitle": "Buy the Blueprint: How to Read a New Town Before It's Priced In — EastCondos.sg",
+    "metaDescription": "A half-built area isn't a risk — it's a funded plan you can read for free. Using Lentor as the live example: 11 plots, 5,000 homes, and land that came in at $920 psf. Here's the move.",
+    "keywords": [
+      "Lentor Gardens",
+      "Lentor new launch",
+      "buying new launch half-built area",
+      "URA master plan property",
+      "Lentor MRT condo",
+      "new launch vs resale Singapore",
+      "HDB upgrader new launch 2026"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/buy-the-blueprint"
+  },
+  "relatedSlugs": ["yesterdays-launch-price-earlier-phase-play"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "Five years ago, this whole patch of Lentor was jungle. Nothing was there.\n\nToday there's a mall. An MRT station. Seven condominiums, either finished or going up. The same stretch of land that looked like nothing now looks like a neighbourhood.\n\nMost buyers look at a place like this and feel the risk. It's half-built. The trees are still coming down on the next plot over. The roads aren't all there yet. Surely it's safer to buy somewhere already finished?\n\nHere is the part most people miss. When you buy a new launch in a half-built area, you are not really buying a condo. You are buying the government's plan to finish the whole town. And that plan is not a guess — it's drawn, funded, and public."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "11",
+          "label": "Plots in the plan",
+          "note": "The full Lentor parcel, drawn out from the start"
+        },
+        {
+          "number": "5,000",
+          "label": "Homes when it's done",
+          "note": "Built around one central park connecting them all"
+        },
+        {
+          "number": "$920",
+          "suffix": " PSF",
+          "label": "The land floor",
+          "note": "The cheapest plot of the whole lot — without losing the certainty"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "You're Not Buying a Condo. You're Buying a Town."
+    },
+    {
+      "type": "prose",
+      "content": "Think about what actually makes a condo go up in value over time. It is rarely the building itself. Concrete and glass age. What lifts a home is everything around it — the train line that opens, the mall that fills up, the schools that move in, the park that turns a row of blocks into a place people want to live.\n\nIn a finished town, all of that is already in the price. You pay for the certainty because you can see it with your own eyes.\n\nIn a half-built town, that future hasn't been priced in yet — but it has been promised. And in 13 years of doing this, I have never once seen the government start a town and walk away. They always finish. The mall gets built. The MRT opens. The park gets planted. The question is never really whether the town gets finished. It's whether you bought in before everyone else could see it was going to."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The Plan Is Already Drawn"
+    },
+    {
+      "type": "prose",
+      "content": "This is the part that surprises people: you don't have to trust me, and you don't have to trust the developer's brochure. The plan is public.\n\nFor Lentor, it's all there. Eleven plots of land. About 5,000 homes when the whole thing is complete. A large park sitting right in the middle, connecting every one of them. It is funded. It is happening. Some of it is already standing.\n\nWhen a plan like that is on paper and the early pieces are already built — the mall trading, the train running, the first condo finished and lived in — the uncertainty that normally comes with a new area has mostly been removed. You are no longer betting on whether the town happens. You're choosing where in the sequence you want to step in."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Lentor · Then vs Now",
+      "headers": ["What", "Five years ago", "Today"],
+      "rows": [
+        ["The land", "Jungle", "A named town with a drawn master plan"],
+        ["The mall", "None", "Open and trading"],
+        ["The MRT", "None", "Running"],
+        ["Condos", "Zero", "Seven, finished or going up"],
+        ["The park", "Forest", "Planned, central, connecting all 11 plots"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "The Proof Is Already Happening Next Door"
+    },
+    {
+      "type": "prose",
+      "content": "If reading a master plan still feels abstract, you don't have to imagine how this ends. You can watch it happening in real time, a few stops away, at Tampines North.\n\nTampines North is being built right in front of us — the same idea, a planned extension of an existing town. The people who bought the early HDB flats there, at projects like Greenweave and Greenridge, got in while it still looked unfinished. Today those same flats are changing hands for around $300,000 more than the owners paid.\n\nThat is not a special case. It is what tends to happen when a planned town fills in around homes that were bought early. Lentor is simply the earlier version of the same story — a few chapters behind, with the same plan already on the table."
+    },
+    {
+      "type": "pull-quote",
+      "text": "The town getting finished was never the question. The only question was whether you bought before everyone could see it would.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "Where Lentor Gardens Sits — And Why the Price Matters"
+    },
+    {
+      "type": "prose",
+      "content": "So where does a project like Lentor Gardens fit into all of this? It's one of the last plots in the sequence.\n\nThat position is unusual, because it gives you two things that normally don't come together. First, the certainty: by the time the last plots launch, the town is already proven. The mall is open. The MRT is running. The first condo is done and lived in. There is very little left to imagine.\n\nSecond — and this is the part that doesn't usually survive — the land here came in the cheapest of the whole lot, at around $920 per square foot. Normally, the more certain a place becomes, the more you pay for it. Here, the most certain plot also sat on the lowest land cost. That means you get all the certainty of a finished town without paying the premium that certainty usually carries.\n\nThat combination — late in the sequence, lowest land cost — is the whole point. You are not paying extra to remove the risk. The risk was already removed by everything built before you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "How to Buy the Blueprint"
+    },
+    {
+      "type": "prose",
+      "content": "Here is the actual move — and you can do the first part yourself, today, for free.\n\nDon't look at the condo first. Look at the town.\n\nPull up the URA master plan. It is public, it is online, and anyone can read it. Find the area you're considering and count the empty plots around it. Every empty plot is a future neighbour — and that neighbour is going to pay more than you, because they're buying later, into a town that's more finished than the one you're looking at now.\n\nThen check the sequence. Is the mall open or just promised? Is the train running or still a line on a map? Is the first condo lived in, or still a showflat? The further along the town already is, the less you're betting and the more you're simply buying.\n\nWhen you read a new launch this way — town first, condo second — a half-built area stops looking like a gamble. You can see exactly what is coming, who's funding it, and where the price sits relative to everyone who will arrive after you.\n\nYou are not early and risky. You are early and right."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On Buying the Blueprint",
+      "text": "People walk into a half-built area and feel the risk. I read the master plan and feel the opposite. The plan is drawn, it's funded, and the early pieces are already standing. The only real variable left is the price you pay to get in — and the last plots, on the cheapest land, in a town that's already proven, are where that maths works hardest in your favour. Don't buy the condo. Buy the blueprint.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Buy the Blueprint",
+      "body": "If you're weighing a new launch in a developing area and want to know whether the master plan, the sequence, and the entry price actually line up in your favour, a Clarity Call is where we read the blueprint together — with the specific project, the real numbers, and an honest view of where you'd be in the sequence.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
