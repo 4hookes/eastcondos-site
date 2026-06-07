@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { BuyerBio, HdbInputs, TargetInputs, VerdictResult } from "@/lib/safetyMeter";
 import { computeVerdict, maxLoan, netCashProceeds } from "@/lib/safetyMeter";
 import LastUpdated from "@/components/editorial/LastUpdated";
+import SpotGraphic from "@/components/SpotGraphic";
 import { StepRail } from "./components/StepRail";
 
 const SAFETY_METER_LAST_UPDATED = "2026-04-25";
@@ -95,6 +96,9 @@ export default function SafetyMeterPage() {
     <div className="bg-cream min-h-screen">
       {/* ===== Lean hero ===== */}
       <section className="border-b border-charcoal text-center px-5 sm:px-10 py-8 sm:py-12">
+        <div className="max-w-[360px] mx-auto mb-4 sm:mb-5 opacity-90">
+          <SpotGraphic name="spot-safety" variant="dark" priority />
+        </div>
         <div className="inline-flex items-center gap-3 mb-3">
           <span className="w-5 sm:w-7 h-px bg-amber-deep" />
           <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">

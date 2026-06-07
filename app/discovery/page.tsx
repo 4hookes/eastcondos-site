@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import styles from "./discovery.module.css";
+import SpotGraphic from "@/components/SpotGraphic";
 
 const WHATSAPP_NUMBER = "6596667496";
 
@@ -120,6 +121,9 @@ export default function DiscoveryPage() {
           A short form. If we&apos;re a good fit, I&apos;ll WhatsApp you back to set up a 7-minute call —
           no pressure, no pitch.
         </p>
+        <div className="mt-8 sm:mt-10 max-w-[540px] mx-auto opacity-90">
+          <SpotGraphic name="spot-consultation" variant="dark" priority />
+        </div>
       </section>
 
       {/* ===== Body ===== */}

@@ -3,6 +3,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import processData from "@/content/process.json";
 import LastUpdated from "@/components/editorial/LastUpdated";
+import SpotGraphic from "@/components/SpotGraphic";
 
 const LAST_UPDATED = "2026-04-25";
 
@@ -26,7 +27,7 @@ export default function ProcessPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-charcoal py-24 text-center">
+      <section className="bg-charcoal py-16 sm:py-20 text-center">
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <Badge variant="amber-outline" className="mb-6">
             {processData.sectionLabel}
@@ -38,6 +39,9 @@ export default function ProcessPage() {
             {processData.subtext}
           </p>
           <LastUpdated date={LAST_UPDATED} align="center" tone="onDark" />
+          <div className="mt-6 sm:mt-8 max-w-2xl mx-auto">
+            <SpotGraphic name="spot-journey" variant="light" priority />
+          </div>
         </div>
       </section>
 

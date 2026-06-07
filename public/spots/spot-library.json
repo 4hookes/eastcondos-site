@@ -1,0 +1,14 @@
+{
+  "$schema": "EastCondos spot-illustration manifest — single source of truth.",
+  "style": "Modern Luxe hairline editorial line illustration: charcoal #1A1A2E strokes + small amber #D4A843 accents. 16:9, transparent PNG, max ~1600px wide.",
+  "usage": "Website: <SpotGraphic name=\"...\" variant=\"dark|light\" />. Variant 'light' (cream strokes) on CHARCOAL backgrounds; 'dark' (charcoal) on cream.",
+  "source": "gemini-3-pro-image",
+  "spots": [
+    { "name": "spot-journey", "label": "The Journey", "description": "HDB block on the left, dotted milestone path, condo tower on the right — the upgrade story.", "placements": ["/process hero"], "keywords": ["journey","upgrade","HDB to condo","path","milestones","process"] },
+    { "name": "spot-eastcoast", "label": "East Coast skyline", "description": "Panorama of East-coast condo towers behind a calm coastline. Signature brand piece.", "placements": ["about","homepage divider","footer band","Strategy Session"], "keywords": ["East Coast","skyline","D14-18","panorama","coast","brand"] },
+    { "name": "spot-safety", "label": "Safety Meter", "description": "Shield with a checkmark + a gauge needle pointing to the safe zone (amber).", "placements": ["/safety-meter hero","Safety Meter landing"], "keywords": ["safety","secure","shield","gauge","meter","low risk"] },
+    { "name": "spot-consultation", "label": "Consultation", "description": "Two chairs facing each other, overlapping speech bubbles (one with a house), notebook + pen.", "placements": ["/discovery hero","/strategy-session hero"], "keywords": ["consultation","conversation","advisory","talk","meeting","discovery call"] },
+    { "name": "spot-nl-resale", "label": "New launch vs Resale", "description": "Two condo buildings on a balance scale — the real-cost comparison metaphor.", "placements": ["/new-launch-vs-resale header"], "keywords": ["new launch","resale","compare","balance","trade-off","real cost"] },
+    { "name": "spot-numbers", "label": "Running the numbers", "description": "Desk scene: calculator, documents with a line chart, amber magnifier, pen.", "placements": ["/calculator hero"], "keywords": ["calculator","numbers","analysis","review","run the numbers","magnifier"] }
+  ]
+}

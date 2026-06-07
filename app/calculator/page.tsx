@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
 import styles from "./calculator.module.css";
 import LastUpdated from "@/components/editorial/LastUpdated";
+import SpotGraphic from "@/components/SpotGraphic";
 import { CALCULATOR_LAST_UPDATED } from "./meta";
 
 // ===== Math helpers =====
@@ -128,6 +129,9 @@ export default function CalculatorPage() {
           align="center"
           note="TDSR, MSR, LTV and stress-test rates reflect MAS rules current on this date"
         />
+        <div className="mt-8 sm:mt-10 max-w-[560px] mx-auto opacity-90">
+          <SpotGraphic name="spot-numbers" variant="dark" priority />
+        </div>
       </section>
 
       {/* ===== Main ===== */}
