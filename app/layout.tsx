@@ -27,6 +27,23 @@ export const metadata: Metadata = {
       "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence.",
     type: "website",
     url: "https://eastcondos.sg",
+    siteName: "EastCondos",
+    locale: "en_SG",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "EastCondos — Singapore's data-first condo investment advisory",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
+    description:
+      "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -110,7 +127,7 @@ export default function RootLayout({
                           name: "Property Portfolio Review",
                           serviceType: "Property investment advisory",
                           description:
-                            "A data-first review of your current property position using the Property by Design (PBD™) 11-factor framework — entry pricing, exit audience, financing runway, and portfolio fit.",
+                            "A data-first review of your current property position using the Property by Design (PBD™) 12-factor LENS framework — entry pricing, exit audience, financing runway, and portfolio fit.",
                           provider: { "@id": "https://eastcondos.sg/#organization" },
                         },
                       },
