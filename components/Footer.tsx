@@ -40,6 +40,7 @@ export default function Footer() {
             <ul className="list-none space-y-2 text-[15px] text-cream/85">
               <li><a className="hover:text-amber" href="/quiz">Readiness Quiz</a></li>
               <li><a className="hover:text-amber" href="/calculator">Calculator</a></li>
+              <li><a className="hover:text-amber" href="/new-launch-vs-resale">New Launch vs Resale</a></li>
               <li><a className="hover:text-amber" href="/disclaimer-hdb-condo-meter-planner">HDB-Condo Meter</a></li>
             </ul>
           </div>

@@ -113,6 +113,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
+      url: `${baseUrl}/new-launch-vs-resale`,
+      lastModified: new Date("2026-06-07"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/team`,
       lastModified: new Date(),
       changeFrequency: "monthly",
