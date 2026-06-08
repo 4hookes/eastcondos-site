@@ -1,0 +1,209 @@
+/* New Launch vs Resale planner — shares the visual language of the loan calculator. */
+
+/* Calculator number fields — clean sans-serif tabular figures on white, for readability */
+.numberInput {
+  font-family: var(--font-inter), sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  font-size: 22px;
+  font-weight: 600;
+  padding: 13px 16px 13px 42px;
+  background: #ffffff;
+  border: 1px solid #1a1a2e;
+  color: #1a1a2e;
+  width: 100%;
+  letter-spacing: -0.01em;
+}
+.numberInput:focus {
+  outline: 2px solid #d4a843;
+  outline-offset: -1px;
+}
+.numberInputNoPrefix {
+  padding-left: 16px;
+}
+
+/* Dropdown (resale tenure / lease-start year) */
+.select {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 42px 14px 14px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%231A1A2E' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  border: 1px solid #1a1a2e;
+  color: #1a1a2e;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.select:focus {
+  outline: 2px solid #d4a843;
+  outline-offset: -1px;
+}
+
+/* Compact dropdown that fills a comparison-table cell (cell provides the border) */
+.cellSelect {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 11px 30px 11px 12px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%231A1A2E' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: none;
+  color: #1a1a2e;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.cellSelect:focus {
+  outline: none;
+}
+@media (max-width: 420px) {
+  .cellSelect {
+    font-size: 11.5px;
+    padding: 10px 24px 10px 8px;
+  }
+}
+
+.inputWrap {
+  position: relative;
+}
+.inputWrap::before {
+  content: attr(data-prefix);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6b6b6b;
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+.inputWrap[data-suffix]::after {
+  content: attr(data-suffix);
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #6b6b6b;
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+/* Segmented two-/three-option control (tenure type, rent vs stay) */
+.segmented {
+  display: flex;
+  border: 1px solid #1a1a2e;
+  background: #f2ebdb;
+}
+.segBtn {
+  flex: 1;
+  padding: 11px 10px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #1a1a2e;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #1a1a2e;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.segBtn:last-child {
+  border-right: none;
+}
+.segBtnActive {
+  background: #1a1a2e;
+  color: #f2ebdb;
+}
+
+/* Range sliders — touch-friendly (dark cards) */
+.range {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+}
+.range::-webkit-slider-runnable-track {
+  height: 3px;
+  background: rgba(242, 235, 219, 0.3);
+}
+.range::-moz-range-track {
+  height: 3px;
+  background: rgba(242, 235, 219, 0.3);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  background: #d4a843;
+  border: 2px solid #f2ebdb;
+  border-radius: 50%;
+  margin-top: -12px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+.range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: #d4a843;
+  border: 2px solid #f2ebdb;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Light-background variant of the slider track (used inside the assumptions panel) */
+.rangeLight::-webkit-slider-runnable-track {
+  background: rgba(26, 26, 46, 0.18);
+}
+.rangeLight::-moz-range-track {
+  background: rgba(26, 26, 46, 0.18);
+}
+
+/* Caveat icon */
+.caveatIcon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #b8902f;
+  color: #b8902f;
+  font-family: var(--font-dm-serif), serif;
+  font-size: 16px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 720px) {
+  .numberInput {
+    font-size: 21px;
+    padding: 12px 14px 12px 34px;
+  }
+  .numberInputNoPrefix {
+    padding-left: 14px;
+  }
+}
+@media (max-width: 380px) {
+  .numberInput {
+    font-size: 19px;
+  }
+}
