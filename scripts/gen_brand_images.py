@@ -215,12 +215,33 @@ def make_favicon_source(out: Path, size: int = 512, *, ios: bool = False):
     print(f"wrote {out.relative_to(ROOT)} ({out.stat().st_size // 1024} KB · {size}x{size})")
 
 
+def make_favicon_ico(out: Path):
+    """Multi-resolution .ico for legacy clients that hard-request /favicon.ico
+    (old WhatsApp link previews, IE, some RSS readers). Generated from the same
+    design as icon.png at 16/32/48 sizes — Pillow packs them into one .ico."""
+    sizes = [(16, 16), (32, 32), (48, 48), (64, 64)]
+    base = Image.new("RGB", (256, 256), CHARCOAL_DEEP)
+    d = ImageDraw.Draw(base)
+    # Hairline amber border
+    d.rectangle([(6, 6), (250, 250)], outline=AMBER, width=2)
+    font = f(DM_SERIF, int(256 * 0.72))
+    letter = "E"
+    bbox = d.textbbox((0, 0), letter, font=font)
+    lw, lh = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    d.text(((256 - lw) // 2 - bbox[0], (256 - lh) // 2 - bbox[1] - 5), letter, font=font, fill=CREAM)
+    # Tiny amber dot
+    d.ellipse([(125, 18), (131, 24)], fill=AMBER)
+    base.save(out, format="ICO", sizes=sizes)
+    print(f"wrote {out.relative_to(ROOT)} (multi-res {sizes}, {out.stat().st_size // 1024} KB)")
+
+
 def main():
     PUBLIC.mkdir(parents=True, exist_ok=True)
     make_og_landscape(PUBLIC / "og-image.png")
     make_og_square(PUBLIC / "og-square.png")
     make_favicon_source(APP / "icon.png", size=512)
     make_favicon_source(APP / "apple-icon.png", size=180, ios=True)
+    make_favicon_ico(APP / "favicon.ico")
 
 
 if __name__ == "__main__":
