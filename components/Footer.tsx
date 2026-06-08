@@ -41,6 +41,7 @@ export default function Footer() {
               <li><a className="hover:text-amber" href="/quiz">Readiness Quiz</a></li>
               <li><a className="hover:text-amber" href="/calculator">Calculator</a></li>
               <li><a className="hover:text-amber" href="/new-launch-vs-resale">New Launch vs Resale</a></li>
+              <li><a className="hover:text-amber" href="/progressive-payment-calculator">Progressive Payment</a></li>
               <li><a className="hover:text-amber" href="/disclaimer-hdb-condo-meter-planner">HDB-Condo Meter</a></li>
             </ul>
           </div>

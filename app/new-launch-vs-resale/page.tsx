@@ -303,7 +303,7 @@ export default function NewLaunchVsResalePage() {
                 muted
               />
               <CompareRow label="Renovation" nl={fmt(inputs.nlReno)} re={fmt(inputs.resaleReno)} shaded lowerBetter nlVal={inputs.nlReno} reVal={inputs.resaleReno} />
-              <CompareRow label={`Loan interest · ${yrs} yrs`} nl={fmt(r.nlInterest)} re={fmt(r.resaleInterest)} hint={`New launch: progressive draw during the ${waitYrs}-yr wait + full loan during the ${liveYrs} live-in ${liveYrs === 1 ? "year" : "years"}. Resale: fully drawn from day one for all ${yrs} years.`} lowerBetter nlVal={r.nlInterest} reVal={r.resaleInterest} />
+              <CompareRow label={`Loan interest · ${yrs} yrs`} nl={fmt(r.nlInterest)} re={fmt(r.resaleInterest)} hint={`New launch: progressive draw during the ${waitYrs}-yr wait + full loan during the ${liveYrs} live-in ${liveYrs === 1 ? "year" : "years"}. Resale: fully drawn from day one for all ${yrs} years. See the full schedule in the Progressive Payment calculator.`} link={{ href: "/progressive-payment-calculator", label: "Progressive payment →" }} lowerBetter nlVal={r.nlInterest} reVal={r.resaleInterest} />
               <CompareRow label={`Maintenance · ${yrs} yrs`} nl={liveYrs > 0 ? fmt(r.nlMaintCost) : "None till move-in"} re={fmt(r.maintCost)} hint={liveYrs > 0 ? `New launch only pays during the ${liveYrs} ${liveYrs === 1 ? "year" : "years"} after TOP. Same monthly rate assumed.` : undefined} shaded />
               <CompareRow label={`Property tax · ${yrs} yrs`} nl={liveYrs > 0 ? fmt(r.nlPropTaxCost) : "None till move-in"} re={fmt(r.propTaxCost)} hint={liveYrs > 0 ? `Tax tracks Annual Value (≈3% of property value), so the new launch's tax scales with its price.` : undefined} />
               <CompareRow label={`Rent · ${yrs} yrs`} nl={fmt(r.rentCost)} re="Move in now" hint="Rent only counts during the wait years — once you move in, it stops." shaded />
@@ -636,6 +636,7 @@ function CompareRow({
   lowerBetter,
   nlVal,
   reVal,
+  link,
 }: {
   label: string;
   nl: string;
@@ -646,6 +647,7 @@ function CompareRow({
   lowerBetter?: boolean;
   nlVal?: number;
   reVal?: number;
+  link?: { href: string; label: string };
 }) {
   const nlBetter = lowerBetter && nlVal !== undefined && reVal !== undefined && nlVal < reVal;
   const reBetter = lowerBetter && nlVal !== undefined && reVal !== undefined && reVal < nlVal;
@@ -657,6 +659,11 @@ function CompareRow({
       <div className="px-3 sm:px-6 py-3.5">
         <div className="text-[12.5px] sm:text-[14.5px] text-charcoal leading-snug">{label}</div>
         {hint && <div className="text-[11px] sm:text-[12px] text-gray-500 mt-0.5 leading-snug">{hint}</div>}
+        {link && (
+          <Link href={link.href} className="inline-block mt-1 text-[11px] sm:text-[12px] text-amber-deep hover:text-charcoal underline decoration-amber-deep/40 hover:decoration-charcoal">
+            {link.label}
+          </Link>
+        )}
       </div>
       <div className={`px-2 sm:px-5 py-3.5 text-right ${numCls}`}>{cell(nl, !!nlBetter)}</div>
       <div className={`px-2 sm:px-5 py-3.5 text-right ${numCls}`}>{cell(re, !!reBetter)}</div>
