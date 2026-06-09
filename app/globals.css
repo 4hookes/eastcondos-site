@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Division team hub: strip marketing chrome so the page screenshots clean for WhatsApp. */
+html.division-bare body > header,
+html.division-bare body > nav,
+html.division-bare body > footer,
+html.division-bare header.border-b-2,
+html.division-bare footer.bg-charcoal,
+html.division-bare .fixed.bottom-6.right-6 {
+  display: none !important;
+}
+
 /* ============================================
    Base — layout & scroll
    ============================================ */
