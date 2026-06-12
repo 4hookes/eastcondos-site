@@ -18,7 +18,7 @@ const STATS = [
   { value: "13", label: "Years of Experience" },
   { value: "500+", label: "Families Served", accentChar: "+" },
   { value: "80%", label: "Referral Rate", accentChar: "%" },
-  { value: "4.9", label: "Google Rating" },
+  { value: "435k", label: "Transactions on File" },
 ] as const;
 
 export default function TrustBar() {

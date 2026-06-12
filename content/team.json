@@ -3,7 +3,7 @@
   "heading": "Meet Our Team",
   "subtext": "A dedicated team of property specialists committed to your successful upgrade journey.",
   "teamPhoto": {
-    "src": "https://eastcondos.sg/wp-content/uploads/2026/01/team-cutout.png",
+    "src": "",
     "alt": "EastCondos team photo"
   },
   "members": [
@@ -12,8 +12,8 @@
       "role": "HDB-to-Condo Specialist",
       "tag": "Team Lead",
       "oneLiner": "13 years helping East Singapore families upgrade with confidence.",
-      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/elfi-whatsapp-e1769140200941.avif",
-      "bio": "With 13 years of experience specializing in East Singapore property, Elfi has helped over 500 families successfully upgrade from HDB to condo. Her deep knowledge of Districts 15, 16, and 18 means she spots opportunities others miss—and protects families from costly mistakes. Elfi believes in honest advice, even if it means telling you to wait. Her reputation is built on trust, not quick sales, which is why 80% of her clients come from referrals.",
+      "photo": "/images/team/elfi.png",
+      "bio": "With 13 years of experience specializing in East Singapore property, Elfi has helped over 500 families successfully upgrade from HDB to condo. His deep knowledge of Districts 15, 16, and 18 means he spots opportunities others miss—and protects families from costly mistakes. Elfi believes in honest advice, even if it means telling you to wait. His reputation is built on trust, not quick sales, which is why 80% of his clients come from referrals.",
       "phone": "+65 9666 7496",
       "whatsapp": "https://wa.me/6596667496"
     },
@@ -21,7 +21,7 @@
       "name": "Jimmy",
       "role": "Technology & AI Lead",
       "oneLiner": "Building smart tools that give our clients a real edge.",
-      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Jimmy.avif",
+      "photo": "",
       "bio": "Jimmy powers the tech behind EastCondos. He builds AI-driven tools that analyse market data, forecast price movements, and generate personalised strategy reports for every client. From automated property matching to custom affordability calculators, Jimmy ensures our team works faster and smarter—so you get insights that most agents simply can't offer. He's the reason our clients get their strategy videos within 24 hours, not 24 days.",
       "email": "jimmy@eastcondos.sg"
     },
@@ -29,7 +29,7 @@
       "name": "Alyssa",
       "role": "Client Relations Manager",
       "oneLiner": "Ensuring smooth communication and support throughout your journey.",
-      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Alyssa.avif",
+      "photo": "",
       "bio": "Alyssa is the friendly voice that guides you through every step of your upgrade journey. She ensures seamless communication between all parties—lawyers, bankers, and agents—so you never feel lost in the process. Her dedication to client care means you'll always have someone to turn to with questions, concerns, or just for reassurance during what can be a stressful time.",
       "email": "alyssa@eastcondos.sg"
     },
@@ -37,7 +37,7 @@
       "name": "Azhar",
       "role": "Listing & Buyer Specialist",
       "oneLiner": "Matching the right buyers to the right homes, every time.",
-      "photo": "https://eastcondos.sg/wp-content/uploads/2026/01/Aaron.avif",
+      "photo": "",
       "bio": "Azhar is the person you want in your corner when it's time to sell your HDB or secure your next condo. He specialises in pricing strategy, preparing listings that attract serious buyers, and negotiating deals that protect your interests. On the buying side, Azhar's deep knowledge of East Singapore inventory means he often finds units before they hit the public market. His clients appreciate his calm, no-pressure approach and his knack for making complex transactions feel straightforward.",
       "email": "azhar@eastcondos.sg"
     }

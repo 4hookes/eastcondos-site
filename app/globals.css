@@ -26,7 +26,8 @@ html.division-bare .fixed.bottom-6.right-6 {
   }
 
   body {
-    @apply text-body antialiased bg-offwhite font-sans text-lg leading-relaxed;
+    @apply antialiased bg-charcoal-deep font-sans text-lg leading-relaxed;
+    color: rgba(242, 235, 219, 0.82);
 
     /* Premium typography rendering */
     -webkit-font-smoothing: antialiased;
@@ -36,15 +37,14 @@ html.division-bare .fixed.bottom-6.right-6 {
 
   /* Amber text selection highlight */
   ::selection {
-    background: rgba(212, 168, 67, 0.2);
-    color: #1A1A2E;
+    background: rgba(212, 168, 67, 0.35);
+    color: #0E0E1F;
   }
 
   /* Premium focus ring — replaces default blue outline */
   *:focus-visible {
     outline: 2px solid #D4A843;
     outline-offset: 3px;
-    border-radius: 4px;
   }
 
   /* Webkit scrollbar styling */
@@ -52,14 +52,14 @@ html.division-bare .fixed.bottom-6.right-6 {
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #FAFAF8;
+    background: #0E0E1F;
   }
   ::-webkit-scrollbar-thumb {
-    background: #9CA3AF;
+    background: #2D2D44;
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #6B7280;
+    background: #4a4a6a;
   }
 }
 
@@ -311,6 +311,158 @@ html.division-bare .fixed.bottom-6.right-6 {
   }
   .photo-badge {
     @apply absolute top-4 left-4 bg-amber text-charcoal text-[12px] uppercase tracking-[0.2em] font-semibold px-3.5 py-2;
+  }
+
+  /* ============================================
+     Concrete Editorial — Direction B system
+     Dark-dominant. Display type does the talking.
+     Serif italic = the annotation voice. Mono = data voice.
+     ============================================ */
+
+  /* Display headlines — Inter Display, ultra-light, huge, tight.
+     <b> / <strong> inside = weight 400 emphasis (never bold). */
+  .display-hero {
+    @apply font-display text-cream;
+    font-weight: 200;
+    font-size: clamp(3.2rem, 8vw, 7.2rem);
+    line-height: 0.97;
+    letter-spacing: -0.045em;
+  }
+  .display-section {
+    @apply font-display text-cream;
+    font-weight: 200;
+    font-size: clamp(2.2rem, 4.6vw, 3.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+  }
+  .display-block {
+    @apply font-display text-cream;
+    font-weight: 300;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+  .display-hero b, .display-hero strong,
+  .display-section b, .display-section strong,
+  .display-block b, .display-block strong {
+    font-weight: 400;
+  }
+  /* On cream surfaces the display voice flips to charcoal */
+  .surface-light .display-hero,
+  .surface-light .display-section,
+  .surface-light .display-block {
+    @apply text-charcoal;
+  }
+
+  /* Serif italic accent inside display headlines (the editorial wink) */
+  .display-hero i, .display-hero em,
+  .display-section i, .display-section em,
+  .display-block i, .display-block em {
+    @apply font-serif italic text-amber;
+    letter-spacing: -0.01em;
+  }
+  .surface-light .display-hero em, .surface-light .display-hero i,
+  .surface-light .display-section em, .surface-light .display-section i,
+  .surface-light .display-block em, .surface-light .display-block i {
+    color: #B8902F;
+  }
+
+  /* Mono label — index lines, kickers, data labels */
+  .mono-label {
+    @apply font-mono text-[12px] uppercase text-amber;
+    letter-spacing: 0.3em;
+  }
+  .mono-label-dim {
+    @apply font-mono text-[12px] uppercase;
+    letter-spacing: 0.22em;
+    color: rgba(242, 235, 219, 0.5);
+  }
+  .surface-light .mono-label { color: #B8902F; }
+  .surface-light .mono-label-dim { color: #6B6B6B; }
+
+  /* Annotation — the serif italic margin-note voice, amber, hairline-left */
+  .annot {
+    @apply font-serif italic text-amber;
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    line-height: 1.5;
+    border-left: 1px solid #D4A843;
+    padding-left: 26px;
+  }
+  .surface-light .annot {
+    color: #B8902F;
+    border-left-color: #B8902F;
+  }
+
+  /* Exposed 6-column grid — the structural signature */
+  .gridlines {
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(242, 235, 219, 0.055) 0 1px,
+      transparent 1px calc(100% / 6)
+    );
+  }
+  .gridlines-light {
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(26, 26, 46, 0.07) 0 1px,
+      transparent 1px calc(100% / 6)
+    );
+  }
+  @media (max-width: 767px) {
+    .gridlines, .gridlines-light { background-image: none; }
+  }
+
+  /* Giant ghost numeral behind sections */
+  .meganum {
+    @apply font-serif select-none pointer-events-none;
+    font-size: clamp(140px, 22vw, 300px);
+    line-height: 1;
+    color: rgba(242, 235, 219, 0.05);
+  }
+  .surface-light .meganum { color: rgba(26, 26, 46, 0.06); }
+
+  /* Square buttons — no pills in Concrete Editorial */
+  .btn-square {
+    @apply inline-flex items-center justify-center bg-amber text-charcoal-deep
+           font-sans text-[12px] uppercase font-semibold px-8 py-4
+           transition-all duration-200 hover:bg-amber-light;
+    letter-spacing: 0.24em;
+  }
+  .btn-square-ghost {
+    @apply inline-flex items-center justify-center bg-transparent text-amber
+           font-sans text-[12px] uppercase font-medium px-8 py-4
+           border border-amber transition-all duration-200
+           hover:bg-amber hover:text-charcoal-deep;
+    letter-spacing: 0.24em;
+  }
+  .surface-light .btn-square-ghost {
+    @apply text-charcoal border-charcoal hover:bg-charcoal hover:text-cream;
+  }
+
+  /* Hairline borders on dark */
+  .hairline { border-color: rgba(242, 235, 219, 0.14); }
+  .hairline-strong { border-color: rgba(242, 235, 219, 0.3); }
+
+  /* Body prose on dark */
+  .prose-dark {
+    @apply text-[16.5px] leading-[1.8];
+    color: rgba(242, 235, 219, 0.66);
+  }
+  .prose-dark p + p { margin-top: 18px; }
+
+  /* Cream surface wrapper — readable long-form sections */
+  .surface-light {
+    @apply bg-cream;
+    color: #374151;
+  }
+
+  /* Light surfaces reset inherited text color (body default is cream-on-dark).
+     Explicit text-* utilities on descendants still win. */
+  .bg-cream,
+  .bg-paper,
+  .bg-offwhite,
+  .bg-white {
+    color: #374151;
   }
 }
 

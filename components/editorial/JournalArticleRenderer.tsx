@@ -38,7 +38,7 @@ export type JournalBlock =
 
 export default function JournalArticleRenderer({ body }: { body: JournalBlock[] }) {
   return (
-    <div className="max-w-[68ch] mx-auto">
+    <div className="max-w-[68ch] mx-auto min-w-0">
       {body.map((block, idx) => (
         <Fragment key={idx}>{renderBlock(block, idx)}</Fragment>
       ))}
@@ -274,7 +274,7 @@ function StatGridBlock({
       className={`my-10 sm:my-14 grid ${gridCols} border-l border-t border-charcoal bg-paper`}
     >
       {stats.map((s, i) => (
-        <div key={i} className="border-r border-b border-charcoal p-5 sm:p-7">
+        <div key={i} className="border-r border-b border-charcoal p-5 sm:p-7 min-w-0 [overflow-wrap:anywhere]">
           <div className="flex items-baseline gap-1">
             <span
               className="font-serif text-charcoal leading-none"

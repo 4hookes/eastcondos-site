@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
+import SpotGraphic from "@/components/SpotGraphic";
 import Link from "next/link";
 import styles from "./planner.module.css";
 import LastUpdated from "@/components/editorial/LastUpdated";
@@ -8,7 +9,6 @@ import { PLANNER_LAST_UPDATED } from "./meta";
 import { compute, DEFAULT_INPUTS, type PlannerInputs } from "@/lib/newLaunchVsResale";
 import { downloadPlannerPdf } from "@/lib/plannerPdf";
 import EcIcon, { type EcIconName } from "@/components/EcIcon";
-import SpotGraphic from "@/components/SpotGraphic";
 
 // Shared column template. Mobile: 2 columns (the two homes) with the row label stacked above.
 // Desktop: 3 columns (label · new launch · resale).
@@ -105,43 +105,35 @@ export default function NewLaunchVsResalePage() {
   const fmtSqft = (n: number) => Math.round(n).toLocaleString("en-SG") + " sqft";
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Hero ===== */}
-      <section className="border-b border-charcoal text-center px-5 sm:px-10 pt-9 pb-8 sm:pt-12 sm:pb-10 max-w-broadsheet mx-auto">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-3.5">
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            New Launch vs Resale · Real-Cost Planner
-          </span>
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-        </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(1.9rem, 6vw, 3.4rem)",
-            lineHeight: 1.02,
-            letterSpacing: "-0.025em",
-            maxWidth: "18ch",
-            marginBottom: "14px",
-          }}
-        >
-          Is a new launch <em className="text-amber-deep italic">really</em> more expensive?
-        </h1>
-        <p className="text-body text-[15px] sm:text-[17px] leading-snug max-w-[52ch] mx-auto mb-5">
-          A resale always looks cheaper on the sticker. Reset the lease, normalise the space, and
-          count what you&apos;d actually spend on each — then read the real gap.
-        </p>
-        <LastUpdated
-          date={PLANNER_LAST_UPDATED}
-          align="center"
-          note="Lease values use the official URA leasehold table"
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-16 md:pt-20 pb-12 overflow-hidden">
+        <SpotGraphic
+          name="spot-nl-resale"
+          variant="light"
+          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[36%] max-w-[420px] opacity-25 pointer-events-none"
         />
-        <div className="mt-7 sm:mt-9 max-w-[520px] mx-auto opacity-90">
-          <SpotGraphic name="spot-nl-resale" variant="dark" priority />
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-7">Tools / New Launch vs Resale · Real-Cost Planner</div>
+          <h1 className="display-hero !text-[clamp(2.4rem,5.5vw,4.6rem)] max-w-[18ch]">
+            Is a new launch <em>really</em> more expensive?
+          </h1>
+          <p className="annot mt-8 max-w-[46ch]">
+            A resale always looks cheaper on the sticker. Reset the lease, normalise the space, and
+            count what you&apos;d actually spend on each — then read the real gap.
+          </p>
+          <div className="mt-7">
+            <LastUpdated
+              date={PLANNER_LAST_UPDATED}
+              tone="onDark"
+              note="Lease values use the official URA leasehold table"
+            />
+          </div>
         </div>
       </section>
 
-      <main className="max-w-broadsheet mx-auto px-4 sm:px-10 py-8 sm:py-12">
+      <main className="surface-light gridlines-light px-4 sm:px-10 py-8 sm:py-12">
+       <div className="max-w-broadsheet mx-auto">
         {/* ===== THE CALCULATOR ===== */}
         <div className="bg-offwhite border border-charcoal shadow-premium">
           {/* Disclaimer — shown before anyone uses the planner */}
@@ -430,10 +422,11 @@ export default function NewLaunchVsResalePage() {
             Request a 7-min discovery call
           </Link>
         </div>
+       </div>
       </main>
 
       {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t border-charcoal text-[11px] sm:text-xs text-gray-500 leading-relaxed italic">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
         Lease normalisation uses the official URA &ldquo;Leasehold values as a percentage of freehold value&rdquo; table (DC
         Circular dc22-08, Appendix 2). Progressive payment interest follows the Normal Payment Scheme; resale interest is the
         amortising interest on a fully-drawn loan over the same window. CPF accrued interest is the 2.5% that builds on CPF used

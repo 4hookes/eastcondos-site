@@ -601,14 +601,14 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
                 </div>
               </Link>
               <Link
-                href="/strategy-session"
+                href="/discovery"
                 className="block border border-charcoal bg-charcoal text-cream p-5 sm:p-6 hover:bg-amber hover:text-charcoal transition-colors"
               >
                 <div className="text-[10px] uppercase tracking-[0.22em] text-amber mb-2">
                   Step 3 · Plan
                 </div>
                 <div className="font-serif text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Request a Clarity Call
+                  Request a 7-Min Discovery Call
                 </div>
                 <div className="text-[13px] sm:text-[14px] leading-relaxed opacity-80">
                   10 minutes. Your numbers, applied.

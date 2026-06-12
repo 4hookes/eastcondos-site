@@ -82,7 +82,7 @@ function formatDate(iso: string) {
 
 export default function GuidesIndexPage() {
   return (
-    <div className="bg-cream min-h-screen">
+    <div className="bg-charcoal-deep min-h-screen">
       {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
@@ -135,40 +135,29 @@ export default function GuidesIndexPage() {
         }}
       />
 
-      {/* ===== Masthead ===== */}
-      <section className="border-b border-charcoal max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
-        <div className="max-w-[720px]">
-          <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-7">
-            <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep font-medium">
-              The Guides · EastCondos.sg
-            </span>
-          </div>
-          <h1
-            className="font-serif text-charcoal"
-            style={{
-              fontSize: "clamp(2.2rem, 5.5vw, 4.2rem)",
-              lineHeight: 1.04,
-              letterSpacing: "-0.028em",
-              marginBottom: "20px",
-            }}
-          >
-            Practical references
-            <br />
-            for serious upgraders.
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-20 md:pt-28 pb-16 overflow-hidden">
+        <div
+          aria-hidden
+          className="meganum absolute right-6 md:right-12 top-2 md:top-6"
+        >
+          04
+        </div>
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-8">Index / The Guides</div>
+          <h1 className="display-hero max-w-[14ch]">
+            Practical references for <b>serious upgraders.</b>
           </h1>
-          <p
-            className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug"
-            style={{ maxWidth: "54ch" }}
-          >
+          <p className="annot mt-10 max-w-[44ch]">
             Each guide is a working reference — structured answers to the
-            questions that actually come up in an upgrade advisory. No fluff, no
-            generic copy.
+            questions that actually come up in an upgrade advisory. No fluff,
+            no generic copy.
           </p>
         </div>
       </section>
 
-      <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
+      <main className="surface-light gridlines-light px-5 sm:px-10 py-12 sm:py-20">
+       <div className="max-w-broadsheet mx-auto">
         {/* ===== Guides label ===== */}
         <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
           <span className="w-5 sm:w-7 h-px bg-amber-deep" />
@@ -354,16 +343,17 @@ export default function GuidesIndexPage() {
             className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
             style={{ color: "rgba(242, 235, 219, 0.7)" }}
           >
-            If a guide resonates with your situation, book a 10-minute Clarity
-            Call. Same frameworks, applied to your numbers.
+            If a guide resonates with your situation, book a 7-minute discovery
+            call. Same frameworks, applied to your numbers.
           </p>
           <Link
-            href="/strategy-session"
+            href="/discovery"
             className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
           >
-            Request a Clarity Call
+            Request a 7-Min Discovery Call
           </Link>
         </div>
+       </div>
       </main>
     </div>
   );

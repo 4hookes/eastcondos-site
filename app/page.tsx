@@ -2,7 +2,7 @@ import HeroCover from "@/components/editorial/HeroCover";
 import IndexRibbon from "@/components/editorial/IndexRibbon";
 import ChapterArticle from "@/components/editorial/ChapterArticle";
 import MethodGrid from "@/components/editorial/MethodGrid";
-import FounderQuote from "@/components/editorial/FounderQuote";
+import PhotoBand from "@/components/editorial/PhotoBand";
 import StoriesShelf from "@/components/editorial/StoriesShelf";
 import ByTheNumbers from "@/components/editorial/ByTheNumbers";
 import QuizBand from "@/components/editorial/QuizBand";
@@ -33,9 +33,17 @@ export default function Home() {
       <IndexRibbon />
       <ChapterArticle />
       <MethodGrid />
-      <FounderQuote
-        quote="I would rather lose a sale today than have a family lose ten years to a building they should never have bought. The model exists so that decision is not even close."
-        cite="— Elfi Abdullah, Founder · The Elfi Division, ERA Singapore"
+      <PhotoBand
+        src="/broll/family-window.jpg"
+        position="center 30%"
+        label="The point of all of it"
+        line={
+          <>
+            A home you can hold through anything &mdash; <em>not</em> a
+            payment that owns you.
+          </>
+        }
+        attribution="Why the model comes before the property"
       />
       <StoriesShelf />
       <ByTheNumbers />

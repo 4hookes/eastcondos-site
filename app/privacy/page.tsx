@@ -9,15 +9,18 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div>
-      <div className="bg-charcoal py-16 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">
+      <div className="bg-charcoal-deep gridlines border-b hairline py-16 px-6 md:px-12">
+        <div className="max-w-3xl mx-auto">
+        <h1 className="display-section">
           Privacy Policy
         </h1>
-        <p className="text-gray-300 mt-3 text-lg">
+        <p className="mono-label-dim mt-4">
           Last updated: February 2026
         </p>
+        </div>
       </div>
 
+      <div className="surface-light">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         <div className="text-charcoal [&_h2]:text-2xl [&_h2]:font-serif [&_h2]:mt-8 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-3 [&_p]:text-gray-600 [&_p]:leading-relaxed [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_li]:text-gray-600 [&_li]:mb-2 [&_a]:text-amber [&_a]:underline max-w-none space-y-8">
           <section>
@@ -176,6 +179,7 @@ export default function PrivacyPage() {
             </div>
           </section>
         </div>
+      </div>
       </div>
     </div>
   );

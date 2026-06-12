@@ -1,30 +1,43 @@
-const STEPS = [
+import EcIcon, { type EcIconName } from "@/components/EcIcon";
+
+const STEPS: {
+  no: string;
+  when: string;
+  icon: EcIconName;
+  title: string;
+  body: string;
+  deliverable: string;
+}[] = [
   {
     no: "01",
-    when: "Days 1\u20133",
+    when: "Days 1–3",
+    icon: "calculator",
     title: "Qualify & Plan",
-    body: "The financial model: TDSR, CPF, stress test, two-mortgage scenarios. We know what you can carry before we know what to look at.",
+    body: "We work out your loan limit, your CPF, and your stress test first. We know what you can carry before we know what to look at.",
     deliverable: "Personalised model + roadmap",
   },
   {
     no: "02",
-    when: "Weeks 1\u20136",
+    when: "Weeks 1–6",
+    icon: "growth-staircase",
     title: "Sell High",
-    body: "Tubear photography, listing across PropertyGuru, MIH, EdgeProp. Comparable sales analysis. Negotiation across multiple offers.",
+    body: "Pro photography, listed across PropertyGuru, MIH and EdgeProp. We check recent sales nearby and run the offers against each other.",
     deliverable: "HDB resale at maximum price",
   },
   {
     no: "03",
-    when: "Weeks 4\u201310",
+    when: "Weeks 4–10",
+    icon: "magnifier",
     title: "Buy Smart",
-    body: "The 7-key property report and 11-factor x-ray, run on every shortlist before a single viewing. No \u201cfeels right\u201d. Only \u201cpasses the test\u201d.",
+    body: "The 7-key report and 12-factor check, run on every place before a single viewing. No “feels right”. Only “passes the test”.",
     deliverable: "7-key report on every shortlist",
   },
   {
     no: "04",
-    when: "Months 3\u20136",
+    when: "Months 3–6",
+    icon: "key",
     title: "Execute",
-    body: "Concurrent timeline so HDB sale, condo completion, and your move all align. No temporary housing. No double-mortgage gap.",
+    body: "We line up your HDB sale, your new keys, and your move so they meet. No temporary housing. No paying two home loans at once.",
     deliverable: "Keys to keys, no gap period",
   },
 ];
@@ -33,40 +46,43 @@ export default function MethodGrid() {
   return (
     <section
       id="method"
-      className="bg-paper py-24 md:py-32 px-6 md:px-12 border-t border-charcoal"
+      className="bg-charcoal-deep gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline relative overflow-hidden"
     >
-      <div className="max-w-broadsheet mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16 border-b border-charcoal pb-8">
-          <div className="chapter-marker">
-            Chapter 02<b>The Method</b>
-          </div>
-          <h2 className="headline-block max-w-[22ch]">
-            Every family receives the same four documents, in the same order,
-            before any property is discussed.
+      <div
+        aria-hidden
+        className="meganum absolute right-6 md:right-12 -top-2 md:top-2"
+      >
+        03
+      </div>
+      <div className="relative max-w-broadsheet mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16 border-b hairline pb-8">
+          <div className="mono-label">03 / The Method</div>
+          <h2 className="display-section max-w-[24ch]">
+            Every family receives the <b>same four documents</b>, in the same
+            order, before any property is discussed.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 border-l border-t border-charcoal">
+        <div className="grid grid-cols-1 md:grid-cols-4 border-l hairline border-t">
           {STEPS.map((s) => (
             <div
               key={s.no}
-              className="p-8 border-r border-b border-charcoal flex flex-col min-h-[340px] hover:bg-cream transition-colors duration-300"
+              className="p-8 border-r border-b hairline flex flex-col min-h-[340px] hover:bg-charcoal/60 transition-colors duration-300"
             >
-              <div className="flex justify-between items-baseline mb-5">
-                <div className="font-serif text-[48px] leading-none tracking-[-0.04em] text-charcoal/30">
+              <div className="flex justify-between items-baseline mb-6">
+                <div className="font-display font-extralight text-[52px] leading-none tracking-[-0.04em] text-cream/25">
                   {s.no}
                 </div>
-                <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium">
+                <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-amber">
                   {s.when}
                 </div>
               </div>
-              <h4 className="font-serif text-[26px] leading-tight tracking-[-0.01em] text-charcoal mb-3.5">
-                {s.title}
-              </h4>
-              <p className="text-[15px] leading-[1.65] text-body">{s.body}</p>
-              <div className="mt-auto pt-5 border-t border-dotted border-[#c9bfa3] text-[13px] uppercase tracking-[0.18em] text-amber-deep font-medium">
+              <EcIcon name={s.icon} variant="light" size={40} className="mb-5" />
+              <h4 className="display-block mb-4">{s.title}</h4>
+              <p className="prose-dark text-[14.5px]">{s.body}</p>
+              <div className="mt-auto pt-5 border-t hairline font-mono text-[11px] uppercase tracking-[0.2em] text-amber">
                 Deliverable
-                <b className="block font-serif font-normal text-charcoal text-[16px] normal-case tracking-normal mt-1">
+                <b className="block font-sans font-normal text-cream/90 text-[15px] normal-case tracking-normal mt-1.5">
                   {s.deliverable}
                 </b>
               </div>

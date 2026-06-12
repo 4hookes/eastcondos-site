@@ -8,7 +8,7 @@ const STEPS = [
 
 export function StepRail({ current, onStepClick }: { current: number; onStepClick?: (n: number) => void }) {
   return (
-    <div className="flex justify-center gap-0 pt-4">
+    <div className="surface-light flex justify-center gap-0 pt-6">
       {STEPS.map((s, i) => {
         const done = current > s.n;
         const isCurrent = current === s.n;

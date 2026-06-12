@@ -98,44 +98,37 @@ export default function CalculatorPage() {
   const num = useCallback((s: string) => parseFloat(s) || 0, []);
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Hero ===== */}
-      <section className="border-b border-charcoal text-center px-5 sm:px-10 py-10 sm:py-16 md:py-20 max-w-broadsheet mx-auto">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            Singapore Loan Eligibility
-          </span>
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-        </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(2rem, 7vw, 4.2rem)",
-            lineHeight: 1.0,
-            letterSpacing: "-0.025em",
-            maxWidth: "16ch",
-            marginBottom: "16px",
-          }}
-        >
-          How much can you <em className="text-amber-deep italic">borrow?</em>
-        </h1>
-        <p className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug max-w-[42ch] mx-auto mb-6 sm:mb-8">
-          Three answers, one calculation. Your maximum loan for private property, HDB with HDB
-          loan, and HDB with bank loan — all in one view.
-        </p>
-        <LastUpdated
-          date={CALCULATOR_LAST_UPDATED}
-          align="center"
-          note="TDSR, MSR, LTV and stress-test rates reflect MAS rules current on this date"
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-20 md:pt-28 pb-16 overflow-hidden">
+        <SpotGraphic
+          name="spot-numbers"
+          variant="light"
+          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[40%] max-w-[460px] opacity-25 pointer-events-none"
         />
-        <div className="mt-8 sm:mt-10 max-w-[560px] mx-auto opacity-90">
-          <SpotGraphic name="spot-numbers" variant="dark" priority />
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-8">Tools / Singapore Loan Eligibility</div>
+          <h1 className="display-hero max-w-[14ch]">
+            How much can you <em>borrow?</em>
+          </h1>
+          <p className="annot mt-10 max-w-[42ch]">
+            Three answers, one calculation. Your maximum loan for private
+            property, HDB with HDB loan, and HDB with bank loan — all in one
+            view.
+          </p>
+          <div className="mt-8">
+            <LastUpdated
+              date={CALCULATOR_LAST_UPDATED}
+              tone="onDark"
+              note="TDSR, MSR, LTV and stress-test rates reflect MAS rules current on this date"
+            />
+          </div>
         </div>
       </section>
 
       {/* ===== Main ===== */}
-      <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-9 sm:py-14">
+      <main className="surface-light gridlines-light px-5 sm:px-10 py-9 sm:py-14">
+       <div className="max-w-broadsheet mx-auto">
         {/* ----- Input section ----- */}
         <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
           <span className="w-5 sm:w-7 h-px bg-amber-deep" />
@@ -372,10 +365,11 @@ export default function CalculatorPage() {
             Request a 7-min discovery call
           </Link>
         </div>
+       </div>
       </main>
 
       {/* ----- Footnote ----- */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t border-charcoal text-[11px] sm:text-xs text-gray-500 leading-relaxed italic">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
         Calculations follow MAS Notice 645 (TDSR 55%) and MAS Notice 632/825 (MSR 30%). Bank loan
         eligibility is calculated at the higher of your offered rate or the 4% stress floor. HDB
         loan uses the prevailing concessionary rate. Tenure is capped at age 65 with a max of 30

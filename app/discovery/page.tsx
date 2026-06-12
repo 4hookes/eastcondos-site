@@ -95,39 +95,29 @@ export default function DiscoveryPage() {
   }, [name, age, income, timeline, goal, email, context, whatsapp, isFormReady]);
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Hero ===== */}
-      <section className="border-b border-charcoal text-center px-5 sm:px-10 py-10 sm:py-16 max-w-broadsheet mx-auto">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            Discovery call
-          </span>
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-        </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(2rem, 6vw, 3.6rem)",
-            lineHeight: 1.05,
-            letterSpacing: "-0.025em",
-            maxWidth: "20ch",
-            marginBottom: "16px",
-          }}
-        >
-          Tell me about your <em className="text-amber-deep italic">plans.</em>
-        </h1>
-        <p className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug max-w-[46ch] mx-auto">
-          A short form. If we&apos;re a good fit, I&apos;ll WhatsApp you back to set up a 7-minute call —
-          no pressure, no pitch.
-        </p>
-        <div className="mt-8 sm:mt-10 max-w-[540px] mx-auto opacity-90">
-          <SpotGraphic name="spot-consultation" variant="dark" priority />
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-20 md:pt-28 pb-16 overflow-hidden">
+        <SpotGraphic
+          name="spot-consultation"
+          variant="light"
+          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[38%] max-w-[440px] opacity-25 pointer-events-none"
+        />
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-8">The 7-Minute Discovery Call</div>
+          <h1 className="display-hero max-w-[14ch]">
+            Tell me about your <em>plans.</em>
+          </h1>
+          <p className="annot mt-10 max-w-[44ch]">
+            A short form. If we&apos;re a good fit, I&apos;ll WhatsApp you back
+            to set up a 7-minute call — no pressure, no pitch.
+          </p>
         </div>
       </section>
 
       {/* ===== Body ===== */}
-      <main className="max-w-[760px] mx-auto px-5 sm:px-10 py-9 sm:py-14">
+      <main className="surface-light gridlines-light px-5 sm:px-10 py-12 sm:py-16">
+       <div className="max-w-[760px] mx-auto">
         {/* Honesty box */}
         <div
           className="bg-paper border border-charcoal mb-9 sm:mb-12 p-5 sm:p-7 grid gap-4 sm:gap-5"
@@ -364,6 +354,7 @@ export default function DiscoveryPage() {
             when to send.
           </p>
         </div>
+       </div>
       </main>
     </div>
   );

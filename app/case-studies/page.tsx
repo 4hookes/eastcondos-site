@@ -34,37 +34,24 @@ export default function CaseStudiesPage() {
   const secondary = theScarcityTax;
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Masthead ===== */}
-      <section className="border-b border-charcoal max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20 text-center">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-5 sm:mb-7">
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            {indexData.sectionLabel}
-          </span>
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-20 md:pt-28 pb-16 overflow-hidden">
+        <div
+          aria-hidden
+          className="meganum absolute right-6 md:right-12 top-2 md:top-6"
+        >
+          04
         </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(2.2rem, 6vw, 4.6rem)",
-            lineHeight: 1.02,
-            letterSpacing: "-0.028em",
-            maxWidth: "18ch",
-            marginBottom: "22px",
-          }}
-        >
-          {indexData.heading}
-        </h1>
-        <p
-          className="font-serif italic text-charcoal text-[17px] sm:text-[20px] leading-snug mx-auto"
-          style={{ maxWidth: "52ch" }}
-        >
-          {indexData.subtext}
-        </p>
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-8">Index / {indexData.sectionLabel}</div>
+          <h1 className="display-hero max-w-[16ch]">{indexData.heading}</h1>
+          <p className="annot mt-10 max-w-[44ch]">{indexData.subtext}</p>
+        </div>
       </section>
 
-      <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
+      <main className="surface-light gridlines-light max-w-none px-5 sm:px-10 py-12 sm:py-20">
+       <div className="max-w-broadsheet mx-auto">
         {/* ===== Featured Flagship ===== */}
         <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
           <span className="w-5 sm:w-7 h-px bg-amber-deep" />
@@ -217,45 +204,12 @@ export default function CaseStudiesPage() {
           </Link>
         </div>
 
-        {/* ===== Bucket placeholders (more cases coming) ===== */}
-        <div className="mt-16 sm:mt-20 border-t border-charcoal pt-10 sm:pt-14">
-          <div className="flex items-center gap-3 sm:gap-4 mb-5">
-            <span className="w-5 sm:w-7 h-px bg-amber-deep" />
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-              Browse · By challenge
-            </span>
-          </div>
-          <h2
-            className="font-serif text-charcoal mb-8 sm:mb-10 max-w-[24ch]"
-            style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
-          >
-            Cases, organised by the challenge they solved.
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
-            {indexData.buckets.map((b) => (
-              <div key={b.id} className="border border-charcoal bg-paper p-5 sm:p-7">
-                <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">
-                  Bucket
-                </div>
-                <h3
-                  className="font-serif text-charcoal text-[20px] sm:text-[24px] mb-2"
-                  style={{ letterSpacing: "-0.01em" }}
-                >
-                  {b.label}
-                </h3>
-                <p className="text-[13px] sm:text-[14px] text-body italic font-serif">
-                  Cases publishing shortly. Elfi is reviewing each one before release.
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center mt-10 sm:mt-12 text-[13px] sm:text-[14px] text-gray-600 italic font-serif max-w-[46ch] mx-auto">
-            More case studies from the bank are being prepared for publication. Each is reviewed
-            personally before it goes live — no templated copy, no fabricated numbers.
-          </p>
-        </div>
+        {/* More cases are in review — the by-challenge browse grid returns
+            once each bucket has at least one published case. */}
+        <p className="text-center mt-16 sm:mt-20 border-t border-charcoal pt-10 text-[13px] sm:text-[14px] text-gray-600 italic font-serif max-w-[46ch] mx-auto">
+          More case studies from the bank are being prepared for publication. Each is reviewed
+          personally before it goes live — no templated copy, no fabricated numbers.
+        </p>
 
         {/* ===== Bottom CTA ===== */}
         <div className="mt-16 sm:mt-20 bg-charcoal text-cream text-center py-10 sm:py-14 px-5 sm:px-10 border border-charcoal">
@@ -293,6 +247,7 @@ export default function CaseStudiesPage() {
             </Link>
           </div>
         </div>
+       </div>
       </main>
     </div>
   );

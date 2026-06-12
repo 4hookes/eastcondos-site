@@ -1,322 +1,243 @@
 # EastCondos.sg — Design System
 
-> **Modern Luxe · Editorial Spread**
-> Monocle-magazine precision applied to private wealth advisory.
-> Like Aman opened a wealth-management quarterly designed by Aesop.
+> **Concrete Editorial**
+> A dark, Swiss-brutalist broadsheet. Big quiet type, exposed structure, restraint.
+> Like a private wealth briefing crossed with a design quarterly — modern, but it reads like print.
+
+Chosen by Elfi 2026-06-12 (Direction B, "Concrete Editorial"). Replaces the earlier
+cream-dominant "Modern Luxe / Monocle" spec. Reason it won: the **typography** —
+modern sans display does the talking, the serif is demoted to a small accent. Easy to
+read, not a wall of serif.
+
+---
+
+## 0. The one rule that defines this system
+
+**Inter Display does the headlines. The serif is a small accent only — never a headline.**
+
+Elfi's call: *"I don't like too many serif fonts."* So:
+
+- **Big type = Inter Display, ExtraLight/Light.** All headlines, hero statements, section heads, stat numbers.
+- **Serif (DM Serif Display, italic) = the accent voice only.** One or two emphasis words inside a headline, pull-quotes, a standfirst lede, a data figure. Think of it as the human handwriting in the margin — never the main text.
+- If a whole heading is in serif, it's wrong. Convert it to Inter Display and serif just the one word that carries the feeling.
 
 ---
 
 ## 1. Visual Theme & Atmosphere
 
-**Mood:** A printed quarterly. Calm authority. Magazine-spread density. Trust earned through restraint, not decoration.
+**Mood:** Dark, structural, confident. Lots of negative space. The page feels engineered, not decorated.
 
 **References:**
-- **Monocle** — table-of-contents nav, masthead, marginalia, chapter numbering
-- **Aesop / Kinfolk** — generous whitespace, italic ledes, tonal cream palette
-- **Aman Resorts** — gold-on-charcoal accents, formal portraiture, hospitality gravitas
-- **Goldman / Pictet private wealth** — broadsheet data tables as art, severe typography
+- **Experimental Jetset / Bureau Borsche** — Swiss-brutalist grids, exposed structure, type as the whole design
+- **FT Weekend / Monocle** — broadsheet density, mono datelines, numbered sections
+- **Pentagram annual reports** — giant ghost numerals, hairline rules, restraint
 
 **Principles:**
-- **Quiet authority** — the page reads like a publication, not a landing site
-- **Editorial structure** — every long-form section is a numbered chapter with marginalia
-- **Substance over flash** — no gradients-for-gradients-sake, no scroll-jacking, no hero video
-- **Trust through restraint** — looks like a private wealth quarterly, not a listings portal
-- **Density = depth** — broadsheet stat grids and bordered cells signal seriousness
+- **Type is the design** — a great headline in great type needs almost no decoration
+- **Less words, more structure** — say it once, big; let icons and space carry the rest
+- **Exposed grid** — faint vertical gridlines run down every section, like a print layout guide left visible
+- **Restraint** — no shadows, no gradients, no rounded cards, no emoji, no FOMO
+- **Quiet authority** — dark and calm signals seriousness more than bright and busy
 
-**Texture:** Subtle fractal-noise grain (3.5–6% opacity) on every dark surface. Cream paper-stock background on light surfaces — never clinical white.
+**Texture:** Faint fractal grain on dark surfaces (`.grain`, 3.5%). Exposed 6-column gridlines (`.gridlines`) on most sections.
 
 ---
 
 ## 2. Color Palette
 
-### Core Tokens
+Dark-dominant. The site lives on near-black; cream is now the *accent surface* used to break rhythm and host long reading.
 
 | Token | Hex | Role |
 |-------|-----|------|
-| `charcoal` | `#1A1A2E` | Primary text, dark backgrounds, masthead rules, footer |
-| `charcoal-light` | `#2D2D44` | Secondary dark surface (CTA blocks, charts) |
-| `charcoal-deep` | `#0E0E1F` | Darkest dark, used sparingly for hero overlays |
-| `amber` | `#D4A843` | Primary accent — CTAs, kickers on dark, hover states |
-| `amber-light` | `#E0BC6A` | Hover for amber CTAs |
-| `amber-deep` | `#B8902F` | Editorial accent — kickers on light, drop caps, "By the numbers" highlights |
-| `offwhite` | `#FAFAF8` | Legacy page background (still used for /process, /calculator etc. until migrated) |
-| `cream` | `#F2EBDB` | **Primary editorial page background** — paper-stock tone |
-| `paper` | `#EFE7D2` | Slightly warmer cream for breaking section rhythm (Method, FAQ, Manifesto) |
-| `body` | `#374151` | Body prose color |
+| `charcoal-deep` | `#0E0E1F` | **Primary background** — the whole site sits on this |
+| `charcoal` | `#1A1A2E` | Secondary dark surface (inset bands, featured cards) |
+| `charcoal-light` | `#2D2D44` | Hover dark, image placeholders |
+| `cream` | `#F2EBDB` | Primary text on dark · **accent surface** for long-form reading (`.surface-light`) |
+| `paper` | `#EFE7D2` | Slightly warmer cream, for inset boxes on light surfaces |
+| `amber` | `#D4A843` | The single accent — mono labels, serif emphasis, CTAs, icons-on-dark |
+| `amber-light` | `#E0BC6A` | CTA hover |
+| `amber-deep` | `#B8902F` | Amber accent on cream surfaces (labels, serif emphasis) |
+| `body` | `#374151` | Body prose **on cream surfaces only** |
 
-### Neutral Greys (for borders, captions)
+**Text colors:**
+- On dark: cream at 82% (`rgba(242,235,219,.82)`) for body, full cream for headlines, amber for labels/emphasis.
+- On cream (`.surface-light`): `body #374151` for prose, charcoal for headlines, amber-deep for labels.
 
-| Token | Hex | Role |
-|-------|-----|------|
-| `gray-600` | `#4B5563` / `#6B6B6B` | Captions, secondary text |
-| Border dotted | `#c9bfa3` | Marginalia divider, deliverable separator |
-| Border solid | `#1A1A2E` | All broadsheet grid lines, masthead rules |
+**Hairlines:** `.hairline` = `rgba(242,235,219,.14)` on dark · `border-charcoal` on cream.
 
 ### Color Don'ts
-- Never pure black — always `charcoal` or `charcoal-deep`
-- Never amber as a large fill — only as accents, rules, kickers, CTAs
-- Never bright/saturated colors — palette is intentionally muted to the cream/charcoal/amber triangle
-- Never use `offwhite` on new editorial sections — use `cream` or `paper`
+- Never pure black — always `charcoal-deep`.
+- Amber is an accent, never a fill behind big text blocks. Small CTAs and the occasional band only.
+- No second accent color. The whole palette is charcoal + cream + amber. That's it.
+- No gradients anywhere. The grain + gridlines are the only "texture".
 
 ---
 
 ## 3. Typography
 
 ### Font Stack
-| Role | Family | Weight |
-|------|--------|--------|
-| Headlines, drop caps, ledes | `DM Serif Display` | 400 only (italic available) |
-| Body, kickers, nav, captions | `Inter` | 300 / 400 / 500 / 600 |
+| Role | Family | Weight | Tailwind |
+|------|--------|--------|----------|
+| **Display headlines, hero, stat numbers** | **Inter Display** (local OTF) | 200 / 300 / 400 | `font-display` |
+| Body, UI, nav | Inter | 300–600 | `font-sans` |
+| **Labels, datelines, data, captions** | IBM Plex Mono | 400 / 500 | `font-mono` |
+| **Accent only** — emphasis word, pull-quote, standfirst, data figure | DM Serif Display (italic) | 400 | `font-serif` |
 
-### Editorial Type Scale
+Real Inter Display cuts are bundled at `app/fonts/InterDisplay-*.otf` (ExtraLight/Light/Regular/Italic) and wired via `next/font/local` → `--font-inter-display`. Use the real display family, not faux-light Inter.
 
+### The display classes (use these, don't hand-roll sizes)
 | Class | Size | Use |
 |-------|------|-----|
-| `.headline-cover` | `clamp(3rem, 6.5vw, 5.6rem)` | Hero / cover-story headline |
-| `.headline-section` | `clamp(2.4rem, 4.4vw, 4rem)` | Article / chapter heading |
-| `.headline-block` | `clamp(2rem, 3.6vw, 3.2rem)` | Section H2 (Method, Stories, Manifesto) |
-| `.standfirst` | 22px serif italic | Magazine standfirst lede |
-| Cover italic accent | `<em>` inside h1 | Amber-deep italic on key word ("*before*", "*actually*") |
-| Body | 17–18px Inter 400 | Default reading size |
-| Caption / kicker | 10–11px tracking-[0.22em–0.28em] | Uppercase labels |
-| Drop cap (`.dropcap p:first-of-type::first-letter`) | 78px serif amber-deep | First letter of editorial body |
+| `.display-hero` | clamp 3.2–7.2rem, weight 200, -0.045em | Page hero statement |
+| `.display-section` | clamp 2.2–3.8rem, weight 200, -0.035em | Section heading |
+| `.display-block` | clamp 1.6–2.3rem, weight 300, -0.025em | Card title, sub-head |
 
-### Editorial Patterns
+Inside any display class:
+- `<b>` / `<strong>` → weight 400 emphasis (the "heavier" word). **Never actual bold.**
+- `<em>` / `<i>` → flips to **serif italic amber** (the accent). This is the only place serif appears in a headline, and only on 1–2 words.
 
-- **Kicker** (`.kicker`): hairline + uppercase amber-deep label (28px rule, then text). Always introduces a section.
-- **Issue line** (`.issue-line`): same, but with hairline trailing right (used in cover stories and openers).
-- **Chapter marker** (`.chapter-marker`): "Chapter 0X" in tracked uppercase + serif chapter title block.
-- **Marginalia** (`.marginalia` + `.marginalia-list`): right-side article TOC with dotted dividers and page numbers.
-- **Standfirst**: italic 22px serif lede, max-w-[30ch], placed between headline and body.
-- **Two-column prose** (`.prose-editorial`): magazine-style 2-col text, 48px gap, with `.dropcap` trigger on first paragraph.
+### The supporting classes
+- `.mono-label` — amber mono, uppercase, 0.3em tracking. The section/index label. (e.g. `02 / The Method`)
+- `.mono-label-dim` — cream-50 mono, for datelines/footnotes.
+- `.annot` — serif italic amber with a hairline left border. The "margin note" / standfirst voice.
+- `.prose-dark` — cream-66 body for reading on dark.
+- `.meganum` — giant ghost serif numeral (clamp 140–300px, 5% opacity) behind section headers.
 
 ### Typography Don'ts
-- Never bold DM Serif Display — only weight 400 exists
-- Never serif body or UI labels
-- Never go below 13px for prose, 10px for kickers
-- Never centered paragraphs longer than 3 lines
-- Never use generic letter-spacing on serif headlines — always `-0.02em` to `-0.03em`
+- **Never set a headline in serif.** Serif is the accent word only. (Rule 0.)
+- Never bold DM Serif Display — weight 400 only, and only italic for accent.
+- Never use Inter Display below ~22px — it's a display face; use Inter for anything body-sized.
+- Numbers/data → mono or Inter Display, never serif (except a deliberate pull-figure).
+- Never go below 13px for prose, 10px for mono labels.
 
 ---
 
-## 4. Editorial Components (the new system)
+## 4. Layout Signatures (what makes it "Concrete Editorial")
 
-### Masthead + TOC
-- **Masthead**: Cream background, 2px charcoal bottom border. 3-column grid: status pill (left) · serif logo + tagline (center) · "Vol. XIII · No. 04" + CTA pill (right).
-- **TOC strip**: Sticky below masthead, 1px bottom border. Numbered chapter list (`01 Approach`, `02 Method`, …) in tracked uppercase + serif chapter titles in amber-deep. Phone + WhatsApp on right.
+1. **Exposed gridlines.** Most sections carry `.gridlines` (dark) or `.gridlines-light` (cream) — faint vertical rules at every 1/6, like a visible print grid. Auto-hidden on mobile.
+2. **Giant ghost numeral.** Section openers carry a `.meganum` (01–05, or a tool glyph) bleeding off the right edge at 5% opacity.
+3. **Mono index labels.** Every section is introduced by `NN / Name` in amber mono, not a sentence.
+4. **Square edges.** No rounded corners except the masthead nothing. Buttons are square (`.btn-square`, `.btn-square-ghost`).
+5. **Hairline structure.** 1px cream-14% borders separate everything. Bordered grids, not cards with shadows.
+6. **Surface flip for reading.** Long-form (tool bodies, legal, article prose) sits on a `.surface-light` cream block so it's comfortable to read; the dark is for statements and structure.
 
-### Hero Cover (magazine cover spread)
-- 2-col: left = headline + standfirst + byline · right = portrait
-- Issue line ("The Cover Story") → headline with italic amber-deep accent → standfirst → byline
-- Portrait with `.photo-badge` (top-left amber chip) + `.photo-caption` (charcoal strip across bottom: name + photo credit)
-- Always followed by a 1px charcoal rule
-
-### Index Ribbon
-- Charcoal background, cream text, 5-col grid
-- Left cell: "In this issue" + serif blurb
-- Other 4 cells: large serif chapter number (50% opacity) + serif title + amber page reference
-
-### Chapter Article
-- 2-col: marginalia (1fr) + prose (2fr)
-- Header: chapter marker (1fr) + headline (2fr), aligned at baseline
-- Body: sticky marginalia sidebar + 2-column prose with drop cap
-- Padding: py-24 md:py-32
-
-### Method Grid (broadsheet)
-- 4-col bordered grid, charcoal lines
-- Each cell: large serif number (30% opacity) + when label (top-right amber-deep) + serif title + body + footer with deliverable
-- Hover: cell background becomes cream (subtle)
-
-### Founder Quote
-- Charcoal background, 6px amber top-rule
-- 1fr/4fr grid: label · italic serif quote (clamp 1.8–3rem) + amber cite
-- Used multiple times across pages with different quotes
-
-### Stories Shelf
-- Cream background, 2px charcoal bottom rule on header
-- Featured: 1.4fr/1fr grid — hero image (badge top-left) + meta + serif title + lede + 2x2 broadsheet data table + read link
-- Index: 3-col cards, each pt-4 with charcoal top border, meta + serif title + summary with serif amber-deep numbers
-
-### By The Numbers (broadsheet stats)
-- 4-col bordered grid (charcoal lines)
-- Each cell: kicker label + 108px serif number with amber-deep suffix + small note
-- Header: serif "By the numbers" + tracked verification line
-
-### Quiz Band (CTA)
-- Charcoal grain background, 6px amber top-rule
-- 2-col: kicker + serif headline (italic accent) · body paragraphs + amber CTA + ghost ghost link
-
-### Editorial FAQ
-- Paper background
-- 2-col Q&A: serif question (with "No. 0X" kicker above) · body answer
-- Each item separated by charcoal line
-
-### Footer (broadsheet)
-- Charcoal background, grain texture
-- 4-col grid: brand + blurb · The Practice · Tools · Contact
-- Bottom bar: copyright · ERA license
-
-### About Page Components
-- **Opener**: massive serif (clamp 3.5–7rem) "Depth over breadth. *Trust over volume*." with issue line above, 1px bottom rule
-- **Feature Spread**: 1fr/1.2fr — portrait + standfirst + drop-cap body + license byline
-- **Stats Ribbon**: charcoal mid-page band, 4-col with white/15 borders, 84px serif numbers
-- **Manifesto Grid**: 3-col bordered grid (Six Principles), each cell: large serif number + title + body
-- **Team Grid**: 2-col, each member is 1fr/1.6fr — portrait + role kicker + name + role + one-liner + contact
+### Containers & rhythm
+- `max-w-broadsheet` (1320px), `px-6 md:px-12`.
+- Section padding `py-20 md:py-28` (openers) / `py-24 md:py-32` (content sections).
+- Background rhythm: **charcoal-deep → charcoal-deep (different section) → cream surface-light → charcoal-deep**. Never two cream surfaces adjacent; dark-on-dark is fine here (the gridlines + hairline borders separate them).
 
 ---
 
-## 5. Layout Principles
+## 5. Brand Assets — USE THESE TO CUT WORD COUNT
 
-### Containers
-- `max-w-broadsheet` (1320px) — primary editorial container
-- `max-w-[1100px]` — quote band, FAQ, quiz CTA (narrower for reading)
-- `max-w-broadsheet` with `px-6 md:px-12` — standard horizontal padding
+Elfi's standing instruction: **more images, more design, fewer words.** We own a full custom asset library — reach for it before writing another paragraph.
 
-### Vertical Rhythm
-- Major section padding: `py-24 md:py-32`
-- Editorial article inner gap: `gap-12 md:gap-20`
-- Card padding: `p-7` to `p-8`
-- Between header and grid: `mb-12` to `mb-16`
+### Hairline icons — `<EcIcon>` (95 icons, dark + light variants)
+- `import EcIcon from "@/components/EcIcon"` · names typed in `components/ecIcons.ts`.
+- **On dark surfaces always pass `variant="light"`** (cream strokes). `variant="dark"` is for cream surfaces.
+- Props: `name`, `size` (px), `variant`, `className`, `alt` (omit for decorative).
+- Names are the source of truth in `public/icons/icon-library.json`. 95 across property-types, money, process, location/amenities, advisory, outcomes.
+- **Where they're wired now:** IndexRibbon chapters, MethodGrid steps, ManifestoGrid principles — one icon per cell, so a cell reads as icon + 3 words + one line, not a paragraph.
+- **Use them for:** any list of 3–6 things (steps, factors, features, amenities, costs). Icon + label beats a bulleted sentence.
 
-### Background Rhythm (editorial alternation)
-1. **Cream** — Hero, By the numbers, Stories
-2. **Charcoal** — Index ribbon, Founder quote, Quiz band, Stats ribbon (about), Footer
-3. **Paper** — Method grid, Editorial FAQ, Manifesto grid
+### Spot illustrations — `<SpotGraphic>` (6 scenes, dark + light)
+- `import SpotGraphic from "@/components/SpotGraphic"`. Names: `spot-journey`, `spot-eastcoast`, `spot-safety`, `spot-consultation`, `spot-nl-resale`, `spot-numbers`.
+- 16:9 hairline line-art. **On dark openers pass `variant="light"`.**
+- **Where wired now:** every tool-page opener (calculator, safety-meter, NL-vs-resale, progressive-payment, discovery) carries its matching spot, floated right at ~25% opacity behind the headline. Replaces the old "ghost glyph" placeholder.
+- **Use them for:** the hero of any new page/section as a quiet background visual, or full-strength as a section divider.
 
-**Rule:** Never two adjacent sections of the same background. Never two dark sections back-to-back without a light break.
+### Photography / B-roll
+- Real photos live under `public/images/` (hero.png, stories-cover.png) and `public/broll/` (curated stills pulled from Supabase). Pipeline to generate more: Gemini 3 Pro Image / Higgsfield, then grade into brand.
+- Master asset index across icons/spots/broll/audio lives in Supabase `cp_assets_index` (~155 b-roll stills/clips, all tagged by `category` + `keywords`). The team gallery at `/team/library` browses it. Pull the strongest shots into `public/broll/` rather than hot-linking — keeps the static export self-contained.
+- **Treatment is mandatory** — never drop a raw photo in. Desaturate + darken (`filter: grayscale(0.3) contrast(1.04) brightness(0.83)`) and mask with a charcoal-deep gradient so it reads as branded texture, not stock. Raw stock = looks MORE AI-built, the opposite of the goal.
 
-### Borders as Structure
-- Broadsheet grids use 1px solid charcoal lines (`.broadsheet` utility)
-- Article-internal dividers use `border-dotted border-[#c9bfa3]`
-- Section dividers use `border-b border-charcoal pb-6 mb-12` or `border-b-2` for emphasis
+### Photo bands — `<PhotoBand>` (the human beat)
+- `import PhotoBand from "@/components/editorial/PhotoBand"`. Full-bleed treated photo + charcoal gradient + one `.mono-label` + one `.display-section` line (with a single serif-amber `<em>` accent) anchored bottom-left. Optional `attribution` sub-label.
+- **Use sparingly** — one emotional/outcome image between data-heavy sections, never a gallery. Live examples: home (`family-window.jpg`, the "why"), process (`keys-handover.jpg`, the payoff).
+- The hero backdrop is the same idea inline: skyline at `opacity-.32` behind the cover type, double gradient (left→right + bottom→up) so the headline stays crisp.
+
+### The rule of thumb
+> Before writing a paragraph to explain a list, ask: can an icon row or a spot say it? If yes, use the asset and cut the words to a label + one line.
 
 ---
 
-## 6. Depth & Elevation
+## 6. Components (Concrete Editorial)
 
-Minimal depth in the editorial system. Lift comes from typographic hierarchy and bordered grids, not shadows.
+Editorial components in `components/editorial/`:
 
-| Token | Value | Use |
-|-------|-------|-----|
-| `shadow-premium` | `0 4px 20px rgba(0,0,0,0.06)` | Default cards (legacy, used outside editorial system) |
-| `shadow-premium-lg` | `0 8px 40px rgba(0,0,0,0.08)` | Modals |
-| `shadow-premium-glow` | amber-tinted glow | Featured cards |
+| File | What it is now |
+|------|----------------|
+| `HeroCover.tsx` | Dark hero: mono index label · `.display-hero` with serif-amber accent word · `.annot` pull-quote · inline stat row · square CTAs · `.meganum` 01 |
+| `IndexRibbon.tsx` | 4 chapter cells, each: mono `NN / Tag` + `<EcIcon light>` + display title + one line |
+| `ChapterArticle.tsx` | Cream `.surface-light` reading block: marginalia sidebar + 2-col drop-cap prose |
+| `MethodGrid.tsx` | Dark bordered 4-col: meganum 03 · per-cell ghost numeral + `<EcIcon light>` + display title + mono deliverable |
+| `FounderQuote.tsx` | Dark band, hairline-left serif-italic-amber quote |
+| `StoriesShelf.tsx` | Dark: featured case (image + mono data grid) + 3 index cards |
+| `ByTheNumbers.tsx` | Dark bordered 4-col, Inter Display ExtraLight numbers with amber suffix |
+| `QuizBand.tsx` | Cream `.surface-light` CTA → Safety Meter |
+| `EditorialFAQ.tsx` | Dark numbered Q&A |
+| `about/Opener.tsx` | Dark `.display-hero` page header |
+| `about/FeatureSpread.tsx` | Cream spread: portrait + drop-cap founder note |
+| `about/StatsRibbon.tsx` | Dark mid-page stat band |
+| `about/ManifestoGrid.tsx` | Dark bordered 3-col, per-cell ghost numeral + `<EcIcon light>` |
+| `about/TeamGridEditorial.tsx` | Cream team grid; missing photos fall back to a grain monogram tile |
+| `about/CenterCTA.tsx` | Dark closing CTA, square buttons |
 
-Editorial sections do not use shadows. They use grain + borders.
+Shared chrome:
+- `Navbar.tsx` — sticky dark mast: wordmark · mono nav with amber numerals · ghost square CTA · full-screen mobile overlay
+- `Footer.tsx` — dark gridlines, 4-col, mono headings
 
 ---
 
 ## 7. Motion
-
-**Restrained editorial.** No WebGL, no scroll-jacking.
-
-Approved patterns:
-- `animate-pulse` on the green status dot in masthead
-- 200–300ms color/transform transitions on nav links and CTAs
-- `hover:bg-cream` cell background fade on Method grid
-- `hover:-translate-y-0.5` on amber CTAs
-- `.fade-in-section` (legacy, available) for IntersectionObserver scroll reveals
-
-Never:
-- Scroll-bound 3D
-- Particle effects
-- Auto-playing video
-- Animated gradient backgrounds (the cream is the gradient)
+Restrained. 200–300ms color/opacity transitions on nav, icons (opacity 70→100 on hover), CTAs, and card hover (`hover:bg-charcoal/60`). `.fade-in-section` available for scroll reveal. Never: scroll-jacking, parallax, autoplay video, animated gradients.
 
 ---
 
-## 8. Do's and Don'ts
+## 8. Do / Don't
 
 ### Do
-- Use cream/paper backgrounds for all light sections
-- Number every chapter, every step, every principle
-- Use kickers above every section heading
-- Use broadsheet borders for data and step grids
-- Use serif italics with amber-deep color for emphasis words
-- Use drop caps on the first body paragraph of editorial articles
-- Use marginalia sidebars to make articles feel like magazine spreads
-- Use the photo-caption strip on every portrait
+- Headlines in Inter Display ExtraLight/Light, one serif-amber accent word.
+- Introduce every section with a `mono-label` (`NN / Name`).
+- Reach for `<EcIcon light>` / `<SpotGraphic light>` before writing another list paragraph.
+- Keep the exposed gridlines + meganum on section openers.
+- Flip to `.surface-light` cream for anything people actually read at length.
+- Square buttons, hairline borders, lots of negative space.
 
 ### Don't
-- Don't use white card surfaces in editorial sections — use bordered cells on cream/paper instead
-- Don't use rounded corners on editorial cells (only on CTA pills and the masthead pill)
-- Don't use gradients on light surfaces
-- Don't use emoji as icons — Lucide React SVG only
-- Don't add drop shadows to text or borders
-- Don't center long body paragraphs
-- Don't bold DM Serif Display
-- Don't use FOMO copy: no "limited time", "act now", "don't miss out"
-- Don't use blue for links — charcoal text with amber underline animation
+- Don't set headlines in serif. (Rule 0.)
+- Don't bold DM Serif Display, ever.
+- Don't add a second accent color, gradients, shadows, or rounded editorial cells.
+- Don't use emoji as icons — `<EcIcon>` or Lucide only.
+- Don't write a paragraph where an icon row says it.
+- Don't use FOMO/urgency ("act now", "limited time", "don't miss out").
+- Don't put cream body text on cream with no contrast, or cream-on-cream sections back to back.
 
 ---
 
-## 9. Responsive Behavior
-
-| Breakpoint | Width | Use |
-|------------|-------|-----|
-| `sm` | 640px | Padding bump, single-stat ribbon collapse |
-| `md` | 768px | Multi-column grids, TOC strip visible, masthead 3-col |
-| `lg` | 1024px | (rare — most layouts use md as the breakpoint) |
-
-### Mobile Patterns
-- Masthead collapses to single column (status hidden, CTA below logo)
-- TOC strip hidden — replaced by hamburger → full-screen charcoal overlay
-- All multi-col editorial grids collapse to single column
-- 2-column prose collapses to 1 column
-- Method/Manifesto bordered grids stack vertically (still bordered)
+## 9. Responsive
+- Gridlines + meganum hide on mobile (<768px).
+- Dark mast collapses to wordmark + hamburger → full-screen charcoal overlay with display-type links.
+- All bordered grids stack to single column (still hairline-bordered).
+- Spot illustrations in openers are `hidden md:block` (decorative, desktop only).
+- Tool/article bodies must stay overflow-safe: parent grids use `grid-cols-1 md:grid-cols-[...minmax(0,1fr)]` and reading columns use `min-w-0`.
 
 ---
 
-## 10. Component Inventory
-
-All editorial components live in `components/editorial/`:
-
-| File | Purpose |
-|------|---------|
-| `HeroCover.tsx` | Magazine cover hero with portrait |
-| `IndexRibbon.tsx` | Charcoal "In this issue" chapter list |
-| `ChapterArticle.tsx` | 2-col article with marginalia + drop cap |
-| `MethodGrid.tsx` | 4-col bordered method steps |
-| `FounderQuote.tsx` | Charcoal quote band (reusable, prop-driven) |
-| `StoriesShelf.tsx` | Featured case study + 3-card index |
-| `ByTheNumbers.tsx` | 4-col bordered stat grid |
-| `QuizBand.tsx` | Charcoal CTA band for quiz |
-| `EditorialFAQ.tsx` | 2-col Q&A with numbered questions |
-| `about/Opener.tsx` | Massive serif page header |
-| `about/FeatureSpread.tsx` | About-page magazine spread |
-| `about/StatsRibbon.tsx` | Charcoal mid-page stats |
-| `about/ManifestoGrid.tsx` | 3-col Six Principles |
-| `about/TeamGridEditorial.tsx` | 2-col team member cards |
-| `about/CenterCTA.tsx` | Centered closing CTA |
-
-Shared chrome:
-- `components/Navbar.tsx` — Masthead + sticky TOC
-- `components/Footer.tsx` — Broadsheet 4-col footer
-
----
-
-## 11. Agent Prompt Guide
-
-### Quick Reference
+## 10. Quick Reference (for agent prompts)
 ```
-Bg light:    cream #F2EBDB or paper #EFE7D2
-Bg dark:     charcoal #1A1A2E (with grain)
-Accent:      amber #D4A843 (dark sections), amber-deep #B8902F (light sections)
-Body text:   body #374151
-Headlines:   DM Serif Display 400, tracking -0.02em
-Kicker:      Inter 11px uppercase tracking 0.22–0.28em
-Containers:  max-w-broadsheet (1320px), px-6 md:px-12
-Section pad: py-24 md:py-32
-Borders:     1px solid charcoal (broadsheet), dotted #c9bfa3 (intra-article)
+Bg:            charcoal-deep #0E0E1F (whole site) · cream #F2EBDB = .surface-light reading blocks
+Accent:        amber #D4A843 (dark) / #B8902F (cream) — labels, 1 serif word, CTAs, icons
+Headlines:     .display-hero / .display-section / .display-block  (Inter Display 200/300)
+  emphasis:    <b> = weight 400 · <em> = serif italic amber (1–2 words MAX)
+Labels:        .mono-label  →  "02 / The Method"  (IBM Plex Mono, amber)
+Margin note:   .annot  (serif italic amber, hairline-left)
+Body on dark:  .prose-dark   ·  Body on cream: text-body #374151
+Structure:     .gridlines / .gridlines-light · .meganum · .hairline borders · square buttons
+Icons:         <EcIcon name=".." variant="light" size={36} />   (light on dark!)
+Spots:         <SpotGraphic name="spot-.." variant="light" />   (light on dark!)
+Container:     max-w-broadsheet, px-6 md:px-12 · section py-24 md:py-32
 ```
 
-### Ready-to-Use Prompts
-
-**New editorial section:**
-> Build a section with cream background, max-w-broadsheet container, py-24 md:py-32 padding. Header: 1fr/2fr grid with chapter-marker on the left and headline-block on the right. Then a bordered grid of cells with serif numbers (30% opacity), kicker labels, serif titles, and body. Use 1px charcoal borders.
-
-**New dark band:**
-> Build a section with charcoal background, py-28 md:py-36 padding, 6px amber top-rule, grain texture overlay. Two-column layout: kicker + serif headline (with italic amber accent) on left, body + amber CTA on right.
-
-**New article-style page:**
-> Open with a massive serif (clamp 3.5–7rem) statement on cream. Then a 1fr/1.2fr feature spread with portrait (with photo-badge + photo-caption) and italic standfirst + drop-cap body. Then a charcoal stats ribbon. Then a bordered 3-col manifesto grid on paper. Close with a centered CTA on charcoal-light.
+### Ready-to-use prompt — new section
+> Dark `bg-charcoal-deep gridlines` section, `py-24 md:py-32`, a `.meganum` ghost numeral bleeding off the right. Open with a `.mono-label` ("NN / Name"), then a `.display-section` headline with ONE serif-amber `<em>` accent word. If it's a list of 3–6 items, build a hairline-bordered grid where each cell is `<EcIcon variant="light">` + display-block title + one short line — not paragraphs. Square amber CTA. No serif headlines, no shadows, no rounded corners.

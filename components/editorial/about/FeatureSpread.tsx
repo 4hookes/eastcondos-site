@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function FeatureSpread() {
   return (
-    <section className="bg-cream px-6 md:px-12 py-20 md:py-28">
+    <section className="surface-light gridlines-light px-6 md:px-12 py-20 md:py-28">
       <div className="max-w-broadsheet mx-auto grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-12 md:gap-20 items-start">
         <div className="relative">
           <span className="photo-badge">In Conversation</span>
           <Image
-            src="https://storage.googleapis.com/msgsndr/6t13xn57K4fOsTYNYS7v/media/68d9e2b64c35d6324e9f6e5c.png"
+            src="/images/team/elfi.png"
             alt="Elfi Abdullah"
             width={800}
             height={1000}
@@ -54,7 +54,7 @@ export default function FeatureSpread() {
             </p>
           </div>
 
-          <div className="mt-9 border-t border-charcoal pt-4 flex justify-between items-center text-[13px] uppercase tracking-[0.2em] text-[#6B6B6B]">
+          <div className="mt-9 border-t border-charcoal pt-4 flex justify-between items-center font-mono text-[11px] uppercase tracking-[0.2em] text-[#6B6B6B]">
             <span>
               <b className="text-charcoal font-medium">Elfi Abdullah</b>{" "}
               &middot; Founder &middot; The Elfi Division, ERA Singapore

@@ -1,62 +1,72 @@
-const BELIEFS = [
+import EcIcon, { type EcIconName } from "@/components/EcIcon";
+
+const BELIEFS: { no: string; icon: EcIconName; title: string; body: string }[] = [
   {
     no: "01",
+    icon: "chart-up",
     title: "The model comes first.",
-    body: "No property is shown until your numbers have been run. Every time. Without exception. The model is the condition, not the consequence.",
+    body: "No place is shown until your numbers have been run. Every time. The model is the condition, not the consequence.",
   },
   {
     no: "02",
+    icon: "location-pin",
     title: "Depth over breadth.",
-    body: "Five districts, not the whole island. We would rather know one street perfectly than fifty streets generally.",
+    body: "Five districts, not the whole island. We would rather know one street perfectly than fifty streets in passing.",
   },
   {
     no: "03",
-    title: "The honest \u201cno\u201d.",
-    body: "If the answer is \u201cnot yet\u201d or \u201cnot ever\u201d, the answer is \u201cnot yet\u201d or \u201cnot ever\u201d. A lost sale is cheaper than a wrong purchase.",
+    icon: "shield-check",
+    title: "The honest “no”.",
+    body: "If the answer is “not yet” or “not ever”, that is the answer. A lost sale is cheaper than a wrong buy.",
   },
   {
     no: "04",
-    title: "Eleven factors, every time.",
-    body: "The 11-factor x-ray is not a checklist we sometimes use. It is the discipline that runs on every shortlist, full stop.",
+    icon: "checklist",
+    title: "Twelve factors, every time.",
+    body: "The 12-factor check is not something we use only sometimes. It runs on every place on your shortlist, full stop.",
   },
   {
     no: "05",
+    icon: "handshake",
     title: "Referrals, not advertising.",
-    body: "Eighty percent of clients arrive through past clients. We have never bought a lead. We never will.",
+    body: "Eight in ten of our clients come from past clients. We have never bought a lead. We never will.",
   },
   {
     no: "06",
+    icon: "calendar",
     title: "Concurrent timelines.",
-    body: "HDB sale, condo completion, and your move are sequenced so the family is never in temporary housing and never paying two mortgages longer than the model said.",
+    body: "Your HDB sale, your new keys, and your move are lined up so you never sit in a rental and never pay two home loans at once.",
   },
 ];
 
 export default function ManifestoGrid() {
   return (
-    <section className="bg-paper py-24 md:py-32 px-6 md:px-12">
+    <section className="bg-charcoal-deep gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline">
       <div className="max-w-broadsheet mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16 border-b border-charcoal pb-6">
-          <div className="chapter-marker">
-            The Practice<b>Six Principles</b>
-          </div>
-          <h2 className="headline-block max-w-[18ch]">
-            What this advisory believes, written down so you can hold us to it.
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16 border-b hairline-strong pb-7">
+          <div className="mono-label">The Practice / Six Principles</div>
+          <h2 className="display-section max-w-[20ch]">
+            What this advisory believes, <b>written down</b> so you can hold us
+            to it.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 border-l border-t border-charcoal">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-l border-t hairline">
           {BELIEFS.map((b) => (
             <div
               key={b.no}
-              className="p-8 border-r border-b border-charcoal min-h-[280px] flex flex-col"
+              className="p-8 border-r border-b hairline min-h-[280px] flex flex-col hover:bg-charcoal/60 transition-colors duration-300"
             >
-              <div className="font-serif text-[42px] leading-none tracking-[-0.04em] text-charcoal/25 mb-5">
-                {b.no}
+              <div className="flex items-center justify-between mb-6">
+                <div className="font-display font-extralight text-[46px] leading-none tracking-[-0.04em] text-cream/25">
+                  {b.no}
+                </div>
+                <EcIcon name={b.icon} variant="light" size={36} className="opacity-75" />
               </div>
-              <h4 className="font-serif text-[24px] leading-tight tracking-[-0.01em] text-charcoal mb-3.5 max-w-[14ch]">
+              <h4 className="display-block !text-[22px] mb-4 max-w-[16ch]">
                 {b.title}
               </h4>
-              <p className="text-[15px] leading-[1.7] text-body">{b.body}</p>
+              <p className="prose-dark text-[14.5px]">{b.body}</p>
             </div>
           ))}
         </div>

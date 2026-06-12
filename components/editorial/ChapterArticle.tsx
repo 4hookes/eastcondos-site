@@ -1,26 +1,34 @@
 export default function ChapterArticle() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 bg-cream">
-      <div className="max-w-broadsheet mx-auto">
+    <section className="surface-light gridlines-light py-24 md:py-32 px-6 md:px-12 relative overflow-hidden">
+      <div
+        aria-hidden
+        className="meganum absolute right-6 md:right-12 -top-4 md:top-0"
+      >
+        02
+      </div>
+      <div className="relative max-w-broadsheet mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16">
-          <div className="chapter-marker">
-            Chapter 01<b>The Approach</b>
+          <div>
+            <div className="mono-label">02 / The Approach</div>
           </div>
-          <h2 className="headline-section max-w-[18ch]">
-            You&rsquo;ve been researching for months. You&rsquo;re more confused
-            than when you started.
+          <h2 className="display-section max-w-[20ch]">
+            You&rsquo;ve been researching for months. You&rsquo;re{" "}
+            <b>more confused</b> than when you started.
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-start">
-          <aside className="md:sticky md:top-24 border-t border-charcoal pt-4">
-            <div className="marginalia">In this chapter</div>
+          <aside className="md:sticky md:top-28 border-t border-charcoal pt-4">
+            <div className="font-mono text-[11px] uppercase tracking-[0.26em] text-amber-deep mb-3">
+              In this chapter
+            </div>
             <ul className="marginalia-list">
-              <li><span>The TDSR question</span><b>P. 16</b></li>
-              <li><span>Reading your CPF</span><b>P. 18</b></li>
-              <li><span>The 4% stress test</span><b>P. 21</b></li>
-              <li><span>Two-mortgage scenarios</span><b>P. 23</b></li>
-              <li><span>When the answer is &ldquo;wait&rdquo;</span><b>P. 25</b></li>
+              <li><span>The TDSR question</span><b>01</b></li>
+              <li><span>Reading your CPF</span><b>02</b></li>
+              <li><span>The 4% stress test</span><b>03</b></li>
+              <li><span>Two-mortgage scenarios</span><b>04</b></li>
+              <li><span>When the answer is &ldquo;wait&rdquo;</span><b>05</b></li>
             </ul>
           </aside>
 

@@ -227,7 +227,7 @@ Also needs GitHub access — add Jimmy as **Admin** on `https://github.com/4hook
 
 ```bash
 # Work on the project
-cd "/Users/elfi/Desktop/elfi-business/East Condos/apps/eastcondos.sg"
+cd "/Users/elfi/Desktop/elfi-business/east-condos/apps/eastcondos.sg"
 
 # Dev server (avoid port 3000)
 npm run dev -- -p 3100
@@ -252,7 +252,7 @@ cp DESIGN.md ~/.claude/DESIGN.md
 You'll inherit this project via the auto-memory system. Key things to know:
 
 1. **Read this doc first**, then `DESIGN.md`, then skim `components/editorial/` to understand the patterns.
-2. Elfi's project CLAUDE.md (`East Condos/apps/eastcondos.sg/CLAUDE.md`) and global instructions (`~/.claude/CLAUDE.md`) set behavioral rules — follow them.
+2. Elfi's project CLAUDE.md (`east-condos/apps/eastcondos.sg/CLAUDE.md`) and global instructions (`~/.claude/CLAUDE.md`) set behavioral rules — follow them.
 3. Workflow preferences are saved in `memory/feedback_*.md` files — apply them automatically.
 4. When in doubt about "should I mock first or just ship" — **mock first for anything new, direct-to-main for tweaks**.
 5. Always verify live deploys with `curl -sI https://eastcondos.sg/` headers before claiming "shipped".

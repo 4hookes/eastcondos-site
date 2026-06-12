@@ -45,6 +45,9 @@ public/          # Static assets
 - **Condo Meter**: Tool for comparing HDB vs condo costs
 - **Calculator**: Financial planning tools for property purchase
 
+## Design System
+Master design spec lives at `~/.claude/DESIGN.md` (loaded globally). Project-local copy at `./DESIGN.md` for reference. Read before any visual work.
+
 ## Development Guidelines
 - Use TypeScript
 - Prefer React Server Components

@@ -245,7 +245,7 @@ export default async function JournalArticlePage({
 
       {/* ============ ARTICLE BODY (with marginalia TOC on wide screens) ============ */}
       <main className="max-w-broadsheet mx-auto px-5 sm:px-10 py-12 sm:py-20">
-        <div className="grid md:grid-cols-[220px_1fr] gap-10 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-[220px_minmax(0,1fr)] gap-10 md:gap-16">
           {/* Marginalia TOC — hidden on mobile */}
           <aside className="hidden md:block">
             <div className="sticky top-24">

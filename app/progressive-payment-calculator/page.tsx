@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
+import SpotGraphic from "@/components/SpotGraphic";
 import Link from "next/link";
 import styles from "./calc.module.css";
 import LastUpdated from "@/components/editorial/LastUpdated";
@@ -51,40 +52,35 @@ export default function ProgressivePaymentCalculatorPage() {
   const r = useMemo(() => compute(inputs), [inputs]);
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Hero ===== */}
-      <section className="border-b border-charcoal text-center px-5 sm:px-10 pt-9 pb-8 sm:pt-12 sm:pb-10 max-w-broadsheet mx-auto">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-3.5">
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            New Launch · Progressive Payment Calculator
-          </span>
-          <span className="w-5 sm:w-8 h-px bg-amber-deep" />
-        </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(1.9rem, 6vw, 3.4rem)",
-            lineHeight: 1.02,
-            letterSpacing: "-0.025em",
-            maxWidth: "20ch",
-            marginBottom: "14px",
-          }}
-        >
-          See exactly what you pay, <em className="text-amber-deep italic">and when</em>.
-        </h1>
-        <p className="text-body text-[15px] sm:text-[17px] leading-snug max-w-[56ch] mx-auto mb-5">
-          The full 10-stage Normal Payment Scheme. Your cash + CPF outlay, when the loan disburses,
-          and how your monthly instalment ramps up — from booking fee to keys.
-        </p>
-        <LastUpdated
-          date={PPC_LAST_UPDATED}
-          align="center"
-          note="Uses the standard URA Normal Payment Scheme"
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-16 md:pt-20 pb-12 overflow-hidden">
+        <SpotGraphic
+          name="spot-numbers"
+          variant="light"
+          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[36%] max-w-[420px] opacity-25 pointer-events-none"
         />
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-7">Tools / New Launch · Progressive Payment</div>
+          <h1 className="display-hero !text-[clamp(2.4rem,5.5vw,4.6rem)] max-w-[20ch]">
+            See exactly what you pay, <em>and when.</em>
+          </h1>
+          <p className="annot mt-8 max-w-[48ch]">
+            The full 10-stage Normal Payment Scheme. Your cash + CPF outlay, when the loan disburses,
+            and how your monthly instalment ramps up — from booking fee to keys.
+          </p>
+          <div className="mt-7">
+            <LastUpdated
+              date={PPC_LAST_UPDATED}
+              tone="onDark"
+              note="Uses the standard URA Normal Payment Scheme"
+            />
+          </div>
+        </div>
       </section>
 
-      <main className="max-w-broadsheet mx-auto px-4 sm:px-10 py-8 sm:py-12">
+      <main className="surface-light gridlines-light px-4 sm:px-10 py-8 sm:py-12">
+       <div className="max-w-broadsheet mx-auto">
         {/* ===== Disclaimer ===== */}
         <div className="flex gap-3 items-start bg-paper border border-charcoal p-3.5 sm:p-4 mb-6 sm:mb-8" style={{ borderLeft: "3px solid #D4A843" }}>
           <span className={styles.caveatIcon}>i</span>
@@ -275,10 +271,11 @@ export default function ProgressivePaymentCalculatorPage() {
             Request a 7-min discovery call
           </Link>
         </div>
+       </div>
       </main>
 
       {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t border-charcoal text-[11px] sm:text-xs text-gray-500 leading-relaxed italic">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
         Stage percentages follow the standard Singapore Normal Payment Scheme (URA / BCA — the same
         schedule every project uses). Loan disbursement assumes the bank pays out only after your
         downpayment is exhausted. Monthly interest during construction is interest-only on the

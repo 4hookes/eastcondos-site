@@ -1,23 +1,16 @@
-import type { Metadata } from "next";
-import QuizClient from "@/components/quiz/QuizClient";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Upgrade Readiness Quiz – eastcondos.sg",
-  description:
-    "Take the 2-minute quiz to find out your HDB-to-condo upgrade readiness score. Get a personalized report with actionable next steps.",
-  openGraph: {
-    title: "What's Your Upgrade Readiness Score?",
-    description:
-      "Take the 2-minute quiz to find out if you're ready to upgrade from HDB to condo.",
-    type: "website",
-    url: "https://eastcondos.sg/quiz",
-  },
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
+// The readiness quiz is retired — the Safety Meter does this job with real
+// numbers. Route kept so old links and bookmarks land somewhere useful.
 export default function QuizPage() {
-  return (
-    <section className="bg-offwhite min-h-screen">
-      <QuizClient />
-    </section>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/safety-meter");
+  }, [router]);
+
+  return null;
 }

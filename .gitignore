@@ -40,3 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .gstack/
+
+# local agent/editor config + python cache
+.claude/
+__pycache__/

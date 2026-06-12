@@ -93,45 +93,38 @@ export default function SafetyMeterPage() {
   };
 
   return (
-    <div className="bg-cream min-h-screen">
-      {/* ===== Lean hero ===== */}
-      <section className="border-b border-charcoal text-center px-5 sm:px-10 py-8 sm:py-12">
-        <div className="max-w-[360px] mx-auto mb-4 sm:mb-5 opacity-90">
-          <SpotGraphic name="spot-safety" variant="dark" priority />
-        </div>
-        <div className="inline-flex items-center gap-3 mb-3">
-          <span className="w-5 sm:w-7 h-px bg-amber-deep" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
-            HDB → Condo · Safety Meter
-          </span>
-          <span className="w-5 sm:w-7 h-px bg-amber-deep" />
-        </div>
-        <h1
-          className="font-serif text-charcoal mx-auto"
-          style={{
-            fontSize: "clamp(1.9rem, 5.8vw, 3.2rem)",
-            lineHeight: 1.0,
-            letterSpacing: "-0.025em",
-            maxWidth: "20ch",
-          }}
-        >
-          Can you <em className="text-amber-deep italic">actually</em> afford the upgrade?
-        </h1>
-        <p className="font-serif italic text-charcoal text-[15px] sm:text-[18px] leading-snug max-w-[42ch] mx-auto mt-3 mb-5 text-gray-500">
-          Bank approval is easy. Surviving the payments is the real test.
-        </p>
-        <LastUpdated
-          date={SAFETY_METER_LAST_UPDATED}
-          align="center"
-          note="Scoring reflects TDSR, MSR and LTV rules current on this date"
+    <div className="bg-charcoal-deep min-h-screen">
+      {/* ===== Lean opener ===== */}
+      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-16 md:pt-20 pb-12 overflow-hidden">
+        <SpotGraphic
+          name="spot-safety"
+          variant="light"
+          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[34%] max-w-[400px] opacity-25 pointer-events-none"
         />
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-7">Tools / HDB → Condo Safety Meter</div>
+          <h1 className="display-hero !text-[clamp(2.4rem,5.5vw,4.6rem)] max-w-[18ch]">
+            Can you <em>actually</em> afford the upgrade?
+          </h1>
+          <p className="annot mt-8 max-w-[40ch]">
+            Bank approval is easy. Surviving the payments is the real test.
+          </p>
+          <div className="mt-7">
+            <LastUpdated
+              date={SAFETY_METER_LAST_UPDATED}
+              tone="onDark"
+              note="Scoring reflects TDSR, MSR and LTV rules current on this date"
+            />
+          </div>
+        </div>
       </section>
 
       {/* ===== Step rail ===== */}
       <StepRail current={step} onStepClick={(n) => setStep(n as 1 | 2 | 3)} />
 
       {/* ===== Wizard body ===== */}
-      <main className="max-w-broadsheet mx-auto px-4 sm:px-10 py-6 sm:py-10">
+      <main className="surface-light gridlines-light px-4 sm:px-10 py-6 sm:py-10">
+       <div className="max-w-broadsheet mx-auto">
         {step === 1 && (
           <BioStep
             buyer1={buyer1}
@@ -162,6 +155,7 @@ export default function SafetyMeterPage() {
             onSubmit={handleRunMeter}
           />
         )}
+       </div>
       </main>
 
       {/* ===== Verdict ===== */}
@@ -188,20 +182,20 @@ export default function SafetyMeterPage() {
               Want a <em className="text-amber italic">personalised</em> plan?
             </h2>
             <p className="max-w-[48ch] mx-auto text-[15px] sm:text-base mb-6" style={{ color: "rgba(242, 235, 219, 0.75)" }}>
-              This meter is a snapshot. The full strategy — timing, pledging options, asset selection — takes a 15-min call.
+              This meter is a snapshot. The full strategy — timing, pledging options, asset selection — starts with a 7-minute discovery call.
             </p>
             <Link
-              href="/strategy-session"
+              href="/discovery"
               className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
             >
-              Book a Roadmap Call
+              Book a 7-Min Discovery Call
             </Link>
           </div>
         </section>
       )}
 
       {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t border-charcoal text-[11px] sm:text-xs text-gray-500 leading-relaxed italic">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
         Calculations follow MAS Notice 645 (TDSR 55%), CPF Board Ordinary Account rates by age band, and IRAS Buyer's Stamp Duty tiers. Loan eligibility is stressed at 4% per MAS floor. Default mortgage rate is 1.5% (prevailing). Tenure is capped at 30 years with income-weighted average age for joint applicants. For planning only — actual approval depends on credit history, valuation, and underwriting.{" "}
         <Link href="/disclaimer-hdb-condo-meter-planner" className="underline decoration-amber-deep/40 underline-offset-2 hover:text-charcoal">
           Full disclaimer

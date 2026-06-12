@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, DM_Serif_Display } from "next/font/google";
+import { Inter, DM_Serif_Display, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,6 +15,23 @@ const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
   weight: "400",
   subsets: ["latin"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  weight: ["400", "500"],
+  subsets: ["latin"],
+});
+
+// Concrete Editorial display voice — real Inter Display cuts, not faux-light Inter
+const interDisplay = localFont({
+  variable: "--font-inter-display",
+  src: [
+    { path: "./fonts/InterDisplay-ExtraLight.otf", weight: "200", style: "normal" },
+    { path: "./fonts/InterDisplay-Light.otf", weight: "300", style: "normal" },
+    { path: "./fonts/InterDisplay-Regular.otf", weight: "400", style: "normal" },
+    { path: "./fonts/InterDisplay-Italic.otf", weight: "400", style: "italic" },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -53,8 +71,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
-      <body className="antialiased bg-offwhite font-sans">
+    <html
+      lang="en"
+      className={`${inter.variable} ${dmSerif.variable} ${plexMono.variable} ${interDisplay.variable}`}
+    >
+      <body className="antialiased bg-charcoal-deep text-cream font-sans">
         <Navbar />
         <main>{children}</main>
         <Footer />
@@ -135,10 +156,10 @@ export default function RootLayout({
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "Clarity Call",
+                          name: "7-Minute Discovery Call",
                           serviceType: "Consultation",
                           description:
-                            "A 10-minute call to apply the Property by Design (PBD™) framework to your specific numbers and timeline. No pitch, no pressure.",
+                            "A 7-minute call to apply the Property by Design (PBD™) framework to your specific numbers and timeline. No pitch, no pressure.",
                           provider: { "@id": "https://eastcondos.sg/#organization" },
                         },
                       },

@@ -18,46 +18,39 @@ const STATS = [
     note: "Of new clients arrive through past clients.",
   },
   {
-    lbl: "Google rating",
-    num: "4.9",
-    suffix: "\u2605",
-    note: "Across 200+ verified reviews.",
+    lbl: "Transactions on file",
+    num: "435",
+    suffix: "k",
+    note: "Resale records behind every recommendation.",
   },
 ];
 
 export default function ByTheNumbers() {
   return (
-    <section className="bg-cream py-24 md:py-32 px-6 md:px-12 border-t border-charcoal">
+    <section className="bg-charcoal-deep gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline">
       <div className="max-w-broadsheet mx-auto">
-        <div className="flex justify-between items-end border-b-2 border-charcoal pb-4 mb-12">
-          <div className="font-serif text-[36px] tracking-[-0.02em]">
-            By the numbers
-          </div>
-          <div className="text-[13px] uppercase tracking-[0.2em] text-[#6B6B6B]">
-            2013 &mdash; 2026 &middot; Verified
-          </div>
+        <div className="flex flex-wrap gap-4 justify-between items-end border-b hairline-strong pb-5 mb-14">
+          <div className="display-block">By the numbers</div>
+          <div className="mono-label-dim">2013 — 2026</div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 border-l border-t border-charcoal">
+        <div className="grid grid-cols-1 md:grid-cols-4 border-l border-t hairline">
           {STATS.map((s) => (
-            <div
-              key={s.lbl}
-              className="p-7 border-r border-b border-charcoal"
-            >
-              <div className="text-[12px] uppercase tracking-[0.22em] text-amber-deep font-medium mb-3.5">
+            <div key={s.lbl} className="p-8 border-r border-b hairline">
+              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-amber mb-5">
                 {s.lbl}
               </div>
               <div
-                className="font-serif text-charcoal"
+                className="font-display font-extralight text-cream"
                 style={{
-                  fontSize: "108px",
+                  fontSize: "clamp(64px, 7vw, 96px)",
                   lineHeight: 0.95,
-                  letterSpacing: "-0.045em",
+                  letterSpacing: "-0.05em",
                 }}
               >
                 {s.num}
-                <span className="text-amber-deep">{s.suffix}</span>
+                <span className="text-amber">{s.suffix}</span>
               </div>
-              <div className="mt-3.5 text-[15px] leading-[1.55] text-body max-w-[24ch]">
+              <div className="prose-dark text-[14px] mt-4 max-w-[24ch]">
                 {s.note}
               </div>
             </div>

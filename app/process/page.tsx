@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { Badge } from "@/components/ui/Badge";
 import processData from "@/content/process.json";
+import FounderQuote from "@/components/editorial/FounderQuote";
+import PhotoBand from "@/components/editorial/PhotoBand";
 import LastUpdated from "@/components/editorial/LastUpdated";
-import SpotGraphic from "@/components/SpotGraphic";
 
 const LAST_UPDATED = "2026-04-25";
 
@@ -26,121 +25,103 @@ export const metadata: Metadata = {
 export default function ProcessPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-charcoal py-16 sm:py-20 text-center">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8">
-          <Badge variant="amber-outline" className="mb-6">
-            {processData.sectionLabel}
-          </Badge>
-          <h1 className="text-5xl md:text-6xl font-serif font-normal text-white leading-tight mb-6">
-            {processData.heading}
+      {/* Opener */}
+      <section className="relative bg-charcoal-deep gridlines px-6 md:px-12 pt-20 md:pt-28 pb-16 md:pb-20 border-b hairline overflow-hidden">
+        <div
+          aria-hidden
+          className="meganum absolute right-6 md:right-12 top-2 md:top-6"
+        >
+          02
+        </div>
+        <div className="relative max-w-broadsheet mx-auto">
+          <div className="mono-label mb-8">
+            Index / The Method &middot; {processData.timelineStat}
+          </div>
+          <h1 className="display-hero max-w-[12ch]">
+            Four documents. <br />
+            <em>One order.</em> No gap.
           </h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed mb-6">
-            {processData.subtext}
+          <p className="prose-dark mt-9 text-[17px] max-w-[56ch]">
+            {processData.overviewBody}
           </p>
-          <LastUpdated date={LAST_UPDATED} align="center" tone="onDark" />
-          <div className="mt-6 sm:mt-8 max-w-2xl mx-auto">
-            <SpotGraphic name="spot-journey" variant="light" priority />
+          <div className="mt-8">
+            <LastUpdated date={LAST_UPDATED} tone="onDark" />
           </div>
         </div>
       </section>
 
-      {/* Overview */}
-      <SectionWrapper background="white" narrow>
-        <div className="text-center mb-8">
-          <span className="inline-block bg-amber/10 text-amber font-semibold text-sm px-5 py-2 rounded-full">
-            {processData.timelineStat}
-          </span>
-        </div>
-        <p className="text-lg text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
-          {processData.overviewBody}
-        </p>
-      </SectionWrapper>
-
-      {/* Phase Sections */}
-      {processData.phases.map((phase, index) => {
-        const isEven = index % 2 === 0;
-        return (
-          <SectionWrapper
-            key={phase.number}
-            background={isEven ? "offwhite" : "white"}
-          >
-            <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-              {/* Content side */}
-              <div className={`flex-1 ${!isEven ? "md:order-2" : ""}`}>
-                <span className="text-7xl font-bold text-amber/20 leading-none block mb-2 font-sans">
+      {/* Phases — full-width ledger rows */}
+      <section id="method" className="bg-charcoal-deep gridlines px-6 md:px-12 py-20 md:py-28">
+        <div className="max-w-broadsheet mx-auto">
+          {processData.phases.map((phase) => (
+            <div
+              key={phase.number}
+              className="grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] gap-8 md:gap-14 py-14 border-t hairline items-start"
+            >
+              <div>
+                <div
+                  className="font-display font-extralight text-cream/25"
+                  style={{ fontSize: "clamp(64px, 8vw, 110px)", lineHeight: 0.9, letterSpacing: "-0.05em" }}
+                >
                   {phase.number}
-                </span>
-                <h2 className="text-3xl md:text-4xl font-serif font-normal text-charcoal leading-tight mb-5">
-                  {phase.title}
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                  {phase.description}
-                </p>
-
-                {/* Deliverable callout */}
-                <div className="flex items-start gap-3 bg-amber/5 border-l-4 border-amber rounded-r-xl px-5 py-4">
-                  <svg
-                    className="w-5 h-5 text-amber flex-shrink-0 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-amber mb-1">
-                      Key Deliverable
-                    </p>
-                    <p className="text-base text-charcoal font-medium">
-                      {phase.deliverable}
-                    </p>
-                  </div>
+                </div>
+                <h2 className="display-block mt-5">{phase.title}</h2>
+              </div>
+              <p className="prose-dark text-[16px] max-w-[58ch] md:pt-3">
+                {phase.description}
+              </p>
+              <div className="md:pt-3">
+                <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-amber mb-3">
+                  Deliverable
+                </div>
+                <div className="font-display font-light text-[19px] leading-snug text-cream max-w-[24ch]">
+                  {phase.deliverable}
                 </div>
               </div>
-
-              {/* Image side */}
-              <div className={`flex-1 w-full ${!isEven ? "md:order-1" : ""}`}>
-                {phase.image ? (
-                  <img
-                    src={phase.image}
-                    alt={phase.imageAlt || phase.imagePlaceholder}
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full aspect-[4/3] object-cover rounded-2xl shadow-md"
-                  />
-                ) : (
-                  <div className="w-full aspect-[4/3] bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl flex items-center justify-center text-gray-400 text-sm">
-                    {phase.imagePlaceholder}
-                  </div>
-                )}
-              </div>
             </div>
-          </SectionWrapper>
-        );
-      })}
+          ))}
+        </div>
+      </section>
 
-      {/* CTA */}
-      <section className="bg-charcoal py-24 text-center">
-        <div className="max-w-3xl mx-auto px-5 sm:px-8">
-          <h2 className="text-4xl md:text-5xl font-serif font-normal text-white leading-tight mb-6">
-            {processData.cta.heading}
-          </h2>
-          <p className="text-lg text-white/70 mb-10 max-w-xl mx-auto">
-            We&rsquo;ll review your numbers and tell you exactly where you
-            stand — before anything moves.
-          </p>
-          <a href={processData.cta.href} className="btn-primary">
-            {processData.cta.label}
-          </a>
+      <PhotoBand
+        src="/broll/keys-handover.jpg"
+        position="center 40%"
+        label="The end of the sequence"
+        line={
+          <>
+            Four documents, in the right order &mdash; and the keys arrive{" "}
+            <em>without</em> a gap in between.
+          </>
+        }
+      />
+
+      <FounderQuote
+        quote="Most families try to manage the upgrade on their own — and end up with a gap period, a rushed purchase, or a condo that doesn't grow. Every date and every dollar is projected before we start."
+        cite="— Elfi Abdullah, Founder · The Elfi Division, ERA Singapore"
+      />
+
+      {/* CTA — cream band */}
+      <section className="surface-light gridlines-light py-24 md:py-28 px-6 md:px-12">
+        <div className="max-w-broadsheet mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
+          <div>
+            <div className="mono-label mb-7">Start the sequence</div>
+            <h3 className="display-section max-w-[16ch]">
+              Step one is <em>your numbers</em>, not a viewing.
+            </h3>
+            <p className="mt-6 text-[17px] leading-[1.75] text-body max-w-[46ch]">
+              We review where you stand and tell you honestly — even if the
+              answer is &ldquo;wait&rdquo;.
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col sm:flex-row gap-5">
+            <a
+              href="/discovery"
+              className="inline-flex items-center justify-center bg-charcoal text-cream font-sans text-[12px] uppercase font-semibold px-10 py-5 transition-all duration-200 hover:bg-charcoal-light"
+              style={{ letterSpacing: "0.24em" }}
+            >
+              Book a 7-Min Discovery Call
+            </a>
+          </div>
         </div>
       </section>
     </>
