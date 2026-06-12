@@ -44,3 +44,6 @@ next-env.d.ts
 # local agent/editor config + python cache
 .claude/
 __pycache__/
+
+# internal docs — never publish
+business-manual.md
