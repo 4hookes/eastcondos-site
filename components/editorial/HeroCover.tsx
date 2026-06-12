@@ -6,6 +6,7 @@ export default function HeroCover() {
         <img
           src="/broll/hero-skyline.jpg"
           alt=""
+          data-parallax-img
           className="absolute inset-0 h-full w-full object-cover object-center opacity-[0.32]"
           style={{ filter: "grayscale(0.35) contrast(1.05) brightness(0.85)" }}
         />
@@ -45,7 +46,10 @@ export default function HeroCover() {
             { num: "435k", lbl: "Transactions on file" },
           ].map((s) => (
             <div key={s.lbl}>
-              <div className="font-display font-light text-[28px] md:text-[32px] text-cream tracking-[-0.02em]">
+              <div
+                data-countup
+                className="font-display font-light text-[28px] md:text-[32px] text-cream tracking-[-0.02em]"
+              >
                 {s.num}
               </div>
               <div className="mono-label-dim mt-1.5">{s.lbl}</div>

@@ -49,7 +49,7 @@ export default function Navbar() {
                     className="group font-mono text-[12px] uppercase tracking-[0.18em] text-cream/60 hover:text-cream transition-colors"
                   >
                     <span className="text-amber/70 mr-2">{l.no}</span>
-                    <span>{l.label}</span>
+                    <span className="nav-u">{l.label}</span>
                   </a>
                 </li>
               ))}

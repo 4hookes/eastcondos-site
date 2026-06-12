@@ -1,5 +1,6 @@
 import HeroCover from "@/components/editorial/HeroCover";
 import IndexRibbon from "@/components/editorial/IndexRibbon";
+import NumbersStory from "@/components/editorial/NumbersStory";
 import ChapterArticle from "@/components/editorial/ChapterArticle";
 import MethodGrid from "@/components/editorial/MethodGrid";
 import PhotoBand from "@/components/editorial/PhotoBand";
@@ -31,6 +32,7 @@ export default function Home() {
       />
       <HeroCover />
       <IndexRibbon />
+      <NumbersStory />
       <ChapterArticle />
       <MethodGrid />
       <PhotoBand

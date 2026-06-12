@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MotionProvider from "@/components/motion/MotionProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -73,13 +74,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${inter.variable} ${dmSerif.variable} ${plexMono.variable} ${interDisplay.variable}`}
     >
       <body className="antialiased bg-charcoal-deep text-cream font-sans">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        {/* Motion gate: html.motion only when JS runs and reduced-motion is off.
+            Runs synchronously before first paint of the content below. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion')}catch(e){}",
+          }}
+        />
+        <MotionProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </MotionProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -67,6 +67,7 @@ export default function MethodGrid() {
           {STEPS.map((s) => (
             <div
               key={s.no}
+              data-reveal
               className="p-8 border-r border-b hairline flex flex-col min-h-[340px] hover:bg-charcoal/60 transition-colors duration-300"
             >
               <div className="flex justify-between items-baseline mb-6">

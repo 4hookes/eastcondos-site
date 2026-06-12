@@ -491,3 +491,59 @@ html.division-bare .fixed.bottom-6.right-6 {
 .stagger-3 { transition-delay: 300ms; }
 .stagger-4 { transition-delay: 400ms; }
 .stagger-5 { transition-delay: 500ms; }
+
+/* ============================================
+   Motion system (Concrete Editorial)
+   All initial-hidden states live under html.motion, which an inline
+   script sets ONLY when JS runs and prefers-reduced-motion is off.
+   No JS / reduced motion -> everything below is inert and the page
+   renders fully visible.
+   ============================================ */
+
+/* Rise-and-fade reveal targets (GSAP animates to visible) */
+html.motion [data-reveal] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(26px);
+}
+
+/* Headlines hidden until SplitText has wrapped their lines */
+html.motion .display-hero:not(.split-done),
+html.motion .display-section:not(.split-done) {
+  visibility: hidden;
+}
+
+/* Numbers story variants: pinned stage only on motion + desktop,
+   stacked ledger everywhere else */
+.ns-pin {
+  display: none;
+}
+@media (min-width: 768px) {
+  html.motion .ns-pin {
+    display: flex;
+  }
+  html.motion .ns-stack {
+    display: none;
+  }
+}
+
+/* Nav link underline — amber hairline slides in from the left */
+.nav-u {
+  position: relative;
+}
+.nav-u::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background: #d4a843;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+a:hover .nav-u::after,
+a:focus-visible .nav-u::after {
+  transform: scaleX(1);
+}

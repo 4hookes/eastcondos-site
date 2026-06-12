@@ -25,6 +25,7 @@ export default function PhotoBand({
         src={src}
         alt=""
         aria-hidden
+        data-parallax-img
         className="absolute inset-0 h-full w-full object-cover"
         style={{
           objectPosition: position,

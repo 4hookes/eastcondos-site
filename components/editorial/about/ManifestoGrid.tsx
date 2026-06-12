@@ -55,6 +55,7 @@ export default function ManifestoGrid() {
           {BELIEFS.map((b) => (
             <div
               key={b.no}
+              data-reveal
               className="p-8 border-r border-b hairline min-h-[280px] flex flex-col hover:bg-charcoal/60 transition-colors duration-300"
             >
               <div className="flex items-center justify-between mb-6">
