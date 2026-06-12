@@ -49,13 +49,29 @@ export default function JournalIndexPage() {
     <div className="bg-charcoal-deep min-h-screen">
       {/* ===== Opener ===== */}
       <section className="relative gridlines border-b hairline px-6 md:px-12 pt-20 md:pt-28 pb-16 overflow-hidden">
+        {/* Atmospheric facade backdrop — desaturated, gradient-masked so type stays crisp */}
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <img
+            src="/broll/condo-facade.jpg"
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-[center_30%] opacity-[0.28]"
+            style={{ filter: "grayscale(0.35) contrast(1.05) brightness(0.85)" }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(90deg, #0E0E1F 0%, rgba(14,14,31,0.92) 38%, rgba(14,14,31,0.55) 70%, rgba(14,14,31,0.78) 100%), linear-gradient(0deg, #0E0E1F 0%, rgba(14,14,31,0) 45%)",
+            }}
+          />
+        </div>
         <div
           aria-hidden
-          className="meganum absolute right-6 md:right-12 top-2 md:top-6"
+          className="meganum absolute right-6 md:right-12 top-2 md:top-6 z-10"
         >
           03
         </div>
-        <div className="relative max-w-broadsheet mx-auto">
+        <div className="relative z-10 max-w-broadsheet mx-auto">
           <div className="mono-label mb-8">Index / {indexData.sectionLabel}</div>
           <h1 className="display-hero max-w-[16ch]">{indexData.heading}</h1>
           <p className="annot mt-10 max-w-[44ch]">{indexData.subtext}</p>

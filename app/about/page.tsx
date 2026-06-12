@@ -4,6 +4,7 @@ import FeatureSpread from "@/components/editorial/about/FeatureSpread";
 import StatsRibbon from "@/components/editorial/about/StatsRibbon";
 import ManifestoGrid from "@/components/editorial/about/ManifestoGrid";
 import FounderQuote from "@/components/editorial/FounderQuote";
+import PhotoBand from "@/components/editorial/PhotoBand";
 import TeamGridEditorial from "@/components/editorial/about/TeamGridEditorial";
 import CenterCTA from "@/components/editorial/about/CenterCTA";
 import LastUpdated from "@/components/editorial/LastUpdated";
@@ -29,6 +30,18 @@ export default function AboutPage() {
       <FeatureSpread />
       <StatsRibbon />
       <ManifestoGrid />
+      <PhotoBand
+        src="/broll/district-aerial.jpg"
+        position="center 55%"
+        label="Principle 02, from the air"
+        line={
+          <>
+            Five districts, known street by street &mdash; <em>not</em> the
+            whole island in passing.
+          </>
+        }
+        attribution="Districts 14–18 · East Singapore"
+      />
       <FounderQuote
         quote="The eleven-factor model exists because two early clients in 2014 made decisions I could have prevented. I have not made that mistake since."
         cite="— Elfi Abdullah, Founder · The Elfi Division, ERA Singapore"
