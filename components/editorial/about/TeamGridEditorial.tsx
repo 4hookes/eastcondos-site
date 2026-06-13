@@ -16,6 +16,7 @@ export default function TeamGridEditorial() {
           {teamData.members.map((m) => (
             <div
               key={m.name}
+              data-reveal
               className="grid grid-cols-1 sm:grid-cols-[1fr_1.6fr] gap-6 sm:gap-8 pt-6 border-t border-charcoal"
             >
               <div className="aspect-[4/5] bg-charcoal-light overflow-hidden">

@@ -84,7 +84,7 @@ export default function StoriesShelf() {
             <p className="prose-dark mt-6 max-w-[42ch]">{FEATURE.lede}</p>
             <div className="mt-8 grid grid-cols-2 border-l border-t hairline">
               {FEATURE.data.map((d) => (
-                <div key={d.lbl} className="px-4 py-4 border-r border-b hairline">
+                <div key={d.lbl} data-reveal className="px-4 py-4 border-r border-b hairline">
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-amber">
                     {d.lbl}
                   </div>
@@ -105,7 +105,7 @@ export default function StoriesShelf() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {INDEX.map((c) => (
-            <div key={c.title} className="pt-5 border-t hairline">
+            <div key={c.title} data-reveal className="pt-5 border-t hairline">
               <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-amber">
                 {c.meta}
               </div>

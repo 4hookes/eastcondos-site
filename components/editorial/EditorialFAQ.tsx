@@ -19,6 +19,7 @@ export default function EditorialFAQ() {
         {faqData.items.map((item, i) => (
           <div
             key={item.question}
+            data-reveal
             className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-14 py-10 border-b hairline items-start"
           >
             <div className="font-display font-light text-[22px] leading-snug tracking-[-0.015em] text-cream">

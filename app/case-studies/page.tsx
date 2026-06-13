@@ -67,6 +67,7 @@ export default function CaseStudiesPage() {
         </h2>
 
         <Link
+          data-reveal
           href={`/case-studies/${featured.slug}`}
           className="block border border-charcoal bg-paper hover:bg-amber/10 transition-colors group"
         >
@@ -143,6 +144,7 @@ export default function CaseStudiesPage() {
           </h2>
 
           <Link
+            data-reveal
             href={`/case-studies/${secondary.slug}`}
             className="block border border-charcoal bg-paper hover:bg-amber/10 transition-colors group"
           >

@@ -152,6 +152,7 @@ export default function JournalIndexPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {rest.map((a) => (
                 <Link
+                  data-reveal
                   key={a.slug}
                   href={`/journal/${a.slug}`}
                   className="block border-t hairline-strong pt-5 group"

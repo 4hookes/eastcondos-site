@@ -170,6 +170,7 @@ export default function GuidesIndexPage() {
         <div className="space-y-6 sm:space-y-8">
           {guides.map((guide) => (
             <Link
+              data-reveal
               key={guide.slug}
               href={`/guides/${guide.slug}`}
               className="block border border-charcoal bg-paper hover:bg-amber/10 transition-colors group"
