@@ -1,207 +1,42 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
-import Link from "next/link";
-import type { BuyerBio, HdbInputs, TargetInputs, VerdictResult } from "@/lib/safetyMeter";
-import { computeVerdict, maxLoan, netCashProceeds } from "@/lib/safetyMeter";
-import LastUpdated from "@/components/editorial/LastUpdated";
-import SpotGraphic from "@/components/SpotGraphic";
-import { StepRail } from "./components/StepRail";
+import { useEffect } from "react";
 
-const SAFETY_METER_LAST_UPDATED = "2026-04-25";
-import { BioStep } from "./components/BioStep";
-import { HdbStep } from "./components/HdbStep";
-import { TargetStep } from "./components/TargetStep";
-import { VerdictReveal } from "./components/VerdictReveal";
-import { StrategySection } from "./components/StrategySection";
+/**
+ * The Safety Meter lives as its own funnel at safetymeter.eastcondos.sg —
+ * the proven, ad-tested lead machine (quiz → score → WhatsApp plan → PDF,
+ * with lead capture + the WAHA bot behind it). This route used to host a
+ * second, standalone calculator that computed an on-page verdict but captured
+ * nothing — a lead leak. It now forwards into the real funnel so there is one
+ * machine, one scoring engine, one source of truth.
+ *
+ * Organic/site visits are tagged utm_source=site so they stay distinguishable
+ * from ad traffic (which enters via /go and the rotating-slug system). The
+ * funnel root lets direct visits straight in — no slug required.
+ */
+const FUNNEL_URL =
+  "https://safetymeter.eastcondos.sg/?utm_source=eastcondos_site&utm_medium=nav";
 
-const defaultBuyer1: BuyerBio = {
-  name: "",
-  age: 35,
-  fixedSalary: 0,
-  variableAnnual: 0,
-  obligations: 0,
-  cpfYes: true,
-  oaBalance: 0,
-};
-
-const defaultHdb: HdbInputs = {
-  sellingPrice: 0,
-  outstandingLoan: 0,
-  cpfUsedBuyer1: 0,
-  cpfUsedBuyer2: 0,
-};
-
-const defaultTarget: TargetInputs = {
-  price: 0,
-  voluntaryTopUp: 0,
-  earmarked: 0,
-  interestRate: 0.015,
-};
-
-export default function SafetyMeterPage() {
-  const [step, setStep] = useState<1 | 2 | 3>(1);
-  const [buyer1, setBuyer1] = useState<BuyerBio>(defaultBuyer1);
-  const [buyer2, setBuyer2] = useState<BuyerBio | null>(null);
-  const [cashSavings, setCashSavings] = useState(0);
-  const [hdb, setHdb] = useState<HdbInputs>(defaultHdb);
-  const [target, setTarget] = useState<TargetInputs>(defaultTarget);
-
-  // Verdict state — set after user clicks "Run my Meter"
-  const [verdict, setVerdict] = useState<VerdictResult | null>(null);
-  const [revealKey, setRevealKey] = useState(0); // forces VerdictReveal to re-animate
-  const verdictRef = useRef<HTMLDivElement>(null);
-
-  // Live previews for the wizard (only depend on steps 1+2)
-  const bankEligibility = useMemo(() => maxLoan(buyer1, buyer2), [buyer1, buyer2]);
-  const cashAfterSale = useMemo(() => netCashProceeds(hdb) + cashSavings, [hdb, cashSavings]);
-
-  const handleRunMeter = () => {
-    const result = computeVerdict({ buyer1, buyer2, cashSavings, hdb, target });
-    setVerdict(result);
-    setRevealKey((k) => k + 1);
-    // Scroll after a tick so DOM updates
-    setTimeout(() => {
-      verdictRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 50);
-  };
-
-  const handleReRun = () => {
-    setVerdict(null);
-    setStep(3);
-    window.scrollTo({ top: document.body.scrollHeight * 0.3, behavior: "smooth" });
-  };
-
-  const handleShare = async () => {
-    if (!verdict) return;
-    const url = `${window.location.origin}/safety-meter`;
-    const text = `I'm a ${verdict.persona.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())} on the HDB→Condo Safety Meter (${verdict.score}/100). Run yours:`;
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: "EastCondos Safety Meter", text, url });
-        return;
-      } catch {
-        // fallthrough to clipboard
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(`${text} ${url}`);
-      alert("Link copied to clipboard.");
-    } catch {
-      // Silent fail
-    }
-  };
+export default function SafetyMeterRedirect() {
+  useEffect(() => {
+    window.location.replace(FUNNEL_URL);
+  }, []);
 
   return (
-    <div className="bg-charcoal-deep min-h-screen">
-      {/* ===== Lean opener ===== */}
-      <section className="relative gridlines border-b hairline px-6 md:px-12 pt-16 md:pt-20 pb-12 overflow-hidden">
-        <SpotGraphic
-          name="spot-safety"
-          variant="light"
-          className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[34%] max-w-[400px] opacity-25 pointer-events-none"
-        />
-        <div className="relative max-w-broadsheet mx-auto">
-          <div className="mono-label mb-7">Tools / HDB → Condo Safety Meter</div>
-          <h1 className="display-hero !text-[clamp(2.4rem,5.5vw,4.6rem)] max-w-[18ch]">
-            Can you <em>actually</em> afford the upgrade?
-          </h1>
-          <p className="annot mt-8 max-w-[40ch]">
-            Bank approval is easy. Surviving the payments is the real test.
-          </p>
-          <div className="mt-7">
-            <LastUpdated
-              date={SAFETY_METER_LAST_UPDATED}
-              tone="onDark"
-              note="Scoring reflects TDSR, MSR and LTV rules current on this date"
-            />
-          </div>
+    <main className="bg-charcoal-deep min-h-screen flex items-center justify-center px-6">
+      {/* noscript / slow-connection fallback — keeps the brief flash on-brand */}
+      <div className="text-center max-w-[34ch]">
+        <div className="mono-label-dim mb-6">
+          Tools / HDB → Condo Safety Meter
         </div>
-      </section>
-
-      {/* ===== Step rail ===== */}
-      <StepRail current={step} onStepClick={(n) => setStep(n as 1 | 2 | 3)} />
-
-      {/* ===== Wizard body ===== */}
-      <main className="surface-light gridlines-light px-4 sm:px-10 py-6 sm:py-10">
-       <div className="max-w-broadsheet mx-auto">
-        {step === 1 && (
-          <BioStep
-            buyer1={buyer1}
-            buyer2={buyer2}
-            cashSavings={cashSavings}
-            onBuyer1Change={setBuyer1}
-            onBuyer2Change={setBuyer2}
-            onCashSavingsChange={setCashSavings}
-            onNext={() => setStep(2)}
-          />
-        )}
-        {step === 2 && (
-          <HdbStep
-            hdb={hdb}
-            hasCouple={buyer2 !== null}
-            onChange={setHdb}
-            onBack={() => setStep(1)}
-            onNext={() => setStep(3)}
-          />
-        )}
-        {step === 3 && (
-          <TargetStep
-            target={target}
-            bankEligibility={bankEligibility}
-            cashAfterSale={cashAfterSale}
-            onChange={setTarget}
-            onBack={() => setStep(2)}
-            onSubmit={handleRunMeter}
-          />
-        )}
-       </div>
-      </main>
-
-      {/* ===== Verdict ===== */}
-      {verdict && (
-        <div ref={verdictRef}>
-          <VerdictReveal key={revealKey} verdict={verdict} onReRun={handleReRun} onShare={handleShare} />
-          <StrategySection
-            verdict={verdict}
-            buyer1Name={buyer1.name}
-            buyer2Name={buyer2?.name}
-          />
-        </div>
-      )}
-
-      {/* ===== Footer CTA band (only shown pre-verdict) ===== */}
-      {!verdict && (
-        <section className="bg-charcoal text-cream mt-12 py-14 sm:py-20 px-5 sm:px-10 relative" style={{ borderTop: "6px solid #D4A843" }}>
-          <div className="max-w-[820px] mx-auto text-center">
-            <div className="inline-flex items-center gap-3 mb-4">
-              <span className="w-5 sm:w-7 h-px bg-amber" />
-              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber">Beyond the meter</span>
-            </div>
-            <h2 className="font-serif text-[24px] sm:text-[32px] mb-3" style={{ letterSpacing: "-0.02em" }}>
-              Want a <em className="text-amber italic">personalised</em> plan?
-            </h2>
-            <p className="max-w-[48ch] mx-auto text-[15px] sm:text-base mb-6" style={{ color: "rgba(242, 235, 219, 0.75)" }}>
-              This meter is a snapshot. The full strategy — timing, pledging options, asset selection — starts with a 7-minute discovery call.
-            </p>
-            <Link
-              href="/discovery"
-              className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
-            >
-              Book a 7-Min Discovery Call
-            </Link>
-          </div>
-        </section>
-      )}
-
-      {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
-        Calculations follow MAS Notice 645 (TDSR 55%), CPF Board Ordinary Account rates by age band, and IRAS Buyer's Stamp Duty tiers. Loan eligibility is stressed at 4% per MAS floor. Default mortgage rate is 1.5% (prevailing). Tenure is capped at 30 years with income-weighted average age for joint applicants. For planning only — actual approval depends on credit history, valuation, and underwriting.{" "}
-        <Link href="/disclaimer-hdb-condo-meter-planner" className="underline decoration-amber-deep/40 underline-offset-2 hover:text-charcoal">
-          Full disclaimer
-        </Link>
-        .
+        <h1 className="font-display font-extralight text-cream text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.1] tracking-[-0.03em]">
+          Taking you to the{" "}
+          <em className="font-serif italic text-amber">Safety Meter</em>&hellip;
+        </h1>
+        <a href={FUNNEL_URL} className="btn-square mt-9 inline-flex">
+          Continue to the Safety Meter
+        </a>
       </div>
-    </div>
+    </main>
   );
 }

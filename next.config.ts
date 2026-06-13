@@ -24,6 +24,15 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        // The Safety Meter is the standalone funnel (the proven lead machine).
+        // Forward the on-site route into it at the edge — instant, no flash.
+        // Temporary (307): we may bring a restyled version back on-site later.
+        source: "/safety-meter",
+        destination:
+          "https://safetymeter.eastcondos.sg/?utm_source=eastcondos_site&utm_medium=nav",
+        permanent: false,
+      },
+      {
         source: "/team",
         destination: "/about",
         permanent: true,
