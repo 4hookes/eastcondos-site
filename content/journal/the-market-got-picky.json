@@ -1,0 +1,180 @@
+{
+  "slug": "the-market-got-picky",
+  "title": "The Market Got Picky",
+  "titleHtml": "The Market Got <em>Picky</em>",
+  "standfirst": "New home sales fell by almost a third — and most people read that as a market dying. It isn't. It's a market sorting itself, in public, for free. Here is how to read what it's telling you before you buy.",
+  "kicker": "READING THE SLOWDOWN · JUNE 2026",
+  "publishDate": "2026-06-15",
+  "readingTimeMinutes": 8,
+  "ogImage": "/images/journal/the-market-got-picky/hero.jpg",
+  "coverImage": "/images/journal/the-market-got-picky/hero.jpg",
+  "coverImageAlt": "Two new condominium towers side by side at dusk in Singapore — one lit up and busy, the other dark and quiet",
+  "coverImageCaption": "Same market, same week. One tower full of buyers, the other quiet. A slow market doesn't stop demand — it concentrates it.",
+  "excerpt": "New private home sales fell about 31% — yet the strongest launches still sold out in a weekend. A slow market isn't a dead market; it's a sorting machine that tells you, for free, which homes have real buyers. Here's how to read it using one question.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Market Trends",
+  "framework": {
+    "name": "The Exit Question",
+    "id": "the-exit-question"
+  },
+  "seo": {
+    "metaTitle": "The Market Got Picky: How to Read Singapore's Property Slowdown — EastCondos.sg",
+    "metaDescription": "New private home sales fell about 31% in early 2026, yet the best launches sold out in a weekend. A slow market sorts the winners from the losers for free. Here's how to read it with one question.",
+    "keywords": [
+      "Singapore property slowdown 2026",
+      "new launch sales fell 2026",
+      "is now a good time to buy property Singapore",
+      "buying in a slow property market",
+      "Lentor oversupply",
+      "new launch vs resale Singapore",
+      "HDB upgrader 2026"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/the-market-got-picky"
+  },
+  "relatedSlugs": ["buy-the-blueprint", "the-waiting-trap"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "The headline this year was a scary one. New private home sales fell by almost a third. If you only read the headline, the message seemed obvious: the market is slowing, so sit tight and wait.\n\nBut look one layer down and the story flips completely.\n\nIn the same stretch, the strongest launches sold out in a single weekend. One project moved 853 homes out of 863. Another sold 658 out of 666. The buyers didn't disappear. The money didn't leave. It just got picky.\n\nThat is the part almost nobody is saying out loud. A slow market isn't a dead market. It's a sorting machine — and it's doing your homework for you, in public, for free."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "31",
+          "suffix": "%",
+          "label": "Drop in new-home take-up",
+          "note": "New private home sales, early 2026 vs a year earlier (URA / developer sales, June 2026)"
+        },
+        {
+          "number": "853",
+          "suffix": " / 863",
+          "label": "Sold in one weekend",
+          "note": "One launch's opening-weekend take-up, 2026 — near sold out (developer sales, June 2026)"
+        },
+        {
+          "number": "658",
+          "suffix": " / 666",
+          "label": "Another, almost gone",
+          "note": "A separate launch's opening weekend, 2026 (developer sales, June 2026)"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "A Slow Market Isn't a Dead Market. It's a Sorting Machine."
+    },
+    {
+      "type": "prose",
+      "content": "When a market is hot, everything sells. The good homes sell, and the weak ones get pulled along in the rush. Prices rise across the board, and it's genuinely hard to tell a strong buy from a lazy one — because the tide is lifting all of them at once.\n\nA slow market does the opposite. It stops carrying the weak ones. Buyers slow down, they get fussy, and they put their money only where they're sure. So the strong homes still sell — sometimes fast — and the weak ones sit.\n\nThat gap is the gift. In a hot market you have to guess which homes have real demand. In a slow one, the market shows you. A sold-out launch is the crowd telling you, out loud, that people want this. A quiet one is telling you the opposite. You didn't have to pay for that research. You just had to read it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The One Question That Sorts Everything"
+    },
+    {
+      "type": "prose",
+      "content": "So how do you use this when you're standing in a showflat, or scrolling a listing at night? You ask one question. It's the same question I bring to every home I look at with a client.\n\nIn five years, when you want to sell this — who buys it from you?\n\nThat's it. Not the marble in the lobby. Not the launch-day discount. Not whether it's new or resale. The single thing that decides whether you actually make money is whether there's a real, willing buyer waiting on the other side when it's your turn to sell.\n\nIf you can picture that buyer easily — the young family who'll want this exact size, in this exact spot, at a price they can afford — that's a good sign. If you have to squint to imagine who'd want it, that's the market trying to warn you. The slow market simply makes the warning louder, because the homes with no clear future buyer are the ones now sitting quietly on the listings."
+    },
+    {
+      "type": "data-table",
+      "kicker": "What the market is telling you — for free",
+      "headers": ["What you see", "What it means", "What to do"],
+      "rows": [
+        ["A launch sells out fast", "Real, deep demand at this price and size", "Worth a serious look — the crowd already voted"],
+        ["A project sits quietly for months", "Few willing buyers at this price", "Ask why before you become the next seller stuck there"],
+        ["Everyone avoids one area at once", "Too much choice in one spot right now", "Not automatically bad — check who buys there later"],
+        ["Prices flat but the best homes still move", "The market is sorting, not collapsing", "Buy the home with the clear future buyer"]
+      ],
+      "highlightRowIndex": 3
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "Why \"Too Crowded\" Is the Wrong Worry"
+    },
+    {
+      "type": "prose",
+      "content": "Right now the clearest example is Lentor. A whole cluster of new condos launched there, almost on top of each other, and you can feel buyers hesitating. The common worry is simple: there are too many new homes in one spot.\n\nBut \"too crowded\" is the wrong thing to be afraid of. Plenty of busy, built-up areas hold their value perfectly well. Crowding today isn't the risk.\n\nThe real risk is quieter, and it's the exit question again. When all those homes finish around the same time, and a wave of owners eventually want to sell in the same window — who's there to buy? If the future buyers are there, the cluster sorts itself out over time. If they're thin, that's the actual problem, and it has nothing to do with how it looks today. So don't run from an area because it's busy. Run the numbers on who buys it from you later. That's the question that matters — in Lentor, or anywhere else."
+    },
+    {
+      "type": "pull-quote",
+      "text": "A slow market is the cheapest research you'll ever get. It sorts the winners from the losers for you — you just have to be willing to read it instead of fear it.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "The Same Pattern Is Showing Up in HDB"
+    },
+    {
+      "type": "prose",
+      "content": "This isn't only a private-property story. The exact same sorting is happening in HDB resale.\n\nEarly this year, the HDB resale price index dipped for the first time in about seven years. On the surface, another scary headline. Yet in the very same quarter, a record number of flats — more than 400 of them — sold for a million dollars or more.\n\nFalling and breaking records, at the same time. That's not a contradiction; it's the sorting machine again. The flats with something real behind them — location, size, lease, the right future buyer — are still commanding strong prices. The ones without are softening. One market, splitting into two. And the question that decides which side any given flat lands on is, once again, who buys it from you next."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "How to Read the Slowdown — and Use It"
+    },
+    {
+      "type": "prose",
+      "content": "Here's the actual move, and you can start it today, for free.\n\nStop reading the slowdown as a reason to freeze. Read it as data. A quiet market is handing you a sorted list of what's strong and what's weak, if you're willing to look.\n\nFor any home you're weighing, do three things. First, ask the exit question — in five years, who buys this from you, and can you name them without squinting? Second, look at how its neighbours are selling: are homes like this one moving, or sitting? The market is already telling you. Third, be honest about why a quiet one is quiet — sometimes it's just timing, and sometimes it's a missing buyer you don't want to inherit.\n\nDo that, and a slow market stops being something to be afraid of. It becomes the clearest buying signal you'll get all year. The people who sit it out in fear are ignoring free research. The people who read it buy the home that still has a crowd waiting on the other side."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On Reading a Slow Market",
+      "text": "Everyone freezes when the headlines turn negative. I do the opposite — a slow market is when the truth finally shows. The strong homes still sell, the weak ones sit, and for once you can tell them apart without guessing. Don't ask whether it's a good time to buy. Ask who buys this home from you in five years. Get that answer right and the market's mood doesn't matter. Get it wrong and no boom will save you.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Is now a bad time to buy property in Singapore because sales have slowed?",
+          "answer": "Not necessarily. New private home sales fell by about 31% in early 2026, but the strongest launches still sold out in a weekend — one moved 853 of 863 units. A slow market doesn't remove demand; it concentrates it on the best homes. The signal isn't 'don't buy,' it's 'buy the home that still has real buyers.'"
+        },
+        {
+          "question": "What is the 'exit question' when buying a home?",
+          "answer": "It's the single question that decides whether you make money: in five years, when you want to sell, who buys this home from you? If you can clearly picture that future buyer — the right size, location and price for them — it's a good sign. If you have to squint to imagine who'd want it, the market is warning you."
+        },
+        {
+          "question": "Is it risky to buy in an area with lots of new launches, like Lentor?",
+          "answer": "Crowding today isn't the real risk — plenty of busy areas hold their value. The real question is what happens when many of those homes finish and owners want to sell in the same window: are there enough future buyers? Judge the area on who buys there later, not on how busy it looks now."
+        },
+        {
+          "question": "HDB resale prices dipped but million-dollar flats hit a record — how can both be true?",
+          "answer": "It's the same 'sorting' at work. Flats with strong fundamentals — location, size, lease, a clear future buyer — keep commanding high prices, while weaker ones soften. The overall index can dip while the best flats break records. One market splitting into two."
+        },
+        {
+          "question": "How do I tell a strong buy from a weak one in a slow market?",
+          "answer": "Watch how similar homes are selling. If homes like the one you're considering are moving quickly, demand is real. If they sit quietly for months, ask why before you become the next stuck seller. A slow market does this sorting in public — read it instead of fearing it."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Ask the Exit Question Together",
+      "body": "If you're weighing a specific home in this slower market and want an honest read on who actually buys it from you in five years — with the real transaction data behind it — that's exactly what a Clarity Call is for. We look at the project, the numbers, and whether the future buyer is really there.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
