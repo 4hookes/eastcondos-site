@@ -10,7 +10,7 @@
   "coverImage": "/images/journal/the-market-got-picky/hero.jpg",
   "coverImageAlt": "Two new condominium towers side by side at dusk in Singapore — one lit up and busy, the other dark and quiet",
   "coverImageCaption": "Same market, same week. One tower full of buyers, the other quiet. A slow market doesn't stop demand — it concentrates it.",
-  "excerpt": "New private home sales fell about 31% — yet the strongest launches still sold out in a weekend. A slow market isn't a dead market; it's a sorting machine that tells you, for free, which homes have real buyers. Here's how to read it using one question.",
+  "excerpt": "New home sales fell sharply and resale condos now take 106 days to sell — yet the strongest launches still sold out in a weekend. A slow market isn't a dead market; it's a sorting machine that tells you, for free, which homes have real buyers. Here's how to read it using one question.",
   "author": {
     "name": "Elfi Abdullah",
     "role": "Founder · Division Director, ERA Singapore"
@@ -39,17 +39,17 @@
     {
       "type": "prose",
       "dropcap": true,
-      "content": "The headline this year was a scary one. New private home sales fell by almost a third. If you only read the headline, the message seemed obvious: the market is slowing, so sit tight and wait.\n\nBut look one layer down and the story flips completely.\n\nIn the same stretch, the strongest launches sold out in a single weekend. One project moved 853 homes out of 863. Another sold 658 out of 666. The buyers didn't disappear. The money didn't leave. It just got picky.\n\nThat is the part almost nobody is saying out loud. A slow market isn't a dead market. It's a sorting machine — and it's doing your homework for you, in public, for free."
+      "content": "The headlines this year were scary ones. New private home sales fell hard — in May alone, down 71.1% from the month before, to just 447 homes sold. If you only read the headline, the message seemed obvious: the market is slowing, so sit tight and wait.\n\nBut look one layer down and the story flips completely.\n\nIn the same stretch, the strongest launches sold out in a single weekend. One project moved 853 homes out of 863. Another sold 658 out of 666. The buyers didn't disappear. The money didn't leave. It just got picky.\n\nThat is the part almost nobody is saying out loud. A slow market isn't a dead market. It's a sorting machine — and it's doing your homework for you, in public, for free."
     },
     {
       "type": "stat-grid",
       "columns": 3,
       "stats": [
         {
-          "number": "31",
-          "suffix": "%",
-          "label": "Drop in new-home take-up",
-          "note": "New private home sales, early 2026 vs a year earlier (URA / developer sales, June 2026)"
+          "number": "106",
+          "suffix": " days",
+          "label": "To sell a resale condo now",
+          "note": "Median time on market, Q1 2026 — up from 66 days a year earlier (The Straits Times / PropertyGuru / 99.co, June 2026)"
         },
         {
           "number": "853",
@@ -76,7 +76,7 @@
     },
     {
       "type": "prose",
-      "content": "When a market is hot, everything sells. The good homes sell, and the weak ones get pulled along in the rush. Prices rise across the board, and it's genuinely hard to tell a strong buy from a lazy one — because the tide is lifting all of them at once.\n\nA slow market does the opposite. It stops carrying the weak ones. Buyers slow down, they get fussy, and they put their money only where they're sure. So the strong homes still sell — sometimes fast — and the weak ones sit.\n\nThat gap is the gift. In a hot market you have to guess which homes have real demand. In a slow one, the market shows you. A sold-out launch is the crowd telling you, out loud, that people want this. A quiet one is telling you the opposite. You didn't have to pay for that research. You just had to read it."
+      "content": "When a market is hot, everything sells. The good homes sell, and the weak ones get pulled along in the rush. Prices rise across the board, and it's genuinely hard to tell a strong buy from a lazy one — because the tide is lifting all of them at once.\n\nA slow market does the opposite. It stops carrying the weak ones. Buyers slow down, they get fussy, and they put their money only where they're sure. So the strong homes still sell — sometimes fast — and the weak ones sit.\n\nAnd you can see the sorting in one number. Resale condos now take a median 106 days to sell — up from 66 days a year ago (The Straits Times, June 2026). Homes aren't failing to sell because nobody is buying. They're taking longer because buyers are choosing. The strong ones still go quickly; the rest wait.\n\nThat gap is the gift. In a hot market you have to guess which homes have real demand. In a slow one, the market shows you. A sold-out launch is the crowd telling you, out loud, that people want this. A quiet one is telling you the opposite. You didn't have to pay for that research. You just had to read it."
     },
     {
       "type": "heading",
@@ -146,7 +146,7 @@
       "items": [
         {
           "question": "Is now a bad time to buy property in Singapore because sales have slowed?",
-          "answer": "Not necessarily. New private home sales fell by about 31% in early 2026, but the strongest launches still sold out in a weekend — one moved 853 of 863 units. A slow market doesn't remove demand; it concentrates it on the best homes. The signal isn't 'don't buy,' it's 'buy the home that still has real buyers.'"
+          "answer": "Not necessarily. New home sales fell sharply in 2026 — down 71.1% month-on-month in May — and resale condos now take a median 106 days to sell, up from 66 a year ago. Yet the strongest launches still sold out in a weekend; one moved 853 of 863 units. A slow market doesn't remove demand; it concentrates it on the best homes. The signal isn't 'don't buy,' it's 'buy the home that still has real buyers.'"
         },
         {
           "question": "What is the 'exit question' when buying a home?",
