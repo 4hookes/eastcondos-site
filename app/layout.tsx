@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MotionProvider from "@/components/motion/MotionProvider";
+import MetaPixel from "@/components/analytics/MetaPixel";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -78,6 +80,8 @@ export default function RootLayout({
       className={`${inter.variable} ${dmSerif.variable} ${plexMono.variable} ${interDisplay.variable}`}
     >
       <body className="antialiased bg-charcoal-deep text-cream font-sans">
+        <MetaPixel />
+        <Analytics />
         {/* Motion gate: html.motion only when JS runs and reduced-motion is off.
             Runs synchronously before first paint of the content below. */}
         <script

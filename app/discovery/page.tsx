@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import styles from "./discovery.module.css";
 import SpotGraphic from "@/components/SpotGraphic";
+import { track } from "@/lib/fbq";
 
 const WHATSAPP_NUMBER = "6596667496";
 
@@ -181,7 +182,12 @@ export default function DiscoveryPage() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            if (whatsappLink) window.open(whatsappLink, "_blank");
+            if (whatsappLink) {
+              // The on-site conversion: a qualified discovery request handed to
+              // WhatsApp. Feeds the shared pixel so ads can optimise on Leads.
+              track("Lead", { content_name: "discovery_call" });
+              window.open(whatsappLink, "_blank");
+            }
           }}
         >
           {/* Name */}
