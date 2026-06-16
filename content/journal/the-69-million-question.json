@@ -1,0 +1,170 @@
+{
+  "slug": "the-69-million-question",
+  "title": "The 6.9 Million Question",
+  "titleHtml": "The 6.9 Million <em>Question</em>",
+  "standfirst": "There is one number, buried in a paper almost nobody read, that quietly settles the 'is it a good time to buy?' debate. Singapore is being built for up to 6.9 million people. We're at 6.1 million. Here is why that gap is the whole story.",
+  "kicker": "THE DEMAND IS DECIDED · JUNE 2026",
+  "publishDate": "2026-06-15",
+  "readingTimeMinutes": 8,
+  "ogImage": "/images/journal/the-69-million-question/hero.jpg",
+  "coverImage": "/images/journal/the-69-million-question/hero.jpg",
+  "coverImageAlt": "A dense dusk skyline of Singapore HDB blocks and condominium towers stretching to the horizon",
+  "coverImageCaption": "Built for up to 6.9 million. We're at 6.1 million. The gap between those two numbers is the most certain thing in Singapore property.",
+  "excerpt": "Singapore is being built for up to 6.9 million people; we're at 6.1 million — about 800,000 short. Meanwhile new-home supply sits below its 10-year average. Locked-in demand, tight supply: here's why today's soft prices are the window, not the warning.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Market Trends",
+  "framework": {
+    "name": "The Undersupply Trap",
+    "id": "undersupply-trap"
+  },
+  "seo": {
+    "metaTitle": "The 6.9 Million Question: Why Singapore's Population Plan Settles the Buy Debate — EastCondos.sg",
+    "metaDescription": "Singapore is planned for up to 6.9 million people; we're at 6.1 million. With new-home supply below its 10-year average, demand is locked in and supply is tight. Here's how to read it before you buy.",
+    "keywords": [
+      "Singapore population 6.9 million",
+      "Singapore population white paper property",
+      "is it a good time to buy property Singapore 2026",
+      "Singapore housing supply shortage",
+      "URA unsold inventory 2026",
+      "Singapore property demand 2026",
+      "HDB upgrader buy timing"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/the-69-million-question"
+  },
+  "relatedSlugs": ["the-market-got-picky", "buy-the-blueprint"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "Every week, someone asks me the same question. \"Elfi, is now a good time to buy?\"\n\nIt feels like the most important question in the world. It isn't. Because the answer was decided years ago — in a government paper almost nobody actually read.\n\nIn 2013, Singapore published a plan to prepare the country — the land, the housing, the trains — for a population of up to 6.9 million people. Today we're at 6.1 million. That's roughly 800,000 more people coming, on an island that cannot get any bigger. And every one of them needs somewhere to live.\n\nOnce you see that, the question changes. It's no longer \"is it a good time to buy?\" The demand is already locked in. The only real question left is when."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "6.9",
+          "suffix": "M",
+          "label": "What we're built for",
+          "note": "Population planning parameter, Population White Paper 2013 (infrastructure planned for up to 6.9M)"
+        },
+        {
+          "number": "6.1",
+          "suffix": "M",
+          "label": "Where we are now",
+          "note": "Total population as at June 2025 (Singapore Department of Statistics)"
+        },
+        {
+          "number": "16,219",
+          "label": "Unsold new homes",
+          "note": "Below the 10-year average of 21,498 — supply is historically tight (URA, Q1 2026)"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "The Demand Was Decided For You"
+    },
+    {
+      "type": "prose",
+      "content": "A number like 6.9 million isn't a guess or a forecast you can argue with. It's the figure the whole country is being built around — the reason new MRT lines get drawn, new towns get planned, and land keeps getting released.\n\nThe government was careful to call it a planning parameter, not a target. They're not promising to hit 6.9 million; they're making sure the infrastructure can cope if we get there. But for a home buyer, the effect is the same either way: the country is being prepared for a lot more people, and people need homes.\n\nThink about what that does to demand. Over the last ten years, the number of households in Singapore grew by 21.4%. That's not a blip — that's a steady, structural tide. More people, more families forming, on the same small island. Whatever happens to prices in any given quarter, that tide doesn't stop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "\"But Aren't They Building Everywhere?\""
+    },
+    {
+      "type": "prose",
+      "content": "This is where most people push back. They look at the cranes, they read about a wave of new flats, and they assume the market is about to be flooded. It's a fair worry. It's also wrong — and the actual numbers say so.\n\nAt the end of Q1 2026, the number of unsold new private homes sitting on the market was 16,219. That sounds like a lot until you compare it to history: the 10-year average is 21,498. In other words, there are fewer unsold homes today than normal. New supply isn't flooding in. It's historically tight.\n\nSo where does the \"flood\" feeling come from? Mostly from HDB. More than 13,000 HDB flats are reaching the end of their 5-year minimum stay in 2026 — that's the period you must live in a new flat before you're allowed to sell it. When that wave hits, a lot of resale flats come onto the market at once. But that's existing homes changing hands. It is not new homes being built. Two completely different things — and confusing them is what makes people misread the whole market."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Demand vs supply — the real picture",
+      "headers": ["The force", "The number", "What it means"],
+      "rows": [
+        ["People we're building for", "Up to 6.9M", "Locked-in, structural demand"],
+        ["Where we are now", "6.1M", "~800,000 more still to come"],
+        ["Household growth, 10 years", "+21.4%", "The tide isn't slowing"],
+        ["Unsold new homes", "16,219", "Below the 10-year average of 21,498"],
+        ["The 'flood' you hear about", "13,000+ HDB flats", "Resale, not new supply — different market"]
+      ],
+      "highlightRowIndex": 3
+    },
+    {
+      "type": "pull-quote",
+      "text": "The country is being built for 800,000 more people, and there are fewer unsold new homes than normal. The demand was decided for you. The only thing you control is your timing.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "Why Today's Soft Prices Are the Window"
+    },
+    {
+      "type": "prose",
+      "content": "Right now, prices are quiet. Private home price growth has slowed, the HDB resale wave is softening sentiment, and a lot of buyers are sitting on their hands waiting for a clearer signal.\n\nThat soft patch isn't the warning everyone treats it as. It's the window. You have locked-in demand on one side — 800,000 people the country is being built for — and historically tight new supply on the other. The long-run direction is about as clear as it gets in property. The only thing the current softness changes is your entry point.\n\nThe buyers who wait for the \"all-clear\" usually get it at exactly the wrong moment — because by the time the demand is obvious and the headlines turn positive, it's already in the price. The quiet, patient window is when you're early. Not early and reckless. Early and right, with the most certain demand story in the country sitting behind you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "How to Use This"
+    },
+    {
+      "type": "prose",
+      "content": "You don't have to take any of this on faith. Do three things.\n\nFirst, separate the two supplies in your head. New private homes (historically tight) and the HDB resale wave (a one-off churn of existing flats) are not the same market. When a headline scares you with a \"supply glut,\" check which one it's actually talking about.\n\nSecond, anchor on the demand, not the mood. The mood swings every quarter. The 800,000 people the country is being built for do not. Buy a home that sits where those people will want to live — near the trains, the jobs, the schools that are being planned for them.\n\nThird, treat a quiet market as your friend. Softer prices, more choice, less competition — that's the easiest time to buy well, precisely because everyone else is hesitating. The demand was decided for you. Time it well."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On the 6.9 Million Question",
+      "text": "People spend so much energy trying to time the mood of the market. I'd rather anchor on the one thing that's already decided. The country is being built for up to 6.9 million people, and there are fewer unsold new homes than usual. That's locked in. The quiet patch we're in now isn't a reason to wait — it's the cheapest entry you'll get into the most certain demand story in Singapore. Don't ask if it's a good time. Ask if you're buying the home those 800,000 people will want.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Is Singapore really planning for 6.9 million people?",
+          "answer": "The 2013 Population White Paper set 6.9 million as a planning parameter — the figure Singapore prepares its land, housing and transport infrastructure for. The government was clear it is not a target or a promise to reach that number, but a planning ceiling. As at June 2025, the population was about 6.1 million, so roughly 800,000 more people could still come."
+        },
+        {
+          "question": "Aren't they building too many new homes right now?",
+          "answer": "No. At the end of Q1 2026 there were 16,219 unsold new private homes — below the 10-year average of 21,498. New supply is historically tight, not flooded. The 'wave' people worry about is mostly HDB resale: over 13,000 flats reaching the end of their 5-year minimum-stay period in 2026 and coming onto the resale market. That's existing homes changing hands, not new supply."
+        },
+        {
+          "question": "If demand is so strong, why are prices soft right now?",
+          "answer": "Short-term mood. Buyers are cautious, the HDB resale wave is dampening sentiment, and price growth has slowed. But the soft patch is about sentiment and timing, not a collapse in demand. Locked-in population growth plus tight new supply means the long-run direction stays up — which is what makes a quiet market a good entry point rather than a warning."
+        },
+        {
+          "question": "What is the HDB minimum occupation period (MOP)?",
+          "answer": "It's the 5 years you must live in a new HDB flat before you're allowed to sell it. When a large batch of flats reaches the end of that period in the same year — like the 13,000+ in 2026 — a lot of resale flats hit the market at once, which can soften HDB resale prices. It does not add to the new private home supply."
+        },
+        {
+          "question": "So is now a good time to buy?",
+          "answer": "The more useful question is when, and what. The demand is already decided by the population plan, and new supply is tight. The current quiet patch is a reasonable entry window — softer prices, more choice, less competition. The key is to buy a home that sits where the next 800,000 people will actually want to live, then time your own move sensibly rather than waiting for headlines to turn positive."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Time It Well",
+      "body": "If you want to know whether a specific home sits on the right side of that 800,000-person demand — and whether your timing actually works — that's exactly what a Clarity Call is for. We look at the location, the real numbers, and where you'd be entering.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
