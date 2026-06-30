@@ -1,0 +1,194 @@
+{
+  "slug": "is-lentor-oversupplied",
+  "title": "Is Lentor Oversupplied? We Checked All Seven Launches.",
+  "titleHtml": "Is Lentor <em>Oversupplied</em>? We Checked All Seven Launches.",
+  "standfirst": "No. Seven condo launches opened around Lentor MRT in three years — more than 2,400 new homes — and the entry price rose at every single one. The first buyers are up about 14%. Here is what the data actually shows, and why \"too much supply\" is the wrong worry.",
+  "kicker": "THE OVERSUPPLY QUESTION · JUNE 2026",
+  "publishDate": "2026-06-26",
+  "readingTimeMinutes": 7,
+  "ogImage": "/images/journal/is-lentor-oversupplied/hero.jpg",
+  "coverImage": "/images/journal/is-lentor-oversupplied/hero.jpg",
+  "coverImageAlt": "Dusk aerial of a maturing Lentor residential estate — finished condominium towers beside plots still under construction near the MRT line",
+  "coverImageCaption": "Seven launches in three years around Lentor MRT — and the price floor rose at every one.",
+  "excerpt": "Everyone fears oversupply. Lentor is the cleanest test of that fear in Singapore: seven launches, one MRT, 2,400+ homes — and prices rose anyway. Here is the data, drawn from 247,000+ transactions.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "New Launch Analysis",
+  "framework": {
+    "name": "Buy the Blueprint",
+    "id": "buy-the-blueprint"
+  },
+  "seo": {
+    "metaTitle": "Is Lentor Oversupplied? All 7 Launches, Analysed — EastCondos.sg",
+    "metaDescription": "Seven condo launches, one MRT, 2,400+ homes — yet Lentor's entry price rose every time and the first buyers are up about 14%. The data behind the oversupply myth.",
+    "keywords": [
+      "is Lentor oversupplied",
+      "Lentor condo oversupply",
+      "Lentor condo prices",
+      "Lentor new launch",
+      "Lentor Garden Residences",
+      "Lentor MRT condo",
+      "Singapore condo oversupply"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/is-lentor-oversupplied"
+  },
+  "relatedSlugs": ["buy-the-blueprint", "yesterdays-launch-price-earlier-phase-play"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "Ask anyone shopping for a condo near Lentor MRT and the same worry comes up: there are too many launches here. Seven of them in about three years, packed around a single train station. More than 2,400 brand-new homes.\n\nThe instinct is simple. Too much supply, prices must fall, so stay away.\n\nIt is a fair instinct. It is also wrong. And Lentor is the best place in Singapore to prove it, because nowhere else got flooded this hard, this fast. If oversupply crushes prices, this is exactly where the damage should show. It doesn't. To check, we pulled every Lentor new-sale and resale from our database of more than 247,000 transactions. Here is what it says."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "7",
+          "label": "Launches in 3 years",
+          "note": "All within walking distance of one MRT station"
+        },
+        {
+          "number": "+14",
+          "suffix": "%",
+          "label": "The first buyers' gain",
+          "note": "Lentor Modern 2022 buyers, reselling now — EastCondos data"
+        },
+        {
+          "number": "92",
+          "suffix": "%",
+          "label": "Sold on opening weekend",
+          "note": "The most recent Lentor launch"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "Is There a Condo Oversupply in Lentor?"
+    },
+    {
+      "type": "prose",
+      "content": "No. Oversupply shows up as falling prices and unsold stock. Lentor shows the opposite — every launch opened higher than the one before it.\n\nLook at the entry price of each launch: the cheapest price per square foot the developer opened at. It rose the whole way through, from about $2,108 in 2022 to about $2,262 in 2024. Seven projects competed for buyers in the same square kilometre, and not a single one undercut the project before it."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Lentor launch entry prices (median, per square foot)",
+      "headers": ["Launch", "Year", "Entry price"],
+      "rows": [
+        ["Lentor Modern", "2022", "$2,108"],
+        ["Lentor Hills", "2023", "$2,115"],
+        ["Hillock Green", "2023", "$2,160"],
+        ["Lentoria", "2024", "$2,207"],
+        ["Lentor Mansion", "2024", "$2,262"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "Did the Early Buyers Get Hurt?"
+    },
+    {
+      "type": "prose",
+      "content": "No — they made money. Lentor Modern's first buyers paid a median of about $2,108 per square foot in 2022. They are reselling now at about $2,400 — up roughly 14% — even as five more launches opened right next door.\n\nAnd the new launches kept clearing. The most recent one sold 92% of its homes on its opening weekend. The one before it, 75%. That is not the signature of an oversupplied market. That is a queue."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "Was It Just a Rising Market?"
+    },
+    {
+      "type": "prose",
+      "content": "No. Over the same years, the average suburban new launch in Singapore went sideways — flat to slightly down. Lentor took on the heaviest supply load in the country and still beat the suburban average.\n\nThat is the part that matters. It is not that everything went up. It is that the most-flooded estate beat the field while it was being flooded."
+    },
+    {
+      "type": "pull-quote",
+      "text": "Supply you fear in a dead town is fuel in a live one.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "So Why Didn't Prices Fall?"
+    },
+    {
+      "type": "prose",
+      "content": "Two reasons. First, every new launch made the estate more complete — the mall opened, the train ran, schools and six other developments arrived. A condo next to a finished neighbourhood is a known quantity, and buyers pay for certainty.\n\nSecond, and most people miss this: land cost is the floor under every price. A developer pays for the land before laying a single brick, and cannot sell below that cost. In Lentor, land kept getting more expensive — and rising land does not just allow higher prices, it forces them."
+    },
+    {
+      "type": "data-table",
+      "kicker": "What each developer paid for the land (state tender, per square foot)",
+      "headers": ["Site", "Awarded", "Land price"],
+      "rows": [
+        ["Lentor Modern", "2021", "$1,204"],
+        ["Lentor Hills", "2022", "$1,060"],
+        ["Hillock Green", "2022", "$1,108"],
+        ["Lentoria", "2022", "$1,130"],
+        ["Lentor Mansion", "2023", "$985"],
+        ["Lentor Garden", "2025", "$920 — lowest"]
+      ],
+      "highlightRowIndex": 5
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "What This Means If You're Buying"
+    },
+    {
+      "type": "prose",
+      "content": "The cheapest land of all seven sites — $920 per square foot — sits under the newest launch, Lentor Garden, while the most recent Lentor land tender hit a record $1,278. So the last project in the sequence sits on the lowest land cost, in a market still pricing upward. The last launch in a hot estate is not the leftover; on the cheapest land, in a proven town, it can be the value buy. We unpack that specific project in Buy the Blueprint.\n\nOne honest caveat: this is not a law of physics. It works where demand is deep — a train at the doorstep, schools, real reasons people fight to live there. Flood a quiet, weak location with the same number of launches and prices will sag. Lentor worked because the demand was real, not because supply is magic.\n\nThe bottom line: a wall of new launches in a wanted estate is not the red flag people think. Often it is the opposite — proof the place is in demand and the floor is rising under your feet."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On the Oversupply Myth",
+      "text": "People count the cranes and panic. I count the transactions. Seven launches went into Lentor and the price floor went up every single time — and the first buyers are already ahead. Oversupply is real in a place nobody wants. In a place everybody wants, more launches just means the town is filling in. Read the data, not the headlines.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Is there a condo oversupply in Lentor?",
+          "answer": "No. Across all seven launches around Lentor MRT between 2022 and 2026, the entry price per square foot rose every time — from about $2,108 to $2,262 — and the earliest buyers (Lentor Modern, 2022) are reselling about 14% higher. The two most recent launches sold 75% and 92% of their homes on opening weekend. That is demand absorbing supply, not oversupply."
+        },
+        {
+          "question": "Why did Lentor condo prices rise despite so many launches?",
+          "answer": "Two reasons. Each new launch made the estate more complete — mall, MRT, schools — which buyers pay a premium for. And land costs kept climbing, which raises the floor price every new launch must open above, because a developer cannot sell below what it paid for the land."
+        },
+        {
+          "question": "Which Lentor condo sits on the cheapest land?",
+          "answer": "Lentor Garden, whose developer paid about $920 per square foot for the land — the lowest of all seven Lentor sites, versus up to $1,204 for the earliest plots. A 2026 Lentor land tender later hit a record $1,278, so the cost floor under future launches is still rising."
+        },
+        {
+          "question": "Did early Lentor buyers make money?",
+          "answer": "Yes. Lentor Modern's 2022 buyers paid a median of about $2,108 per square foot and are reselling at about $2,400 — up roughly 14% — even though five more launches opened next to them."
+        },
+        {
+          "question": "Will Lentor condo prices keep rising?",
+          "answer": "No one can promise prices. But the mechanics still point up: the estate is more complete each year, and the newest land tender set a record at $1,278 per square foot, which lifts the floor under every launch that follows. The risk is in weak locations, not a wanted one like Lentor."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Read the Data, Not the Headlines",
+      "body": "If a \"too much supply\" worry is keeping you on the sidelines — in Lentor or anywhere else — a Clarity Call is where we check it against the real transactions: who is actually buying, what the early owners have done, and whether the entry price lines up in your favour.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
