@@ -1,0 +1,179 @@
+{
+  "slug": "can-a-hdb-flat-become-5-million",
+  "title": "Can a $700,000 Flat Really Become $5 Million?",
+  "titleHtml": "Can a $700,000 Flat Really Become <em>$5 Million</em>?",
+  "standfirst": "Yes — on a spreadsheet. In real life, almost never. The viral 'sell every five years and trade up' ladder turns a $700,000 flat into $5.6 million, but only if you earn about $46,000 a month by 45 — more than four times what a typical Singapore family makes. Here is the one row every chart leaves out.",
+  "kicker": "THE UPGRADE LADDER · JUNE 2026",
+  "publishDate": "2026-06-30",
+  "readingTimeMinutes": 8,
+  "ogImage": "/images/journal/can-a-hdb-flat-become-5-million/hero.jpg",
+  "coverImage": "/images/journal/can-a-hdb-flat-become-5-million/hero.jpg",
+  "coverImageAlt": "A single tall luxury condominium tower at dusk, its upper floors dissolving into faint blueprint lines against a muted sky",
+  "coverImageCaption": "The dream is drawn cleanly on a chart. The higher you climb it, the more it leans on an income most people never reach.",
+  "excerpt": "A popular webinar shows a $700,000 HDB flat growing into a $5.6 million property by selling and trading up every five years. The property math works. The income behind it doesn't: the final step needs about $46,000 a month — four times a typical family, and almost double the top-10% entry point. Here's how to read the ladder as a map, not a promise.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Financial Planning",
+  "framework": {
+    "name": "The Payslip Ceiling",
+    "id": "the-payslip-ceiling"
+  },
+  "seo": {
+    "metaTitle": "Can a $700,000 Flat Become $5 Million? The Income the Chart Hides — EastCondos.sg",
+    "metaDescription": "The viral 'sell every five years' upgrade ladder turns a $700K HDB into $5.6M — but it needs you earning $46,000 a month by 45, four times a typical family. Here's the row every chart hides.",
+    "keywords": [
+      "can a HDB flat become 5 million",
+      "Singapore property upgrade ladder",
+      "sell every 5 years property strategy",
+      "how much income to buy a 5 million home Singapore",
+      "build a property portfolio from a HDB flat",
+      "HDB to condo upgrade math",
+      "Singapore household income 2025"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/can-a-hdb-flat-become-5-million"
+  },
+  "relatedSlugs": ["the-market-got-picky", "the-waiting-trap"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "There's a property webinar making the rounds, and the promise is exciting. Start with a $700,000 HDB flat. Sell every five years, trade up each time, and by 65 you are holding a $5.6 million home. A flat becomes a small fortune.\n\nIt is a beautiful chart. And I want to be fair to it before I take it apart.\n\nThe move itself is real. On the property side, the math even works. You build some equity, you sell, you roll it into a bigger home, and you repeat. I have helped clients climb a step or two of exactly this ladder.\n\nSo this is not a 'property is a scam' article. Upgrading is one of the best wealth moves a Singapore family can make. But every chart like this hides one row — and it is the most important one of all."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "$10,600",
+          "suffix": " /mo",
+          "label": "What a typical family earns",
+          "note": "Median resident household income from work, 2025 (Singapore Dept of Statistics, data.gov.sg)"
+        },
+        {
+          "number": "$27,700",
+          "suffix": " /mo",
+          "label": "Where the top 10% begins",
+          "note": "90th-percentile resident household income from work, 2025 (SingStat, data.gov.sg)"
+        },
+        {
+          "number": "$46,000",
+          "suffix": " /mo",
+          "label": "What the $5.6M rung needs",
+          "note": "Income required to hold the final home, from the upgrade-ladder webinar's own slides, 2026"
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "The Row Every Chart Hides: Your Income"
+    },
+    {
+      "type": "prose",
+      "content": "The hidden row is your income. To own each home in the chain, you must qualify for the loan on each one. And the bank only lets you borrow against the income you actually earn.\n\nSo let us put the hidden row back in. To hold the $2.8 million home at 40, the same webinar says you need about $20,000 a month. To hold the final $5.6 million home at 45, you need about $46,000 a month.\n\nSit with those two numbers for a second. They are the whole game. Everything else on the chart depends on them being true."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "What $46,000 a Month Actually Means"
+    },
+    {
+      "type": "prose",
+      "content": "It is one thing to type '$46,000 a month' on a slide. It is another to earn it. So let us compare it to real Singapore households.\n\nThe typical family here earns about $10,600 a month. That is the middle of the whole country (Singapore Department of Statistics, 2025). So $46,000 a month is more than four times what a normal household makes.\n\nWhat about the well-off? To even reach the top 10% of households, you need about $27,700 a month. The chart's $46,000 is almost double even that. You are not in the top 10% any more. You are in a much smaller group near the very top.\n\nThese are not my guesses. They are the national income figures, straight from the government's own data."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Each rung — and the income it quietly demands",
+      "headers": ["The rung", "Income the chart needs", "Where that ranks"],
+      "rows": [
+        ["$1.4M home at 35", "~$9,000 / month", "Around the middle"],
+        ["$2.8M home at 40", "~$20,000 / month", "Top 20% of households"],
+        ["$5.6M home at 45", "~$46,000 / month", "Far beyond the top 10%"]
+      ],
+      "highlightRowIndex": 2
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "The Five-Times Problem"
+    },
+    {
+      "type": "prose",
+      "content": "Now line it up against the clock. The chart starts you around $9,000 a month at 35. By 45, it needs you at $46,000. That is your pay growing more than five times in ten years.\n\nBe honest about that. A pay rise is wonderful. But a pay rise of five times in a decade, for a normal earner, almost never happens. For most of us, the income never catches up to the chart.\n\nThat is the quiet reason these ladders break. Not the property. The payslip."
+    },
+    {
+      "type": "pull-quote",
+      "text": "It looks possible on paper. It's impossible on payslip.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "Two More Things the Slide Skips"
+    },
+    {
+      "type": "prose",
+      "content": "Even if the income were there, two more costs sit off the chart.\n\nFirst, the friction. Every time you sell and rebuy, you lose money to stamp duty, agent fees, legal fees and renovation. Across three sales and four purchases, that is easily a few hundred thousand dollars leaking out. The chart rolls 100% of your equity forward. Real life takes a cut at every single step.\n\nSecond, the smooth line. The chart assumes your home rises a tidy amount every single year. It also assumes you can always sell at a gain, right on schedule. Real markets have flat years and down years. Hit one at the wrong moment, and the whole chain stalls."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "A Map, Not a Promise — What To Do Instead"
+    },
+    {
+      "type": "prose",
+      "content": "So is the ladder useless? Not at all. It is a great map. It just is not a promise.\n\nThe smart move is to climb the one or two steps your real income can actually hold. Not the income on a slide. A $700,000 flat into a $1.4 million home you comfortably own is a real win. That single step alone can change your family's future.\n\nThe mistake is reaching for the top of the chart on an income that lives in the middle. That is how people over-stretch, panic in a soft year, and sell at the worst time.\n\nUse the ladder to see the path. Then climb only as high as your real pay can carry you. One home you can keep beats a $5 million home you can't."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On Chasing the Spreadsheet",
+      "text": "Every few months a new chart goes viral, promising a fortune from one flat. I love the optimism. But I have sat with enough families to know the ladder never breaks on the property — it breaks on the payslip. My job is not to sell you the top of the chart. It is to find the highest rung your real income can hold, and get you there safely. That one honest step builds more wealth than ten imaginary ones.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Can a $700,000 HDB flat really grow into a $5 million property?",
+          "answer": "On a spreadsheet, yes — but for almost everyone, no. The popular 'sell every five years and trade up' ladder only works if your income reaches about $46,000 a month by age 45. That is more than four times what a typical Singapore family earns (around $10,600 a month, SingStat 2025), and almost double the entry point to the top 10%. The property math works; the income rarely does."
+        },
+        {
+          "question": "How much income do you need to own a $5.6 million home in Singapore?",
+          "answer": "Roughly $46,000 a month in household income, going by the upgrade-ladder webinar's own figures. For the $2.8 million step at 40, you need about $20,000 a month — already the top 20% of households. The bank caps your loan against the income you actually earn, so income is the real ceiling, not the property."
+        },
+        {
+          "question": "Is the property upgrade ladder a scam?",
+          "answer": "No. Selling one home and trading up to a better one is a genuine wealth move, and many families do it well. The problem is only the extreme version — four jumps to $5.6 million — which quietly assumes an income almost nobody reaches. Treat the ladder as a map, then climb only the steps your real pay can hold."
+        },
+        {
+          "question": "What costs does the upgrade-ladder chart leave out?",
+          "answer": "Two big ones. First, friction: stamp duty, agent fees, legal fees and renovation on every sale and purchase — easily a few hundred thousand dollars across the chain. Second, it assumes prices rise smoothly every year and that you can always sell at a gain on schedule, which real market cycles don't guarantee."
+        },
+        {
+          "question": "What's a realistic upgrade from a $700,000 HDB flat?",
+          "answer": "For most families, one solid step — a $700,000 flat into a roughly $1.4 million private home you can comfortably afford — is the real win. It is achievable on a normal income, and that single move can meaningfully grow your wealth without over-stretching. Climb the rung your payslip supports, not the one on the slide."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Find the Rung You Can Actually Hold",
+      "body": "If you're looking at your own flat and wondering how far up you can really go — without betting on an income you don't have yet — that's exactly what a Clarity Call is for. We run your real numbers and map the highest step you can hold with confidence.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}

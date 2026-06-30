@@ -9,6 +9,7 @@ import buyTheBlueprint from "@/content/journal/buy-the-blueprint.json";
 import marketGotPicky from "@/content/journal/the-market-got-picky.json";
 import sixNineMillion from "@/content/journal/the-69-million-question.json";
 import lentorOversupply from "@/content/journal/is-lentor-oversupplied.json";
+import fiveMillionLadder from "@/content/journal/can-a-hdb-flat-become-5-million.json";
 import JournalArticleRenderer, {
   type JournalBlock,
 } from "@/components/editorial/JournalArticleRenderer";
@@ -48,6 +49,7 @@ const articleMap: Record<string, JournalArticle> = {
   "the-market-got-picky": marketGotPicky as JournalArticle,
   "the-69-million-question": sixNineMillion as JournalArticle,
   "is-lentor-oversupplied": lentorOversupply as JournalArticle,
+  "can-a-hdb-flat-become-5-million": fiveMillionLadder as JournalArticle,
 };
 
 export async function generateStaticParams() {
