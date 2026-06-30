@@ -111,12 +111,18 @@ export default async function JournalArticlePage({
     author: {
       "@type": "Person",
       name: article.author.name,
+      jobTitle: article.author.role,
       url: "https://eastcondos.sg/about",
+      sameAs: ["https://www.instagram.com/elfi.abd"],
     },
     publisher: {
       "@type": "Organization",
       name: "EastCondos.sg",
       url: "https://eastcondos.sg",
+      sameAs: [
+        "https://www.youtube.com/channel/UCglVDJ8Y7rKc0WlqdLGOc5Q",
+        "https://www.facebook.com/eastcondossg",
+      ],
     },
     image: article.ogImage,
     mainEntityOfPage: article.seo.canonicalUrl,
