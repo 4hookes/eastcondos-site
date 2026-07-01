@@ -17,6 +17,7 @@
 // won't render (filtered out), so keep this list in step with index.json.
 // ─────────────────────────────────────────────────────────────────────────
 import indexData from "./index.json";
+import theMovingTax from "./the-moving-tax.json";
 import canAHdbFlatBecome5Million from "./can-a-hdb-flat-become-5-million.json";
 import isLentorOversupplied from "./is-lentor-oversupplied.json";
 import the69MillionQuestion from "./the-69-million-question.json";
@@ -29,6 +30,7 @@ import yourHdbLooksYoungInsideItsOld from "./your-hdb-looks-young-inside-its-old
 // Typed as `unknown` so each consumer casts to its own view (JournalArticle /
 // JournalSummary) — the registry stays decoupled from the renderer's types.
 export const articleMap: Record<string, unknown> = {
+  "the-moving-tax": theMovingTax,
   "can-a-hdb-flat-become-5-million": canAHdbFlatBecome5Million,
   "is-lentor-oversupplied": isLentorOversupplied,
   "the-69-million-question": the69MillionQuestion,

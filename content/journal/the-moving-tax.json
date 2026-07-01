@@ -1,0 +1,187 @@
+{
+  "slug": "the-moving-tax",
+  "title": "The Moving Tax: What Climbing the Property Ladder Really Costs",
+  "titleHtml": "The Moving Tax: What Climbing the Property Ladder <em>Really Costs</em>",
+  "standfirst": "Climb the ladder three times — a $700,000 HDB flat up to a $2.8 million condo — and the moving itself costs about $597,000. That is more than the $538,000 in gains the chart shows you making. The profit the spreadsheet promised was quietly eaten by stamp duty, agent fees, lawyers and renovation, one step at a time. Here is the full ledger, transaction by transaction.",
+  "kicker": "THE UPGRADE LADDER · JULY 2026",
+  "publishDate": "2026-07-01",
+  "readingTimeMinutes": 7,
+  "ogImage": "/images/journal/the-moving-tax/hero.jpg",
+  "coverImage": "/images/journal/the-moving-tax/hero.jpg",
+  "coverImageAlt": "A staircase of condominium towers climbing into a dusk sky, each step faintly overlaid with receipt and ledger lines dissolving into the haze",
+  "coverImageCaption": "Every step up the ladder is drawn as pure gain. The receipt for the climb is printed in ink you only read at the end.",
+  "excerpt": "The viral 'sell and trade up' ladder shows your money growing at every step. It hides the cost of the steps themselves. Climb three times and moving alone runs about $597,000 — bigger than the $538,000 the chart says you gained. Here's the transaction-by-transaction receipt, and how to upgrade without handing most of your gain to the taxman, the agent and the lawyer.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Financial Planning",
+  "framework": {
+    "name": "The Moving Tax",
+    "id": "the-moving-tax"
+  },
+  "seo": {
+    "metaTitle": "The Moving Tax: What Climbing the Property Ladder Really Costs — EastCondos.sg",
+    "metaDescription": "Climb the upgrade ladder three times and the moving itself costs about $597,000 — more than the $538,000 gain the chart shows. Here's the full transaction-by-transaction ledger, and how to upgrade without leaking your gain to fees.",
+    "keywords": [
+      "cost of upgrading property Singapore",
+      "does climbing the property ladder make money",
+      "how much does it cost to sell and buy a home Singapore",
+      "stamp duty agent fees legal fees renovation Singapore",
+      "HDB to condo upgrade cost",
+      "Singapore property upgrade ladder math",
+      "buyer stamp duty Singapore 2026"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/the-moving-tax"
+  },
+  "relatedSlugs": ["can-a-hdb-flat-become-5-million", "the-waiting-trap"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "There's a property video making the rounds, and the pitch is simple. Sell your HDB flat, upgrade to a condo. Four years later, sell that and upgrade to a bigger one. Keep climbing, and a $700,000 flat becomes a few million.\n\nOn a spreadsheet, it's beautiful. Every row, the price goes up. Your money seems to grow with every move.\n\nI want to be fair to it. The move itself is real — I've helped families climb a step or two of exactly this ladder, and upgrading is one of the best wealth moves a Singapore family can make.\n\nBut the spreadsheet hides one thing. Every step up has a cost. And when you add those costs across a whole lifetime of moving, they don't just nibble at your gain. They can swallow it whole."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "$538,000",
+          "label": "What the chart says you gained",
+          "note": "Paper gain across two condo sales, assuming 3% annual price growth. EastCondos worked model, July 2026."
+        },
+        {
+          "number": "$597,000",
+          "label": "What the moving actually cost",
+          "note": "Stamp duty, agent fees, legal fees and renovation across 3 purchases and 3 sales. EastCondos calculation, July 2026."
+        },
+        {
+          "number": "$58,000",
+          "label": "How much the cost beat the gain",
+          "note": "Moving cost $596,448 minus paper gain $538,000 — before the final home has earned a cent."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "First, Let's Be Fair to the Chart"
+    },
+    {
+      "type": "prose",
+      "content": "Start by giving the ladder its best case. Assume your home rises about 3% a year — the long-run average for Singapore homes. No crashes, no flat years, and a clean sale every single time.\n\nHere's the climb. You sell your HDB after the five-year lock-in and buy your first condo at $1,500,000. Four years later it's worth about $1,688,000, and you sell — a gain of $188,000. You trade up to a $2,200,000 condo, hold it a few years to about $2,550,000, and sell — a gain of $350,000. Then you buy your final home at $2,800,000 and stop.\n\nAdd the two gains and the chart shows you making $538,000. This is the number that makes people say yes. But it's only half the sheet."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The Half Nobody Shows You"
+    },
+    {
+      "type": "prose",
+      "content": "Now put the missing half back in: the cost of the moving itself. Every purchase and every sale carries a bill, and here is every one of them, laid out.\n\nThe pattern is simple. Every time you buy, you pay stamp duty — the tax you pay just for buying. Every time you sell, the agent takes about 2%, plus GST. The lawyer bills you on both sides. And every new home gets renovated — here, $80,000 each."
+    },
+    {
+      "type": "data-table",
+      "kicker": "The full ledger — every transaction in the climb",
+      "headers": ["Transaction", "Price", "Cost of this step"],
+      "rows": [
+        ["Sell HDB", "$700,000", "$17,760"],
+        ["Buy Condo 1", "$1,500,000", "$127,100"],
+        ["Sell Condo 1", "$1,688,000", "$39,298"],
+        ["Buy Condo 2", "$2,200,000", "$162,100"],
+        ["Sell Condo 2", "$2,550,000", "$58,090"],
+        ["Buy Condo 3", "$2,800,000", "$192,100"],
+        ["Total cost of moving", "", "$596,448"]
+      ],
+      "highlightRowIndex": 6
+    },
+    {
+      "type": "prose",
+      "content": "Buying costs more than selling, because stamp duty and renovation both land on the purchase. That's why the three 'buy' rows are the heavy ones.\n\nGroup the same numbers a different way, and you can see exactly where the money goes."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Where the $596,448 goes",
+      "headers": ["Cost", "Across the whole journey"],
+      "rows": [
+        ["Stamp duty — 3 purchases", "$233,800"],
+        ["Agent fees — 3 sales (2% + GST)", "$107,648"],
+        ["Legal — 6 transactions", "$15,000"],
+        ["Renovation — 3 homes at $80,000", "$240,000"],
+        ["Total", "$596,448"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "Put the Two Numbers Side by Side"
+    },
+    {
+      "type": "prose",
+      "content": "The chart said you made $538,000. The moving cost you $596,448. The cost is bigger than the gain — by about $58,000 — and that's before your final home has earned a single dollar.\n\nSo the 'profit' the spreadsheet promised was never really there. It was quietly handed over, one step at a time, to the taxman, the agent and the lawyer. You did all that moving, took on all that loan, and the gain existed mostly on paper on the way through."
+    },
+    {
+      "type": "pull-quote",
+      "text": "The number on the spreadsheet was never the number in your pocket.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "So Should You Never Upgrade? No."
+    },
+    {
+      "type": "prose",
+      "content": "This is not a 'don't upgrade' article. The ladder still works. Moving from an HDB flat to a home that fits your family's future is one of the smartest things you can do.\n\nThe enemy isn't owning. The enemy is moving too many times. Every extra move is another full round of stamp duty, agent fee, lawyer and renovation — another slice off the top.\n\nSo change the game. Move fewer times, and when you do move, jump bigger. One clean jump — from your flat straight to the home you actually want to stay in — beats three small hops that each pay the toll. The win isn't climbing more often. It's keeping more of what you make."
+    },
+    {
+      "type": "founder-quote",
+      "label": "On the Cost of Climbing",
+      "text": "Every few months a chart goes viral showing a flat becoming a fortune, one upgrade at a time. I love the ambition. But I've signed enough cheques alongside my clients to know the truth — every move quietly costs six figures, and the chart never shows that row. My job isn't to keep you climbing. It's to find the one or two moves that genuinely change your life, and get you there without leaking half your gain on the way. Move with purpose, not on repeat.",
+      "cite": "Elfi Abdullah · Founder, EastCondos.sg"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Does climbing the property ladder actually make money?",
+          "answer": "On paper, yes — but the moving itself can eat most of the gain. In a typical three-move climb (an HDB flat up to a $2.8 million condo), the paper gain works out to about $538,000, while stamp duty, agent fees, legal fees and renovation add up to about $597,000. The cost is bigger than the gain, before the final home earns a cent. Upgrading still works — but only if you move fewer times and jump bigger."
+        },
+        {
+          "question": "How much does it cost to sell and buy a home in Singapore?",
+          "answer": "Every purchase carries stamp duty (the buyer's tax, from 1% up to 6% at higher prices) plus legal fees and renovation. Every sale carries an agent fee of about 2% plus 9% GST, plus legal fees. Across three purchases and three sales in a full upgrade journey, that comes to roughly $597,000 — about $234,000 stamp duty, $108,000 in agent fees, $15,000 legal, and $240,000 renovation."
+        },
+        {
+          "question": "What is the 'moving tax'?",
+          "answer": "It's the name we give to the total cost of moving home — stamp duty, agent fees, legal fees and renovation — that a growth chart leaves out. It's a tax on moving, not on owning: you pay it every time you buy or sell, so the more often you climb the ladder, the more it stacks up."
+        },
+        {
+          "question": "How do I upgrade without losing money to fees?",
+          "answer": "Move fewer times and make each move count. One well-chosen jump — from your flat to a home you'll actually keep — pays the fees once instead of three times. Where you can, sell before you buy so you don't trigger the extra second-property tax (ABSD), and hold each home long enough that the timing works in your favour rather than against it."
+        },
+        {
+          "question": "Should I upgrade my HDB to a condo?",
+          "answer": "Often yes — moving from an HDB flat to a private home that suits your family's future is a genuine wealth move. The mistake is upgrading again and again, chasing a chart. Each extra move hands another six figures to fees. Climb the one or two steps that matter, on numbers you can comfortably hold, and stop."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "cta-card",
+      "kicker": "See What Your Own Climb Really Costs",
+      "body": "Thinking about your next move? Before you list or buy, it's worth seeing the real cost — and the fewest, biggest steps that get you where you want to be. That's exactly what a Clarity Call is for. We run your actual numbers and map the climb that keeps the most in your pocket.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
