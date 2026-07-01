@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import indexData from "@/content/journal/index.json";
-import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
-import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
+import fiveMillion from "@/content/journal/can-a-hdb-flat-become-5-million.json";
+import lentor from "@/content/journal/is-lentor-oversupplied.json";
+import sixNineMillion from "@/content/journal/the-69-million-question.json";
+import marketGotPicky from "@/content/journal/the-market-got-picky.json";
+import buyTheBlueprint from "@/content/journal/buy-the-blueprint.json";
 import waitingTrap from "@/content/journal/the-waiting-trap.json";
+import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
+import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
 
 type JournalSummary = {
   slug: string;
@@ -15,11 +20,33 @@ type JournalSummary = {
   publishDate: string;
   readingTimeMinutes: number;
   topicCluster: string;
+  coverImage: string;
+  coverImageAlt?: string;
   author: { name: string; role: string };
   framework?: { name: string; id: string };
 };
 
-const articles: JournalSummary[] = [waitingTrap as JournalSummary, earlierPhasePlay as JournalSummary, hdbBotox as JournalSummary];
+// Data-driven from index.json — add a new article to slugs[] + import it below and it appears here automatically.
+const articleMap: Record<string, JournalSummary> = {
+  "can-a-hdb-flat-become-5-million": fiveMillion as JournalSummary,
+  "is-lentor-oversupplied": lentor as JournalSummary,
+  "the-69-million-question": sixNineMillion as JournalSummary,
+  "the-market-got-picky": marketGotPicky as JournalSummary,
+  "buy-the-blueprint": buyTheBlueprint as JournalSummary,
+  "the-waiting-trap": waitingTrap as JournalSummary,
+  "yesterdays-launch-price-earlier-phase-play": earlierPhasePlay as JournalSummary,
+  "your-hdb-looks-young-inside-its-old": hdbBotox as JournalSummary,
+};
+
+const orderedSlugs: string[] = (indexData.slugs as string[]).filter((s) => articleMap[s]);
+const featuredSlug: string =
+  (indexData as { featuredSlug?: string }).featuredSlug && articleMap[(indexData as { featuredSlug?: string }).featuredSlug as string]
+    ? ((indexData as { featuredSlug?: string }).featuredSlug as string)
+    : orderedSlugs[0];
+const articles: JournalSummary[] = [
+  articleMap[featuredSlug],
+  ...orderedSlugs.filter((s) => s !== featuredSlug).map((s) => articleMap[s]),
+];
 
 export const metadata: Metadata = {
   title: `${indexData.heading} — The Journal · EastCondos.sg`,
@@ -86,6 +113,23 @@ export default function JournalIndexPage() {
           href={`/journal/${featured.slug}`}
           className="block border hairline hover:border-amber/50 transition-colors group"
         >
+          {/* Cover image */}
+          <div className="relative h-56 sm:h-72 md:h-80 overflow-hidden border-b hairline">
+            <img
+              src={featured.coverImage}
+              alt={featured.coverImageAlt || featured.title}
+              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+              style={{ filter: "grayscale(0.15) contrast(1.03) brightness(0.9)" }}
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(14,14,31,0.6) 0%, rgba(14,14,31,0) 55%)",
+              }}
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr]">
             {/* Left — data strip */}
             <div className="bg-charcoal p-6 sm:p-10 border-b md:border-b-0 md:border-r hairline flex flex-col justify-between">
@@ -155,19 +199,30 @@ export default function JournalIndexPage() {
                   data-reveal
                   key={a.slug}
                   href={`/journal/${a.slug}`}
-                  className="block border-t hairline-strong pt-5 group"
+                  className="group block border hairline hover:border-amber/50 transition-colors"
                 >
-                  <div className="flex items-center gap-3 mb-4 font-mono text-[10px] uppercase tracking-[0.22em] text-amber">
-                    <span>{a.topicCluster}</span>
-                    <span>·</span>
-                    <span>{a.readingTimeMinutes} min</span>
+                  {/* Thumbnail */}
+                  <div className="relative aspect-[16/10] overflow-hidden border-b hairline">
+                    <img
+                      src={a.coverImage}
+                      alt={a.coverImageAlt || a.title}
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      style={{ filter: "grayscale(0.15) contrast(1.03) brightness(0.9)" }}
+                    />
                   </div>
-                  <h3 className="font-display font-light text-cream text-[21px] leading-snug tracking-[-0.02em] mb-3 group-hover:text-amber transition-colors">
-                    {a.title}
-                  </h3>
-                  <p className="prose-dark text-[14px]">{a.excerpt}</p>
-                  <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-cream/40">
-                    {formatDate(a.publishDate)}
+                  <div className="p-5">
+                    <div className="flex items-center gap-3 mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-amber">
+                      <span>{a.topicCluster}</span>
+                      <span>·</span>
+                      <span>{a.readingTimeMinutes} min</span>
+                    </div>
+                    <h3 className="font-display font-light text-cream text-[20px] leading-snug tracking-[-0.02em] mb-3 group-hover:text-amber transition-colors">
+                      {a.title}
+                    </h3>
+                    <p className="prose-dark text-[14px]">{a.excerpt}</p>
+                    <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-cream/40">
+                      {formatDate(a.publishDate)}
+                    </div>
                   </div>
                 </Link>
               ))}
