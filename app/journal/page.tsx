@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import indexData from "@/content/journal/index.json";
-import fiveMillion from "@/content/journal/can-a-hdb-flat-become-5-million.json";
-import lentor from "@/content/journal/is-lentor-oversupplied.json";
-import sixNineMillion from "@/content/journal/the-69-million-question.json";
-import marketGotPicky from "@/content/journal/the-market-got-picky.json";
-import buyTheBlueprint from "@/content/journal/buy-the-blueprint.json";
-import waitingTrap from "@/content/journal/the-waiting-trap.json";
-import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
-import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
+import { articleMap, journalSlugs, featuredSlug } from "@/content/journal/registry";
 
 type JournalSummary = {
   slug: string;
@@ -26,26 +19,13 @@ type JournalSummary = {
   framework?: { name: string; id: string };
 };
 
-// Data-driven from index.json — add a new article to slugs[] + import it below and it appears here automatically.
-const articleMap: Record<string, JournalSummary> = {
-  "can-a-hdb-flat-become-5-million": fiveMillion as JournalSummary,
-  "is-lentor-oversupplied": lentor as JournalSummary,
-  "the-69-million-question": sixNineMillion as JournalSummary,
-  "the-market-got-picky": marketGotPicky as JournalSummary,
-  "buy-the-blueprint": buyTheBlueprint as JournalSummary,
-  "the-waiting-trap": waitingTrap as JournalSummary,
-  "yesterdays-launch-price-earlier-phase-play": earlierPhasePlay as JournalSummary,
-  "your-hdb-looks-young-inside-its-old": hdbBotox as JournalSummary,
-};
-
-const orderedSlugs: string[] = (indexData.slugs as string[]).filter((s) => articleMap[s]);
-const featuredSlug: string =
-  (indexData as { featuredSlug?: string }).featuredSlug && articleMap[(indexData as { featuredSlug?: string }).featuredSlug as string]
-    ? ((indexData as { featuredSlug?: string }).featuredSlug as string)
-    : orderedSlugs[0];
+// Featured cover story first (index.json featuredSlug), then the rest in index.json order.
+// Article set is registered once in content/journal/registry.ts — shared with the detail page.
 const articles: JournalSummary[] = [
-  articleMap[featuredSlug],
-  ...orderedSlugs.filter((s) => s !== featuredSlug).map((s) => articleMap[s]),
+  articleMap[featuredSlug] as JournalSummary,
+  ...journalSlugs
+    .filter((s) => s !== featuredSlug)
+    .map((s) => articleMap[s] as JournalSummary),
 ];
 
 export const metadata: Metadata = {

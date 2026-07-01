@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import indexData from "@/content/journal/index.json";
-import hdbBotox from "@/content/journal/your-hdb-looks-young-inside-its-old.json";
-import earlierPhasePlay from "@/content/journal/yesterdays-launch-price-earlier-phase-play.json";
-import waitingTrap from "@/content/journal/the-waiting-trap.json";
-import buyTheBlueprint from "@/content/journal/buy-the-blueprint.json";
-import marketGotPicky from "@/content/journal/the-market-got-picky.json";
-import sixNineMillion from "@/content/journal/the-69-million-question.json";
-import lentorOversupply from "@/content/journal/is-lentor-oversupplied.json";
-import fiveMillionLadder from "@/content/journal/can-a-hdb-flat-become-5-million.json";
+import { articleMap, journalSlugs } from "@/content/journal/registry";
 import JournalArticleRenderer, {
   type JournalBlock,
 } from "@/components/editorial/JournalArticleRenderer";
@@ -41,19 +33,8 @@ type JournalArticle = {
   relatedSlugs?: string[];
 };
 
-const articleMap: Record<string, JournalArticle> = {
-  "your-hdb-looks-young-inside-its-old": hdbBotox as JournalArticle,
-  "yesterdays-launch-price-earlier-phase-play": earlierPhasePlay as JournalArticle,
-  "the-waiting-trap": waitingTrap as JournalArticle,
-  "buy-the-blueprint": buyTheBlueprint as JournalArticle,
-  "the-market-got-picky": marketGotPicky as JournalArticle,
-  "the-69-million-question": sixNineMillion as JournalArticle,
-  "is-lentor-oversupplied": lentorOversupply as JournalArticle,
-  "can-a-hdb-flat-become-5-million": fiveMillionLadder as JournalArticle,
-};
-
 export async function generateStaticParams() {
-  return indexData.slugs.map((slug) => ({ slug }));
+  return journalSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -62,7 +43,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = articleMap[slug];
+  const article = articleMap[slug] as JournalArticle | undefined;
   if (!article) return { title: "Not Found — EastCondos.sg" };
 
   return {
@@ -97,7 +78,7 @@ export default async function JournalArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = articleMap[slug];
+  const article = articleMap[slug] as JournalArticle | undefined;
   if (!article) notFound();
 
   const dateModified = article.dateModified || article.publishDate;
