@@ -8,6 +8,8 @@ import StoriesShelf from "@/components/editorial/StoriesShelf";
 import ByTheNumbers from "@/components/editorial/ByTheNumbers";
 import QuizBand from "@/components/editorial/QuizBand";
 import EditorialFAQ from "@/components/editorial/EditorialFAQ";
+import StickyCTA from "@/components/editorial/StickyCTA";
+import SocialProofToast from "@/components/editorial/SocialProofToast";
 import faqData from "@/content/faq.json";
 
 export default function Home() {
@@ -51,6 +53,8 @@ export default function Home() {
       <ByTheNumbers />
       <QuizBand />
       <EditorialFAQ />
+      <StickyCTA />
+      <SocialProofToast />
     </>
   );
 }

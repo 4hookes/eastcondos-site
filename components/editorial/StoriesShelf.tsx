@@ -62,7 +62,10 @@ export default function StoriesShelf() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-12 md:gap-16 items-start pb-16 border-b hairline mb-12">
-          <div className="relative aspect-[4/3] overflow-hidden bg-charcoal-light">
+          <div
+            data-clip-reveal
+            className="relative aspect-[4/3] overflow-hidden bg-charcoal-light"
+          >
             <span className="photo-badge">{FEATURE.badge}</span>
             <Image
               src={FEATURE.image}

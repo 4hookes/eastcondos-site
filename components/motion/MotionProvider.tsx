@@ -19,6 +19,9 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
  *   [data-countup]                    -> numerals count up from zero
  *   [data-parallax-img]               -> slow scale/drift scrub on photos
  *   .meganum                          -> ghost numerals drift slower than the page
+ *   [data-hero]                       -> cinematic exit scrub (zoom, dim, lift)
+ *   [data-clip-reveal]                -> clip-path image reveal on enter
+ *   [data-sweep]                      -> gradient overlay sweep on photo bands
  *   .btn-square / .btn-square-ghost   -> magnetic pull (fine pointers only)
  *
  * Everything is gated on html.motion, set by an inline script in layout.tsx
@@ -132,7 +135,65 @@ function Orchestrator() {
               );
             });
 
-          // 6 — Magnetic CTAs (desktop pointers only)
+          // 6 — Cinematic hero exit: as the hero scrolls away, the video
+          // slowly zooms, the scene dims, the content lifts and fades.
+          document
+            .querySelectorAll<HTMLElement>("[data-hero]")
+            .forEach((hero) => {
+              const media = hero.querySelector<HTMLElement>("[data-hero-media]");
+              const dim = hero.querySelector<HTMLElement>("[data-hero-dim]");
+              const content =
+                hero.querySelector<HTMLElement>("[data-hero-content]");
+              const cue = hero.querySelector<HTMLElement>("[data-hero-cue]");
+              const tl = gsap.timeline({
+                defaults: { ease: "none" },
+                scrollTrigger: {
+                  trigger: hero,
+                  start: "top top",
+                  end: "bottom top",
+                  scrub: true,
+                },
+              });
+              if (media) tl.to(media, { scale: 1.12 }, 0);
+              if (dim) tl.to(dim, { opacity: 0.55 }, 0);
+              if (content) tl.to(content, { yPercent: -10, autoAlpha: 0.2 }, 0);
+              if (cue) tl.to(cue, { autoAlpha: 0 }, 0);
+            });
+
+          // 7 — Clip-path reveals for feature imagery
+          document
+            .querySelectorAll<HTMLElement>("[data-clip-reveal]")
+            .forEach((el) => {
+              gsap.to(el, {
+                clipPath: "inset(0% 0% 0% 0%)",
+                autoAlpha: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%", once: true },
+              });
+            });
+
+          // 8 — Slow gradient sweep on photo bands (overlay fades as you read)
+          document
+            .querySelectorAll<HTMLElement>("[data-sweep]")
+            .forEach((el) => {
+              gsap.fromTo(
+                el,
+                { opacity: 1 },
+                {
+                  opacity: 0.35,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: el.parentElement,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                  },
+                }
+              );
+            });
+
+          // 9 — Magnetic CTAs (desktop pointers only)
           if (window.matchMedia("(pointer: fine)").matches) {
             document
               .querySelectorAll<HTMLElement>(".btn-square, .btn-square-ghost")

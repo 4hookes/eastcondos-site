@@ -1,6 +1,9 @@
 export default function QuizBand() {
   return (
-    <section className="surface-light gridlines-light py-24 md:py-32 px-6 md:px-12">
+    <section
+      data-quiz-band
+      className="surface-light gridlines-light py-24 md:py-32 px-6 md:px-12"
+    >
       <div className="max-w-broadsheet mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-12">
         <div>
           <div className="mono-label mb-7">Begin Here</div>

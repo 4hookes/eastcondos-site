@@ -52,7 +52,7 @@ export default function IndexRibbon() {
               key={c.no}
               href={c.href}
               data-reveal
-              className={`group block py-12 md:py-14 md:pr-10 ${
+              className={`chapter-link group block py-12 md:py-14 md:pr-10 ${
                 i > 0 ? "md:pl-10 md:border-l hairline border-t md:border-t-0" : ""
               }`}
             >

@@ -33,13 +33,14 @@ export default function PhotoBand({
         }}
       />
       <div
+        data-sweep
         className="absolute inset-0"
         style={{
           background:
             "linear-gradient(90deg, #0E0E1F 0%, rgba(14,14,31,0.85) 42%, rgba(14,14,31,0.4) 100%), linear-gradient(0deg, rgba(14,14,31,0.7) 0%, rgba(14,14,31,0) 55%)",
         }}
       />
-      <div className="relative z-10 max-w-broadsheet mx-auto px-6 md:px-12 py-28 md:py-40 min-h-[420px] md:min-h-[520px] flex flex-col justify-end">
+      <div className="relative z-10 max-w-broadsheet mx-auto px-6 md:px-12 py-28 md:py-40 min-h-[70vh] md:min-h-[80vh] flex flex-col justify-end">
         <div className="mono-label mb-6">{label}</div>
         <h2 className="display-section max-w-[24ch]">{line}</h2>
         {attribution && (

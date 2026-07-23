@@ -1,23 +1,12 @@
+import HeroMedia from "./HeroMedia";
+
 export default function HeroCover() {
   return (
-    <section className="relative bg-charcoal-deep gridlines overflow-hidden">
-      {/* Atmospheric skyline backdrop — desaturated, gradient-masked so type stays crisp */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <img
-          src="/broll/hero-skyline.jpg"
-          alt=""
-          data-parallax-img
-          className="absolute inset-0 h-full w-full object-cover object-center opacity-[0.32]"
-          style={{ filter: "grayscale(0.35) contrast(1.05) brightness(0.85)" }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, #0E0E1F 0%, rgba(14,14,31,0.92) 38%, rgba(14,14,31,0.55) 70%, rgba(14,14,31,0.78) 100%), linear-gradient(0deg, #0E0E1F 0%, rgba(14,14,31,0) 45%)",
-          }}
-        />
-      </div>
+    <section
+      data-hero
+      className="relative bg-charcoal-deep gridlines overflow-hidden"
+    >
+      <HeroMedia />
 
       <div
         aria-hidden
@@ -26,7 +15,10 @@ export default function HeroCover() {
         01
       </div>
 
-      <div className="relative z-10 max-w-broadsheet mx-auto px-6 md:px-12 pt-20 md:pt-28 pb-16 md:pb-24">
+      <div
+        data-hero-content
+        className="relative z-10 max-w-broadsheet mx-auto px-6 md:px-12 w-full min-h-[calc(100svh-5rem)] flex flex-col justify-center pt-20 md:pt-28 pb-24 md:pb-28"
+      >
         <div className="mono-label">Index / The Cover Story</div>
 
         <h1 className="display-hero mt-9 max-w-[14ch]">
@@ -70,6 +62,16 @@ export default function HeroCover() {
           By Elfi Abdullah &middot; D14&ndash;18 Specialist &middot; East
           Singapore &middot; Est. 2013
         </div>
+      </div>
+
+      {/* Scroll cue — fades out as soon as the hero starts moving */}
+      <div
+        aria-hidden
+        data-hero-cue
+        className="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-3"
+      >
+        <span className="mono-label-dim !text-[10px]">Scroll</span>
+        <span className="scroll-cue-line block w-px h-12 bg-cream/30 overflow-hidden" />
       </div>
     </section>
   );

@@ -517,6 +517,68 @@ html.motion .display-section:not(.split-done) {
   }
 }
 
+/* Clip-path image reveals (GSAP animates to inset(0) + visible) */
+html.motion [data-clip-reveal] {
+  clip-path: inset(10% 6% 10% 6%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Hero scroll cue — a hairline that keeps drawing downward */
+.scroll-cue-line {
+  position: relative;
+}
+.scroll-cue-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #d4a843;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+html.motion .scroll-cue-line::after {
+  animation: scrollCue 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+@keyframes scrollCue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top center;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+}
+
+/* Chapter index links — amber hairline sweeps in on hover */
+.chapter-link {
+  position: relative;
+}
+.chapter-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: #d4a843;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.chapter-link:hover::before,
+.chapter-link:focus-visible::before {
+  transform: scaleX(1);
+}
+
 /* Nav link underline — amber hairline slides in from the left */
 .nav-u {
   position: relative;
