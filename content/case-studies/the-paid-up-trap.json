@@ -1,0 +1,329 @@
+{
+  "slug": "the-paid-up-trap",
+  "caseNumber": "",
+  "type": "flagship",
+  "publishDate": "2026-07-27",
+  "dateModified": "2026-07-27",
+  "bucket": "Money & Financing",
+  "subBucket": "Retirement Planning",
+  "title": "Their HDB flat was fully paid. It still wasn't a retirement plan",
+  "subtitle": "A $240,000 gain, $225,000 of it owed straight back to CPF",
+  "standfirst": "Faizal and Nurul owned a 1,582 sqft Executive HDB flat in Pasir Ris outright, with no loan and no debt. Then they asked whether it could actually carry them once they stopped working.",
+  "description": "A fully paid HDB flat feels like the finish line. This Pasir Ris couple found out what 13 years of CPF accrued interest, lease decay and a shrinking buyer pool had quietly done to their retirement — and what one move changed.",
+  "editorialCredit": "Drawn from a consultation conducted by Elfi Abdullah, Division Director at ERA Singapore. Names and identifying details changed; every figure is a real Pasir Ris market median.",
+  "hero": {
+    "image": "/images/case-studies/case-29-hero.jpg",
+    "caption": "Faizal and Nurul with Elfi, shortly after completion. Illustration — identity protected.",
+    "alt": "Ink illustration of a Singaporean couple with their property adviser"
+  },
+  "coverImage": "/images/case-studies/case-29-hero.jpg",
+  "ogImage": "/images/case-studies/case-29-hero.jpg",
+  "clients": {
+    "names": "Faizal & Nurul",
+    "location": "Pasir Ris",
+    "portrait": "/images/case-studies/case-29-couple.jpg",
+    "portraitCaption": "Illustration — real case, identity protected."
+  },
+  "clientDetails": [
+    "Married Singaporean couple, both aged 42",
+    "Combined household salary around $23,000 a month",
+    "1,582 sqft Executive HDB flat, bought 2013, fully paid by 2015",
+    "About $867,000 between them in CPF",
+    "No property debt of any kind at the point of the first consultation"
+  ],
+  "buyersBrief": [
+    "Work out whether the HDB flat could actually fund their retirement",
+    "Do not shrink — they wanted the same amount of floor area, not less",
+    "Do not overstretch — the monthly had to stay comfortable on their salary",
+    "Understand the exit before the entry: who buys this home later?",
+    "A decision they could hold for 20 years without revisiting it"
+  ],
+  "challenges": [
+    "Everything looked healthy on paper — no loan, no debt, a paid-up home",
+    "$650,000 of CPF had been sitting in the property since 2013, quietly accruing interest",
+    "The HDB flat was already 33 years old, past the years when flats do most of their growing",
+    "Taking on a mortgage again at 42, with only 23 years to age 65",
+    "No obvious problem to solve — which is exactly why nobody had checked"
+  ],
+  "softCta": {
+    "text": "If your HDB flat is paid up or nearly there, the question isn't what it's worth. It's whether it can carry you.",
+    "ctaLabel": "Take the Safety Meter",
+    "ctaHref": "/safety-meter"
+  },
+  "headlineStats": [
+    {
+      "value": "$225K",
+      "label": "CPF interest owed on a $240K gain"
+    },
+    {
+      "value": "$45K",
+      "label": "Actual cash after 13 years"
+    },
+    {
+      "value": "29 → 52",
+      "label": "Youngest buyer, today vs at 65"
+    },
+    {
+      "value": "$1,500 → $10,600",
+      "label": "Monthly at 65, stay vs move"
+    }
+  ],
+  "moves": [
+    {
+      "number": "01",
+      "year": "2026",
+      "title": "The question nobody had asked",
+      "chapterTitle": "Can we retire with this HDB flat?",
+      "image": "/images/case-studies/case-29-question.jpg",
+      "imageCaption": "The couple at 65, on the path they were already on. Illustration.",
+      "imageAlt": "Ink illustration of an older couple reading a document together",
+      "marketContext": "Across big HDB flats in the east — 5-room and Executive — price per square foot falls with age and then flattens. Under 20 years old the median is $759 psf (n=515). At 21–30 years it is $578 (n=580), at 31–40 years $561 (n=1,587), and at 41–50 years $542 (n=546). Same towns, same flat types, controlled for area. An older HDB flat still grows. It just grows slowly, and every year there is less lease left to sell.",
+      "rows": [
+        {
+          "label": "Their HDB flat",
+          "value": "1,582 sqft Executive, 33 years old"
+        },
+        {
+          "label": "Lease remaining",
+          "value": "66 years"
+        },
+        {
+          "label": "Bought 2013",
+          "value": "about $680,000"
+        },
+        {
+          "label": "Market value 2026",
+          "value": "about $920,000 (Pasir Ris Executive median, n=85)"
+        }
+      ],
+      "keyDecision": "Stopped asking what the HDB flat was worth and started asking what it would pay them at 65.",
+      "quote": {
+        "text": "Nobody actually cares what their home is worth. They care whether they can retire well if they stay put. Those are completely different questions, and only one of them has a useful answer.",
+        "attribution": "Elfi"
+      }
+    },
+    {
+      "number": "02",
+      "year": "2026",
+      "title": "The exit, checked before the entry",
+      "chapterTitle": "Who is still allowed to buy it?",
+      "image": "/images/case-studies/case-29-future-flat.jpg",
+      "imageCaption": "The same couple at 65, had they stayed. Illustration.",
+      "imageAlt": "Ink illustration of an older couple at home reading a letter",
+      "marketContext": "An HDB flat must cover its youngest buyer to age 95 for that buyer to use full CPF. So the minimum buyer age is simply 95 minus the lease remaining — and it climbs every single year. Separately, once remaining lease falls below 60 years, the next buyer's bank loan drops from 75% to 55% of the price, meaning they must find 45% themselves. Faizal and Nurul's HDB flat crosses that line in six years, when they are 48.",
+      "rows": [
+        {
+          "label": "Today (66 years lease)",
+          "value": "Youngest buyer can be 29"
+        },
+        {
+          "label": "At 55 (53 years lease)",
+          "value": "Youngest buyer must be 42"
+        },
+        {
+          "label": "At 65 (43 years lease)",
+          "value": "Youngest buyer must be 52"
+        },
+        {
+          "label": "The 60-year bank cliff",
+          "value": "Six years away, when they are 48"
+        }
+      ],
+      "keyDecision": "Judged the HDB flat on who could buy it in 20 years' time, not on what the neighbour sold for last month.",
+      "quote": {
+        "text": "The queue doesn't just get shorter as the lease runs down. It gets older. You end up selling a family home to people whose families have already grown up.",
+        "attribution": "Elfi"
+      }
+    },
+    {
+      "number": "03",
+      "year": "2026",
+      "title": "The number that stopped the conversation",
+      "chapterTitle": "A $240,000 gain, and $225,000 of it owed",
+      "image": "/images/case-studies/case-29-couple.jpg",
+      "imageCaption": "Faizal and Nurul in their early 40s. Illustration.",
+      "imageAlt": "Ink illustration of a Singaporean couple",
+      "marketContext": "They had paid for the HDB flat almost entirely with CPF — about $650,000 of it, fully drawn by 2015. CPF accrued interest is not a penalty and it is not lost: it is the 2.5% a year that money would have earned had it stayed in the Ordinary Account. But on sale, all of it goes back. Over roughly twelve years that came to about $225,000, against a total price gain of $240,000.",
+      "rows": [
+        {
+          "label": "Sold 2026",
+          "value": "about $920,000"
+        },
+        {
+          "label": "Bought 2013",
+          "value": "about $680,000"
+        },
+        {
+          "label": "Gain over 13 years",
+          "value": "$240,000 (about 2.4% a year)"
+        },
+        {
+          "label": "CPF principal returned",
+          "value": "about $650,000"
+        },
+        {
+          "label": "CPF accrued interest returned",
+          "value": "about $225,000"
+        },
+        {
+          "label": "Cash actually in hand",
+          "value": "about $45,000"
+        }
+      ],
+      "keyDecision": "Counted the CPF refund as part of the real return, instead of reading the headline sale price as profit.",
+      "quote": {
+        "text": "The accrued interest isn't the enemy. It goes back into their own CPF. But it means the gain never becomes spendable money, and thirteen years of ownership turned into forty-five thousand dollars they could actually touch.",
+        "attribution": "Elfi"
+      }
+    },
+    {
+      "number": "04",
+      "year": "2026",
+      "title": "The move — same floor area, new clock",
+      "chapterTitle": "Bigger floor plan, bigger price growth",
+      "image": "/images/case-studies/case-29-future-condo.jpg",
+      "imageCaption": "The same couple at 65, on the path they chose. Illustration.",
+      "imageAlt": "Ink illustration of an older couple at home with their grandchildren",
+      "marketContext": "In Pasir Ris condo transactions since 2023, price per square foot falls as unit size rises: under 800 sqft $1,414, 800–1,100 sqft $1,297, 1,100–1,500 sqft $1,267, and 1,500 sqft and above $1,257. Big homes cost less per square foot, so the same money buys more floor area — and every $100 psf of future growth is multiplied by every one of those square feet. Meanwhile large units have become scarce: in 2010, 18 of every 100 new condominium units were this size. By 2025 it was four.",
+      "rows": [
+        {
+          "label": "Bought",
+          "value": "1,700 sqft condominium, 12 years old"
+        },
+        {
+          "label": "Floor area",
+          "value": "1,700 sqft, up from 1,582 sqft — they did not shrink"
+        },
+        {
+          "label": "Lease remaining",
+          "value": "87 years, up from 66"
+        },
+        {
+          "label": "Loan",
+          "value": "about $1,600,000 over 23 years, to age 65"
+        },
+        {
+          "label": "Monthly instalment",
+          "value": "about $7,700"
+        },
+        {
+          "label": "Cash top-up",
+          "value": "about $3,500 a month — 15% of household salary"
+        }
+      ],
+      "keyDecision": "Chose floor area and lease over address prestige, and kept the cash top-up inside 15% of salary.",
+      "quote": {
+        "text": "A hundred dollars per square foot on a 900 square foot home is ninety thousand dollars. On seventeen hundred square feet it's a hundred and seventy. Same market, same movement, nearly double the outcome — purely because of the floor plan.",
+        "attribution": "Elfi"
+      }
+    }
+  ],
+  "currentPosition": {
+    "year": "2026",
+    "marketContext": "Held to age 65 at 3% a year, the condominium projects to about $4,200,000. The HDB flat, growing at 2% because older flats slow down, would have reached about $1,450,000 — a gap of roughly $2,750,000. Converted into retirement money the difference is starker: both households sell at 65 and buy an HDB flat to live in at around $1,000,000, then draw the remainder down over 25 years. CPF LIFE sits on top of both.",
+    "rows": [
+      {
+        "label": "If they had stayed",
+        "value": "about $1,500 a month from 65"
+      },
+      {
+        "label": "Because they moved",
+        "value": "about $10,600 a month from 65"
+      },
+      {
+        "label": "The real cost",
+        "value": "about $3,500 a month in cash for 23 years, and a loan they will carry to 65"
+      },
+      {
+        "label": "Key insight",
+        "value": "The salary was never the problem. The home was doing no work."
+      }
+    ]
+  },
+  "problem": "High-earning families who have paid off their HDB flat and assume they are safe. There is no visible problem — no loan, no debt, a good salary — so nobody ever checks whether the home is actually building anything for retirement.",
+  "mistake": "Treat a fully paid HDB flat as the finish line. Read the headline resale price as profit, without counting the CPF principal and accrued interest that must be refunded. Judge the home on what it is worth today rather than on who will still be allowed to buy it in twenty years.",
+  "whatElfiDid": [
+    "Reframed the question from what is this HDB flat worth to can we retire with this HDB flat — the only version of the question that has a useful answer.",
+    "Pulled the real figures rather than the recalled ones: Pasir Ris Executive medians, psf by flat age across the eastern towns, and condo psf by unit size.",
+    "Showed the CPF refund in full — $650,000 of principal plus about $225,000 of accrued interest against a $240,000 gain — so the true cash outcome was visible before any decision.",
+    "Ran the exit audience forward: the youngest permitted buyer rises from 29 today to 42 at age 55 and 52 at age 65, with the 60-year bank cliff arriving in six years.",
+    "Sized the new purchase against floor area and lease rather than address, and capped the cash top-up at 15% of gross household salary so the plan survives a bad year.",
+    "Kept roughly $360,000 of CPF in the Ordinary Account rather than sinking every dollar into the deposit — a buffer that services the mortgage through a job loss."
+  ],
+  "closingQuote": {
+    "text": "A paid-up HDB flat is somewhere to live. It is not a retirement plan. And the families this hits hardest are the comfortable ones, because when the salary is good nobody ever checks whether the home is doing any work.",
+    "attribution": "Elfi"
+  },
+  "result": [
+    "Same floor area — 1,700 sqft against the 1,582 sqft they left, so no downgrade in daily living",
+    "Lease reset from 66 years remaining to 87",
+    "Projected asset at 65: about $4,200,000 against about $1,450,000 had they stayed",
+    "Retirement income at 65: about $10,600 a month against about $1,500",
+    "The honest cost: a loan to age 65 and about $3,500 a month in cash — 15% of household salary"
+  ],
+  "frameworks": [
+    {
+      "name": "The CPF Trap™",
+      "slug": "cpf-trap",
+      "iconName": "cpf-trap",
+      "description": "Every dollar of CPF used for a property must be refunded on sale, plus the 2.5% a year it would have earned. Here that was about $225,000 against a $240,000 gain — the money comes back, but it comes back into CPF, not into their pocket."
+    },
+    {
+      "name": "The Exit Audience Test™",
+      "slug": "exit-audience-test",
+      "iconName": "exit-audience-test",
+      "description": "Judge a home by who can still buy it later. An HDB flat must cover its youngest buyer to 95, so the minimum buyer age climbs every year — 29 today, 42 at 55, 52 at 65."
+    },
+    {
+      "name": "The Liquidity Trap™",
+      "slug": "liquidity-trap",
+      "iconName": "liquidity-trap",
+      "description": "Slow growth, a shrinking pool of buyers, and a gain that never becomes cash. The value existed on paper the whole time — it just could not be spent."
+    },
+    {
+      "name": "The Better Asset Switch™",
+      "slug": "better-asset-switch",
+      "iconName": "better-asset-switch",
+      "description": "Move the capital into an asset with a longer runway before the old one enters its slow years. Lease went from 66 years remaining to 87, without giving up floor area."
+    },
+    {
+      "name": "The Floor Space Multiplier™",
+      "slug": "floor-space-multiplier",
+      "iconName": "floor-space-multiplier",
+      "description": "Bigger homes cost less per square foot, and every dollar of future psf growth is multiplied by every square foot owned. $100 psf is $90,000 on a 900 sqft home and $170,000 on 1,700 sqft."
+    }
+  ],
+  "takeaway": "A fully paid HDB flat feels like the finish line. For a household still earning well in their forties, it is usually the starting line — because the years when a flat does its growing are already behind it, and the queue of people allowed to buy it is getting shorter and older every year.",
+  "faqs": [
+    {
+      "q": "What is CPF accrued interest, and is it really a loss?",
+      "a": "It is the interest your CPF savings would have earned — 2.5% a year — had you not withdrawn them to pay for a property. When you sell, the principal and that accrued interest both go back into your CPF. It is not lost and it is not a penalty. But it is not cash either. In this case about $650,000 of principal and $225,000 of interest went back, against a $240,000 price gain, leaving roughly $45,000 the couple could actually spend after thirteen years of ownership."
+    },
+    {
+      "q": "Why does the remaining lease decide who can buy my HDB flat?",
+      "a": "For a buyer to use their CPF in full, the remaining lease must cover the youngest buyer to age 95. So the minimum age of your buyer is 95 minus your remaining lease, and it rises every year. Separately, once remaining lease drops below 60 years, banks cut the loan from 75% to 55% of the price, so your buyer must find 45% of the money themselves. Both quietly shrink the pool of people who can afford your home, long before the lease actually runs out."
+    },
+    {
+      "q": "Doesn't an older HDB flat still go up in value?",
+      "a": "Yes, and we should be honest about that — this one gained $240,000 over thirteen years, roughly 2.4% a year. The issue is not that it stops growing. It is that it grows slowly, the CPF refund absorbs most of the gain, and the buyer pool narrows the whole time. Across big HDB flats in the eastern towns the median falls from $759 psf under 20 years old to $542 psf at 41–50 years, controlling for town and flat type."
+    },
+    {
+      "q": "Why buy a bigger unit instead of a smaller, cheaper one?",
+      "a": "Two reasons. Larger units transact at a lower price per square foot — in Pasir Ris since 2023, $1,257 psf above 1,500 sqft against $1,414 psf below 800 sqft — so the same money buys more floor area. And when prices move, they move per square foot: $100 psf is $90,000 on a 900 sqft home and $170,000 on a 1,700 sqft one. Large units have also become scarce, falling from 18 of every 100 new units in 2010 to four in 2025."
+    },
+    {
+      "q": "What did the move actually cost them?",
+      "a": "A mortgage again at 42 — about $1.6 million over 23 years, roughly $7,700 a month. CPF covers part of it and cash covers about $3,500 a month, which is 15% of their gross household salary. As a rule of thumb, under 15% is comfortable and above 35% means the home is too big. They also kept about $360,000 in their CPF Ordinary Account rather than putting every dollar down, so the mortgage can be serviced through a period without income."
+    },
+    {
+      "q": "Are these the clients' real numbers?",
+      "a": "No. Names and identifying details are changed, and every figure here is a real Pasir Ris market median rather than one household's transaction — a specific price, size and month would be traceable in public HDB data. The story is true and every number is checkable; it simply belongs to no single family."
+    }
+  ],
+  "closingCta": {
+    "heading": "Is your HDB flat",
+    "headingAccent": "actually working",
+    "headingTail": " for you?",
+    "body": "If your HDB flat is paid up or nearly there, we can run the same numbers on yours — the CPF refund, the lease, and what it would pay you at 65. No pitch. You decide."
+  }
+}

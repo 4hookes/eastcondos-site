@@ -4,6 +4,8 @@ import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
 import staircaseWealth from "@/content/case-studies/staircase-wealth.json";
 import theScarcityTax from "@/content/case-studies/the-scarcity-tax.json";
+import theOneMoveUpgrade from "@/content/case-studies/the-one-move-upgrade.json";
+import thePaidUpTrap from "@/content/case-studies/the-paid-up-trap.json";
 import PhotoBlock from "@/components/PhotoBlock";
 import FrameworkIcon from "@/components/FrameworkIcon";
 
@@ -17,13 +19,29 @@ type IconName =
   | "scarcity-tax"
   | "four-week-rule"
   | "bounced-buyer-spillover"
-  | "pattern-recognition";
+  | "pattern-recognition"
+  | "light-viewing"
+  | "stars-aligned"
+  | "extension-runway"
+  | "numbers-floor"
+  | "lived-in-test"
+  | "second-best"
+  | "dynamic-pricing"
+  | "watch-street"
+  | "smart-not-cheap"
+  | "cpf-trap"
+  | "exit-audience-test"
+  | "liquidity-trap"
+  | "better-asset-switch"
+  | "floor-space-multiplier";
 
 type FlagshipCase = typeof staircaseWealth;
 
 const caseStudyMap: Record<string, FlagshipCase> = {
   "staircase-wealth": staircaseWealth,
   "the-scarcity-tax": theScarcityTax as unknown as FlagshipCase,
+  "the-one-move-upgrade": theOneMoveUpgrade as unknown as FlagshipCase,
+  "the-paid-up-trap": thePaidUpTrap as unknown as FlagshipCase,
 };
 
 export async function generateStaticParams() {
@@ -61,6 +79,13 @@ export default async function CaseStudyPage({
   const { slug } = await params;
   const study = caseStudyMap[slug];
   if (!study) notFound();
+
+  // The closing CTA used to be hardcoded to the staircase-wealth story, so every
+  // other case study ended by asking about a "staircase move". Per-case now, with
+  // a neutral fallback.
+  const closingCta = (study as {
+    closingCta?: { heading: string; headingAccent: string; headingTail?: string; body?: string };
+  }).closingCta;
 
   const canonicalUrl = `https://eastcondos.sg/case-studies/${study.slug}`;
   const publishDate = (study as { publishDate?: string }).publishDate;
@@ -556,15 +581,24 @@ export default async function CaseStudyPage({
             className="font-serif text-[24px] sm:text-[34px] mb-3 sm:mb-4"
             style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}
           >
-            Could a <em className="text-amber italic">staircase move</em> work for you?
+            {closingCta?.heading ? (
+              <>
+                {closingCta.heading}{" "}
+                <em className="text-amber italic">{closingCta.headingAccent}</em>
+                {closingCta.headingTail ?? "?"}
+              </>
+            ) : (
+              <>
+                Could a <em className="text-amber italic">move like this</em> work for you?
+              </>
+            )}
           </h3>
           <p
             className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
             style={{ color: "rgba(242, 235, 219, 0.7)" }}
           >
-            Run your numbers, then request a 7-minute discovery call. If the math supports a move,
-            we&apos;ll talk through how to structure it. If it doesn&apos;t, I&apos;ll tell you
-            straight.
+            {closingCta?.body ??
+              "Run your numbers, then request a 7-minute discovery call. If the math supports a move, we'll talk through how to structure it. If it doesn't, I'll tell you straight."}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link

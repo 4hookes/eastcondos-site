@@ -3,6 +3,8 @@ import Link from "next/link";
 import indexData from "@/content/case-studies/index.json";
 import staircaseWealth from "@/content/case-studies/staircase-wealth.json";
 import theScarcityTax from "@/content/case-studies/the-scarcity-tax.json";
+import theOneMoveUpgrade from "@/content/case-studies/the-one-move-upgrade.json";
+import thePaidUpTrap from "@/content/case-studies/the-paid-up-trap.json";
 
 export const metadata: Metadata = {
   title: `${indexData.heading} — EastCondos.sg`,
@@ -29,9 +31,38 @@ export const metadata: Metadata = {
   },
 };
 
+type CaseStudyCard = {
+  slug: string;
+  bucket: string;
+  title: string;
+  subtitle: string;
+};
+
+const allStudies: CaseStudyCard[] = [
+  thePaidUpTrap,
+  staircaseWealth,
+  theScarcityTax,
+  theOneMoveUpgrade,
+].map((s) => ({
+  slug: s.slug,
+  bucket: s.bucket,
+  title: s.title,
+  subtitle: s.subtitle,
+}));
+
 export default function CaseStudiesPage() {
-  const featured = staircaseWealth;
-  const secondary = theScarcityTax;
+  const featured = thePaidUpTrap;
+  const secondary = staircaseWealth;
+
+  // Group the published cases under their challenge bucket, in the order
+  // the buckets are defined in index.json. Only buckets with at least one
+  // published case appear in the browse grid.
+  const bucketsWithCases = indexData.buckets
+    .map((b) => ({
+      ...b,
+      cases: allStudies.filter((s) => s.bucket === b.label),
+    }))
+    .filter((b) => b.cases.length > 0);
 
   return (
     <div className="bg-charcoal-deep min-h-screen">
@@ -206,12 +237,59 @@ export default function CaseStudiesPage() {
           </Link>
         </div>
 
-        {/* More cases are in review — the by-challenge browse grid returns
-            once each bucket has at least one published case. */}
-        <p className="text-center mt-16 sm:mt-20 border-t border-charcoal pt-10 text-[13px] sm:text-[14px] text-gray-600 italic font-serif max-w-[46ch] mx-auto">
-          More case studies from the bank are being prepared for publication. Each is reviewed
-          personally before it goes live — no templated copy, no fabricated numbers.
-        </p>
+        {/* ===== Browse by challenge ===== */}
+        <div className="mt-16 sm:mt-20 border-t border-charcoal pt-10 sm:pt-14">
+          <div className="flex items-center gap-3 sm:gap-4 mb-5">
+            <span className="w-5 sm:w-7 h-px bg-amber-deep" />
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-deep">
+              The Bank · Browse by challenge
+            </span>
+          </div>
+          <h2
+            className="font-serif text-charcoal mb-8 sm:mb-10 max-w-[24ch]"
+            style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.02em", lineHeight: 1.1 }}
+          >
+            The case study bank, organised by challenge.
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+            {bucketsWithCases.map((b) => (
+              <div key={b.id} className="border border-charcoal bg-paper p-5 sm:p-7 flex flex-col">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">
+                  Bucket
+                </div>
+                <h3
+                  className="font-serif text-charcoal text-[20px] sm:text-[24px] mb-4"
+                  style={{ letterSpacing: "-0.01em" }}
+                >
+                  {b.label}
+                </h3>
+                <ul className="flex flex-col gap-3 mt-auto">
+                  {b.cases.map((c) => (
+                    <li key={c.slug}>
+                      <Link
+                        href={`/case-studies/${c.slug}`}
+                        className="group block border-t border-dotted border-[#c9bfa3] pt-3 hover:text-amber-deep transition-colors"
+                      >
+                        <span className="block font-serif text-charcoal text-[15px] sm:text-[16px] leading-snug group-hover:text-amber-deep transition-colors">
+                          {c.title}
+                        </span>
+                        <span className="mt-1.5 inline-block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-amber-deep font-medium">
+                          Read the case →
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center mt-10 sm:mt-12 text-[13px] sm:text-[14px] text-gray-600 italic font-serif max-w-[46ch] mx-auto">
+            More case studies from the bank are added over time. Each is reviewed
+            personally before it goes live — no templated copy, no fabricated numbers.
+          </p>
+        </div>
 
         {/* ===== Bottom CTA ===== */}
         <div className="mt-16 sm:mt-20 bg-charcoal text-cream text-center py-10 sm:py-14 px-5 sm:px-10 border border-charcoal">

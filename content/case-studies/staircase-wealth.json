@@ -52,10 +52,22 @@
     "ctaHref": "/calculator"
   },
   "headlineStats": [
-    { "value": "3.6x", "label": "Asset class growth" },
-    { "value": "5 yrs", "label": "End-to-end timeline" },
-    { "value": "$480K", "label": "Total profit across 2 moves" },
-    { "value": "2", "label": "Deliberate wealth bursts" }
+    {
+      "value": "3.6x",
+      "label": "Asset class growth"
+    },
+    {
+      "value": "5 yrs",
+      "label": "End-to-end timeline"
+    },
+    {
+      "value": "$480K",
+      "label": "Total profit across 2 moves"
+    },
+    {
+      "value": "2",
+      "label": "Deliberate wealth bursts"
+    }
   ],
   "moves": [
     {
@@ -68,10 +80,22 @@
       "imageAlt": "First condominium purchase, ground-floor unit",
       "marketContext": "In 2021, Punggol 4-room HDBs were transacting in the $450K–$550K range, with freshly-MOP flats at the higher end. New condominiums in D19 (Hougang / Punggol / Sengkang) launched around $1,300–$1,500 psf — putting 3-bedders typically above $1.4M. Ground-floor units were the most accessible entry point.",
       "rows": [
-        { "label": "Sold", "value": "Punggol 4-room HDB — ~$500K" },
-        { "label": "Cash profit", "value": "~$130K" },
-        { "label": "Bought", "value": "3-bedder condo (ground floor — only unit within budget)" },
-        { "label": "Cash deployment", "value": "~50% of cash profits ($65K) for cash portion + stamp duty. Remainder to renovation." }
+        {
+          "label": "Sold",
+          "value": "Punggol 4-room HDB — ~$500K"
+        },
+        {
+          "label": "Cash profit",
+          "value": "~$130K"
+        },
+        {
+          "label": "Bought",
+          "value": "3-bedder condo (ground floor — only unit within budget)"
+        },
+        {
+          "label": "Cash deployment",
+          "value": "~50% of cash profits ($65K) for cash portion + stamp duty. Remainder to renovation."
+        }
       ],
       "keyDecision": "Didn't wait for the 'perfect' unit. Got into the condo market with what they could afford.",
       "quote": {
@@ -89,10 +113,22 @@
       "imageAlt": "Second condominium purchase",
       "marketContext": "By 2025, D19 3-bedder condos were transacting around $1,600–$1,900 psf. A $1.6M quantum secured a roughly 900–1,000 sqft three-bedder in newer, recently-completed developments. For context: comparable projects like Kingsford Waterbay, The Florence Residences, and Sengkang Grand Residences were moving in this band.",
       "rows": [
-        { "label": "Trigger", "value": "4-year Seller's Stamp Duty (SSD) window expired" },
-        { "label": "Sold first condo", "value": "Cashed out ~$350K profit" },
-        { "label": "Bought", "value": "$1.6M condo" },
-        { "label": "Cash deployment", "value": "Portion of $350K profit funded the cash portion of the next property" }
+        {
+          "label": "Trigger",
+          "value": "4-year Seller's Stamp Duty (SSD) window expired"
+        },
+        {
+          "label": "Sold first condo",
+          "value": "Cashed out ~$350K profit"
+        },
+        {
+          "label": "Bought",
+          "value": "$1.6M condo"
+        },
+        {
+          "label": "Cash deployment",
+          "value": "Portion of $350K profit funded the cash portion of the next property"
+        }
       ],
       "keyDecision": "Exited precisely at SSD expiry. Recycled the profit into a stronger asset class.",
       "quote": {
@@ -105,9 +141,18 @@
     "year": "2026",
     "marketContext": "As of early 2026, average psf across D19 condominiums sits in the $1,700–$2,200 band depending on age and MRT proximity. The couple's second condo now sits comfortably in the upper half of that range — tracking the market, not fighting it.",
     "rows": [
-      { "label": "Property value", "value": "$1.8M+ (no listings in the block below $1.8M)" },
-      { "label": "Asset class journey", "value": "$500K HDB → $1.8M condo in 5 years" },
-      { "label": "Key insight", "value": "Income didn't grow dramatically. The asset class did all the heavy lifting." }
+      {
+        "label": "Property value",
+        "value": "$1.8M+ (no listings in the block below $1.8M)"
+      },
+      {
+        "label": "Asset class journey",
+        "value": "$500K HDB → $1.8M condo in 5 years"
+      },
+      {
+        "label": "Key insight",
+        "value": "Income didn't grow dramatically. The asset class did all the heavy lifting."
+      }
     ]
   },
   "problem": "HDB owners who have completed MOP and want to upgrade but feel stuck — they think they need higher income or more savings to make a meaningful move into private property.",
@@ -185,5 +230,11 @@
       "q": "What's the minimum HDB equity needed to start a staircase move?",
       "a": "There's no hard rule, but a useful benchmark is roughly $100K–$150K in cash profit after your HDB sale, plus sufficient CPF balance to cover the downpayment on a condo. If your numbers are close, run the calculator first — it takes five minutes and tells you exactly where you stand before you commit to a conversation."
     }
-  ]
+  ],
+  "closingCta": {
+    "heading": "Could a",
+    "headingAccent": "staircase move",
+    "headingTail": " work for you?",
+    "body": "Run your numbers, then request a 7-minute discovery call. If the math supports a move, we'll talk through how to structure it. If it doesn't, I'll tell you straight."
+  }
 }
