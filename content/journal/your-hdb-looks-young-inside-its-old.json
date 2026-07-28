@@ -194,10 +194,10 @@
     },
     {
       "type": "cta-card",
-      "kicker": "A 10-MINUTE CLARITY CALL",
-      "body": "If you'd like to see The Younger-Borrower Play applied to your specific numbers, request a 10-minute Clarity Call. No pitch, no pressure — I'll show you what your actual monthly would look like under both structures, and whether the window works for your household.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "kicker": "A 7-MINUTE DISCOVERY CALL",
+      "body": "If you'd like to see The Younger-Borrower Play applied to your specific numbers, request a 7-Min Discovery Call. No pitch, no pressure — I'll show you what your actual monthly would look like under both structures, and whether the window works for your household.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

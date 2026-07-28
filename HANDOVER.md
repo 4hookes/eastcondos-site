@@ -142,7 +142,7 @@ Monocle magazine × Aesop minimalism × Aman hospitality × Goldman private-weal
 - FAQ items: from `content/faq.json` (real copy)
 - Team member bios: from `content/team.json` (real but dated)
 - Contact: `+65 8841 5991` / `elfi@eastcondos.sg` / `wa.me/6588415991`
-- ERA license: `L3009250K`
+- ERA license: `L3002382K`
 
 ### Placeholder / fabricated (need replacing)
 - **Case study hero image** — Unsplash stock (`images.unsplash.com/photo-1567496898669-ee935f5f647a`)

@@ -155,9 +155,9 @@
     {
       "type": "cta-card",
       "kicker": "The Earlier Phase Play",
-      "body": "If you're an HDB upgrader wondering whether new launch pricing has left you behind, a Clarity Call is where we look at whether Door One or Door Two applies to your situation — with specific projects, real numbers, and a clear picture of what your entry price would actually look like.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you're an HDB upgrader wondering whether new launch pricing has left you behind, a 7-Min Discovery Call is where we look at whether Door One or Door Two applies to your situation — with specific projects, real numbers, and a clear picture of what your entry price would actually look like.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

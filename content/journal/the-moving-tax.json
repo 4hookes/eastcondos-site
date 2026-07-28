@@ -179,9 +179,9 @@
     {
       "type": "cta-card",
       "kicker": "See What Your Own Climb Really Costs",
-      "body": "Thinking about your next move? Before you list or buy, it's worth seeing the real cost — and the fewest, biggest steps that get you where you want to be. That's exactly what a Clarity Call is for. We run your actual numbers and map the climb that keeps the most in your pocket.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "Thinking about your next move? Before you list or buy, it's worth seeing the real cost — and the fewest, biggest steps that get you where you want to be. That's exactly what a 7-Min Discovery Call is for. We run your actual numbers and map the climb that keeps the most in your pocket.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

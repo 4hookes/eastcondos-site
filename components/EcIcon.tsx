@@ -40,7 +40,6 @@ export default function EcIcon({
       aria-hidden={alt === "" ? true : undefined}
       width={size}
       height={size}
-      loading="lazy"
       className={className}
       style={{ width: size, height: size, objectFit: "contain" }}
     />

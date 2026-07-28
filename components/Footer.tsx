@@ -62,7 +62,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-3 pt-7 font-mono text-[11px] uppercase tracking-[0.18em] text-cream/40">
           <div>&copy; MMXXVI EastCondos.sg &middot; Property by Design&trade;</div>
           <div className="flex gap-6">
-            <span>The Elfi Division &middot; ERA Singapore &middot; L3009250K</span>
+            <span>The Elfi Division &middot; ERA Singapore &middot; L3002382K</span>
             <a className="hover:text-cream transition-colors" href="/privacy">Privacy</a>
             <a className="hover:text-cream transition-colors" href="/terms">Terms</a>
           </div>

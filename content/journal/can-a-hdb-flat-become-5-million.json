@@ -171,9 +171,9 @@
     {
       "type": "cta-card",
       "kicker": "Find the Rung You Can Actually Hold",
-      "body": "If you're looking at your own flat and wondering how far up you can really go — without betting on an income you don't have yet — that's exactly what a Clarity Call is for. We run your real numbers and map the highest step you can hold with confidence.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you're looking at your own flat and wondering how far up you can really go — without betting on an income you don't have yet — that's exactly what a 7-Min Discovery Call is for. We run your real numbers and map the highest step you can hold with confidence.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

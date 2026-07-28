@@ -162,9 +162,9 @@
     {
       "type": "cta-card",
       "kicker": "Time It Well",
-      "body": "If you want to know whether a specific home sits on the right side of that 800,000-person demand — and whether your timing actually works — that's exactly what a Clarity Call is for. We look at the location, the real numbers, and where you'd be entering.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you want to know whether a specific home sits on the right side of that 800,000-person demand — and whether your timing actually works — that's exactly what a 7-Min Discovery Call is for. We look at the location, the real numbers, and where you'd be entering.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

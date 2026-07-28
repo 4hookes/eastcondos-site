@@ -186,9 +186,9 @@
     {
       "type": "cta-card",
       "kicker": "Read the Data, Not the Headlines",
-      "body": "If a \"too much supply\" worry is keeping you on the sidelines — in Lentor or anywhere else — a Clarity Call is where we check it against the real transactions: who is actually buying, what the early owners have done, and whether the entry price lines up in your favour.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If a \"too much supply\" worry is keeping you on the sidelines — in Lentor or anywhere else — a 7-Min Discovery Call is where we check it against the real transactions: who is actually buying, what the early owners have done, and whether the entry price lines up in your favour.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

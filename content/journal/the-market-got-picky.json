@@ -172,9 +172,9 @@
     {
       "type": "cta-card",
       "kicker": "Ask the Exit Question Together",
-      "body": "If you're weighing a specific home in this slower market and want an honest read on who actually buys it from you in five years — with the real transaction data behind it — that's exactly what a Clarity Call is for. We look at the project, the numbers, and whether the future buyer is really there.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you're weighing a specific home in this slower market and want an honest read on who actually buys it from you in five years — with the real transaction data behind it — that's exactly what a 7-Min Discovery Call is for. We look at the project, the numbers, and whether the future buyer is really there.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

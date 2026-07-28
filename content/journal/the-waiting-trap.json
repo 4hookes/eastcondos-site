@@ -161,9 +161,9 @@
     {
       "type": "cta-card",
       "kicker": "From Trapped to Decided",
-      "body": "If you've been waiting for the market to give you a clearer signal — a Clarity Call is where we map your specific numbers against the actual market data, separate the math from the noise, and identify whether you should keep waiting or whether the cost of waiting has already exceeded the upside you're hoping to capture.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you've been waiting for the market to give you a clearer signal — a 7-Min Discovery Call is where we map your specific numbers against the actual market data, separate the math from the noise, and identify whether you should keep waiting or whether the cost of waiting has already exceeded the upside you're hoping to capture.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }

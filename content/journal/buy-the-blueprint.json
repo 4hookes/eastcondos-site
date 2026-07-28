@@ -171,9 +171,9 @@
     {
       "type": "cta-card",
       "kicker": "Buy the Blueprint",
-      "body": "If you're weighing a new launch in a developing area and want to know whether the master plan, the sequence, and the entry price actually line up in your favour, a Clarity Call is where we read the blueprint together — with the specific project, the real numbers, and an honest view of where you'd be in the sequence.",
-      "buttonLabel": "Request a Clarity Call",
-      "buttonHref": "/strategy-session"
+      "body": "If you're weighing a new launch in a developing area and want to know whether the master plan, the sequence, and the entry price actually line up in your favour, a 7-Min Discovery Call is where we read the blueprint together — with the specific project, the real numbers, and an honest view of where you'd be in the sequence.",
+      "buttonLabel": "Request a 7-Min Discovery Call",
+      "buttonHref": "/discovery"
     }
   ]
 }
