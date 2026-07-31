@@ -3,6 +3,7 @@
   "heading": "Long-form dispatches on East Singapore property.",
   "subtext": "Data-driven essays on HDB-to-condo upgrade timing, market cycles, and the PBD™ frameworks at work behind the numbers. Written by Elfi Abdullah — published as the market reveals itself.",
   "slugs": [
+    "right-sizing-condo-to-hdb",
     "youre-not-late",
     "the-moving-tax",
     "can-a-hdb-flat-become-5-million",
@@ -14,7 +15,7 @@
     "yesterdays-launch-price-earlier-phase-play",
     "your-hdb-looks-young-inside-its-old"
   ],
-  "featuredSlug": "youre-not-late",
+  "featuredSlug": "right-sizing-condo-to-hdb",
   "topicClusters": [
     {
       "id": "market-trends",

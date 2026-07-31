@@ -1,0 +1,276 @@
+{
+  "slug": "right-sizing-condo-to-hdb",
+  "title": "The One-Way Door: 7 Things To Check Before You Sell The Condo And Buy An HDB Flat",
+  "titleHtml": "The One-Way Door: 7 Things To Check Before You Sell The Condo And <em>Buy An HDB Flat</em>",
+  "standfirst": "The 15-month wait was removed on 28 July 2026. You can now sell your condo and buy a resale HDB flat straight away. Before you do, check the racial quota on the blocks you want. It does not exist in private property. Most right-sizers have never met it. And it is the one thing that can strand you out of your condo, with nothing you are allowed to buy.",
+  "kicker": "THE ONE-WAY DOOR · JULY 2026",
+  "publishDate": "2026-07-31",
+  "readingTimeMinutes": 11,
+  "ogImage": "/images/journal/right-sizing-condo-to-hdb/hero.jpg",
+  "coverImage": "/images/journal/right-sizing-condo-to-hdb/hero.jpg",
+  "coverImageAlt": "A doorway in an older Singapore HDB block seen from the common corridor at dusk, with a set of keys on the ledge",
+  "coverImageCaption": "The wait that used to slow this decision down is gone. The decision is exactly as permanent as it was.",
+  "excerpt": "Two videos and one long checklist have told right-sizers what the removal of the 15-month wait means. None mentioned the racial quota. None priced the round trip. None checked whether the demand is even coming for your flat type. So we went through 465,710 condo sales and 233,431 HDB resale sales. Seven things actually decide this move.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Financial Planning",
+  "framework": {
+    "name": "The One-Way Door",
+    "id": "one-way-door"
+  },
+  "seo": {
+    "metaTitle": "Right-Sizing From A Condo To An HDB Flat In 2026: The 7 Real Checks — EastCondos.sg",
+    "metaDescription": "The 15-month wait is gone on one route only. Check the racial quota before you sell, know what the round trip costs, and see which HDB flats the released demand is actually going to.",
+    "keywords": [
+      "right-sizing condo to HDB",
+      "downgrade condo to HDB singapore",
+      "15 month wait out period removed",
+      "EIP quota resale flat",
+      "sell condo buy HDB flat 2026",
+      "condo to HDB retirement plan",
+      "executive maisonette resale price",
+      "HDB flat racial quota check"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/right-sizing-condo-to-hdb"
+  },
+  "relatedSlugs": ["youre-not-late", "the-moving-tax"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "On 28 July 2026 the government removed the 15-month wait. A private home owner can now sell and buy a resale HDB flat straight away. Every write-up since has treated that as a green light.\n\nIt is not a green light. It is a removed handbrake.\n\nThe wait was, by accident, the only thing forcing people to sit on a decision they cannot undo. It is gone. The decision did not get any less permanent.\n\nSo we checked what actually decides this move. Against 465,710 condo sales and 233,431 HDB resale sales in our database, plus HDB's own published policy.\n\nSeven things came out. The first is in none of the articles we read. It is also the one that can strand you out of your condo, with nothing you are allowed to buy."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "1st",
+          "label": "The day of each month the racial quota resets on you",
+          "note": "HDB updates the Ethnic Integration Policy quota on the 1st, based on the previous month's completed sales. A block that says yes in March can say no in June."
+        },
+        {
+          "number": "$198,000",
+          "label": "The price spread on 5-room HDB flats sold this year",
+          "note": "$660,000 at the cheapest quarter, $858,000 at the dearest. Same flat type, same year. EastCondos analysis of 233,431 HDB resale sales."
+        },
+        {
+          "number": "$215,000",
+          "label": "How much heavier the door back to a condo got in six years",
+          "note": "You walked out with $830,000 in 2020. Walking back today needs $1,045,000."
+        }
+      ]
+    },
+    { "type": "dotted-divider" },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "Check The Racial Quota Before You Sell Anything"
+    },
+    {
+      "type": "prose",
+      "content": "This is number one, and it is the one condo owners never see coming. Private property has no quota. HDB does.\n\nEvery HDB block and every neighbourhood has a limit on how many homes each racial group can own. HDB calls it the Ethnic Integration Policy. If your group has hit the limit in that block, you cannot buy there.\n\nHere is the part that hurts. When the quota is full, the sale can only go through one way. The seller has to be the same race as you. That is because a sale between two households of the same race does not change the mix, so HDB allows it.\n\nSo your choice in that block shrinks to the handful of homes owned by your own group. And those sellers know exactly how few options you have. That is how a right-sizer ends up paying over the odds without ever understanding why.\n\nIt gets worse if you have already sold. You are out of your condo. Your money is sitting in the bank. And in the block you wanted, there is nothing you are allowed to buy.\n\nThree details that decide it."
+    },
+    {
+      "type": "data-table",
+      "kicker": "How the quota works · Source: HDB, Ethnic Integration Policy and SPR quota",
+      "headers": ["What to know", "The detail"],
+      "rows": [
+        ["It is checked twice", "Once for the block, once for the neighbourhood. You must clear both."],
+        ["It moves every month", "Updated on the 1st, based on the previous month's completed sales."],
+        ["When it is full", "The sale can only proceed if the seller is the same race as the buyer."],
+        ["There is a second quota", "Non-Malaysian Permanent Resident households also face an 8% block and 5% neighbourhood limit."],
+        ["Where to check it", "HDB's free quota page. Key in the block number and street name."]
+      ],
+      "highlightRowIndex": 2
+    },
+    {
+      "type": "prose",
+      "content": "So the order most people use is backwards. They sell the condo, bank the money, and then start looking.\n\nDo it the other way round. Pick the three or four areas you would genuinely live in. Check the quota on the actual blocks. Then go and walk them.\n\nOnly once you know you can buy there should you put your condo on the market."
+    },
+    {
+      "type": "pull-quote",
+      "text": "You are out of your condo, your money is in the bank, and there is nothing you are allowed to buy.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "Sell The Condo Clean. Do Not Ask For An Extension Of Stay"
+    },
+    {
+      "type": "prose",
+      "content": "Most people sell the condo and ask the buyer for a few months to stay on. Somewhere to sit while they sort out the next home. It feels like the safe move. It is the expensive one.\n\nEvery buyer who needs to move in immediately is now out. Fewer buyers means a weaker price. And you are doing this at the exact moment other right-sizers are selling too. So you have more competition than usual.\n\nSell clean and everyone can bid on your home.\n\nThen solve the gap on the other side. On an HDB purchase, the seller can stay on for up to three months after completion. Both sides agree it in writing, and HDB has to approve it. Or you take a short rental. Either is cheaper than a soft price on a $1.6 million sale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "The 15-Month Wait Is Gone On One Route Only"
+    },
+    {
+      "type": "prose",
+      "content": "This is the part the coverage got loose with, so here it is precisely.\n\nWhat was removed: the 15-month wait before a private home owner can buy a resale HDB flat. Paid with cash and a bank loan. With no housing grants.\n\nWhat was not removed: the 30-month wait, which still applies on four routes."
+    },
+    {
+      "type": "data-table",
+      "kicker": "What still makes you wait 30 months · Source: HDB, via ERA guidance July 2026",
+      "headers": ["What you want to buy", "The wait"],
+      "rows": [
+        ["A resale HDB flat, cash and bank loan, no grants", "None. Removed 28 July 2026."],
+        ["A BTO flat", "30 months"],
+        ["A resale HDB flat with housing grants", "30 months"],
+        ["An executive condominium from the developer", "30 months"],
+        ["Any HDB flat using an HDB housing loan", "30 months"]
+      ],
+      "highlightRowIndex": 0
+    },
+    {
+      "type": "prose",
+      "content": "Two more conditions nobody is mentioning. You still need an HFE letter, the HDB eligibility letter that tells you what you qualify for. Private home owners need one exactly like a first-time buyer does, and it takes weeks.\n\nAnd once the HDB purchase completes, you have six months to sell every private home you own, here and overseas. That clock starts whether or not you have found a buyer. It is the strongest practical argument for selling first."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "Know Why You Want The Big Flat"
+    },
+    {
+      "type": "prose",
+      "content": "Almost every right-sizer goes for a big one. A maisonette, an executive apartment, or a large 5-room.\n\nThere is usually a reason underneath that, and it is worth being honest about it before you make an offer.\n\nA lot of people in this position bought a small condo four or five years ago. The plan was to hold it a few years and move on. It was never built to be lived in for a decade. So they have spent years in a home that was always meant to be temporary, feeling the walls.\n\nThat is not a housing decision waiting to be made. That is years of frustration looking for somewhere to land.\n\nBuy in that state and you overpay. Easily $100,000 or more, on a home you have fallen in love with in an afternoon. And you may only need it for another ten years. Then the kids move out and you are right-sizing all over again.\n\nThe fix is not complicated. Have someone ask you the hard questions before you make the offer, not after. What is this home for. How long do you actually need this many rooms. What would you pay if you were not tired."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "Negotiate Hard. The Big Flats Sit"
+    },
+    {
+      "type": "prose",
+      "content": "Here is the mid-point of this piece, and it reframes everything after it. The released demand is real, but it is not spread evenly, and it is not urgent. You have far more room than you think.\n\nStart with where the demand is actually going. Look at what the 15-month wait held back when it came in.\n\nIn the year after the wait started, 5-room sales fell by 866 and executive flats by 380. The 3-room moved by 21 and the 4-room by 50. Almost nothing.\n\nSo the buyers coming back are heading for 5-room and bigger, in mature estates, near an MRT station. That is the flat you want. You now have company for it.\n\nBut company is not the same as competition, because this is a thin, slow market. About 1,400 executive flats changed hands in the whole of 2025. Sellers of these homes wait a long time.\n\nAnd look at how wide the prices are."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Big HDB flats, prices paid in 2026 · EastCondos analysis of 233,431 HDB resale sales",
+      "headers": ["Flat type", "Cheapest quarter, up to", "The middle", "Dearest quarter, from", "The spread"],
+      "rows": [
+        ["5-room", "$660,000", "$740,000", "$858,000", "$198,000"],
+        ["Executive", "$840,000", "$911,000", "$985,000", "$145,000"]
+      ],
+      "highlightRowIndex": 0
+    },
+    {
+      "type": "prose",
+      "content": "Read that last column again. Same flat type, same year, and the middle half of the market is $145,000 to $198,000 wide.\n\nWhere you land inside that range is worth six figures. Not the $30,000 or $40,000 people usually talk about saving.\n\nSo do not pay asking on a home that has been sitting. And know who you are bidding against. It is other condo owners doing exactly what you are doing, on exactly the same information."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "6",
+      "text": "This Is A One-Way Door, And It Gets Heavier Every Year"
+    },
+    {
+      "type": "prose",
+      "content": "Everything above is about doing this move well. This one is about whether you can undo it.\n\nIn 2020 the middle resale condo sold for $1,250,000. The middle 4-room HDB flat cost $420,000. You sold, you bought, and you walked away with $830,000 in hand.\n\nChange your mind today and you have to go the other way. Sell that HDB flat for $630,000. Buy a condo back at $1,675,000. You need $1,045,000.\n\nSo the door you walked out of for $830,000 costs $1,045,000 to walk back through. It got $215,000 heavier in six years.\n\nAnd it keeps getting heavier, because the two sides move at different speeds and in your unfavourable direction. Private homes are the bigger number, so the same percentage rise is a bigger dollar rise.\n\nThat is what people mean when they say this decision is almost irreversible. It is not a rule. It is arithmetic, and it compounds while you live there."
+    },
+    {
+      "type": "founder-quote",
+      "label": "From Elfi",
+      "text": "The 15-month wait was doing people a favour nobody thanked it for. It forced you to sit with this for over a year before you could act. That wait is gone now. If you needed a year to be sure before, you still need one. You just don't get made to take it.",
+      "cite": "Elfi Abdullah, Founder of EastCondos"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "7",
+      "text": "Go Back To The Plan You Had When You Bought The Condo"
+    },
+    {
+      "type": "prose",
+      "content": "Ask yourself what the condo was for in the first place. Most people had one of two answers. Cash out $300,000 or $400,000 one day and be comfortable. Or retire in a private home.\n\nIf you right-size now, both answers change. So the plan has to be rewritten, not just the address.\n\nStart with what the move costs you. The deposit, the legal costs, the stamp duty, the agent fees, the renovation, the furniture. Call it $200,000 by the time you are sitting down in the new place.\n\nNow look at what being in the condo actually earned you."
+    },
+    {
+      "type": "data-table",
+      "kicker": "The round trip · Middle of the market, 2021 to 2026",
+      "headers": ["", "2021", "Today", "Gained"],
+      "rows": [
+        ["The resale condo you own", "$1,280,000", "$1,675,000", "$395,000"],
+        ["The 4-room HDB flat you left", "$470,000", "$630,000", "$160,000"],
+        ["What being in the condo was worth", "", "", "$235,000"],
+        ["Less the cost of moving back", "", "", "about $200,000"],
+        ["What you are left with", "", "", "about $35,000"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "prose",
+      "content": "About $35,000. For five years and two moves.\n\nThat is the number nobody puts in front of you. It is why this needs to be a plan, not a reaction to a headline.\n\nOne thing to correct while we are here, because it gets repeated a lot. People say an older HDB flat will not make you money. That is too strong, and we checked it.\n\nOver the last five years, HDB flats under 15 years old rose 34.6% per square foot. Flats 45 years and older still rose 18.6%.\n\nSo they do grow. They capture about half the rise. The older the HDB flat, the less of the market you get."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Older HDB flats still grow, just slower · Median price per square foot, 2021 to 2026",
+      "headers": ["Age of the HDB flat", "2021", "2026", "Rise"],
+      "rows": [
+        ["Under 15 years", "$518", "$697", "34.6%"],
+        ["15 to 24 years", "$422", "$607", "43.8%"],
+        ["25 to 34 years", "$413", "$549", "32.9%"],
+        ["35 to 44 years", "$426", "$547", "28.4%"],
+        ["45 years and older", "$479", "$568", "18.6%"]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "prose",
+      "content": "That is the real point, and it is the one that should change your plan. You are moving into something that grows more slowly. So your retirement has to be funded from somewhere else.\n\nHere is the concrete move most right-sizers should be planning for, and almost nobody does.\n\nAt 55 you build your Retirement Account. Most people stop at the Full Retirement Sum, which is $220,400 in 2026. You are allowed to go further, to the Enhanced Retirement Sum. That is double, so $440,800 in 2026, and it is the most CPF will let you set aside.\n\nSetting aside near that amount at 55 pays out roughly $3,300 a month from 65, for life.\n\nAnd here is why it fits your situation exactly. When you sell the condo, a large CPF refund lands back in your CPF account. Most people leave it sitting there, then spend the cash side on a bigger home and a nicer renovation.\n\nThat refund is the money that gets you to the Enhanced Retirement Sum at 55. Ring-fence part of it before you go shopping, not after."
+    },
+    {
+      "type": "prose",
+      "content": "So here is the whole thing in one line. The wait is gone, and nothing else about this decision changed.\n\nThe quota can still strand you. The big flats still sit, and the spread on them is still six figures wide. The door back to a condo still gets $215,000 heavier every six years. And the condo you are about to sell was probably the thing meant to pay for your retirement.\n\nCheck the quota this week on the three blocks you would actually live in. It is free and it takes ten minutes. It is also the only item on this list that can end your plan before it starts."
+    },
+    {
+      "type": "faq",
+      "kicker": "Straight answers",
+      "items": [
+        {
+          "question": "Can I sell my condo and buy a resale HDB flat immediately in 2026?",
+          "answer": "Yes, on one route. From 28 July 2026 the 15-month wait was removed on one route. A resale HDB flat, bought with cash and a bank loan, with no housing grants. The 30-month wait still applies on four others. A BTO flat, a resale flat with grants, an executive condominium from the developer, or an HDB housing loan."
+        },
+        {
+          "question": "What is the HDB racial quota and how do I check it?",
+          "answer": "The Ethnic Integration Policy caps how many homes in each block and each neighbourhood can be owned by each racial group. You must be within the quota for both the block and the neighbourhood. HDB provides a free page where you key in the block number and street name. The quota is updated on the 1st of each month based on the previous month's completed sales."
+        },
+        {
+          "question": "What happens if the racial quota is full for my group?",
+          "answer": "You can still buy that flat, but only if the seller is the same race as you. That sale does not change the racial mix of the block, so HDB allows it. In practice your choice in that block shrinks to the homes owned by your own group. That is why right-sizers who check late end up paying more."
+        },
+        {
+          "question": "Should I sell my condo first or buy the HDB flat first?",
+          "answer": "Sell first. Once your HDB flat purchase completes, you have six months to sell every private home you own. That includes homes overseas, and the clock runs whether or not you have a buyer. Selling first also means you know your exact number before you commit. And you avoid asking your condo buyer for an extension of stay, which cuts down the people who will bid and softens your price."
+        },
+        {
+          "question": "How much room is there to negotiate on a 5-room or executive HDB flat?",
+          "answer": "More than most people assume. In 2026 the cheapest quarter of 5-room flats sold at $660,000 or less. The dearest quarter went at $858,000 or more. That is a spread of $198,000. For executive flats the spread is $145,000. And only about 1,400 executive flats change hands in a year, so these homes sit and sellers wait."
+        },
+        {
+          "question": "Which HDB flats will the removal of the 15-month wait actually affect?",
+          "answer": "Mainly 5-room and bigger, in mature estates. When the wait came in, 5-room sales fell by 866 in a year and executive flats by 380. The 3-room moved by 21 and the 4-room by 50. So if you own a 4-room and you are waiting for a price bump, the data says it is not coming."
+        },
+        {
+          "question": "Do older HDB flats still go up in value?",
+          "answer": "Yes, but more slowly. Over the last five years HDB flats under 15 years old rose 34.6% per square foot, while flats 45 years and older rose 18.6%. They capture roughly half the market's rise, which is why a right-sizer's retirement plan should not rely on the new home appreciating."
+        }
+      ]
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Before you list the condo",
+      "body": "The right-sizing decision turns on three numbers that are specific to you. What your condo sells for clean, what the flats you can actually buy are going for, and what you need set aside at 55. That is a conversation, not a checklist.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
