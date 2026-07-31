@@ -2,14 +2,43 @@
   "sectionLabel": "The Journal",
   "heading": "Long-form dispatches on East Singapore property.",
   "subtext": "Data-driven essays on HDB-to-condo upgrade timing, market cycles, and the PBD™ frameworks at work behind the numbers. Written by Elfi Abdullah — published as the market reveals itself.",
-  "slugs": ["the-moving-tax", "can-a-hdb-flat-become-5-million", "is-lentor-oversupplied", "the-69-million-question", "the-market-got-picky", "buy-the-blueprint", "the-waiting-trap", "yesterdays-launch-price-earlier-phase-play", "your-hdb-looks-young-inside-its-old"],
-  "featuredSlug": "the-69-million-question",
+  "slugs": [
+    "youre-not-late",
+    "the-moving-tax",
+    "can-a-hdb-flat-become-5-million",
+    "is-lentor-oversupplied",
+    "the-69-million-question",
+    "the-market-got-picky",
+    "buy-the-blueprint",
+    "the-waiting-trap",
+    "yesterdays-launch-price-earlier-phase-play",
+    "your-hdb-looks-young-inside-its-old"
+  ],
+  "featuredSlug": "youre-not-late",
   "topicClusters": [
-    { "id": "market-trends", "label": "Market Trends" },
-    { "id": "hdb-upgrade-journey", "label": "HDB Upgrade Journey" },
-    { "id": "new-launch-analysis", "label": "New Launch Analysis" },
-    { "id": "financial-planning", "label": "Financial Planning" },
-    { "id": "client-stories", "label": "Client Stories" },
-    { "id": "behind-the-scenes", "label": "Behind the Scenes" }
+    {
+      "id": "market-trends",
+      "label": "Market Trends"
+    },
+    {
+      "id": "hdb-upgrade-journey",
+      "label": "HDB Upgrade Journey"
+    },
+    {
+      "id": "new-launch-analysis",
+      "label": "New Launch Analysis"
+    },
+    {
+      "id": "financial-planning",
+      "label": "Financial Planning"
+    },
+    {
+      "id": "client-stories",
+      "label": "Client Stories"
+    },
+    {
+      "id": "behind-the-scenes",
+      "label": "Behind the Scenes"
+    }
   ]
 }

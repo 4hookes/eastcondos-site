@@ -1,0 +1,257 @@
+{
+  "slug": "youre-not-late",
+  "title": "You're Not Late: What the \"Upgrade Before 35\" Maths Leaves Out",
+  "titleHtml": "You're Not Late: What the \"Upgrade Before 35\" Maths <em>Leaves Out</em>",
+  "standfirst": "Someone has told you that at 40 you missed the window to move from an HDB flat to a condo. Check what their sum assumed about your pay. It assumed your pay never moved. Singapore's own figures say it does. Put the real ones back in and the gap between what a 40-year-old and a 35-year-old can borrow is about $45,000, not $250,000. At the price upgraders actually pay, the gap is nothing at all. A different limit stops both of them first.",
+  "kicker": "THE UPGRADE WINDOW · JULY 2026",
+  "publishDate": "2026-07-31",
+  "readingTimeMinutes": 10,
+  "ogImage": "/images/journal/youre-not-late/hero.jpg",
+  "coverImage": "/images/journal/youre-not-late/hero.jpg",
+  "coverImageAlt": "An open casement window in a Singapore HDB flat at dusk, terrazzo sill in the foreground, distant private condominium towers lit warm against a deep blue sky",
+  "coverImageCaption": "The deadline everyone quotes is real arithmetic. It is just arithmetic about somebody else.",
+  "excerpt": "The \"upgrade before 35\" argument lands hardest on people in their forties. We tested it against Singapore's published pay figures and 5,180 real upgrader purchases. The penalty only shows up if your pay never rises. It also needs you to buy a condo most upgraders never buy. Meanwhile the thing that genuinely did cost people money while they waited was never their age.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "HDB Upgrade Journey",
+  "framework": {
+    "name": "The Crossover Point",
+    "id": "crossover-point"
+  },
+  "seo": {
+    "metaTitle": "Too Old To Upgrade From HDB Flat To Condo At 40? The Maths Says No — EastCondos.sg",
+    "metaDescription": "The \"upgrade before 35\" argument assumes your pay never rises. Using Singapore's published median pay and 5,180 real upgrader purchases, a 40-year-old borrows the same as a 35-year-old.",
+    "keywords": [
+      "too old to upgrade HDB to condo",
+      "upgrade to condo at 40 singapore",
+      "best age to upgrade from HDB to condo",
+      "loan tenure age 65 singapore",
+      "TDSR age 40 singapore",
+      "how much can I borrow at 40 singapore",
+      "HDB upgrader condo price singapore",
+      "cost of waiting to upgrade singapore"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/youre-not-late"
+  },
+  "relatedSlugs": ["the-rule-that-moved-the-buyers", "the-moving-tax"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "An argument is going round about the window to move from an HDB flat to a condo. It opens around 30, closes around 35, and is still workable at 38. Leave it until 40, the argument says, and it costs you about $250,000 in buying power. The arithmetic behind it is sound. A bank sets your longest possible loan by counting back from age 65. At 35 that is thirty years. At 40 it is twenty-five. A shorter loan means a bigger payment every month, and a bigger monthly payment means the bank will lend you less.\n\nIf you are 42 and reading that, it lands like a door closing.\n\nSo we tested it. Not the arithmetic, which is fine, but the two things the arithmetic quietly assumes about you. The first is what you earn at 40. The second is which condo you would actually buy. We put Singapore's published pay figures against the first and 5,180 real upgrader purchases against the second. Both assumptions fail. Correct either one and the penalty shrinks to something nobody would change their life over. Correct both and it disappears.\n\nThen a third number turned up that this argument never mentions. It is the one that actually took money off people while they waited, and it has nothing to do with how old they are."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "$45,642",
+          "label": "The real gap in borrowing power between 35 and 40",
+          "note": "Not $250,000. Worked out at the 55% salary limit and the 4% test rate banks must use, on Singapore's published median pay for each age band."
+        },
+        {
+          "number": "$0",
+          "label": "What that gap is worth at the price upgraders actually pay",
+          "note": "At $1,543,000 the 75% loan cap stops a 35-year-old and a 40-year-old at exactly the same figure, so pay never becomes the limit."
+        },
+        {
+          "number": "$268,000",
+          "label": "How much wider the gap to fund grew over five years of waiting",
+          "note": "Condo bought minus flat sold: $645,000 in 2020, $913,000 in 2025. EastCondos analysis of 465,710 condo and 233,431 HDB resale transactions."
+        }
+      ]
+    },
+    { "type": "dotted-divider" },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "First, The Part That Is True"
+    },
+    {
+      "type": "prose",
+      "content": "Give the argument its due, because the squeeze it describes is real and nobody can negotiate around it.\n\nA bank works out the longest loan it can give you by counting back from 65. At 35 that is thirty years. At 40 it is twenty-five. That does two things at once. It raises what you pay every month on the same loan, and it lowers the largest loan you are allowed under the salary test.\n\nThe salary test gets thrown around without explanation, so here it is in plain terms. Bankers call it TDSR, short for total debt servicing ratio. It means everything you owe each month, added together, may not go past 55 percent of your gross monthly pay. The bank has to test that at a rate of 4 percent. Your real rate can be far lower and it changes nothing about the test. Fewer years to spread a loan over makes that monthly figure bigger, which leaves less room under the 55 percent line.\n\nSo yes. All else being equal, a 40-year-old borrows less than a 35-year-old. The two questions worth asking are how much less, and whether it ever changes what you can buy."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The Assumption Nobody Checked: What You Earn At 40"
+    },
+    {
+      "type": "prose",
+      "content": "Here is where the $250,000 comes from. The sum holds household pay still. The same figure at 40 as at 30. Ten years, no raise, no promotion, no change of job.\n\nThat is not what happens to most households, and it is not what Singapore's own figures show. The Ministry of Manpower publishes median gross monthly pay by age band. It climbs all the way through the thirties and peaks in the early forties."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Median gross monthly pay by age · Source: Ministry of Manpower, 2025",
+      "headers": ["Age band", "Per person", "Two earners", "Largest loan the salary test allows"],
+      "rows": [
+        ["30 – 34", "$6,338", "$12,676", "—"],
+        ["35 – 39", "$7,253", "$14,506", "$1,671,145  (thirty-year loan)"],
+        ["40 – 44", "$7,800", "$15,600", "$1,625,502  (twenty-five-year loan)"],
+        ["45 – 49", "$7,605", "$15,210", "falling on both counts"]
+      ],
+      "highlightRowIndex": 2
+    },
+    {
+      "type": "prose",
+      "content": "One note on how to read that table. The two-earner column puts two people on the median for their own age band, which shows the shape rather than a published household figure. The shape is the point here, and the shape is that pay rises.\n\nNow read the highlighted row on its own. A couple in their early forties, borrowing over twenty-five years, can borrow $1,625,502 under the salary test. The same couple five years younger, borrowing over thirty years, can borrow $1,671,145. The difference between those two figures is $45,642 of borrowing power.\n\nThat is the entire age penalty, once you stop assuming nobody gets a pay rise in their thirties. It is about a sixth of the number being quoted. On a purchase this size it is the cost of the renovation, not the cost of the home."
+    },
+    {
+      "type": "pull-quote",
+      "text": "The deadline everyone quotes is real arithmetic. It is just arithmetic about somebody else.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "And Then It Stops Mattering Altogether"
+    },
+    {
+      "type": "prose",
+      "content": "There is a second limit sitting above the salary test, and most upgraders run into it first.\n\nOn a first property, with no other home loan still running, a bank will lend at most 75 percent of the price. That cap does not know how old you are. So the question that decides your loan is not what your pay allows, on its own. It is which of two numbers is smaller: 75 percent of the price, or what your pay allows.\n\nAt the prices upgraders actually pay, 75 percent of the price is the smaller number at both ages. The salary test never gets a turn. The 40-year-old and the 35-year-old walk out with the same loan, to the dollar."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Which limit stops you first · 55% salary limit, 4% test rate, first property",
+      "headers": ["Purchase price", "75% loan cap", "Pay allows at 35", "Pay allows at 40", "What actually stops you"],
+      "rows": [
+        ["$1,543,000  (what upgraders pay)", "$1,157,250", "$1,671,145", "$1,625,502", "the 75% cap — same at both ages"],
+        ["$1,900,000  (the assumed target)", "$1,425,000", "$1,671,145", "$1,625,502", "the 75% cap — same at both ages"],
+        ["$2,167,000  (where it flips)", "$1,625,250", "$1,671,145", "$1,625,502", "pay, and only at 40"],
+        ["$2,400,000", "$1,800,000", "$1,671,145", "$1,625,502", "pay, at both ages — the $45,642 finally shows up"]
+      ],
+      "highlightRowIndex": 0
+    },
+    {
+      "type": "prose",
+      "content": "You can work out exactly where age starts to cost you something, and it is worth naming because nobody ever does. Take what pay allows a 40-year-old, $1,625,502, and ask what purchase price would make 75 percent of it come to that same figure. The answer is about $2,167,000. Below that price the 75 percent cap stops you first and your age changes nothing. Above it, and only above it, the shorter loan starts to bite.\n\nSo the honest version of the claim is not that you lose $250,000 at 40. It is this: if you are buying above about $2,167,000, you can borrow roughly $45,000 less at 40 than you could at 35. That is a much smaller sentence, and it is aimed at a much smaller group of people."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "The Other Assumption: The Condo You Would Actually Buy"
+    },
+    {
+      "type": "prose",
+      "content": "That $2,167,000 line is worth holding on to, because of where the argument set its example. It is built on a purchase of $1.8 million to $2.0 million, rising to $2.09 million if you wait. The price is doing quiet work. A higher price is precisely what drags a buyer up into the zone where pay, rather than the 75 percent cap, decides the loan.\n\nSo we went to look at what upgraders buy.\n\nHere is exactly what we counted. Every condo purchase in the suburban districts, where the address the buyer gave on the caveat was an HDB flat. That means they were living in a flat when they bought. Calendar year 2025, the last complete year. Executive condominiums are included, because plenty of upgraders buy one. That comes to 5,180 purchases, drawn from a database of 465,710 Singapore condo transactions going back to 1995."
+    },
+    {
+      "type": "data-table",
+      "kicker": "What HDB upgraders paid for a suburban condo · 5,180 purchases, calendar 2025",
+      "headers": ["", "Price paid"],
+      "rows": [
+        ["The cheapest quarter, up to", "$1,268,000"],
+        ["The middle", "$1,543,000"],
+        ["The dearest quarter, from", "$1,815,000"],
+        ["Share who paid $1,900,000 or more", "21.0%"],
+        ["Share who paid under $1,900,000", "79.0%"]
+      ],
+      "highlightRowIndex": 1
+    },
+    {
+      "type": "prose",
+      "content": "The middle of that market is $1,543,000. A quarter of those buyers paid $1,268,000 or less. Seventy-nine in every hundred paid under $1.9 million. Almost none of them came anywhere near $2,167,000, which is where their age would have started to count.\n\nThe price in the argument is not the upgrader's price. It sits above roughly three-quarters of the very people it is addressed to. Change that one figure to what people actually spend, and the age penalty the whole argument rests on never appears in the first place."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "What Waiting Actually Cost, And It Was Never Your Age"
+    },
+    {
+      "type": "prose",
+      "content": "None of this means waiting is free. It means the bill came from somewhere else entirely.\n\nThe same database that tells us what upgraders paid last year tells us what they paid in every year before it. Same districts, same kind of buyer, same definition. Only the year changes. An upgrader is also selling one home in order to buy another, so we put that side of the move next to it. That is what a 4-room HDB flat sold for in the same year, taken from 233,431 resale sales published by the Housing and Development Board."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Both sides of the move, by year · HDB resale and suburban condo, medians",
+      "headers": ["Year", "A 4-room HDB flat sold for", "The upgrader's condo cost", "The gap left to fund"],
+      "rows": [
+        ["2020", "$420,000", "$1,065,000", "$645,000"],
+        ["2021", "$470,000", "$1,149,000", "$679,000"],
+        ["2022", "$515,000", "$1,260,000", "$745,000"],
+        ["2023", "$550,000", "$1,350,000", "$800,000"],
+        ["2024", "$590,000", "$1,460,000", "$870,000"],
+        ["2025", "$630,000", "$1,543,000", "$913,000"]
+      ],
+      "highlightRowIndex": 5
+    },
+    {
+      "type": "prose",
+      "content": "Read the last column downwards. In 2020 an upgrader sold the middle 4-room HDB flat for $420,000 and bought the middle suburban condo for $1,065,000. That left $645,000 to find. By 2025 the same move meant selling at $630,000 and buying at $1,543,000. That left $913,000 to find. The flat went up $210,000. The condo went up $478,000. The distance between them, which is the part you actually have to fund, widened by $268,000.\n\nIt widened in every one of those years. Not once did waiting another twelve months make the move cheaper.\n\nBefore anyone objects that buyers simply chose bigger homes: they did not. The middle condo in that group was 947 square feet in 2020 and 936 square feet in 2025, so slightly smaller. What moved was the price of a square foot, from $1,190 to $1,707, a rise of 43 percent. That sits right alongside the 45 percent rise in the price paid. Two different measures agreeing means the increase is price, not size.\n\nNow set the two numbers side by side, because this is the whole point. The most that being five years older could ever cost you was $45,642 of borrowing power, and at normal upgrader prices it cost nothing at all. Waiting five years cost $268,000 in a wider gap to fund. One of those is nearly six times the other, and it is not the one everybody is arguing about."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "6",
+      "text": "What Genuinely Does Get Harder After 40"
+    },
+    {
+      "type": "prose",
+      "content": "Age is not free, and it would be dishonest to swing from one overstatement to another. Three things really do change. They are worth naming plainly, because they are the actual trade-offs rather than the imaginary one.\n\nThe first is your monthly payment. Take the 75 percent loan on a $1,543,000 purchase, which is $1,157,250, and price it at 3 percent. Spread over thirty years that is about $4,880 a month. Spread over twenty-five it is about $5,490. So the shorter loan costs roughly $610 more every month. That is real money and it belongs in your budget.\n\nBut it is only half of what happens, and the other half never gets said. Over the full life of the loan, the thirty-year version hands the bank about $599,000 in interest. The twenty-five-year version hands over about $489,000. The shorter loan costs about $110,000 less in total, because you are borrowing for five fewer years. You are not being punished for being older. You are paying faster.\n\nThe second is when the loan ends. At 40 on a twenty-five-year loan, the last instalment lands at 65, which is close to the day the pay stops. That deserves a plan. The plan is usually about what the home is worth by then and how easily it sells, not about whether to buy it at all.\n\nThe third is time to recover. A 35-year-old who buys badly has two decades to get it back. At 42 you have fewer. That argues for being far choosier about which property, in which location, at which price. It does not argue for staying put, because staying put has its own bill, and section five is what that bill looks like."
+    },
+    {
+      "type": "founder-quote",
+      "label": "From Elfi",
+      "text": "I have sat with people in their forties who had already decided they were too late, before anyone had looked at a single number with them. What that decision costs is not a worse condo. It is another five years in a home that has stopped growing, while they wait for a door to close that was never where they thought it was.",
+      "cite": "Elfi Abdullah, Founder of EastCondos"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "7",
+      "text": "The Deadline That Is Real"
+    },
+    {
+      "type": "prose",
+      "content": "If you want a line in the sand, the figures do point at one. It just is not 35.\n\nLook at the pay table again, at the bottom row. Earnings climb into the early forties and then turn. The 45 to 49 band earns less than the 40 to 44 band. That is the first moment both levers move against you together. Your loan gets shorter every year regardless, and now the pay that was quietly covering it has stopped rising too.\n\nUntil that point, a rising salary was paying for the shorter loan. After it, nothing is. That is the crossover, the moment the maths genuinely stops improving, and it arrives around 45. Which means somebody at 41 who has been told he is too late is in fact standing in the strongest few years he will ever have.\n\nThe cost of waiting is real. It is just not the cost you were quoted, and it is not on the line you were told to watch. Being 40 cost nothing. Waiting cost $268,000.\n\nSo if someone has told you the window has closed, the useful move is not to argue about your age. It is to put two numbers on the table: what your HDB flat would sell for this month, and what the condo you actually want costs today. Everything above this line is about the market. Those two are about you, and until you have them in front of you, nobody is talking about your situation. Including the person who told you that you were too late."
+    },
+    {
+      "type": "faq",
+      "kicker": "Straight answers",
+      "items": [
+        {
+          "question": "Is 40 too old to upgrade from an HDB flat to a condo in Singapore?",
+          "answer": "No. At the prices HDB upgraders actually pay, a 40-year-old and a 35-year-old can borrow exactly the same amount. The 75 percent loan-to-value cap stops both of them before the salary test does. On the salary test alone the difference is about $45,000 of borrowing power, not the $250,000 often quoted. It only becomes the limit that stops you above a purchase price of roughly $2,167,000."
+        },
+        {
+          "question": "How does my age affect my home loan in Singapore?",
+          "answer": "Banks work out your longest possible loan by counting back from age 65. At 35 that is thirty years; at 40 it is twenty-five. A shorter loan raises the monthly payment. It also slightly lowers the maximum you can borrow under TDSR. That is the limit holding total monthly loan repayments to 55 percent of gross monthly pay, tested at a 4 percent rate."
+        },
+        {
+          "question": "Where does the \"$250,000 cost of waiting\" figure come from?",
+          "answer": "From a calculation that holds household pay flat from age 30 to age 40. It also assumes a purchase around $1.9 to $2.09 million. Put back the Ministry of Manpower's published median pay, which rises into the early forties, and the real median price upgraders pay, and the figure does not reproduce. The real gap in borrowing power is $45,642, and at normal upgrader prices it is zero."
+        },
+        {
+          "question": "What do HDB upgraders actually pay for a condo?",
+          "answer": "The median was $1,543,000. That is across 5,180 suburban condo purchases in calendar year 2025, where the buyer's address on the caveat was an HDB flat. A quarter paid $1,268,000 or less. Seventy-nine percent paid under $1,900,000."
+        },
+        {
+          "question": "What did waiting five years actually cost an HDB upgrader?",
+          "answer": "About $268,000. In 2020 the middle 4-room HDB flat sold for $420,000 and the middle suburban upgrader condo cost $1,065,000. That left $645,000 to fund. By 2025 those figures were $630,000 and $1,543,000. That left $913,000 to fund. The gap widened in every year in between."
+        },
+        {
+          "question": "So when does it actually get harder to upgrade?",
+          "answer": "Around 45. Median pay peaks in the 40 to 44 band and falls in the 45 to 49 band, while loan tenure keeps shortening every year. Until then, rising pay offsets the shorter loan. After it, nothing does."
+        },
+        {
+          "question": "What should I check before deciding I have missed the window?",
+          "answer": "Two numbers, both specific to you: what your HDB flat would realistically sell for today, and what the condo you actually want costs. The gap between them, and whether your cash and CPF can cover it, is what decides this. Not your age."
+        }
+      ]
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Find out where you actually stand",
+      "body": "Someone has told you the window has closed. The fastest way to know is to put your own numbers on the table. What your flat is worth, what you would be moving into, and what the gap really is. That takes a conversation, not a rule of thumb.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
