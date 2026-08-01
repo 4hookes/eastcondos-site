@@ -1,0 +1,234 @@
+{
+  "slug": "what-you-actually-keep",
+  "title": "The Keep Number: What a $525,000 Condo Profit Is Really Worth",
+  "titleHtml": "The Keep Number: What a $525,000 Condo Profit <em>Is Really Worth</em>",
+  "standfirst": "Nearly half the people selling a condo in Singapore right now are clearing more than $400,000. That is the headline number. The number you keep is a different one. On a condo bought at $1,500,000 five years ago, the gap between them is about $328,500. Most of it is bank interest you already paid without noticing.",
+  "kicker": "THE KEEP NUMBER · AUGUST 2026",
+  "publishDate": "2026-08-01",
+  "readingTimeMinutes": 9,
+  "ogImage": "/images/journal/what-you-actually-keep/hero.jpg",
+  "coverImage": "/images/journal/what-you-actually-keep/hero.jpg",
+  "coverImageAlt": "Reading glasses and a set of keys resting on a stack of papers on a dark table, lit by a single desk lamp",
+  "coverImageCaption": "The profit is on the valuation. The cost was on the statement, every month, for five years.",
+  "excerpt": "We took every condo in Singapore that was bought and later sold again. That is 23,863 matched sales since 2024. Then we priced one of them properly. Buyer's Stamp Duty, five years of bank interest, renovation, agent fee. The $525,000 becomes $196,476. And the HDB flat that seller left behind went up $160,000 without costing them a cent.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Financial Planning",
+  "framework": {
+    "name": "The Keep Number",
+    "id": "keep-number"
+  },
+  "seo": {
+    "metaTitle": "What A $525,000 Condo Profit Is Really Worth After Costs — EastCondos.sg",
+    "metaDescription": "Buyer's Stamp Duty, five years of bank interest, renovation and agent fees take $328,500 off a $525,000 condo gain. Worked properly, on 23,863 matched Singapore condo sales.",
+    "keywords": [
+      "condo profit after costs singapore",
+      "how much profit selling condo singapore",
+      "buyer stamp duty $1.5 million condo",
+      "home loan interest first 5 years",
+      "condo vs HDB flat which made more money",
+      "cost of selling a condo singapore",
+      "is my condo profit real"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/what-you-actually-keep"
+  },
+  "relatedSlugs": ["right-sizing-condo-to-hdb", "youre-not-late"],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "We pulled every condo in Singapore that was bought and then sold again. Same home, same floor, same stack. Matched, so the gain is a real gain on a real property and not two different homes being compared.\n\nThere are 23,863 of them where the sale happened since 2024. The middle one made $365,000. Nearly half made more than $400,000. They had held the home for about nine years.\n\nSo when somebody tells you they are sitting on $400,000, they usually are.\n\nThat is the headline number. There is a second number underneath it, and almost nobody works it out before they sell. It is what you keep after the buying costs, the borrowing costs and the selling costs come off.\n\nOn a condo bought at $1,500,000 five years ago, the two numbers are $525,000 apart and $196,476 apart. Here is how that happens."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "$365,000",
+          "label": "What the middle condo seller made",
+          "note": "Across 23,863 matched sales since 2024. 46.3% made more than $400,000. 5.5% sold for less than they paid. EastCondos analysis of 465,710 transactions."
+        },
+        {
+          "number": "$159,779",
+          "label": "Bank interest paid in the first five years alone",
+          "note": "On a $1,125,000 loan over 30 years at 3%. That is 56 cents of every dollar you paid the bank."
+        },
+        {
+          "number": "$196,476",
+          "label": "What is left of a $525,000 gain after the four costs",
+          "note": "Buyer's Stamp Duty, five years of interest, renovation and agent fee, on a $1,500,000 purchase."
+        }
+      ]
+    },
+    { "type": "dotted-divider" },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "Start With A Real Condo, Not A Percentage"
+    },
+    {
+      "type": "prose",
+      "content": "Take a condo bought in 2021 for $1,500,000. Nothing fancy. A suburban home, bought with the usual 25% down and a bank loan for the rest.\n\nWhat is it worth today? We do not have to guess. Across the whole resale market the middle price per square foot went from $1,259 in 2021 to $1,699 today. That is a rise of 35%.\n\nSo the same home sells for about $2,025,000. On paper you made $525,000.\n\nThat is a genuinely good five years, and nobody should pretend otherwise. Now take the costs off it, one at a time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The Four Costs Nobody Adds Up"
+    },
+    {
+      "type": "prose",
+      "content": "There are four, and they land at different times, which is exactly why they never get counted together.\n\nThe first one you paid on day one. Buyer's Stamp Duty is the tax you pay when you buy. On $1,500,000 it comes to $44,600. You paid it in cash five years ago and you have not thought about it since.\n\nThe second you have been paying every month, and it is the big one. We will come back to it.\n\nThe third is renovation. Call it $80,000. Use your own figure if you kept the receipts, and most people did not.\n\nThe fourth arrives at the end. Selling a condo costs 2% to the agent plus 9% GST on that fee. On a $2,025,000 sale that is $44,145."
+    },
+    {
+      "type": "data-table",
+      "kicker": "A $1,500,000 condo bought in 2021, sold today · The keep number",
+      "headers": ["", "Amount"],
+      "rows": [
+        ["Sold today", "$2,025,000"],
+        ["Bought in 2021", "$1,500,000"],
+        ["Gain on paper", "$525,000"],
+        ["Less Buyer's Stamp Duty", "−$44,600"],
+        ["Less bank interest, years 1 to 5", "−$159,779"],
+        ["Less renovation", "−$80,000"],
+        ["Less agent fee, 2% plus 9% GST", "−$44,145"],
+        ["What you actually keep", "$196,476"]
+      ],
+      "highlightRowIndex": 7
+    },
+    {
+      "type": "prose",
+      "content": "$525,000 becomes $196,476. The four costs took $328,524, which is 63% of the gain.\n\nAnd we have not counted the monthly maintenance the condo charges for the pool, the guard and the lifts. At $400 a month that is another $24,000 over five years, which takes the keep number down to about $172,000."
+    },
+    {
+      "type": "pull-quote",
+      "text": "The profit is on the valuation. The cost was on the statement, every month, for five years.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "Why The Interest Is The One That Hurts"
+    },
+    {
+      "type": "prose",
+      "content": "Of those four costs, three are one-off and visible. The stamp duty is a single painful transfer. The renovation is a contractor's invoice. The agent fee comes off the sale.\n\nThe interest is different. It arrives in 60 small pieces, buried inside a payment you think of as paying down your home.\n\nMostly it is not paying down your home.\n\nOn a $1,125,000 loan over 30 years at 3%, the monthly payment is $4,743. In year one, $33,429 of what you paid was interest and only $23,488 came off the loan. Fifty-nine cents of every dollar went to the bank and stayed there.\n\nThis is how every home loan is built. You pay interest on what you still owe, and at the start you still owe almost everything. So the early years are nearly all interest and the late years are nearly all loan."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Where your payments actually went · $1,125,000 loan, 30 years, 3%",
+      "headers": ["Year", "Went to interest", "Came off the loan", "Interest share"],
+      "rows": [
+        ["Year 1", "$33,429", "$23,488", "59%"],
+        ["Year 2", "$32,714", "$24,202", "57%"],
+        ["Year 3", "$31,978", "$24,938", "56%"],
+        ["Year 4", "$31,220", "$25,697", "55%"],
+        ["Year 5", "$30,438", "$26,478", "53%"],
+        ["Years 1 to 5 together", "$159,779", "$124,803", "56%"],
+        ["Year 26, for contrast", "$7,239", "$49,678", "13%"]
+      ],
+      "highlightRowIndex": 5
+    },
+    {
+      "type": "prose",
+      "content": "Read the last two rows against each other. In the first five years, 56 cents of every dollar went to the bank. By year 26 it is 13 cents.\n\nThat is the thing to understand about selling early. A home loan rewards the person who stays. Sell in year five and you have paid the expensive part of the loan and collected none of the cheap part.\n\nYour rate is important here too, and over these five years rates moved a lot. Here is the same loan at three different rates, so you can find yours."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Interest paid in the first five years, at different rates",
+      "headers": ["Rate", "Monthly payment", "Interest in 5 years", "Keep number"],
+      "rows": [
+        ["2.5%", "$4,445", "$132,555", "$223,700"],
+        ["3.0%", "$4,743", "$159,779", "$196,476"],
+        ["3.5%", "$5,052", "$187,197", "$169,058"]
+      ],
+      "highlightRowIndex": 1
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "Now Compare It To Doing Nothing"
+    },
+    {
+      "type": "prose",
+      "content": "A keep number of $196,476 over five years is still money. The question is whether it beat the alternative. And for most of these owners, the alternative was staying in the HDB flat they sold.\n\nSo we checked what that flat did over the same five years.\n\nThe middle 4-room HDB flat went from $470,000 in 2021 to $630,000 today. That is $160,000.\n\nThat $160,000 came with no Buyer's Stamp Duty, because they were not buying. No renovation, because they were not moving. No agent fee, because they were not selling. And a far smaller loan, so far less interest."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Five years, two paths · Middle of the market, 2021 to today",
+      "headers": ["", "Bought the condo", "Stayed in the HDB flat"],
+      "rows": [
+        ["Gain on paper", "$525,000", "$160,000"],
+        ["Buyer's Stamp Duty", "−$44,600", "none"],
+        ["Bank interest, 5 years", "−$159,779", "far smaller loan"],
+        ["Renovation", "−$80,000", "none"],
+        ["Agent fee to sell", "−$44,145", "none"],
+        ["Maintenance charges", "−$24,000", "none"],
+        ["What you keep", "about $172,000", "about $160,000"]
+      ],
+      "highlightRowIndex": 6
+    },
+    {
+      "type": "prose",
+      "content": "About $172,000 against about $160,000. Five years of a bigger loan, a bigger tax bill and two renovations, for roughly $12,000.\n\nBefore anyone writes in: the HDB owner had a loan too, and its interest would come off their $160,000. Include it and the two paths sit closer still, not further apart.\n\nThis is not an argument against condos. It is an argument against the number people quote when they talk about them. The $525,000 was never $525,000. It was $172,000, and it took five years and a lot of nerve to earn."
+    },
+    {
+      "type": "founder-quote",
+      "label": "From Elfi",
+      "text": "When somebody tells me they made half a million on their condo, I believe them. Then I ask what they paid the bank in the first five years, and the room goes quiet. It is not that they were lied to. Nobody ever showed them the second number.",
+      "cite": "Elfi Abdullah, Founder of EastCondos"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "What To Do With This"
+    },
+    {
+      "type": "prose",
+      "content": "Three things, and none of them is to avoid buying a condo.\n\nWork out your own keep number before you make any decision. Take the price you would sell at. Take off what you paid, the stamp duty on the way in, the interest to date, the renovation and the agent fee. Your bank will give you the interest figure in one phone call. It is usually the number that surprises people.\n\nSecond, understand that a home loan rewards the person who stays. The expensive years are the early ones. If you sell in year five, you have paid for the costly half and collected none of the cheap half. That does not mean never sell. It means a short hold has to earn a lot to be worth it.\n\nThird, decide what the money is for before it lands. A keep number of $172,000 is a real sum and it can do real work. It can go towards what you set aside at 55, which is what pays you monthly for the rest of your life. Or it can go into a bigger home and a nicer renovation and be gone.\n\nThe headline number is not yours. The keep number is. Work it out first, then decide."
+    },
+    {
+      "type": "faq",
+      "kicker": "Straight answers",
+      "items": [
+        {
+          "question": "How much profit are Singapore condo sellers actually making?",
+          "answer": "Across 23,863 matched sales since 2024, where the same home was bought and later sold, the middle seller made $365,000. Nearly half made more than $400,000 and 5.5% sold for less than they paid. The average hold was about nine years."
+        },
+        {
+          "question": "What costs come off a condo profit when I sell?",
+          "answer": "Four main ones. Buyer's Stamp Duty paid when you bought. Bank interest paid while you held it. Renovation. And the agent fee of 2% plus 9% GST when you sell. On a $1,500,000 purchase held five years, those four came to $328,524 against a $525,000 gain."
+        },
+        {
+          "question": "How much interest do you pay in the first five years of a home loan?",
+          "answer": "On a $1,125,000 loan over 30 years at 3%, you pay $159,779 in interest in the first five years. That is 56 cents of every dollar paid. Only $124,803 came off the loan itself."
+        },
+        {
+          "question": "Why is home loan interest highest at the start?",
+          "answer": "Because interest is charged on what you still owe, and at the start you still owe almost all of it. In year one, 59% of your payment is interest. By year 26 it is 13%. A home loan rewards the person who stays."
+        },
+        {
+          "question": "Would I have made more just staying in my HDB flat?",
+          "answer": "Closer than most people expect. The middle 4-room HDB flat rose $160,000 over the same five years. That came with no stamp duty, no renovation, no agent fee and a far smaller loan. Against a condo keep number of about $172,000, the difference is roughly $12,000."
+        },
+        {
+          "question": "What is Buyer's Stamp Duty on a $1,500,000 property?",
+          "answer": "$44,600. It is charged in bands. 1% on the first $180,000, then 2% on the next $180,000. Then 3% on the next $640,000 and 4% on the next $500,000."
+        }
+      ]
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Work out your own keep number",
+      "body": "Your figures are not the ones in this piece. What you paid, what you owe, what you have paid the bank and what you would sell at are all specific to you. Putting them on one page usually takes half an hour and changes the decision.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
