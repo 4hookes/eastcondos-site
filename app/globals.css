@@ -474,7 +474,9 @@
     color: #FF6B35;
   }
   .surface-light [class~="bg-charcoal"] [class~="text-cream"],
-  .surface-light [class~="bg-charcoal-deep"] [class~="text-cream"] {
+  .surface-light [class~="bg-charcoal"][class~="text-cream"],
+  .surface-light [class~="bg-charcoal-deep"] [class~="text-cream"],
+  .surface-light [class~="bg-charcoal-deep"][class~="text-cream"] {
     color: #F2EBDB;
   }
 
