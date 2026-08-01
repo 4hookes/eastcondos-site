@@ -59,8 +59,12 @@ export default function ProcessPage() {
               className="grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] gap-8 md:gap-14 py-14 border-t hairline items-start"
             >
               <div>
+                {/* Decorative step index. The phase is named by the <h2> below,
+                    so this is duplicate information — hidden from screen readers
+                    and exempt from text contrast, same treatment as .meganum. */}
                 <div
-                  className="font-display font-extralight text-cream/25"
+                  aria-hidden="true"
+                  className="font-display font-extralight text-cream/25 select-none pointer-events-none"
                   style={{ fontSize: "clamp(64px, 8vw, 110px)", lineHeight: 0.9, letterSpacing: "-0.05em" }}
                 >
                   {phase.number}
