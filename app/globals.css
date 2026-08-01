@@ -489,6 +489,16 @@
     color: #0E0E1F;
   }
 
+  /* Same pair, but arriving on hover — the CTA pattern
+     `bg-charcoal text-cream hover:bg-amber hover:text-charcoal`, used on 9
+     call sites. The rule above cannot catch it: hover:bg-amber is its own
+     class token, not bg-amber. Specificity (0,3,0) beats Tailwind's
+     .hover\:text-charcoal:hover at (0,2,0). */
+  [class~="hover:bg-amber"][class~="hover:text-charcoal"]:hover,
+  [class~="hover:bg-amber-light"][class~="hover:text-charcoal"]:hover {
+    color: #0E0E1F;
+  }
+
   /* Light surfaces reset inherited text color (body default is cream-on-dark).
      Explicit text-* utilities on descendants still win. */
   .bg-cream,
