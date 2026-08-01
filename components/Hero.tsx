@@ -64,7 +64,7 @@ export default function Hero() {
         className="absolute top-0 right-[clamp(2rem,8vw,120px)] w-px h-full z-[2] hidden md:block"
         style={{
           background:
-            "linear-gradient(to bottom, transparent, rgba(212,168,67,0.20) 40%, rgba(212,168,67,0.08) 70%, transparent)",
+            "linear-gradient(to bottom, transparent, rgba(232, 64, 31,0.20) 40%, rgba(232, 64, 31,0.08) 70%, transparent)",
         }}
         aria-hidden="true"
       />

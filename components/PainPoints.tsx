@@ -81,7 +81,7 @@ export default function PainPoints() {
                 {/* Icon container */}
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center"
-                  style={{ background: "rgba(212, 168, 67, 0.10)" }}
+                  style={{ background: "rgba(232, 64, 31, 0.10)" }}
                   aria-hidden="true"
                 >
                   <Icon

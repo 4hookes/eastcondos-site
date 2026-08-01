@@ -123,7 +123,7 @@ export async function buildPlannerDoc(result: PlannerResult, dateLabel: string) 
   doc.setFontSize(20);
   doc.setTextColor(255, 255, 255);
   doc.text(money(result.apparentGap), M + 5, y + 17);
-  doc.setTextColor(212, 168, 67);
+  doc.setTextColor(232, 64, 31);
   doc.text(money(result.realGap), halfX + 5, y + 17);
   // divider
   doc.setDrawColor(90, 90, 110);

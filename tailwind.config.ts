@@ -63,7 +63,7 @@ const config: Config = {
         premium: "0 4px 20px rgba(0, 0, 0, 0.06)",
         "premium-lg": "0 8px 40px rgba(0, 0, 0, 0.08)",
         "premium-glow":
-          "0 8px 40px rgba(212, 168, 67, 0.08), 0 4px 20px rgba(0, 0, 0, 0.06)",
+          "0 8px 40px rgba(232, 64, 31, 0.08), 0 4px 20px rgba(0, 0, 0, 0.06)",
         "inner-subtle": "inset 0 1px 2px rgba(0, 0, 0, 0.04)",
       },
       letterSpacing: {
