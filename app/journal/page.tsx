@@ -200,7 +200,7 @@ export default function JournalIndexPage() {
                       {a.title}
                     </h3>
                     <p className="prose-dark text-[14px]">{a.excerpt}</p>
-                    <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-cream/40">
+                    <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-cream/55">
                       {formatDate(a.publishDate)}
                     </div>
                   </div>

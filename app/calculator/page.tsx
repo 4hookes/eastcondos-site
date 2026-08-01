@@ -369,7 +369,7 @@ export default function CalculatorPage() {
       </main>
 
       {/* ----- Footnote ----- */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/55 leading-relaxed">
         Calculations follow MAS Notice 645 (TDSR 55%) and MAS Notice 632/825 (MSR 30%). Bank loan
         eligibility is calculated at the higher of your offered rate or the 4% stress floor. HDB
         loan uses the prevailing concessionary rate. Tenure is capped at age 65 with a max of 30

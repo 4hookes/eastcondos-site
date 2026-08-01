@@ -426,7 +426,7 @@ export default function NewLaunchVsResalePage() {
       </main>
 
       {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/55 leading-relaxed">
         Lease normalisation uses the official URA &ldquo;Leasehold values as a percentage of freehold value&rdquo; table (DC
         Circular dc22-08, Appendix 2). Progressive payment interest follows the Normal Payment Scheme; resale interest is the
         amortising interest on a fully-drawn loan over the same window. CPF accrued interest is the 2.5% that builds on CPF used

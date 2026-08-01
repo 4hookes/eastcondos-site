@@ -275,7 +275,7 @@ export default function ProgressivePaymentCalculatorPage() {
       </main>
 
       {/* ===== Footnote ===== */}
-      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/40 leading-relaxed">
+      <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-6 sm:py-8 border-t hairline font-mono text-[11px] text-cream/55 leading-relaxed">
         Stage percentages follow the standard Singapore Normal Payment Scheme (URA / BCA — the same
         schedule every project uses). Loan disbursement assumes the bank pays out only after your
         downpayment is exhausted. Monthly interest during construction is interest-only on the
