@@ -546,7 +546,7 @@ html.motion [data-clip-reveal] {
   content: "";
   position: absolute;
   inset: 0;
-  background: #d4a843;
+  background: #E8401F;
   transform: scaleY(0);
   transform-origin: top center;
 }
@@ -583,7 +583,7 @@ html.motion .scroll-cue-line::after {
   top: 0;
   width: 100%;
   height: 1px;
-  background: #d4a843;
+  background: #E8401F;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
@@ -604,7 +604,7 @@ html.motion .scroll-cue-line::after {
   right: 0;
   bottom: -5px;
   height: 1px;
-  background: #d4a843;
+  background: #E8401F;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
