@@ -44,7 +44,7 @@ const CHAPTERS: {
 
 export default function IndexRibbon() {
   return (
-    <section className="bg-charcoal-deep gridlines border-t hairline">
+    <section className="surface-light gridlines-light border-t hairline">
       <div className="max-w-broadsheet mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4">
           {CHAPTERS.map((c, i) => (

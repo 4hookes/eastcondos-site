@@ -29,9 +29,9 @@ export default function HeroMedia() {
           loop
           playsInline
           preload="metadata"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.62]"
           style={{
-            filter: "grayscale(0.35) contrast(1.05) brightness(0.85)",
+            filter: "grayscale(0.2) contrast(1.08) brightness(1.02) saturate(1.15)",
           }}
         />
       </div>

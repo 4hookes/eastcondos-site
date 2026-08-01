@@ -14,10 +14,12 @@ const config: Config = {
           light: "#2D2D44",
           deep: "#0E0E1F",
         },
+        // SIGNAL — brand accent since 2026-08-01 (was amber #D4A843).
+        // Token name kept as `amber` so all 63 consuming files flip at once.
         amber: {
-          DEFAULT: "#D4A843",
-          light: "#E0BC6A",
-          deep: "#B8902F",
+          DEFAULT: "#E8401F",
+          light: "#FF6B35",
+          deep: "#B82F12",
         },
         offwhite: "#FAFAF8",
         cream: "#F2EBDB",
@@ -28,8 +30,8 @@ const config: Config = {
         sage: "#6B7280",
         "sage-dark": "#1A1A2E",
         "sage-light": "#FAFAF8",
-        gold: "#D4A843",
-        "gold-light": "#E0BC6A",
+        gold: "#E8401F",
+        "gold-light": "#FF6B35",
         navy: "#1A1A2E",
       },
       fontFamily: {

@@ -82,7 +82,7 @@ export default function ProgressivePaymentCalculatorPage() {
       <main className="surface-light gridlines-light px-4 sm:px-10 py-8 sm:py-12">
        <div className="max-w-broadsheet mx-auto">
         {/* ===== Disclaimer ===== */}
-        <div className="flex gap-3 items-start bg-paper border border-charcoal p-3.5 sm:p-4 mb-6 sm:mb-8" style={{ borderLeft: "3px solid #D4A843" }}>
+        <div className="flex gap-3 items-start bg-paper border border-charcoal p-3.5 sm:p-4 mb-6 sm:mb-8" style={{ borderLeft: "3px solid #E8401F" }}>
           <span className={styles.caveatIcon}>i</span>
           <p className="text-[12.5px] sm:text-[13.5px] text-body leading-snug">
             <span className="font-medium text-charcoal">A guide, not a quote.</span> Banks may vary the

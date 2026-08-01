@@ -27,7 +27,7 @@ const STATS = [
 
 export default function ByTheNumbers() {
   return (
-    <section className="bg-charcoal-deep gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline">
+    <section className="bg-charcoal gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline">
       <div className="max-w-broadsheet mx-auto">
         <div className="flex flex-wrap gap-4 justify-between items-end border-b hairline-strong pb-5 mb-14">
           <div className="display-block">By the numbers</div>

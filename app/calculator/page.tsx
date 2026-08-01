@@ -313,7 +313,7 @@ export default function CalculatorPage() {
         <div
           className="bg-paper border border-charcoal mt-8 p-5 sm:p-7 grid gap-4 sm:gap-5"
           style={{
-            borderLeft: "3px solid #D4A843",
+            borderLeft: "3px solid #E8401F",
             gridTemplateColumns: "auto 1fr",
           }}
         >

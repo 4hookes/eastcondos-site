@@ -15,7 +15,7 @@
 .input:focus,
 .select:focus,
 .textarea:focus {
-  outline: 2px solid #D4A843;
+  outline: 2px solid #E8401F;
   outline-offset: -1px;
 }
 .select {
@@ -41,7 +41,7 @@
   padding: 12px 14px;
   margin-top: 8px;
   background: #FFF7E5;
-  border-left: 2px solid #B8902F;
+  border-left: 2px solid #B82F12;
   font-size: 13px;
   line-height: 1.5;
   color: #5A4A1A;

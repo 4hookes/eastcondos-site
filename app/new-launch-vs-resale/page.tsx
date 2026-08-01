@@ -138,7 +138,7 @@ export default function NewLaunchVsResalePage() {
         <div className="bg-offwhite border border-charcoal shadow-premium">
           {/* Disclaimer — shown before anyone uses the planner */}
           <div className="px-5 sm:px-8 pt-5 sm:pt-6">
-            <div className="flex gap-3 items-start bg-cream/70 border border-charcoal p-3.5 sm:p-4" style={{ borderLeft: "3px solid #D4A843" }}>
+            <div className="flex gap-3 items-start bg-cream/70 border border-charcoal p-3.5 sm:p-4" style={{ borderLeft: "3px solid #E8401F" }}>
               <span className={styles.caveatIcon}>i</span>
               <p className="text-[12.5px] sm:text-[13.5px] text-body leading-snug">
                 <span className="font-medium text-charcoal">These numbers are a guide, not a quote.</span> They&apos;re
@@ -390,7 +390,7 @@ export default function NewLaunchVsResalePage() {
         )}
 
         {/* ===== Caveat ===== */}
-        <div className="bg-offwhite border border-charcoal mt-8 p-5 sm:p-7 grid gap-4 sm:gap-5" style={{ borderLeft: "3px solid #D4A843", gridTemplateColumns: "auto 1fr" }}>
+        <div className="bg-offwhite border border-charcoal mt-8 p-5 sm:p-7 grid gap-4 sm:gap-5" style={{ borderLeft: "3px solid #E8401F", gridTemplateColumns: "auto 1fr" }}>
           <div className={styles.caveatIcon}>i</div>
           <div>
             <h4 className="font-serif text-[18px] sm:text-[20px] text-charcoal mb-2 sm:mb-2.5" style={{ letterSpacing: "-0.01em" }}>

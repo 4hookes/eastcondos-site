@@ -6,7 +6,7 @@ import { kindLabel } from "@/lib/teamLibrary";
 
 const CHARCOAL = "#1A1A2E";
 const CREAM = "#F2EBDB";
-const AMBER = "#D4A843";
+const AMBER = "#E8401F";
 
 function Preview({ a }: { a: Asset }) {
   const isImage = a.kind === "icon" || a.kind === "spot" || a.kind === "broll";

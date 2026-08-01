@@ -123,7 +123,7 @@ export default function DiscoveryPage() {
         <div
           className="bg-paper border border-charcoal mb-9 sm:mb-12 p-5 sm:p-7 grid gap-4 sm:gap-5"
           style={{
-            borderLeft: "3px solid #D4A843",
+            borderLeft: "3px solid #E8401F",
             gridTemplateColumns: "auto 1fr",
           }}
         >
@@ -131,8 +131,8 @@ export default function DiscoveryPage() {
             style={{
               width: 28,
               height: 28,
-              border: "1px solid #B8902F",
-              color: "#B8902F",
+              border: "1px solid #B82F12",
+              color: "#B82F12",
               fontFamily: "var(--font-dm-serif), serif",
               fontSize: 16,
               fontStyle: "italic",

@@ -62,7 +62,7 @@ export default function JournalIndexPage() {
             src="/broll/condo-facade.jpg"
             alt=""
             className="absolute inset-0 h-full w-full object-cover object-[center_30%] opacity-[0.28]"
-            style={{ filter: "grayscale(0.35) contrast(1.05) brightness(0.85)" }}
+            style={{ filter: "grayscale(0.2) contrast(1.08) brightness(1.02) saturate(1.15)" }}
           />
           <div
             className="absolute inset-0"

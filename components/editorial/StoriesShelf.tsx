@@ -46,7 +46,7 @@ const INDEX = [
 
 export default function StoriesShelf() {
   return (
-    <section className="bg-charcoal-deep gridlines py-24 md:py-32 px-6 md:px-12 border-t hairline relative overflow-hidden">
+    <section className="surface-light gridlines-light py-24 md:py-32 px-6 md:px-12 border-t hairline relative overflow-hidden">
       <div
         aria-hidden
         className="meganum absolute right-6 md:right-12 -top-2 md:top-2"
