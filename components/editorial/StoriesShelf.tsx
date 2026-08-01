@@ -99,7 +99,7 @@ export default function StoriesShelf() {
             </div>
             <a
               href="/case-studies"
-              className="mt-8 inline-block font-mono text-[12px] uppercase tracking-[0.2em] text-cream border-b border-amber pb-1.5 hover:text-amber transition-colors"
+              className="mt-8 inline-block font-mono text-[12px] uppercase tracking-[0.2em] text-cream border-b border-amber pb-1.5 hover:text-amber-deep transition-colors"
             >
               Read full case study &rarr;
             </a>

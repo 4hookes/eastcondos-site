@@ -252,7 +252,7 @@ export default function NewLaunchVsResalePage() {
               <button
                 type="button"
                 onClick={revealResult}
-                className="w-full bg-charcoal text-cream py-4 sm:py-5 text-[13px] sm:text-[15px] uppercase tracking-[0.18em] font-semibold hover:bg-amber hover:text-charcoal transition-colors"
+                className="w-full bg-charcoal text-cream py-4 sm:py-5 text-[13px] sm:text-[15px] uppercase tracking-[0.18em] font-semibold hover:bg-amber-light hover:text-charcoal transition-colors"
               >
                 See the result
               </button>
