@@ -17,6 +17,7 @@
 // won't render (filtered out), so keep this list in step with index.json.
 // ─────────────────────────────────────────────────────────────────────────
 import indexData from "./index.json";
+import thePolicyThatMovedTheBuyers from "./the-policy-that-moved-the-buyers.json";
 import whatYouActuallyKeep from "./what-you-actually-keep.json";
 import rightSizingCondoToHdb from "./right-sizing-condo-to-hdb.json";
 import youreNotLate from "./youre-not-late.json";
@@ -33,6 +34,7 @@ import yourHdbLooksYoungInsideItsOld from "./your-hdb-looks-young-inside-its-old
 // Typed as `unknown` so each consumer casts to its own view (JournalArticle /
 // JournalSummary) — the registry stays decoupled from the renderer's types.
 export const articleMap: Record<string, unknown> = {
+  "the-policy-that-moved-the-buyers": thePolicyThatMovedTheBuyers,
   "what-you-actually-keep": whatYouActuallyKeep,
   "right-sizing-condo-to-hdb": rightSizingCondoToHdb,
   "youre-not-late": youreNotLate,

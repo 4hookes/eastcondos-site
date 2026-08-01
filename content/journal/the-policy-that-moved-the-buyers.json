@@ -1,0 +1,298 @@
+{
+  "slug": "the-policy-that-moved-the-buyers",
+  "title": "They Scrapped The 15-Month Wait. Does That Change Anything For My HDB Flat?",
+  "titleHtml": "They Scrapped The 15-Month Wait. <em>Does That Change Anything For My HDB Flat?</em>",
+  "standfirst": "Removing the 15-month wait did not change what homes are worth. It changed who is allowed to bid for them. For four years the wait held roughly 1,250 sales a year out of the 5-room and Executive market. On 28 July 2026 that brake came off. The buyers it was holding back arrive with money. And they are pointed at one narrow slice of the HDB market. Nobody has built it since 2004.",
+  "kicker": "POLICY · JULY 2026",
+  "publishDate": "2026-07-29",
+  "readingTimeMinutes": 8,
+  "ogImage": "/images/journal/the-policy-that-moved-the-buyers/hero.jpg",
+  "coverImage": "/images/journal/the-policy-that-moved-the-buyers/hero.jpg",
+  "coverImageAlt": "Older Singapore HDB blocks at dusk, the large balconied executive-apartment block in the foreground, a few windows lit warm against a deep blue sky",
+  "coverImageCaption": "The flats nobody has built since 2004, on the evening the buyers were let back in.",
+  "excerpt": "Everyone asked whether scrapping the 15-month wait would push HDB resale prices up. That is the wrong question. The policy did not move prices — it moved the buyers, and only for a narrow slice of homes. Here is who it actually changes things for, using our own transaction data.",
+  "author": {
+    "name": "Elfi Abdullah",
+    "role": "Founder · Division Director, ERA Singapore"
+  },
+  "topicCluster": "Market Trends",
+  "framework": {
+    "name": "The Exit Audience Test",
+    "id": "exit-audience-test"
+  },
+  "seo": {
+    "metaTitle": "Does Scrapping The 15-Month Wait Change Anything For Your HDB Flat? — EastCondos.sg",
+    "metaDescription": "Singapore scrapped the 15-month wait-out on 28 July 2026. It did not move HDB prices — it moved the buyers. Roughly 1,250 sales a year were held back, and they were all in one narrow slice of the HDB market. Measured across 233,431 HDB resale sales.",
+    "keywords": [
+      "15 month wait out period removed",
+      "private property owner buy HDB resale flat",
+      "can I buy HDB after selling condo",
+      "executive maisonette price singapore",
+      "downgrade condo to HDB singapore",
+      "HDB resale price 2026",
+      "sell condo buy HDB flat policy"
+    ],
+    "canonicalUrl": "https://eastcondos.sg/journal/the-policy-that-moved-the-buyers"
+  },
+  "relatedSlugs": [
+    "the-waiting-trap",
+    "your-hdb-looks-young-inside-its-old"
+  ],
+  "body": [
+    {
+      "type": "prose",
+      "dropcap": true,
+      "content": "On 28 July 2026 the government removed the 15-month wait-out period. Until that morning the order was fixed. Own private property, want a resale HDB flat without grants? Sell your private home first. Then wait 15 months. That wait is gone. You can now buy the HDB flat first. Two conditions. Do not take an HDB housing loan. And sell every private property you own, here and overseas, within six months of completing the purchase.\n\nAlmost every headline since has asked the same question: will this push HDB resale prices back up? It is the obvious question and it is the wrong one. Prices are set by a whole market. This policy did not touch the whole market. It released a specific group of people, and pointed them at a specific kind of home."
+    },
+    {
+      "type": "stat-grid",
+      "columns": 3,
+      "stats": [
+        {
+          "number": "1,250",
+          "suffix": "+",
+          "label": "Sales a year the wait was taking out of the big-flat market",
+          "note": "5-room sales fell 866 and Executive 380 in the year after the wait came in. EastCondos analysis of 233,431 HDB resale sales."
+        },
+        {
+          "number": "$388,888",
+          "label": "What the typical condo seller is making today",
+          "note": "Median profit across 23,808 matched pairs — the same unit bought, then resold in 2024–2026. EastCondos analysis of 465,710 transactions."
+        },
+        {
+          "number": "1,470",
+          "label": "Executive HDB flats that change hands in a whole year",
+          "note": "HDB resale transactions, executive flats, full-year 2025. Source: data.gov.sg."
+        }
+      ]
+    },
+    {
+      "type": "dotted-divider"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "1",
+      "text": "What Changed, and What Quietly Did Not"
+    },
+    {
+      "type": "prose",
+      "content": "The change is narrower than the headlines suggest. It removes the 15-month wait for one specific move: a private property owner buying a non-subsidised HDB resale flat, without an HDB housing loan.\n\nEverything else stayed where it was. Four routes still carry the old 30-month wait. A flat with housing grants. A new flat from HDB. An executive condominium from a developer. Or any purchase using an HDB loan. You still need an HDB Flat Eligibility letter, the document that tells you what you actually qualify for. And the six-month disposal deadline is new: buy the HDB flat first, and the clock starts on selling everything else you own.\n\nSo the group this genuinely frees is smaller than it sounds. It is people who can buy with cash and a bank loan. Who do not need grants. And who will commit to selling their private home inside six months."
+    },
+    {
+      "type": "data-table",
+      "kicker": "The policy, before and after",
+      "headers": [
+        "",
+        "Before 28 July 2026",
+        "From 28 July 2026"
+      ],
+      "rows": [
+        [
+          "Wait before buying a non-subsidised HDB resale flat",
+          "15 months after selling your private home",
+          "None"
+        ],
+        [
+          "Order of the transactions",
+          "Sell private, wait, then buy",
+          "Buy the HDB flat first, then sell"
+        ],
+        [
+          "Deadline to sell your private property",
+          "Not applicable — you sold first",
+          "6 months from completing the HDB purchase, Singapore and overseas"
+        ],
+        [
+          "If you take an HDB housing loan",
+          "Wait applies",
+          "30-month wait still applies"
+        ],
+        [
+          "If you want grants, a new flat, or an EC from a developer",
+          "Wait applies",
+          "30-month wait still applies"
+        ],
+        [
+          "HDB Flat Eligibility letter",
+          "Required",
+          "Still required"
+        ]
+      ],
+      "highlightRowIndex": 0
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "2",
+      "text": "The Queue Was Already Standing There"
+    },
+    {
+      "type": "prose",
+      "content": "The most useful number in this whole story is not about prices. It is about how many sales the wait was quietly removing from the market.\n\nYou can measure that. Take the year before the wait came in and the year after, for the flat types it actually pointed at.\n\n5-room sales fell by 866. Executive flats fell by 380. So the wait was taking roughly 1,250 sales a year out of the big-flat market, every year, for four years.\n\nThat is not a queue of people standing still. Most of them waited their 15 months and bought anyway, or bought something else, or gave up. What the removal changes is the flow from here on. About 1,250 more big-flat sales a year can now happen without anyone waiting."
+    },
+    {
+      "type": "pull-quote",
+      "text": "The queue did not form on 28 July. It had been standing there for four years, and the barrier simply lifted.",
+      "cite": "Elfi Abdullah"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "3",
+      "text": "What These Buyers Are Bringing With Them"
+    },
+    {
+      "type": "prose",
+      "content": "A buyer released by this policy is, by definition, someone selling a private home. So the question for anyone on the other side of the table is simple: how much are those people walking away with?\n\nWe went and counted. We took all 465,710 transactions in our database and isolated matched pairs. That is the same physical home, bought once and resold later. It removes the guesswork of comparing different homes. Filtering to units resold in 2024, 2025 and 2026 gives 23,808 pairs.\n\nThe typical condo seller today is making $388,888. Just under half of them, 48.9%, are making more than $400,000, and 18.2% are making more than $800,000. It is not universal: 4.1% sold for less than they paid. But the centre of that distribution is a household with several hundred thousand dollars of profit, no HDB loan, and no grant to qualify for."
+    },
+    {
+      "type": "data-table",
+      "kicker": "What a condo seller made · 23,808 matched pairs resold 2024–2026",
+      "headers": [
+        "Profit on the same unit",
+        "Share of sellers"
+      ],
+      "rows": [
+        [
+          "Sold at a loss",
+          "4.1%"
+        ],
+        [
+          "$0 – $200,000",
+          "22.2%"
+        ],
+        [
+          "$200,000 – $400,000",
+          "24.8%"
+        ],
+        [
+          "$400,000 – $800,000",
+          "30.7%"
+        ],
+        [
+          "More than $800,000",
+          "18.2%"
+        ]
+      ],
+      "highlightRowIndex": 3
+    },
+    {
+      "type": "prose",
+      "content": "The method, so you can weigh it. Matched pairs only. Duplicate rows removed. Both address formats collapsed, so no home is counted twice. Minimum holding period of one year. Profit here is the difference between the two transacted prices. It is not net of stamp duty, agent fees, legal costs, or the CPF a seller must return to their own account. So treat it as gross, not cash in hand."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "4",
+      "text": "If You Own a Big HDB Flat, Your Exit Audience Just Changed"
+    },
+    {
+      "type": "prose",
+      "content": "This is where the policy actually bites, and it is the reason the headline question about prices misses.\n\nA household leaving a condo is not downsizing for the sake of it. They are usually after room. That points them at the largest flats HDB ever built. executive apartments, executive maisonettes, and the biggest 5-room layouts. And here is the part that makes this different from an ordinary demand story: nobody is building any more of them.\n\nAcross every executive flat resale in the data, the newest executive apartment carries a lease that began in 2004. Maisonettes run from 1984 to 2000. HDB stopped making both more than twenty years ago. The supply is fixed and can only shrink. A 5-room flat is still being built. Leases in our data run to 2022, so more are coming. Over 13,400 flats reach the end of their 5-year lock-in during 2026 alone.\n\nSo the same policy lands very differently depending on which of those you own. Say you hold an executive apartment or a maisonette. A group of cash-rich buyers who could not legally bid for your home last week can bid today. And no new supply is coming to compete with you. If you hold a 5-room flat, you gained the same buyers. But you will be selling alongside a rising number of neighbours."
+    },
+    {
+      "type": "data-table",
+      "kicker": "Median resale price · the flats this policy points at · Source: data.gov.sg, EastCondos analysis",
+      "headers": [
+        "Year",
+        "Executive maisonette",
+        "Executive apartment"
+      ],
+      "rows": [
+        [
+          "2022",
+          "$818,000",
+          "$745,000"
+        ],
+        [
+          "2023",
+          "$855,000",
+          "$800,000"
+        ],
+        [
+          "2024",
+          "$900,000",
+          "$846,000"
+        ],
+        [
+          "2025",
+          "$950,000",
+          "$880,000"
+        ],
+        [
+          "2026 (to July)",
+          "$950,000",
+          "$898,944"
+        ]
+      ],
+      "highlightRowIndex": 4
+    },
+    {
+      "type": "prose",
+      "content": "Read that last row carefully, because it is the honest part. The maisonette climbed roughly 5% a year for three years and then stopped: $950,000 in 2025, $950,000 so far in 2026. It has not fallen. It has flattened, at the top of a five-year run. That beats a forecast. An owner is being offered a new group of buyers at the exact moment their own price stopped climbing.\n\nThis is what we call The Exit Audience Test™. What your home is worth today counts for less than who can afford to buy it from you next. On 28 July, for one narrow category of HDB flat, that answer changed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "5",
+      "text": "If You Own a Condo, the Same Policy Points the Other Way"
+    },
+    {
+      "type": "prose",
+      "content": "Turn the arithmetic around. Every one of those released households has to sell a condo in order to buy the flat. That is not a possibility, it is a requirement of the policy. Six months from completion, or they are in breach.\n\nIn all of 2025, the entire Singapore market recorded 14,415 condo resale transactions. Four thousand additional sellers is more than a quarter of a full year's volume, arriving in a compressed window and carrying a deadline. It will not land evenly, and not all at once. They have to find and buy a flat first, which takes months. But it lands.\n\nAnd it does not need to land inside your own project to reach you. A buyer looking in your area is choosing between everything available near them at their price. More choice three streets away is still more choice. Say you already know what you want to buy next. Then get your own numbers straight now. A current valuation. A realistic asking price. A clear view of what you would be moving into. Far better than finding out once the listings around you have thickened."
+    },
+    {
+      "type": "founder-quote",
+      "label": "From Elfi",
+      "text": "People keep asking me whether this policy will push HDB prices up. Honestly, for most flats, probably not much. But that was never the useful question. The useful question is whether the people who can afford your particular home just got more numerous or less. For an executive maisonette, more. For a condo in a crowded pocket, less. Same policy, opposite answer.",
+      "cite": "Elfi Abdullah, Founder of EastCondos"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "number": "6",
+      "text": "What This Policy Does Not Do"
+    },
+    {
+      "type": "prose",
+      "content": "It is worth being clear about the limits, because the loudest version of this story is already overstated.\n\nIt does not make HDB flats broadly more expensive. The government removed the measure precisely because the market had cooled. HDB resale price growth slowed from 10.4% in 2022 to 2.9% in 2025. Prices then fell in the first quarter of 2026, the first drop in nearly seven years. They fell again in the second. You do not lift a cooling measure off a market that is running hot. Analysts since the announcement mostly agree the effect will be targeted, not broad. Our own numbers support that. Over the last twelve months the typical 4-room flat rose 1.61%, the 5-room 2.78%, the executive flat 2.48%. Those are not the numbers of a market about to take off.\n\nIt does not help most buyers. Anyone who needs a housing grant or an HDB loan is still under the old 30-month wait.\n\nAnd it does not make a million-dollar flat normal. In the second quarter of 2026 there were 491 HDB resales above $1 million. A record, and the number every headline used. It was also 7.93% of the 6,194 flats sold that quarter. The other 92.1% sold for less than a million dollars, and most of the million-dollar ones sat in a handful of central towns. If you price your own flat off somebody else's headline, you will sit unsold while the honestly-priced listings move.\n\nThe policy did not move the market. It moved the buyers, and only for some of us."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Can a private property owner buy an HDB resale flat immediately now?",
+          "answer": "Yes, from 28 July 2026, provided the flat is a non-subsidised resale flat and you do not take an HDB housing loan. You still need a valid HDB Flat Eligibility letter before you can buy."
+        },
+        {
+          "question": "Do I still have to sell my private property?",
+          "answer": "Yes. You may now buy the HDB flat first. But you must sell every private home you own within six months of completing that purchase. That includes homes overseas."
+        },
+        {
+          "question": "Does this apply if I need an HDB loan or a housing grant?",
+          "answer": "No. The old 30-month wait still applies on four routes. An HDB housing loan. A subsidised flat. A new flat from HDB. Or an executive condominium from a developer."
+        },
+        {
+          "question": "Will removing the 15-month wait push HDB resale prices up?",
+          "answer": "Probably not across the board. The measure was removed because HDB resale growth had already slowed. From 10.4% in 2022 to 2.9% in 2025. Prices then fell in both the first and second quarters of 2026. The likely effect is concentrated in larger flat types rather than market-wide."
+        },
+        {
+          "question": "I own a 5-room HDB flat. Does this help me?",
+          "answer": "It adds buyers, but it adds competition too. Unlike executive apartments and maisonettes, 5-room flats are still being built. And over 13,400 flats reach the end of their 5-year lock-in during 2026 alone."
+        },
+        {
+          "question": "What is an executive maisonette, and why does it matter here?",
+          "answer": "It is a two-storey HDB flat with an internal staircase, built between 1984 and 2000. HDB no longer builds them, and it stopped building executive apartments after 2004. The supply is fixed and cannot grow. So a policy that adds buyers hits these flats harder than the types still being built."
+        }
+      ]
+    },
+    {
+      "type": "cta-card",
+      "kicker": "Work out which side of this you are on",
+      "body": "Whether this policy helps you or crowds you depends entirely on what you own and where. You want the honest read on your own home. What it would realistically fetch. Who can afford to buy it from you next. Whether a move makes sense at all. That is a conversation, not a calculator.",
+      "buttonLabel": "Request a Clarity Call",
+      "buttonHref": "/strategy-session"
+    }
+  ]
+}
