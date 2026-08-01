@@ -32,7 +32,7 @@ export default function TeamGridEditorial() {
                   />
                 ) : (
                   <div className="grain w-full h-full flex flex-col justify-between p-5">
-                    <span className="text-[10px] uppercase tracking-[0.28em] text-amber/80">
+                    <span className="text-[10px] uppercase tracking-[0.28em] text-amber-deep">
                       The Practice
                     </span>
                     <span className="font-serif text-[96px] leading-none text-cream/90">

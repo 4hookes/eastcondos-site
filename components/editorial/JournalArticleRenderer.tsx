@@ -234,7 +234,7 @@ function FounderQuoteBlock({
   return (
     <section className="my-12 sm:my-16 bg-charcoal text-cream py-12 sm:py-16 px-6 sm:px-10 border-t-[4px] border-amber -mx-5 sm:-mx-10 md:mx-0">
       {label && (
-        <div className="text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-amber font-medium mb-5 sm:mb-6">
+        <div className="text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-amber-light font-medium mb-5 sm:mb-6">
           {label}
         </div>
       )}
@@ -249,7 +249,7 @@ function FounderQuoteBlock({
       >
         {text}
       </q>
-      <cite className="block mt-6 sm:mt-7 not-italic text-[11px] uppercase tracking-[0.2em] text-amber">
+      <cite className="block mt-6 sm:mt-7 not-italic text-[11px] uppercase tracking-[0.2em] text-amber-light">
         {cite}
       </cite>
     </section>
@@ -452,7 +452,7 @@ function CtaCardBlock({
       {kicker && (
         <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
           <span className="w-5 sm:w-7 h-px bg-amber" />
-          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber font-medium">
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-amber-light font-medium">
             {kicker}
           </span>
           <span className="w-5 sm:w-7 h-px bg-amber" />

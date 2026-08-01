@@ -128,7 +128,7 @@ export default function JournalIndexPage() {
                       <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-cream/45 mb-2">
                         {d.lbl}
                       </div>
-                      <div className="font-display font-light text-amber text-[17px] sm:text-[19px] leading-tight">
+                      <div className="font-display font-light text-amber-light text-[17px] sm:text-[19px] leading-tight">
                         {d.v}
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export default function JournalIndexPage() {
                   ),
                 }}
               />
-              <p className="font-serif italic text-amber/90 text-[16px] sm:text-[18px] leading-snug mb-6 max-w-[42ch]">
+              <p className="font-serif italic text-amber text-[16px] sm:text-[18px] leading-snug mb-6 max-w-[42ch]">
                 {featured.standfirst}
               </p>
               <p className="prose-dark text-[15px] mb-7 max-w-[52ch]">

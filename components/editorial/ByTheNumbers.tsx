@@ -36,7 +36,7 @@ export default function ByTheNumbers() {
         <div className="grid grid-cols-1 md:grid-cols-4 border-l border-t hairline">
           {STATS.map((s) => (
             <div key={s.lbl} data-reveal className="p-8 border-r border-b hairline">
-              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-amber mb-5">
+              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-amber-light mb-5">
                 {s.lbl}
               </div>
               <div
@@ -48,7 +48,7 @@ export default function ByTheNumbers() {
                 }}
               >
                 <span data-countup>{s.num}</span>
-                <span className="text-amber">{s.suffix}</span>
+                <span className="text-amber-light">{s.suffix}</span>
               </div>
               <div className="prose-dark text-[14px] mt-4 max-w-[24ch]">
                 {s.note}
