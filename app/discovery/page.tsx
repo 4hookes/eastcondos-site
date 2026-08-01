@@ -333,7 +333,7 @@ export default function DiscoveryPage() {
 
           {/* Submit */}
           <div className="mt-9 sm:mt-10 pt-7 border-t border-dotted border-[#c9bfa3]">
-            <p className="text-[13px] sm:text-[14px] text-gray-500 mb-5 leading-relaxed">
+            <p className="text-[13px] sm:text-[14px] text-gray-600 mb-5 leading-relaxed">
               When you tap below, your details open in WhatsApp prefilled — you just hit send. I
               get the message directly and reply within 24 hours.
             </p>
@@ -345,7 +345,7 @@ export default function DiscoveryPage() {
               Send via WhatsApp →
             </button>
             {!isFormReady && (
-              <p className="text-[12px] text-gray-500 mt-3 italic">
+              <p className="text-[12px] text-gray-600 mt-3 italic">
                 Fill in the required fields above to enable the button.
               </p>
             )}
@@ -354,7 +354,7 @@ export default function DiscoveryPage() {
 
         {/* Trust footer */}
         <div className="mt-12 sm:mt-16 pt-7 border-t border-charcoal">
-          <p className="text-[12px] text-gray-500 leading-relaxed italic">
+          <p className="text-[12px] text-gray-600 leading-relaxed italic">
             Your details are sent directly to Elfi&apos;s WhatsApp via your own device — nothing is
             stored on this site, no third-party form processor sees your data. You decide if and
             when to send.
@@ -386,7 +386,7 @@ function Field({
       </label>
       {children}
       {hint && (
-        <p className="block text-[12px] sm:text-[13px] text-gray-500 mt-1.5 font-serif italic">
+        <p className="block text-[12px] sm:text-[13px] text-gray-600 mt-1.5 font-serif italic">
           {hint}
         </p>
       )}

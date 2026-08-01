@@ -145,7 +145,7 @@ export default function ProgressivePaymentCalculatorPage() {
           <h2 className="font-serif text-charcoal leading-tight mb-2" style={{ fontSize: "clamp(1.6rem, 3.4vw, 2.1rem)", letterSpacing: "-0.02em" }}>
             10 stages, from booking fee to keys
           </h2>
-          <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-[64ch] mb-5">
+          <p className="text-gray-600 text-[14px] sm:text-[15px] max-w-[64ch] mb-5">
             You pay the first 5% in cash on the day you book. The next 15% (with CPF) when you sign
             the S&amp;P. The bank disburses the rest of the loan stage by stage as construction
             progresses. <span className="text-amber-deep">Swipe the table on mobile →</span>
@@ -175,14 +175,14 @@ export default function ProgressivePaymentCalculatorPage() {
                       <td className="px-2.5 sm:px-4 py-3 text-center font-sans tabular-nums font-semibold text-[12px] sm:text-[14px]">{s.no}</td>
                       <td className="px-2.5 sm:px-4 py-3">
                         <div className="text-[12.5px] sm:text-[14px] leading-snug font-medium">{s.label}</div>
-                        <div className={`text-[10.5px] sm:text-[11px] mt-0.5 ${isCsc ? "text-cream/65" : "text-gray-500"}`}>
+                        <div className={`text-[10.5px] sm:text-[11px] mt-0.5 ${isCsc ? "text-cream/65" : "text-gray-600"}`}>
                           {s.cashOnly && <span className="uppercase tracking-[0.1em] text-amber-deep mr-2">Cash only</span>}
                           ~month {s.monthRough}
                         </div>
                       </td>
                       <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums text-[12.5px] sm:text-[14px]">
                         {s.pctOfPrice}%
-                        <div className={`text-[10.5px] sm:text-[11px] ${isCsc ? "text-cream/60" : "text-gray-400"}`}>cum {s.pctCumulative}%</div>
+                        <div className={`text-[10.5px] sm:text-[11px] ${isCsc ? "text-cream/60" : "text-gray-600"}`}>cum {s.pctCumulative}%</div>
                       </td>
                       <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums text-[12.5px] sm:text-[14px]">{fmt(s.totalAtStage)}</td>
                       <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums font-semibold text-[12.5px] sm:text-[14px]">
@@ -191,7 +191,7 @@ export default function ProgressivePaymentCalculatorPage() {
                       <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums text-[12.5px] sm:text-[14px]">
                         {s.loanDisbursed > 0 ? fmt(s.loanDisbursed) : <span className={isCsc ? "text-cream/30" : "text-charcoal/25"}>—</span>}
                         {s.cumulativeLoan > 0 && (
-                          <div className={`text-[10.5px] sm:text-[11px] ${isCsc ? "text-cream/60" : "text-gray-400"}`}>cum {fmtShort(s.cumulativeLoan)}</div>
+                          <div className={`text-[10.5px] sm:text-[11px] ${isCsc ? "text-cream/60" : "text-gray-600"}`}>cum {fmtShort(s.cumulativeLoan)}</div>
                         )}
                       </td>
                       <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums text-[12.5px] sm:text-[14px]">
@@ -205,7 +205,7 @@ export default function ProgressivePaymentCalculatorPage() {
                   <td className="px-2.5 sm:px-4 py-3 text-center text-charcoal/40">+</td>
                   <td className="px-2.5 sm:px-4 py-3">
                     <div className="text-[12.5px] sm:text-[14px] font-medium">Stamp duty (BSD + ABSD)</div>
-                    <div className="text-[10.5px] sm:text-[11px] text-gray-500 mt-0.5">Payable within 14 days of S&amp;P (essentially with stage 2).</div>
+                    <div className="text-[10.5px] sm:text-[11px] text-gray-600 mt-0.5">Payable within 14 days of S&amp;P (essentially with stage 2).</div>
                   </td>
                   <td className="px-2.5 sm:px-4 py-3 text-right" />
                   <td className="px-2.5 sm:px-4 py-3 text-right font-sans tabular-nums text-[12.5px] sm:text-[14px]">{fmt(r.stamps)}</td>
@@ -367,7 +367,7 @@ function SummaryCard({ label, value, sub, featured }: { label: string; value: st
       <div className="font-sans tabular-nums font-bold text-charcoal leading-none" style={{ fontSize: "clamp(1.6rem, 4vw, 2.1rem)", letterSpacing: "-0.02em" }}>
         {value}
       </div>
-      <div className={`text-[12px] mt-2 leading-snug ${featured ? "text-charcoal-deep" : "text-gray-500"}`}>{sub}</div>
+      <div className={`text-[12px] mt-2 leading-snug ${featured ? "text-charcoal-deep" : "text-gray-600"}`}>{sub}</div>
     </div>
   );
 }
@@ -377,7 +377,7 @@ function MiniRow({ label, value, sub }: { label: string; value: string; sub: str
     <div className="bg-offwhite border border-charcoal px-4 sm:px-5 py-3.5 flex items-baseline justify-between gap-4">
       <div>
         <div className="text-[13px] sm:text-[14px] text-charcoal font-medium">{label}</div>
-        <div className="text-[11px] sm:text-[12px] text-gray-500 mt-0.5 leading-snug">{sub}</div>
+        <div className="text-[11px] sm:text-[12px] text-gray-600 mt-0.5 leading-snug">{sub}</div>
       </div>
       <div className="font-sans tabular-nums font-semibold text-charcoal text-[14px] sm:text-[16px] shrink-0">{value}</div>
     </div>

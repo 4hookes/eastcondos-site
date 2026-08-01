@@ -139,7 +139,7 @@ export default function CalculatorPage() {
         <h2 className="font-serif text-[26px] sm:text-[36px] text-charcoal leading-tight mb-2 sm:mb-2.5" style={{ letterSpacing: "-0.02em" }}>
           Tell us about you
         </h2>
-        <p className="text-gray-500 text-[15px] sm:text-base max-w-[56ch] mb-6 sm:mb-9">
+        <p className="text-gray-600 text-[15px] sm:text-base max-w-[56ch] mb-6 sm:mb-9">
           We only need your age and gross monthly income. Add your spouse if you&apos;re applying jointly — it nearly always raises your eligibility.
         </p>
 
@@ -159,7 +159,7 @@ export default function CalculatorPage() {
                   onChange={(e) => setAge(num(e.target.value))}
                 />
               </div>
-              <span className="block text-[11px] sm:text-xs text-gray-500 mt-1 font-serif italic">
+              <span className="block text-[11px] sm:text-xs text-gray-600 mt-1 font-serif italic">
                 Used to calculate your maximum loan tenure.
               </span>
             </div>
@@ -177,7 +177,7 @@ export default function CalculatorPage() {
                   onChange={(e) => setIncome(num(e.target.value))}
                 />
               </div>
-              <span className="block text-[11px] sm:text-xs text-gray-500 mt-1 font-serif italic">
+              <span className="block text-[11px] sm:text-xs text-gray-600 mt-1 font-serif italic">
                 Before tax, from your IRAS NOA or payslip.
               </span>
             </div>
@@ -188,7 +188,7 @@ export default function CalculatorPage() {
               <div className="font-serif text-[16px] sm:text-[18px] text-charcoal">
                 Applying with a spouse?
               </div>
-              <div className="text-[12px] sm:text-[13px] text-gray-500 mt-0.5">
+              <div className="text-[12px] sm:text-[13px] text-gray-600 mt-0.5">
                 Joint application combines both incomes and uses income-weighted age for tenure.
               </div>
             </div>
@@ -253,7 +253,7 @@ export default function CalculatorPage() {
         <h2 className="font-serif text-[26px] sm:text-[32px] text-charcoal leading-tight mb-2" style={{ letterSpacing: "-0.02em" }}>
           Here&apos;s what you can <em className="text-amber-deep italic">borrow.</em>
         </h2>
-        <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-[60ch] mb-6 sm:mb-8">
+        <p className="text-gray-600 text-[14px] sm:text-[15px] max-w-[60ch] mb-6 sm:mb-8">
           Drag the sliders inside each card to see how a longer tenure or different rate moves your numbers.
         </p>
 

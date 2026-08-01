@@ -153,7 +153,7 @@ export default function NewLaunchVsResalePage() {
             <h2 className="font-serif text-charcoal leading-tight" style={{ fontSize: "clamp(1.6rem, 3.4vw, 2.1rem)", letterSpacing: "-0.02em" }}>
               Compare the two homes
             </h2>
-            <p className="text-gray-500 text-[14px] sm:text-[15px] mt-2 max-w-[58ch]">
+            <p className="text-gray-600 text-[14px] sm:text-[15px] mt-2 max-w-[58ch]">
               The same details, side by side. Type over any field.
             </p>
           </div>
@@ -240,7 +240,7 @@ export default function NewLaunchVsResalePage() {
               <Slider label="Loan-to-value" display={`${inputs.ltvPct}%`} min={55} max={75} step={5} value={inputs.ltvPct} onChange={(v) => upd({ ltvPct: v })} />
               <MoneyField label="CPF used / mo" prefix="S$" value={inputs.cpfMonthly} onChange={(v) => upd({ cpfMonthly: v })} small hint="CPF toward the instalment — accrues 2.5%. 0 = pay cash." />
             </div>
-            <p className="text-[11.5px] sm:text-[12.5px] text-gray-500 mt-4 leading-snug">
+            <p className="text-[11.5px] sm:text-[12.5px] text-gray-600 mt-4 leading-snug">
               We compare both homes over the <span className="text-charcoal font-medium tabular-nums">{yrs} years</span>{" "}
               you&apos;ll hold them — {waitYrs} years waiting for the new launch + {liveYrs} {liveYrs === 1 ? "year" : "years"} living there after TOP.
             </p>
@@ -256,7 +256,7 @@ export default function NewLaunchVsResalePage() {
               >
                 See the result
               </button>
-              <p className="text-center text-gray-500 text-[12px] sm:text-[13px] mt-3">
+              <p className="text-center text-gray-600 text-[12px] sm:text-[13px] mt-3">
                 Fill in your numbers above, then see the real difference.
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function NewLaunchVsResalePage() {
             <h2 className="font-serif text-[24px] sm:text-[32px] text-charcoal leading-tight mb-2" style={{ letterSpacing: "-0.02em" }}>
               What each home really costs over {yrs} years
             </h2>
-            <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-[58ch] mb-6 sm:mb-7">
+            <p className="text-gray-600 text-[14px] sm:text-[15px] max-w-[58ch] mb-6 sm:mb-7">
               Every cost, both homes, added up — with the real difference at the bottom.
             </p>
 
@@ -341,7 +341,7 @@ export default function NewLaunchVsResalePage() {
           <h2 className="font-serif text-[24px] sm:text-[32px] text-charcoal leading-tight mb-3" style={{ letterSpacing: "-0.02em" }}>
             Three intangibles worth another <em className="text-amber-deep italic tabular-nums">{fmtShort(Math.round(inputs.nlPrice * 0.05 / 10000) * 10000)}+</em>
           </h2>
-          <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-[64ch] mb-6 sm:mb-8">
+          <p className="text-gray-600 text-[14px] sm:text-[15px] max-w-[64ch] mb-6 sm:mb-8">
             These don&apos;t show up in any spreadsheet — but they&apos;re real money, easily another ~5% on the new launch.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
@@ -374,7 +374,7 @@ export default function NewLaunchVsResalePage() {
               <h3 className="font-serif text-[20px] sm:text-[24px] text-charcoal mb-1.5" style={{ letterSpacing: "-0.01em" }}>
                 Take the numbers with you
               </h3>
-              <p className="text-[14px] sm:text-[15px] text-gray-500 max-w-[48ch]">
+              <p className="text-[14px] sm:text-[15px] text-gray-600 max-w-[48ch]">
                 Download a one-page summary of this comparison to keep or forward.
               </p>
             </div>
@@ -453,7 +453,7 @@ function FieldLabel({ children }: { children: React.ReactNode }) {
   return <label className="block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-amber-deep mb-2">{children}</label>;
 }
 function FieldHint({ children }: { children: React.ReactNode }) {
-  return <span className="block text-[11px] sm:text-xs text-gray-500 mt-1.5 leading-snug">{children}</span>;
+  return <span className="block text-[11px] sm:text-xs text-gray-600 mt-1.5 leading-snug">{children}</span>;
 }
 
 function MoneyField({
@@ -537,14 +537,14 @@ function CompareInputRow({
       <div className="flex sm:hidden items-center gap-2 mb-1.5">
         {icon && <EcIcon name={icon} size={22} className="shrink-0" />}
         <span className="text-[13.5px] text-charcoal font-medium">{label}</span>
-        {sub && <span className="text-[10.5px] text-gray-400">· {sub}</span>}
+        {sub && <span className="text-[10.5px] text-gray-600">· {sub}</span>}
       </div>
       <div className={`${GRID3} items-center`}>
         <div className="hidden sm:flex items-center gap-3 pr-2">
           {icon && <EcIcon name={icon} size={26} className="shrink-0" />}
           <div className="leading-tight">
             <div className="text-[15px] text-charcoal font-medium">{label}</div>
-            {sub && <div className="text-[11px] text-gray-400">{sub}</div>}
+            {sub && <div className="text-[11px] text-gray-600">{sub}</div>}
           </div>
         </div>
         {children}
@@ -561,7 +561,7 @@ function fieldBox(extra = "") {
 function CellMoney({ value, onChange }: { value: number; onChange: (n: number) => void }) {
   return (
     <div className={fieldBox()}>
-      <span className="text-[11px] text-gray-400 shrink-0">S$</span>
+      <span className="text-[11px] text-gray-600 shrink-0">S$</span>
       <input
         type="text"
         inputMode="numeric"
@@ -615,7 +615,7 @@ function CellStatic({ children }: { children: React.ReactNode }) {
 // Explains WHY there's nothing to enter (replaces a bare dash).
 function CellNote({ children }: { children: React.ReactNode }) {
   return (
-    <div className="px-1 text-[11.5px] sm:text-[12.5px] text-gray-400 italic leading-snug">{children}</div>
+    <div className="px-1 text-[11.5px] sm:text-[12.5px] text-gray-600 italic leading-snug">{children}</div>
   );
 }
 
@@ -651,7 +651,7 @@ function CompareRow({
     <div className={`grid grid-cols-[1.4fr_1fr_1fr] items-center ${shaded ? "bg-cream/60" : "bg-offwhite"}`}>
       <div className="px-3 sm:px-6 py-3.5">
         <div className="text-[12.5px] sm:text-[14.5px] text-charcoal leading-snug">{label}</div>
-        {hint && <div className="text-[11px] sm:text-[12px] text-gray-500 mt-0.5 leading-snug">{hint}</div>}
+        {hint && <div className="text-[11px] sm:text-[12px] text-gray-600 mt-0.5 leading-snug">{hint}</div>}
         {link && (
           <Link href={link.href} className="inline-block mt-1 text-[11px] sm:text-[12px] text-amber-deep hover:text-charcoal underline decoration-amber-deep/40 hover:decoration-charcoal">
             {link.label}

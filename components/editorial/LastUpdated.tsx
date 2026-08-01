@@ -35,7 +35,9 @@ export default function LastUpdated({
       {note && (
         <>
           <span className={`hidden sm:inline ${accent}`}>·</span>
-          <span className="italic font-serif text-gray-600">{note}</span>
+          <span className={`italic font-serif ${tone === "onDark" ? "text-cream/70" : "text-gray-600"}`}>
+            {note}
+          </span>
         </>
       )}
     </div>
