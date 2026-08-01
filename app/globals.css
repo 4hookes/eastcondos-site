@@ -300,7 +300,7 @@
            px-4 py-3.5 flex justify-between text-[12px] uppercase tracking-[0.2em];
   }
   .photo-badge {
-    @apply absolute top-4 left-4 bg-amber text-charcoal text-[12px] uppercase tracking-[0.2em] font-semibold px-3.5 py-2;
+    @apply absolute top-4 left-4 bg-amber text-charcoal-deep text-[12px] uppercase tracking-[0.2em] font-semibold px-3.5 py-2;
   }
 
   /* ============================================
@@ -476,6 +476,17 @@
   .surface-light [class~="bg-charcoal"] [class~="text-cream"],
   .surface-light [class~="bg-charcoal-deep"] [class~="text-cream"] {
     color: #F2EBDB;
+  }
+
+  /* Dark text ON a signal fill. charcoal #1A1A2E on signal is 4.21:1 — under
+     AA for body-size text. charcoal-deep #0E0E1F is 4.71:1. Applies to the
+     bg-amber CTAs and any element pairing the two utilities. Scoped to the
+     pair so a charcoal-on-cream element is never touched. */
+  [class~="bg-amber"][class~="text-charcoal"],
+  [class~="bg-amber"] [class~="text-charcoal"],
+  [class~="bg-amber-light"][class~="text-charcoal"],
+  [class~="bg-amber-light"] [class~="text-charcoal"] {
+    color: #0E0E1F;
   }
 
   /* Light surfaces reset inherited text color (body default is cream-on-dark).

@@ -363,11 +363,11 @@ function Slider({
 function SummaryCard({ label, value, sub, featured }: { label: string; value: string; sub: string; featured?: boolean }) {
   return (
     <div className={`border border-charcoal p-5 sm:p-6 ${featured ? "bg-amber text-charcoal" : "bg-offwhite"}`}>
-      <div className={`text-[10px] uppercase tracking-[0.2em] mb-2 ${featured ? "text-charcoal/70" : "text-amber-deep"}`}>{label}</div>
+      <div className={`text-[10px] uppercase tracking-[0.2em] mb-2 ${featured ? "text-charcoal-deep" : "text-amber-deep"}`}>{label}</div>
       <div className="font-sans tabular-nums font-bold text-charcoal leading-none" style={{ fontSize: "clamp(1.6rem, 4vw, 2.1rem)", letterSpacing: "-0.02em" }}>
         {value}
       </div>
-      <div className={`text-[12px] mt-2 leading-snug ${featured ? "text-charcoal/70" : "text-gray-500"}`}>{sub}</div>
+      <div className={`text-[12px] mt-2 leading-snug ${featured ? "text-charcoal-deep" : "text-gray-500"}`}>{sub}</div>
     </div>
   );
 }
