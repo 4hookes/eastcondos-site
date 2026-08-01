@@ -25,7 +25,7 @@ export default function AboutPage() {
     <>
       <Opener />
       <div className="max-w-broadsheet mx-auto px-5 sm:px-10 py-5 sm:py-6 border-b border-dotted border-[#c9bfa3]">
-        <LastUpdated date={LAST_UPDATED} align="center" />
+        <LastUpdated date={LAST_UPDATED} align="center" tone="onDark" />
       </div>
       <FeatureSpread />
       <StatsRibbon />

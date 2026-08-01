@@ -842,7 +842,7 @@ export default function D15VsD16VsD18GuidePage() {
                 href="/discovery"
                 className="block border border-charcoal bg-charcoal text-cream p-5 sm:p-6 hover:bg-amber hover:text-charcoal transition-colors"
               >
-                <div className="text-[10px] uppercase tracking-[0.22em] text-amber mb-2">
+                <div className="text-[10px] uppercase tracking-[0.22em] text-amber-light mb-2">
                   Step 3 · Plan
                 </div>
                 <div className="font-serif text-[17px] sm:text-[19px] leading-snug mb-2">

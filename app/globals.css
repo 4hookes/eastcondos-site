@@ -460,6 +460,24 @@
   .surface-light [class~="bg-charcoal-light"] { background-color: rgba(26, 26, 46, 0.07); }
   .surface-light [class~="text-amber"] { color: #B82F12; }
 
+  /* Dark islands inside a light section. A `bg-charcoal*` card nested in
+     .surface-light kept the rule above, painting signal-deep #B82F12 on a
+     dark card — 2.81:1, below AA. Re-assert the dark-surface accent.
+     signal-light #FF6B35 is 6.02:1 on charcoal and 6.73:1 on charcoal-deep;
+     full-strength signal is only 4.21:1 on charcoal, so use light for both.
+     bg-charcoal-light is excluded on purpose — the rule above turns it into
+     a translucent LIGHT inset, so its contents stay on the light scale. */
+  .surface-light [class~="bg-charcoal"] [class~="text-amber"],
+  .surface-light [class~="bg-charcoal"][class~="text-amber"],
+  .surface-light [class~="bg-charcoal-deep"] [class~="text-amber"],
+  .surface-light [class~="bg-charcoal-deep"][class~="text-amber"] {
+    color: #FF6B35;
+  }
+  .surface-light [class~="bg-charcoal"] [class~="text-cream"],
+  .surface-light [class~="bg-charcoal-deep"] [class~="text-cream"] {
+    color: #F2EBDB;
+  }
+
   /* Light surfaces reset inherited text color (body default is cream-on-dark).
      Explicit text-* utilities on descendants still win. */
   .bg-cream,
