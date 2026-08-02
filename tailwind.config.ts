@@ -14,8 +14,11 @@ const config: Config = {
           light: "#2D2D44",
           deep: "#0E0E1F",
         },
-        // SIGNAL — brand accent since 2026-08-01 (was amber #D4A843).
-        // Token name kept as `amber` so all 63 consuming files flip at once.
+        // AMBER — the brand accent. Reverted 2026-08-02: the signal orange-red
+        // tried on 1 Aug lasted a day and Elfi hated it. The token name never
+        // changed, so all 63 consuming files flip back at once with this edit.
+        // (The old accent is deliberately not written here as a hex — a global
+        // swap rewrites hexes inside comments too, which makes the note lie.)
         amber: {
           DEFAULT: "#D4A843",
           light: "#E0BC6A",
