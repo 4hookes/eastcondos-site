@@ -56,7 +56,7 @@ Dark-dominant. The site lives on near-black; cream is now the *accent surface* u
 | `paper` | `#EFE7D2` | Slightly warmer cream, for inset boxes on light surfaces |
 | `amber` | `#D4A843` | The single accent — mono labels, serif emphasis, CTAs, icons-on-dark |
 | `amber-light` | `#E0BC6A` | CTA hover |
-| `amber-deep` | `#B8902F` | Amber accent on cream surfaces (labels, serif emphasis) |
+| `amber-deep` | `#7E6014` | Amber accent on cream surfaces (labels, serif emphasis) |
 | `body` | `#374151` | Body prose **on cream surfaces only** |
 
 **Text colors:**
@@ -227,7 +227,7 @@ Restrained. 200–300ms color/opacity transitions on nav, icons (opacity 70→10
 ## 10. Quick Reference (for agent prompts)
 ```
 Bg:            charcoal-deep #0E0E1F (whole site) · cream #F2EBDB = .surface-light reading blocks
-Accent:        amber #D4A843 (dark) / #B8902F (cream) — labels, 1 serif word, CTAs, icons
+Accent:        amber #D4A843 (dark) / #7E6014 (cream) — labels, 1 serif word, CTAs, icons
 Headlines:     .display-hero / .display-section / .display-block  (Inter Display 200/300)
   emphasis:    <b> = weight 400 · <em> = serif italic amber (1–2 words MAX)
 Labels:        .mono-label  →  "02 / The Method"  (IBM Plex Mono, amber)

@@ -27,13 +27,13 @@
 
   /* Amber text selection highlight */
   ::selection {
-    background: rgba(232, 64, 31, 0.35);
+    background: rgba(212, 168, 67, 0.35);
     color: #0E0E1F;
   }
 
   /* Premium focus ring — replaces default blue outline */
   *:focus-visible {
-    outline: 2px solid #E8401F;
+    outline: 2px solid #D4A843;
     outline-offset: 3px;
   }
 
@@ -119,7 +119,7 @@
     left: 0;
     width: 0;
     height: 1.5px;
-    background: #E8401F;
+    background: #D4A843;
     transition: width 0.3s ease;
   }
   .link-hover:hover::after {
@@ -131,7 +131,7 @@
     transition: all 0.3s ease;
   }
   .card-glow:hover {
-    box-shadow: 0 8px 40px rgba(232, 64, 31, 0.08),
+    box-shadow: 0 8px 40px rgba(212, 168, 67, 0.08),
                 0 4px 20px rgba(0, 0, 0, 0.06);
   }
 
@@ -166,14 +166,14 @@
   .rule-amber {
     width: 60px;
     height: 2px;
-    background: #E8401F;
+    background: #D4A843;
     border: none;
     margin: 1.5rem 0;
   }
   .rule-amber-center {
     width: 60px;
     height: 2px;
-    background: #E8401F;
+    background: #D4A843;
     border: none;
     margin: 1.5rem auto;
   }
@@ -190,7 +190,7 @@
     content: "";
     width: 28px;
     height: 1px;
-    background: #B82F12;
+    background: #7E6014;
     flex-shrink: 0;
   }
   .kicker-plain {
@@ -204,7 +204,7 @@
     float: left;
     line-height: 0.78;
     padding: 8px 14px 0 0;
-    color: #B82F12;
+    color: #7E6014;
   }
 
   /* Editorial headline — extra-large serif with negative tracking */
@@ -354,7 +354,7 @@
   .surface-light .display-hero em, .surface-light .display-hero i,
   .surface-light .display-section em, .surface-light .display-section i,
   .surface-light .display-block em, .surface-light .display-block i {
-    color: #B82F12;
+    color: #7E6014;
   }
 
   /* Mono label — index lines, kickers, data labels */
@@ -367,7 +367,7 @@
     letter-spacing: 0.22em;
     color: rgba(242, 235, 219, 0.5);
   }
-  .surface-light .mono-label { color: #B82F12; }
+  .surface-light .mono-label { color: #7E6014; }
   .surface-light .mono-label-dim { color: #6B6B6B; }
 
   /* Annotation — the serif italic margin-note voice, amber, hairline-left */
@@ -375,12 +375,12 @@
     @apply font-serif italic text-amber;
     font-size: clamp(1.2rem, 1.8vw, 1.5rem);
     line-height: 1.5;
-    border-left: 1px solid #E8401F;
+    border-left: 1px solid #D4A843;
     padding-left: 26px;
   }
   .surface-light .annot {
-    color: #B82F12;
-    border-left-color: #B82F12;
+    color: #7E6014;
+    border-left-color: #7E6014;
   }
 
   /* Exposed 6-column grid — the structural signature */
@@ -458,12 +458,12 @@
      Tailwind treat it as a component and `@apply hover:text-cream` goes circular. */
   .surface-light [class~="text-cream"] { color: #1A1A2E; }
   .surface-light [class~="bg-charcoal-light"] { background-color: rgba(26, 26, 46, 0.07); }
-  .surface-light [class~="text-amber"] { color: #B82F12; }
+  .surface-light [class~="text-amber"] { color: #7E6014; }
 
   /* Dark islands inside a light section. A `bg-charcoal*` card nested in
-     .surface-light kept the rule above, painting signal-deep #B82F12 on a
+     .surface-light kept the rule above, painting signal-deep #7E6014 on a
      dark card — 2.81:1, below AA. Re-assert the dark-surface accent.
-     signal-light #FF6B35 is 6.02:1 on charcoal and 6.73:1 on charcoal-deep;
+     signal-light #E0BC6A is 6.02:1 on charcoal and 6.73:1 on charcoal-deep;
      full-strength signal is only 4.21:1 on charcoal, so use light for both.
      bg-charcoal-light is excluded on purpose — the rule above turns it into
      a translucent LIGHT inset, so its contents stay on the light scale. */
@@ -471,7 +471,7 @@
   .surface-light [class~="bg-charcoal"][class~="text-amber"],
   .surface-light [class~="bg-charcoal-deep"] [class~="text-amber"],
   .surface-light [class~="bg-charcoal-deep"][class~="text-amber"] {
-    color: #FF6B35;
+    color: #E0BC6A;
   }
   .surface-light [class~="bg-charcoal"] [class~="text-cream"],
   .surface-light [class~="bg-charcoal"][class~="text-cream"],
@@ -587,7 +587,7 @@ html.motion [data-clip-reveal] {
   content: "";
   position: absolute;
   inset: 0;
-  background: #E8401F;
+  background: #D4A843;
   transform: scaleY(0);
   transform-origin: top center;
 }
@@ -624,7 +624,7 @@ html.motion .scroll-cue-line::after {
   top: 0;
   width: 100%;
   height: 1px;
-  background: #E8401F;
+  background: #D4A843;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
@@ -645,7 +645,7 @@ html.motion .scroll-cue-line::after {
   right: 0;
   bottom: -5px;
   height: 1px;
-  background: #E8401F;
+  background: #D4A843;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);

@@ -90,7 +90,7 @@ Monocle magazine × Aesop minimalism × Aman hospitality × Goldman private-weal
 | charcoal-deep | `#0E0E1F` |
 | amber | `#D4A843` |
 | amber-light | `#E0BC6A` |
-| amber-deep | `#B8902F` |
+| amber-deep | `#7E6014` |
 | cream | `#F2EBDB` |
 | paper | `#EFE7D2` |
 | offwhite | `#FAFAF8` (legacy) |

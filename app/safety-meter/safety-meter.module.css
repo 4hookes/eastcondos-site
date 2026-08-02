@@ -14,7 +14,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--font-dm-serif), serif;
-  color: #B82F12;
+  color: #7E6014;
   font-size: 26px;
 }
 .priceInput input {
@@ -47,7 +47,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--font-dm-serif), serif;
-  color: #B82F12;
+  color: #7E6014;
   font-size: 18px;
 }
 .numberInput.noPrefix { padding-left: 14px; }
@@ -109,7 +109,7 @@
   background: #1A1A2E;
   transition: transform 0.2s, background 0.2s;
 }
-.toggleSwitchOn { background: #E8401F; }
+.toggleSwitchOn { background: #D4A843; }
 .toggleSwitchOn::after { transform: translateX(22px); background: #1A1A2E; }
 
 /* Range slider */
@@ -136,7 +136,7 @@
   -webkit-appearance: none;
   appearance: none;
   width: 22px; height: 22px;
-  background: #E8401F;
+  background: #D4A843;
   border: 1px solid #1A1A2E;
   border-radius: 0;
   margin-top: -11px;
@@ -144,7 +144,7 @@
 }
 .range::-moz-range-thumb {
   width: 20px; height: 20px;
-  background: #E8401F;
+  background: #D4A843;
   border: 1px solid #1A1A2E;
   border-radius: 0;
   cursor: pointer;
@@ -197,7 +197,7 @@
 .calcDots span {
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: #E8401F;
+  background: #D4A843;
   opacity: 0.3;
   animation: calcPulse 1.2s infinite;
 }
@@ -220,7 +220,7 @@
   outline: none;
   color: #1A1A2E;
 }
-.gateInput:focus { outline: 2px solid #E8401F; outline-offset: -1px; }
+.gateInput:focus { outline: 2px solid #D4A843; outline-offset: -1px; }
 
 /* Locked preview fade */
 .lockedFade {

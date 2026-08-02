@@ -106,7 +106,7 @@ export default function NumbersStory() {
           .to({}, { duration: 0.45 }); // hold before the next beat
         if (i === BEATS.length - 1) {
           // The verdict earns the accent
-          tl.to(numEl, { color: "#E8401F", duration: 0.5 }, `${at}+=0.3`);
+          tl.to(numEl, { color: "#D4A843", duration: 0.5 }, `${at}+=0.3`);
         }
       });
     });

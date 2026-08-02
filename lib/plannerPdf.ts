@@ -6,7 +6,7 @@
 import type { PlannerResult } from "./newLaunchVsResale";
 
 const CHARCOAL: [number, number, number] = [26, 26, 46];
-const AMBER: [number, number, number] = [184, 144, 47]; // amber-deep — readable on cream
+const AMBER: [number, number, number] = [126, 96, 20]; // amber-deep — readable on cream
 const CREAM: [number, number, number] = [242, 235, 219];
 const PAPER: [number, number, number] = [233, 224, 201];
 const BODY: [number, number, number] = [55, 65, 81];
@@ -123,7 +123,7 @@ export async function buildPlannerDoc(result: PlannerResult, dateLabel: string) 
   doc.setFontSize(20);
   doc.setTextColor(255, 255, 255);
   doc.text(money(result.apparentGap), M + 5, y + 17);
-  doc.setTextColor(232, 64, 31);
+  doc.setTextColor(212, 168, 67);
   doc.text(money(result.realGap), halfX + 5, y + 17);
   // divider
   doc.setDrawColor(90, 90, 110);
