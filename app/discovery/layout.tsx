@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Request a 7-Minute Discovery Call | EastCondos.sg",
   description:
-    "Book a short discovery call with Elfi to talk through your property plans. Specialising in private property purchases and HDB-to-private upgrades in Singapore.",
+    "Book a short discovery call with Elfi to talk through your property plans. Focused on private property purchases and HDB-to-private upgrades in Singapore.",
   openGraph: {
     title: "Request a 7-Minute Discovery Call",
     description:

@@ -35,7 +35,7 @@ export default function FeatureSpread() {
           <div className="dropcap text-[18px] leading-[1.78] text-body max-w-[54ch]">
             <p>
               For thirteen years, I have helped Singapore families navigate the
-              upgrade from HDB to condo. I chose to specialise in Districts 15,
+              upgrade from HDB to condo. I chose to focus on Districts 15,
               16, and 18 because depth matters more than breadth. When you know
               every project, every street, every price movement &mdash; you spot
               opportunities others miss.

@@ -108,7 +108,7 @@ export default function RootLayout({
                   name: "EastCondos.sg",
                   alternateName: "The Elfi Division · ERA Singapore",
                   description:
-                    "Singapore's data-first condo investment advisory. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18).",
+                    "Singapore's data-first condo investment advisory. Focused on HDB-to-condo upgrades across East Singapore (Districts 14–18).",
                   url: "https://eastcondos.sg",
                   telephone: "+6596667496",
                   priceRange: "$$$",
@@ -198,7 +198,7 @@ export default function RootLayout({
                   familyName: "Abdullah",
                   jobTitle: "Division Director",
                   description:
-                    "Founder of EastCondos.sg and Division Director at ERA Singapore. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18). Creator of the Property by Design (PBD™) framework.",
+                    "Founder of EastCondos.sg and Division Director at ERA Singapore. Focused on HDB-to-condo upgrades across East Singapore (Districts 14–18). Creator of the Property by Design (PBD™) framework.",
                   url: "https://eastcondos.sg/about",
                   worksFor: { "@id": "https://eastcondos.sg/#organization" },
                   knowsAbout: [

@@ -14,7 +14,7 @@ const LAST_UPDATED = "2026-04-25";
 export const metadata: Metadata = {
   title: "About Elfi Abdullah | EastCondos.sg",
   description:
-    "Depth over breadth. Trust over volume. Meet Elfi Abdullah and the team behind EastCondos.sg — Singapore's data-first condo investment advisory specialising in Districts 14–18.",
+    "Depth over breadth. Trust over volume. Meet Elfi Abdullah and the team behind EastCondos.sg — Singapore's data-first condo investment advisory focused on Districts 14–18.",
   other: {
     "article:modified_time": LAST_UPDATED,
   },

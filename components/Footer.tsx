@@ -18,7 +18,7 @@ export default function Footer() {
             </a>
             <p className="mt-7 text-[15px] leading-[1.7] text-cream/60 max-w-[36ch]">
               A consultancy-first approach to the upgrade decision in
-              Singapore&rsquo;s east. Specialising in Districts 14, 15, 16, 17,
+              Singapore&rsquo;s east. Focused on Districts 14, 15, 16, 17,
               and 18 since 2013.
             </p>
           </div>

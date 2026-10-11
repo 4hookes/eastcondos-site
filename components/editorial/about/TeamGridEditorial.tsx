@@ -8,7 +8,7 @@ export default function TeamGridEditorial() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-end mb-16 border-b-2 border-charcoal pb-6">
           <div className="mono-label">The People / The Practice</div>
           <h2 className="display-section max-w-[20ch]">
-            A small, deliberate team. <b>Specialists</b>, not generalists.
+            A small, deliberate team. <b>Depth</b> over breadth.
           </h2>
         </div>
 

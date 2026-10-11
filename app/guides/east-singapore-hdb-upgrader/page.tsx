@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   title:
     "HDB Upgrader's Guide to East Singapore Condos — 2026 Market Reality",
   description:
-    "A 2026 guide for HDB owners in Districts 14–18 considering a condo upgrade. Covers the first HDB price drop in 7 years, the Younger-Borrower Play, ABSD timing, and when the upgrade math actually works — from a specialist with 13 years in East Singapore.",
+    "A 2026 guide for HDB owners in Districts 14–18 considering a condo upgrade. Covers the first HDB price drop in 7 years, the Younger-Borrower Play, ABSD timing, and when the upgrade math actually works — from an advisor with 13 years in East Singapore.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "HDB Upgrader's Guide to East Singapore Condos — 2026 Market Reality",

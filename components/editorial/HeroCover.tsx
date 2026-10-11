@@ -59,7 +59,7 @@ export default function HeroCover() {
         </div>
 
         <div className="mono-label-dim mt-16 pt-6 border-t hairline">
-          By Elfi Abdullah &middot; D14&ndash;18 Specialist &middot; East
+          By Elfi Abdullah &middot; D14&ndash;18 Advisor &middot; East
           Singapore &middot; Est. 2013
         </div>
       </div>
