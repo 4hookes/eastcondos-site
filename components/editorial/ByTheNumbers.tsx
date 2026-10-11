@@ -3,7 +3,7 @@ const STATS = [
     lbl: "Years in practice",
     num: "13",
     suffix: "",
-    note: "Specialising in D14, D15, D16, D17, D18.",
+    note: "Focused on D14, D15, D16, D17, D18.",
   },
   {
     lbl: "Families guided",
