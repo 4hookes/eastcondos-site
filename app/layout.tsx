@@ -39,13 +39,13 @@ const interDisplay = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://eastcondos.sg"),
-  title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
+  title: "EastCondos | East Side Condos, Checked Before You Buy",
   description:
-    "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence. 500+ families served, 80% referral rate.",
+    "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
   openGraph: {
-    title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
+    title: "EastCondos | East Side Condos, Checked Before You Buy",
     description:
-      "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence.",
+      "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
     type: "website",
     url: "https://eastcondos.sg",
     siteName: "EastCondos",
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "EastCondos — Singapore's data-first condo investment advisory",
+        alt: "Elfi Abdullah, EastCondos: I find the flaw before you buy the condo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EastCondos.sg — Singapore's Data-First Condo Investment Advisory",
+    title: "EastCondos | East Side Condos, Checked Before You Buy",
     description:
-      "We run your numbers before we show you a single property. 13 years of helping East Singapore families upgrade from HDB to condo with confidence.",
+      "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
     images: ["/og-image.png"],
   },
 };
@@ -108,7 +108,7 @@ export default function RootLayout({
                   name: "EastCondos.sg",
                   alternateName: "The Elfi Division · ERA Singapore",
                   description:
-                    "Singapore's data-first condo investment advisory. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18).",
+                    "Condos in East Singapore (Districts 14–18) only. Floor plans, wasted space and stack prices checked against real sales before you buy.",
                   url: "https://eastcondos.sg",
                   telephone: "+6596667496",
                   priceRange: "$$$",
@@ -198,7 +198,7 @@ export default function RootLayout({
                   familyName: "Abdullah",
                   jobTitle: "Division Director",
                   description:
-                    "Founder of EastCondos.sg and Division Director at ERA Singapore. Specialist in HDB-to-condo upgrades across East Singapore (Districts 14–18). Creator of the Property by Design (PBD™) framework.",
+                    "Founder of EastCondos.sg and Division Director at ERA Singapore. Works only on condos in East Singapore (Districts 14–18). Creator of the Property by Design (PBD™) framework.",
                   url: "https://eastcondos.sg/about",
                   worksFor: { "@id": "https://eastcondos.sg/#organization" },
                   knowsAbout: [

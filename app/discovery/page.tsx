@@ -76,7 +76,7 @@ export default function DiscoveryPage() {
   const whatsappLink = useMemo(() => {
     if (!isFormReady) return "";
     const lines = [
-      "Hi Elfi, I just used the calculator on EastCondos.sg and would like a 7-min discovery call.",
+      "Hi Elfi, I'm looking at condos in the East and would like a 7-min Fit-Check.",
       "",
       `Name: ${name}`,
       `Age: ${age}`,
@@ -105,7 +105,7 @@ export default function DiscoveryPage() {
           className="hidden md:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 w-[38%] max-w-[440px] opacity-25 pointer-events-none"
         />
         <div className="relative max-w-broadsheet mx-auto">
-          <div className="mono-label mb-8">The 7-Minute Discovery Call</div>
+          <div className="mono-label mb-8">The 7-Minute Fit-Check</div>
           <h1 className="display-hero max-w-[14ch]">
             Tell me about your <em>plans.</em>
           </h1>

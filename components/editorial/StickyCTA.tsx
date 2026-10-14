@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 /**
  * Slim conversion bar pinned to the bottom of the viewport. Appears once
  * the visitor has scrolled past the hero; tucks itself away while the
- * QuizBand or the footer is on screen (both already carry the same CTAs).
+ * final CTA band or the footer is on screen (both already carry the same CTAs).
  * Sits bottom-center so it never collides with the WhatsApp button (right).
  */
 export default function StickyCTA() {
@@ -18,7 +18,7 @@ export default function StickyCTA() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    const targets = document.querySelectorAll("[data-quiz-band], footer");
+    const targets = document.querySelectorAll("[data-cta-band], [data-quiz-band], footer");
     const io = new IntersectionObserver(
       (entries) => setBlocked(entries.some((e) => e.isIntersecting)),
       { threshold: 0.05 }
@@ -49,18 +49,18 @@ export default function StickyCTA() {
           Begin here
         </span>
         <a
-          href="/safety-meter"
+          href="/discovery"
           className="btn-square !px-6 !py-3 !text-[11px]"
           tabIndex={visible ? 0 : -1}
         >
-          Run the Safety Meter
+          Book a 7-min Fit-Check
         </a>
         <a
-          href="/discovery"
-          className="btn-square-ghost !px-6 !py-3 !text-[11px]"
+          href="#deep-dives"
+          className="btn-square-ghost !px-6 !py-3 !text-[11px] hidden sm:inline-flex"
           tabIndex={visible ? 0 : -1}
         >
-          7-Min Discovery Call
+          Watch a condo check
         </a>
       </div>
     </div>

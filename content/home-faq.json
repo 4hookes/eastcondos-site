@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "question": "What happens in the 7-minute Fit-Check?",
+      "answer": "You tell me your budget and what your family needs. I tell you which 3 East condos pass my test, and which ones to skip. No pitch. If I'm not the right person for you, I'll say so."
+    },
+    {
+      "question": "Why only the East?",
+      "answer": "Because I can't know every block on the island. In the East I know which stacks get the afternoon sun, which face the expressway, and what each one really sold for. That's the part that saves you money."
+    },
+    {
+      "question": "Do you help with HDB flats?",
+      "answer": "No. I only help people buy condos and ECs in the East. If you need an HDB deal or a home outside the East, I'll point you to someone good."
+    },
+    {
+      "question": "New launch or resale. Which do you look at?",
+      "answer": "Both. But I judge both the same way: against what real owners paid and sold for. A price list tells you what the developer wants. Past sales tell you what the market will pay."
+    },
+    {
+      "question": "What if no condo passes your test?",
+      "answer": "Then I tell you to wait. I'd rather lose a sale than put your family in the wrong home."
+    }
+  ]
+}

@@ -40,7 +40,7 @@ export default function Navbar() {
             EastCondos
           </a>
 
-          <nav className="hidden md:block" aria-label="Primary">
+          <nav className="hidden lg:block" aria-label="Primary">
             <ul className="flex gap-9 list-none m-0 p-0">
               {TOC_LINKS.map((l) => (
                 <li key={l.href}>
@@ -56,16 +56,16 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <a href="/discovery" className="btn-square-ghost !px-5 !py-3 text-[11px]">
-              7-Min Discovery Call
+              7-Min Fit-Check
             </a>
           </div>
 
           {/* Mobile hamburger */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-cream"
+            className="lg:hidden p-2 text-cream"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
           >
@@ -80,7 +80,7 @@ export default function Navbar() {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
-        className={`fixed inset-0 z-50 bg-charcoal-deep gridlines flex flex-col items-center justify-center transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-50 bg-charcoal-deep gridlines flex flex-col items-center justify-center transition-opacity duration-300 lg:hidden ${
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -121,7 +121,7 @@ export default function Navbar() {
         </ul>
 
         <a href="/discovery" onClick={close} className="btn-square mt-14">
-          7-Min Discovery Call
+          7-Min Fit-Check
         </a>
       </div>
     </>

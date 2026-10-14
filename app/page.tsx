@@ -1,17 +1,17 @@
-import HeroCover from "@/components/editorial/HeroCover";
-import IndexRibbon from "@/components/editorial/IndexRibbon";
-import NumbersStory from "@/components/editorial/NumbersStory";
-import ChapterArticle from "@/components/editorial/ChapterArticle";
-import MethodGrid from "@/components/editorial/MethodGrid";
-import PhotoBand from "@/components/editorial/PhotoBand";
-import StoriesShelf from "@/components/editorial/StoriesShelf";
-import ByTheNumbers from "@/components/editorial/ByTheNumbers";
-import QuizBand from "@/components/editorial/QuizBand";
-import EditorialFAQ from "@/components/editorial/EditorialFAQ";
+import HomeHero from "@/components/home/HomeHero";
+import FlawMethod from "@/components/home/FlawMethod";
+import DeepDives from "@/components/home/DeepDives";
+import FitCheckOffer from "@/components/home/FitCheckOffer";
+import EastOnly from "@/components/home/EastOnly";
+import StoryFeature from "@/components/home/StoryFeature";
+import HomeFAQ from "@/components/home/HomeFAQ";
+import FinalCTA from "@/components/home/FinalCTA";
 import StickyCTA from "@/components/editorial/StickyCTA";
-import SocialProofToast from "@/components/editorial/SocialProofToast";
-import faqData from "@/content/faq.json";
+import faqData from "@/content/home-faq.json";
 
+// Homepage = the North Star funnel in page form (re-locked 2026-09-27):
+// free secret (flaw-finding) -> catch (condo deep-dives) -> door (7-min
+// Fit-Check) -> filter (East condos only) -> proof -> close.
 export default function Home() {
   return (
     <>
@@ -32,29 +32,15 @@ export default function Home() {
           }),
         }}
       />
-      <HeroCover />
-      <IndexRibbon />
-      <NumbersStory />
-      <ChapterArticle />
-      <MethodGrid />
-      <PhotoBand
-        src="/broll/family-window.jpg"
-        position="center 30%"
-        label="The point of all of it"
-        line={
-          <>
-            A home you can hold through anything &mdash; <em>not</em> a
-            payment that owns you.
-          </>
-        }
-        attribution="Why the model comes before the property"
-      />
-      <StoriesShelf />
-      <ByTheNumbers />
-      <QuizBand />
-      <EditorialFAQ />
+      <HomeHero />
+      <FlawMethod />
+      <DeepDives />
+      <FitCheckOffer />
+      <EastOnly />
+      <StoryFeature />
+      <HomeFAQ />
+      <FinalCTA />
       <StickyCTA />
-      <SocialProofToast />
     </>
   );
 }

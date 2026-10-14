@@ -40,7 +40,6 @@ export default function Footer() {
               Tools
             </h6>
             <ul className="list-none space-y-2.5 text-[15px] text-cream/70">
-              <li><a className="hover:text-amber transition-colors" href="/safety-meter">Safety Meter</a></li>
               <li><a className="hover:text-amber transition-colors" href="/calculator">Calculator</a></li>
               <li><a className="hover:text-amber transition-colors" href="/new-launch-vs-resale">New Launch vs Resale</a></li>
               <li><a className="hover:text-amber transition-colors" href="/progressive-payment-calculator">Progressive Payment</a></li>

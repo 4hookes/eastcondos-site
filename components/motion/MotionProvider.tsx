@@ -48,20 +48,24 @@ function Orchestrator() {
           document
             .querySelectorAll<HTMLElement>(".display-hero, .display-section")
             .forEach((el) => {
+              // autoSplit re-measures lines on resize / rotate, so a headline
+              // split at one width never stays stuck one-word-per-line.
               const split = new SplitText(el, {
                 type: "lines",
                 mask: "lines",
                 linesClass: "split-line",
+                autoSplit: true,
+                onSplit: (self) =>
+                  gsap.from(self.lines, {
+                    yPercent: 112,
+                    duration: 1.15,
+                    ease: "power4.out",
+                    stagger: 0.09,
+                    scrollTrigger: { trigger: el, start: "top 88%", once: true },
+                  }),
               });
               splits.push(split);
               el.classList.add("split-done");
-              gsap.from(split.lines, {
-                yPercent: 112,
-                duration: 1.15,
-                ease: "power4.out",
-                stagger: 0.09,
-                scrollTrigger: { trigger: el, start: "top 88%", once: true },
-              });
             });
 
           // 2 — Generic rise-and-fade reveals, staggered per batch
