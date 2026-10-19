@@ -4,7 +4,7 @@ import StrategyForm from "@/components/StrategyForm";
 export const metadata: Metadata = {
   title: "Strategy Session | EastCondos.sg",
   description:
-    "Book your free HDB-to-condo upgrade strategy session. No obligations. No pressure. Just your numbers — reviewed by East Singapore specialist Elfi.",
+    "Book your free HDB-to-condo upgrade strategy session. No obligations. No pressure. Just your numbers — reviewed by Elfi, East Singapore property advisor.",
   openGraph: {
     title: "Strategy Session | EastCondos.sg",
     description:
