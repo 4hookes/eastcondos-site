@@ -107,11 +107,11 @@ export default function DiscoveryPage() {
         <div className="relative max-w-broadsheet mx-auto">
           <div className="mono-label mb-8">The 7-Minute Fit-Check</div>
           <h1 className="display-hero max-w-[14ch]">
-            Tell me about your <em>plans.</em>
+            Tell us about your plans.
           </h1>
           <p className="annot mt-10 max-w-[44ch]">
-            A short form. If we&apos;re a good fit, I&apos;ll WhatsApp you back
-            to set up a 7-minute call — no pressure, no pitch.
+            A short form. If we&apos;re a good fit, our team will WhatsApp you
+            back to set up a 7-minute call — no pressure, no pitch.
           </p>
         </div>
       </section>
@@ -150,25 +150,25 @@ export default function DiscoveryPage() {
               className="font-serif text-[18px] sm:text-[20px] text-charcoal mb-2 sm:mb-2.5"
               style={{ letterSpacing: "-0.01em" }}
             >
-              Before you fill this in — what I do, and what I don&apos;t
+              Before you fill this in — what we do, and what we don&apos;t
             </h2>
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-body mb-2.5">
-              I focus on{" "}
+              We focus on{" "}
               <em className="font-serif italic text-charcoal">
                 private property purchases and HDB-to-private upgrades
               </em>{" "}
-              in Singapore. I&apos;ve served 500+ families in Districts 14–18 over 13 years.
+              in Singapore. Our team has served 500+ families in Districts 14–18 over 13 years.
             </p>
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-body mb-2.5">
-              I&apos;m{" "}
+              We&apos;re{" "}
               <em className="font-serif italic text-charcoal">
-                not the right person for HDB-to-HDB transactions or first-time HDB/BTO purchases
+                not the right team for HDB-to-HDB transactions or first-time HDB/BTO purchases
               </em>{" "}
               — there are excellent specialists for that.
             </p>
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-body mb-2.5">
               Private property purchase typically requires a combined household income of{" "}
-              <em className="font-serif italic text-charcoal">S$10,000 or above</em>, and I work
+              <em className="font-serif italic text-charcoal">S$10,000 or above</em>, and we work
               best with buyers aged 21–50.
             </p>
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-body">
@@ -239,9 +239,9 @@ export default function DiscoveryPage() {
             />
             {ageWarning && (
               <Warning>
-                <strong>Heads up.</strong> I work mostly with buyers aged 21–50. If you&apos;re above
-                50, my approach (long-tenure mortgages, multi-decade appreciation plays) may not
-                fit your timeline. Happy to refer you to a colleague who specialises in this stage.
+                <strong>Heads up.</strong> We work mostly with buyers aged 21–50. If you&apos;re above
+                50, our approach (long-tenure mortgages, multi-decade appreciation plays) may not
+                fit your timeline. Happy to refer you to a colleague who focuses on this stage.
               </Warning>
             )}
           </Field>
@@ -286,16 +286,16 @@ export default function DiscoveryPage() {
             </select>
             {goalWarningHdbHdb && (
               <Warning>
-                <strong>Heads up.</strong> I don&apos;t typically handle HDB-to-HDB transactions —
-                that&apos;s a different specialism. If your real goal is to eventually move to private,
-                I can help with the planning runway. Otherwise, I&apos;ll refer you to a trusted HDB
-                specialist.
+                <strong>Heads up.</strong> We don&apos;t typically handle standalone HDB-to-HDB transactions.
+                If your real goal is to eventually move to private,
+                we can help with the planning runway. Otherwise, we&apos;ll refer you to a trusted HDB
+                advisor.
               </Warning>
             )}
             {goalWarningFirstHdb && (
               <Warning>
-                <strong>Heads up.</strong> I don&apos;t cover first-time HDB or BTO purchases. My
-                practice focuses on private property and HDB-to-private upgrades. I&apos;ll refer you
+                <strong>Heads up.</strong> We don&apos;t cover first-time HDB or BTO purchases. Our
+                practice focuses on private property and HDB-to-private upgrades. We&apos;ll refer you
                 to a colleague who handles HDB/BTO well.
               </Warning>
             )}
@@ -319,7 +319,7 @@ export default function DiscoveryPage() {
 
           {/* Context */}
           <Field
-            label="Anything else I should know?"
+            label="Anything else we should know?"
             hint="Optional — current property, location preference, key concerns, etc. (max ~200 chars)"
           >
             <textarea
@@ -334,8 +334,8 @@ export default function DiscoveryPage() {
           {/* Submit */}
           <div className="mt-9 sm:mt-10 pt-7 border-t border-dotted border-[#c9bfa3]">
             <p className="text-[13px] sm:text-[14px] text-gray-600 mb-5 leading-relaxed">
-              When you tap below, your details open in WhatsApp prefilled — you just hit send. I
-              get the message directly and reply within 24 hours.
+              When you tap below, your details open in WhatsApp prefilled — you just hit send. Our
+              team gets the message directly and replies within 24 hours.
             </p>
             <button
               type="submit"
@@ -355,7 +355,7 @@ export default function DiscoveryPage() {
         {/* Trust footer */}
         <div className="mt-12 sm:mt-16 pt-7 border-t border-charcoal">
           <p className="text-[12px] text-gray-600 leading-relaxed italic">
-            Your details are sent directly to Elfi&apos;s WhatsApp via your own device — nothing is
+            Your details are sent directly to our team via WhatsApp from your own device — nothing is
             stored on this site, no third-party form processor sees your data. You decide if and
             when to send.
           </p>

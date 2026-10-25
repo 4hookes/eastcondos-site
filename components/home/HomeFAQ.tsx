@@ -6,7 +6,7 @@ export default function HomeFAQ() {
       <div className="relative max-w-broadsheet mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
         <div>
           <h2 className="display-section max-w-[14ch]">
-            What people ask me first.
+            What people ask us first.
           </h2>
           <p className="prose-dark mt-4">
             Straight answers on fees, timing, and how the 7-minute Fit-Check

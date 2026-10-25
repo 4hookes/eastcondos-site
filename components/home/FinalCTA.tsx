@@ -10,13 +10,13 @@ export default function FinalCTA() {
             Skip the 100 hours. Take 7 minutes.
           </h2>
           <p className="mt-5 text-[18px] leading-[1.65] text-body max-w-[48ch]">
-            Tell me your budget. I&rsquo;ll name the 3 East condos that pass my
-            test, and the ones I&rsquo;d walk away from.
+            Tell us your budget. We&rsquo;ll name the 3 East condos that pass
+            our test, and the ones we&rsquo;d walk away from.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row md:flex-col gap-4">
           <a href="/discovery" className="btn-square !bg-charcoal !text-cream hover:!bg-charcoal-light">
-            Book my 7-min Fit-Check
+            Book a 7-min Fit-Check
           </a>
           <a
             href="https://wa.me/6596667496?text=Hi%20Elfi%2C%20I%27m%20looking%20at%20condos%20in%20the%20East."
@@ -24,7 +24,7 @@ export default function FinalCTA() {
             rel="noopener noreferrer"
             className="btn-square-ghost"
           >
-            WhatsApp me instead
+            WhatsApp us instead
           </a>
         </div>
       </div>

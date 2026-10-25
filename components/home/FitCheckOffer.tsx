@@ -19,8 +19,8 @@ export default function FitCheckOffer() {
             </h2>
           </div>
           <p className="prose-dark">
-            In a 7-minute Fit-Check, I run that filter across the East for your
-            budget and family size.
+            In a 7-minute Fit-Check, our team runs that filter across the East
+            for your budget and family size.
           </p>
         </div>
 
@@ -46,20 +46,20 @@ export default function FitCheckOffer() {
           <div data-reveal className="md:col-span-2 p-8 md:p-10 bg-charcoal-deep flex flex-col justify-between">
             <div>
               <h3 className="display-block text-cream">
-                7 minutes with me
+                7 minutes with our team
               </h3>
               <p className="mt-5 text-[18px] leading-[1.65] text-cream max-w-[46ch]">
-                Tell me your budget and what your family needs. I tell you which
-                3 East condos pass my test, and which ones to skip.
+                Tell us your budget and what your family needs. We tell you
+                which 3 East condos pass our test, and which ones to skip.
               </p>
               <p className="mt-4 text-[16px] leading-[1.65] text-cream/85 max-w-[46ch]">
-                No pitch. If none of them pass right now, I will tell you to
+                No pitch. If none of them pass right now, we will tell you to
                 wait.
               </p>
             </div>
             <div className="mt-8">
               <a href="/discovery" className="btn-square">
-                Book my 7-min Fit-Check
+                Book a 7-min Fit-Check
               </a>
             </div>
           </div>

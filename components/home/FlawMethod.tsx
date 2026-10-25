@@ -26,12 +26,12 @@ export default function FlawMethod() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-end mb-14">
           <div className="md:col-span-2">
             <h2 className="display-section max-w-[18ch]">
-              How I check an East condo, for free.
+              How we check an East condo, for free.
             </h2>
           </div>
           <p className="prose-dark">
-            These are the three flaws I look for first on every floor plan and
-            site map. Now you can look for them too.
+            These are the three flaws our team looks for first on every floor
+            plan and site map. Now you can look for them too.
           </p>
         </div>
 
@@ -62,8 +62,9 @@ export default function FlawMethod() {
               The water view cost more on day one. The flats inland grew more.
             </p>
             <p className="mt-4 text-[16px] leading-[1.65] text-cream/85">
-              Bedok Reservoir condos, same road and unit sizes. I never pay for
-              a view without checking what it did for the last owners.
+              Bedok Reservoir condos, same road and unit sizes. We never advise
+              paying for a view without checking what it did for the last
+              owners.
             </p>
           </div>
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8">

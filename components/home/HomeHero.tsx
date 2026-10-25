@@ -9,13 +9,13 @@ export default function HomeHero() {
       <div className="relative max-w-broadsheet mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-center pt-10 md:pt-16 pb-20 md:pb-24">
         <div data-hero-content className="md:col-span-2">
           <h1 className="display-hero max-w-[14ch]">
-            I find the flaw before you buy.
+            We find the flaw before you buy.
           </h1>
 
           <p className="mt-7 text-[18px] leading-[1.65] text-cream max-w-[50ch]">
             East Singapore condos only. Bad floor plans, wasted space, and
-            stacks that cost too much &mdash; I check every East condo for them,
-            then tell you straight which ones pass.
+            stacks that cost too much &mdash; our team checks every East condo
+            for them, then tells you straight which ones pass.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4 items-center">
@@ -59,7 +59,7 @@ export default function HomeHero() {
               Elfi Abdullah
             </div>
             <div className="mono-label-dim mt-1">
-              ERA Realty &middot; CEA R040487C
+              Founder &amp; Lead Advisor &middot; CEA R040487C
             </div>
           </figcaption>
         </figure>

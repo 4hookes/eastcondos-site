@@ -33,7 +33,7 @@ export default function StoryFeature() {
           </div>
           <div className="md:col-span-2">
             <p className="font-serif text-[24px] leading-[1.25] tracking-[-0.015em] text-charcoal group-hover:text-amber-deep transition-colors max-w-[36ch]">
-              {story.title}
+              {story.title.replace("— so I made them wait", "— so we told them to wait")}
             </p>
             <p className="prose-dark mt-4 max-w-[54ch]">{story.subtitle}</p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">

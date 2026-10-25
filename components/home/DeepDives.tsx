@@ -38,7 +38,7 @@ export default function DeepDives() {
             </h2>
           </div>
           <p className="prose-dark">
-            I take one condo at a time and walk through it: the layouts, the
+            We take one condo at a time and walk through it: the layouts, the
             stacks, and what past owners actually made.
           </p>
         </div>
@@ -89,9 +89,9 @@ export default function DeepDives() {
             All condo videos on YouTube &rarr;
           </a>
           <span className="text-[16px] text-cream/85">
-            Looking at a condo I haven&rsquo;t covered?{" "}
+            Looking at a condo we haven&rsquo;t covered?{" "}
             <a href="/discovery" className="text-amber hover:text-amber-light transition-colors">
-              Ask me in the Fit-Check.
+              Ask us in the Fit-Check.
             </a>
           </span>
         </div>

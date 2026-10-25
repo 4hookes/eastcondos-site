@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://eastcondos.sg"),
   title: "EastCondos | East Side Condos, Checked Before You Buy",
   description:
-    "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
+    "We only do condos in the East. Our team checks the floor plan, the wasted space, and the price of every stack, then tells you straight which ones pass. Book a 7-minute Fit-Check.",
   openGraph: {
     title: "EastCondos | East Side Condos, Checked Before You Buy",
     description:
-      "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
+      "We only do condos in the East. Our team checks the floor plan, the wasted space, and the price of every stack, then tells you straight which ones pass. Book a 7-minute Fit-Check.",
     type: "website",
     url: "https://eastcondos.sg",
     siteName: "EastCondos",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Elfi Abdullah, EastCondos: I find the flaw before you buy the condo",
+        alt: "EastCondos: We find the flaw before you buy",
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EastCondos | East Side Condos, Checked Before You Buy",
     description:
-      "I only do condos in the East. I check the floor plan, the wasted space and the price of every stack, then tell you straight which ones pass. Book a 7-minute Fit-Check.",
+      "We only do condos in the East. Our team checks the floor plan, the wasted space, and the price of every stack, then tells you straight which ones pass. Book a 7-minute Fit-Check.",
     images: ["/og-image.png"],
   },
 };

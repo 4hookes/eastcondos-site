@@ -48,27 +48,30 @@ export default function EastOnly() {
           </h2>
           <div className="prose-dark mt-6 max-w-[56ch]">
             <p>
-              I&rsquo;m Elfi. I&rsquo;ve sold homes in the East for 13 years.
-              I know which blocks get the afternoon sun, which stacks face the
-              expressway, and what each one sold for.
+              Led by founder Elfi Abdullah, our team has advised families in the
+              East for 13 years. We know which blocks get the afternoon sun,
+              which stacks face the expressway, and what each one sold for.
             </p>
             <p>
-              You cannot know that about the whole island. So I do not try.
+              Most agents work alone and try to cover the whole island. We built
+              a dedicated East-side practice &mdash; lead advisor, listing
+              specialists, and data analysts &mdash; for the same standard fee.
             </p>
           </div>
 
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div data-reveal className="bg-charcoal p-6">
               <div className="font-sans text-[14px] font-medium text-amber">
-                What I help with
+                What we help with
               </div>
               <p className="mt-2 text-[16px] leading-[1.6] text-cream">
-                Buying a condo or EC in the East. New launch or resale.
+                Buying a condo or EC in the East. New launch or resale, backed
+                by a full advisory and transaction team.
               </p>
             </div>
             <div data-reveal className="bg-charcoal p-6">
               <div className="font-sans text-[14px] font-medium text-cream/80">
-                What I say no to
+                What we say no to
               </div>
               <p className="mt-2 text-[16px] leading-[1.6] text-cream/85">
                 HDB deals. Anything in the West, North, or the city.
