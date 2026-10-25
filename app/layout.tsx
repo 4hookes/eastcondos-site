@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Serif_Display, IBM_Plex_Mono } from "next/font/google";
-import localFont from "next/font/local";
+import { Public_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,8 +8,9 @@ import MotionProvider from "@/components/motion/MotionProvider";
 import MetaPixel from "@/components/analytics/MetaPixel";
 import { Analytics } from "@vercel/analytics/next";
 
-const inter = Inter({
+const publicSans = Public_Sans({
   variable: "--font-inter",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
 });
 
@@ -18,23 +18,6 @@ const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
   weight: "400",
   subsets: ["latin"],
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  weight: ["400", "500"],
-  subsets: ["latin"],
-});
-
-// Concrete Editorial display voice — real Inter Display cuts, not faux-light Inter
-const interDisplay = localFont({
-  variable: "--font-inter-display",
-  src: [
-    { path: "./fonts/InterDisplay-ExtraLight.otf", weight: "200", style: "normal" },
-    { path: "./fonts/InterDisplay-Light.otf", weight: "300", style: "normal" },
-    { path: "./fonts/InterDisplay-Regular.otf", weight: "400", style: "normal" },
-    { path: "./fonts/InterDisplay-Italic.otf", weight: "400", style: "italic" },
-  ],
 });
 
 export const metadata: Metadata = {
@@ -77,7 +60,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${dmSerif.variable} ${plexMono.variable} ${interDisplay.variable}`}
+      className={`${publicSans.variable} ${dmSerif.variable}`}
     >
       <body className="antialiased bg-charcoal-deep text-cream font-sans">
         <MetaPixel />

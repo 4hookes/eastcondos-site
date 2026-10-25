@@ -25,9 +25,9 @@ const config: Config = {
           deep: "#7E6014",
         },
         offwhite: "#FAFAF8",
-        cream: "#F2EBDB",
-        paper: "#EFE7D2",
-        body: "#374151",
+        cream: "#F3F2F0",
+        paper: "#EAE9E6",
+        body: "#222326",
 
         // Transition aliases (legacy support — do not use in new code)
         sage: "#6B7280",
@@ -39,9 +39,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        serif: ["var(--font-dm-serif)", "serif"],
-        display: ["var(--font-inter-display)", "var(--font-inter)", "system-ui", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "ui-monospace", "monospace"],
+        serif: ["var(--font-dm-serif)", "Georgia", "serif"],
+        display: ["var(--font-dm-serif)", "Georgia", "serif"],
+        mono: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       keyframes: {
         fadeInUp: {

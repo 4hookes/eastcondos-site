@@ -8,21 +8,22 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-
-    /* Prevent layout shift from scrollbar appearing/disappearing */
-    scrollbar-gutter: stable;
+    scroll-padding-top: 2rem;
   }
 
   body {
-    @apply antialiased bg-charcoal-deep font-sans text-lg leading-relaxed;
-    color: rgba(242, 235, 219, 0.82);
+    @apply antialiased bg-charcoal-deep font-sans text-base leading-relaxed;
+    color: #F3F2F0;
+    font-variant-numeric: tabular-nums;
 
     /* Premium typography rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  p, li, dd {
+    text-wrap: pretty;
   }
 
   /* Amber text selection highlight */
@@ -309,28 +310,27 @@
      Serif italic = the annotation voice. Mono = data voice.
      ============================================ */
 
-  /* Display headlines — Inter Display, ultra-light, huge, tight.
-     <b> / <strong> inside = weight 400 emphasis (never bold). */
+  /* Display headlines — DM Serif Display, unified face, clean scale */
   .display-hero {
-    @apply font-display text-cream;
-    font-weight: 200;
-    font-size: clamp(3.2rem, 8vw, 7.2rem);
-    line-height: 0.97;
-    letter-spacing: -0.045em;
+    @apply font-serif text-cream;
+    font-weight: 400;
+    font-size: clamp(2.125rem, 4.6vw, 4.125rem);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
   }
   .display-section {
-    @apply font-display text-cream;
-    font-weight: 200;
-    font-size: clamp(2.2rem, 4.6vw, 3.8rem);
-    line-height: 1.02;
-    letter-spacing: -0.035em;
+    @apply font-serif text-cream;
+    font-weight: 400;
+    font-size: clamp(1.625rem, 2.8vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
   .display-block {
-    @apply font-display text-cream;
-    font-weight: 300;
-    font-size: clamp(1.6rem, 3vw, 2.3rem);
-    line-height: 1.1;
-    letter-spacing: -0.025em;
+    @apply font-serif text-cream;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
   }
   .display-hero b, .display-hero strong,
   .display-section b, .display-section strong,
@@ -344,116 +344,91 @@
     @apply text-charcoal;
   }
 
-  /* Serif italic accent inside display headlines (the editorial wink) */
+  /* Keep emphasis in the same face and style to avoid mixed-font-headline tells */
   .display-hero i, .display-hero em,
   .display-section i, .display-section em,
   .display-block i, .display-block em {
-    @apply font-serif italic text-amber;
-    letter-spacing: -0.01em;
+    font-style: normal;
+    color: inherit;
   }
   .surface-light .display-hero em, .surface-light .display-hero i,
   .surface-light .display-section em, .surface-light .display-section i,
   .surface-light .display-block em, .surface-light .display-block i {
-    color: #7E6014;
+    font-style: normal;
+    color: inherit;
   }
 
-  /* Mono label — index lines, kickers, data labels */
+  /* Metadata label — sentence case, 14px minimum */
   .mono-label {
-    @apply font-mono text-[12px] uppercase text-amber;
-    letter-spacing: 0.3em;
+    @apply font-sans text-[14px] font-medium text-amber;
+    letter-spacing: 0;
   }
   .mono-label-dim {
-    @apply font-mono text-[12px] uppercase;
-    letter-spacing: 0.22em;
-    color: rgba(242, 235, 219, 0.5);
+    @apply font-sans text-[14px] font-normal;
+    letter-spacing: 0;
+    color: #CBC8C0;
   }
   .surface-light .mono-label { color: #7E6014; }
-  .surface-light .mono-label-dim { color: #6B6B6B; }
+  .surface-light .mono-label-dim { color: #4A4D55; }
 
-  /* Annotation — the serif italic margin-note voice, amber, hairline-left */
+  /* Annotation — serif pull-quote without a 1px hairline border */
   .annot {
     @apply font-serif italic text-amber;
-    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
-    line-height: 1.5;
-    border-left: 1px solid #D4A843;
-    padding-left: 26px;
+    font-size: 1.125rem;
+    line-height: 1.55;
   }
   .surface-light .annot {
     color: #7E6014;
-    border-left-color: #7E6014;
   }
 
-  /* Exposed 6-column grid — the structural signature */
-  .gridlines {
-    background-image: repeating-linear-gradient(
-      to right,
-      rgba(242, 235, 219, 0.055) 0 1px,
-      transparent 1px calc(100% / 6)
-    );
-  }
-  .gridlines-light {
-    background-image: repeating-linear-gradient(
-      to right,
-      rgba(26, 26, 46, 0.07) 0 1px,
-      transparent 1px calc(100% / 6)
-    );
-  }
-  @media (max-width: 767px) {
-    .gridlines, .gridlines-light { background-image: none; }
+  /* Clean flat surfaces — no repeating-linear-gradient stripes */
+  .gridlines, .gridlines-light {
+    background-image: none;
   }
 
-  /* Giant ghost numeral behind sections */
+  /* Giant ghost numeral disabled */
   .meganum {
-    @apply font-serif select-none pointer-events-none;
-    font-size: clamp(140px, 22vw, 300px);
-    line-height: 1;
-    color: rgba(242, 235, 219, 0.05);
+    display: none;
   }
-  .surface-light .meganum { color: rgba(26, 26, 46, 0.06); }
 
-  /* Square buttons — no pills in Concrete Editorial */
+  /* Square buttons — sentence case, 16px, tonal surfaces without 1px outline boxes */
   .btn-square {
     @apply inline-flex items-center justify-center bg-amber text-charcoal-deep
-           font-sans text-[12px] uppercase font-semibold px-8 py-4
-           transition-all duration-200 hover:bg-amber-light;
-    letter-spacing: 0.24em;
+           font-sans text-[16px] font-semibold px-7 py-3.5
+           transition-colors duration-200 hover:bg-amber-light;
+    letter-spacing: 0;
   }
   .btn-square-ghost {
-    @apply inline-flex items-center justify-center bg-transparent text-amber
-           font-sans text-[12px] uppercase font-medium px-8 py-4
-           border border-amber transition-all duration-200
+    @apply inline-flex items-center justify-center bg-charcoal-light text-cream
+           font-sans text-[16px] font-medium px-7 py-3.5
+           transition-colors duration-200
            hover:bg-amber hover:text-charcoal-deep;
-    letter-spacing: 0.24em;
+    letter-spacing: 0;
   }
   .surface-light .btn-square-ghost {
-    @apply text-charcoal border-charcoal hover:bg-charcoal hover:text-cream;
+    @apply bg-paper text-charcoal hover:bg-charcoal hover:text-cream;
   }
 
-  /* Hairline borders on dark */
-  .hairline { border-color: rgba(242, 235, 219, 0.14); }
-  .hairline-strong { border-color: rgba(242, 235, 219, 0.3); }
+  /* Hairline utilities neutralised to transparent so tone steps carry structure */
+  .hairline { border-color: transparent; }
+  .hairline-strong { border-color: transparent; }
 
-  /* Body prose on dark */
+  /* Body prose on dark — high contrast (>12:1) */
   .prose-dark {
-    @apply text-[16.5px] leading-[1.8];
-    color: rgba(242, 235, 219, 0.66);
+    @apply text-[16px] leading-[1.7];
+    color: #E8E7E4;
   }
-  .prose-dark p + p { margin-top: 18px; }
+  .prose-dark p + p { margin-top: 16px; }
 
   /* Cream surface wrapper — readable long-form sections */
   .surface-light {
     @apply bg-cream;
-    color: #374151;
+    color: #222326;
   }
 
-  /* ── Flipping a section to a light surface (added 2026-08-01) ──────────
-     Brand law: sections alternate cream → paper → charcoal, never two of the
-     same adjacent. These let any dark section flip by swapping ONE class
-     (bg-charcoal-deep gridlines → surface-light gridlines-light) instead of
-     hand-editing every hairline and prose class inside it. */
-  .surface-light .hairline { border-color: rgba(26, 26, 46, 0.16); }
-  .surface-light .hairline-strong { border-color: rgba(26, 26, 46, 0.30); }
-  .surface-light .prose-dark { color: rgba(55, 65, 81, 0.92); }
+  .surface-light .hairline { border-color: transparent; }
+  .surface-light .hairline-strong { border-color: transparent; }
+  .surface-light .prose-dark { color: #222326; }
   /* Attribute selectors, NOT .text-cream {} — redefining a utility name makes
      Tailwind treat it as a component and `@apply hover:text-cream` goes circular. */
   .surface-light [class~="text-cream"] { color: #1A1A2E; }
@@ -477,7 +452,7 @@
   .surface-light [class~="bg-charcoal"][class~="text-cream"],
   .surface-light [class~="bg-charcoal-deep"] [class~="text-cream"],
   .surface-light [class~="bg-charcoal-deep"][class~="text-cream"] {
-    color: #F2EBDB;
+    color: #F3F2F0;
   }
 
   /* Dark text ON a signal fill. charcoal #1A1A2E on signal is 4.21:1 — under
@@ -546,16 +521,11 @@
    ============================================ */
 
 /* Rise-and-fade reveal targets (GSAP animates to visible) */
-html.motion [data-reveal] {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(26px);
-}
-
-/* Headlines hidden until SplitText has wrapped their lines */
-html.motion .display-hero:not(.split-done),
-html.motion .display-section:not(.split-done) {
-  visibility: hidden;
+@media (prefers-reduced-motion: no-preference) {
+  html.motion [data-reveal] {
+    opacity: 0.01;
+    transform: translateY(18px);
+  }
 }
 
 /* Numbers story variants: pinned stage only on motion + desktop,
@@ -572,11 +542,12 @@ html.motion .display-section:not(.split-done) {
   }
 }
 
-/* Clip-path image reveals (GSAP animates to inset(0) + visible) */
-html.motion [data-clip-reveal] {
-  clip-path: inset(10% 6% 10% 6%);
-  opacity: 0;
-  visibility: hidden;
+/* Clip-path image reveals */
+@media (prefers-reduced-motion: no-preference) {
+  html.motion [data-clip-reveal] {
+    opacity: 0.01;
+    transform: translateY(14px);
+  }
 }
 
 /* Hero scroll cue — a hairline that keeps drawing downward */

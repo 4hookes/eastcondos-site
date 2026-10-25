@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const TOC_LINKS = [
-  { no: "01", label: "Approach", href: "/process" },
-  { no: "02", label: "Stories", href: "/case-studies" },
-  { no: "03", label: "Journal", href: "/journal" },
-  { no: "04", label: "Guides", href: "/guides" },
-  { no: "05", label: "About", href: "/about" },
+  { label: "Approach", href: "/process" },
+  { label: "Stories", href: "/case-studies" },
+  { label: "Journal", href: "/journal" },
+  { label: "Guides", href: "/guides" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Navbar() {
@@ -29,13 +29,12 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Mast — Concrete Editorial */}
-      <header className="sticky top-0 z-40 bg-charcoal-deep/95 backdrop-blur-sm border-b hairline">
-        <div className="flex items-center justify-between px-6 md:px-12 py-5 md:py-6">
+      <header className="relative z-40 bg-charcoal-deep">
+        <div className="max-w-broadsheet mx-auto flex items-center justify-between px-6 md:px-12 py-6">
           <a
             href="/"
             aria-label="EastCondos.sg"
-            className="font-sans text-[15px] font-medium text-cream uppercase tracking-[0.34em]"
+            className="font-serif text-[24px] text-cream tracking-[-0.02em]"
           >
             EastCondos
           </a>
@@ -46,9 +45,8 @@ export default function Navbar() {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    className="group font-mono text-[12px] uppercase tracking-[0.18em] text-cream/60 hover:text-cream transition-colors"
+                    className="font-sans text-[16px] text-cream/85 hover:text-amber transition-colors"
                   >
-                    <span className="text-amber mr-2">{l.no}</span>
                     <span className="nav-u">{l.label}</span>
                   </a>
                 </li>
@@ -56,13 +54,20 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <div className="hidden lg:block">
-            <a href="/discovery" className="btn-square-ghost !px-5 !py-3 text-[11px]">
+          <div className="hidden lg:flex items-center gap-6">
+            <a
+              href="https://wa.me/6596667496"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-[16px] text-cream/85 hover:text-amber transition-colors"
+            >
+              WhatsApp
+            </a>
+            <a href="/discovery" className="btn-square-ghost !px-5 !py-2.5 !text-[16px]">
               7-Min Fit-Check
             </a>
           </div>
 
-          {/* Mobile hamburger */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-cream"
@@ -74,56 +79,50 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile full-screen overlay */}
-      <div
-        id="mobile-menu"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobile navigation"
-        className={`fixed inset-0 z-50 bg-charcoal-deep gridlines flex flex-col items-center justify-center transition-opacity duration-300 lg:hidden ${
-          isMobileMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <button
-          onClick={close}
-          className="absolute top-5 right-5 p-2 text-cream/80 hover:text-cream"
-          aria-label="Close menu"
+      {isMobileMenuOpen && (
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+          className="fixed inset-0 z-50 bg-charcoal-deep flex flex-col items-center justify-center lg:hidden"
         >
-          <X className="h-6 w-6" />
-        </button>
+          <button
+            onClick={close}
+            className="absolute top-5 right-5 p-2 text-cream/80 hover:text-cream"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </button>
 
-        <a href="/" onClick={close} className="flex flex-col items-center mb-14">
-          <span className="font-sans text-[15px] font-medium text-cream uppercase tracking-[0.34em]">
-            EastCondos
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-amber mt-2.5">
-            Property by Design
-          </span>
-        </a>
+          <a href="/" onClick={close} className="flex flex-col items-center mb-12">
+            <span className="font-serif text-[24px] text-cream tracking-[-0.02em]">
+              EastCondos
+            </span>
+            <span className="font-sans text-[14px] text-amber mt-1.5">
+              Property by Design
+            </span>
+          </a>
 
-        <ul className="flex flex-col items-center gap-6 list-none">
-          {TOC_LINKS.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                onClick={close}
-                className="font-display font-light text-[28px] tracking-[-0.02em] text-cream/90 hover:text-amber transition-colors"
-              >
-                <span className="font-mono text-[11px] tracking-[0.26em] text-amber mr-4 align-middle">
-                  {l.no}
-                </span>
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul className="flex flex-col items-center gap-6 list-none">
+            {TOC_LINKS.map((l) => (
+              <li key={l.href}>
+                <a
+                  href={l.href}
+                  onClick={close}
+                  className="font-serif text-[24px] tracking-[-0.015em] text-cream hover:text-amber transition-colors"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <a href="/discovery" onClick={close} className="btn-square mt-14">
-          7-Min Fit-Check
-        </a>
-      </div>
+          <a href="/discovery" onClick={close} className="btn-square mt-12">
+            7-Min Fit-Check
+          </a>
+        </div>
+      )}
     </>
   );
 }

@@ -6,12 +6,8 @@ import EastOnly from "@/components/home/EastOnly";
 import StoryFeature from "@/components/home/StoryFeature";
 import HomeFAQ from "@/components/home/HomeFAQ";
 import FinalCTA from "@/components/home/FinalCTA";
-import StickyCTA from "@/components/editorial/StickyCTA";
 import faqData from "@/content/home-faq.json";
 
-// Homepage = the North Star funnel in page form (re-locked 2026-09-27):
-// free secret (flaw-finding) -> catch (condo deep-dives) -> door (7-min
-// Fit-Check) -> filter (East condos only) -> proof -> close.
 export default function Home() {
   return (
     <>
@@ -40,7 +36,6 @@ export default function Home() {
       <StoryFeature />
       <HomeFAQ />
       <FinalCTA />
-      <StickyCTA />
     </>
   );
 }
