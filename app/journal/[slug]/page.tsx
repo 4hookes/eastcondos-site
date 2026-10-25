@@ -121,24 +121,44 @@ export default async function JournalArticlePage({
     b.type === "faq" ? b.items : []
   );
 
+  // Collect YouTube video ID if present in body → emit VideoObject schema node for AEO consensus
+  const ytBlock = article.body.find(
+    (b): b is Extract<JournalBlock, { type: "youtube" }> => b.type === "youtube"
+  );
+
+  const graphNodes: Record<string, unknown>[] = [articleSchema];
+  if (faqItems.length > 0) {
+    graphNodes.push({
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((it) => ({
+        "@type": "Question",
+        name: it.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: it.answer,
+        },
+      })),
+    });
+  }
+  if (ytBlock) {
+    graphNodes.push({
+      "@type": "VideoObject",
+      name: ytBlock.title || article.title,
+      description: article.excerpt,
+      thumbnailUrl: [
+        `https://i.ytimg.com/vi/${ytBlock.videoId}/maxresdefault.jpg`,
+      ],
+      uploadDate: article.publishDate,
+      embedUrl: `https://www.youtube.com/embed/${ytBlock.videoId}`,
+      contentUrl: `https://www.youtube.com/watch?v=${ytBlock.videoId}`,
+    });
+  }
+
   const jsonLd =
-    faqItems.length > 0
+    graphNodes.length > 1
       ? {
           "@context": "https://schema.org",
-          "@graph": [
-            articleSchema,
-            {
-              "@type": "FAQPage",
-              mainEntity: faqItems.map((it) => ({
-                "@type": "Question",
-                name: it.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: it.answer,
-                },
-              })),
-            },
-          ],
+          "@graph": graphNodes,
         }
       : articleSchema;
 

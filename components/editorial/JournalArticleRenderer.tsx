@@ -34,6 +34,12 @@ export type JournalBlock =
       kicker?: string;
       heading?: string;
       items: Array<{ question: string; answer: string }>;
+    }
+  | {
+      type: "youtube";
+      videoId: string;
+      title?: string;
+      caption?: string;
     };
 
 export default function JournalArticleRenderer({ body }: { body: JournalBlock[] }) {
@@ -68,9 +74,48 @@ function renderBlock(block: JournalBlock, idx: number) {
       return <ImageBlock {...block} />;
     case "faq":
       return <FaqBlock {...block} />;
+    case "youtube":
+      return <YouTubeBlock {...block} />;
     default:
       return null;
   }
+}
+
+function YouTubeBlock({
+  videoId,
+  title,
+  caption,
+}: {
+  videoId: string;
+  title?: string;
+  caption?: string;
+}) {
+  return (
+    <figure className="my-10 sm:my-14">
+      <div
+        className="relative w-full border border-charcoal overflow-hidden bg-charcoal"
+        style={{ aspectRatio: "16 / 9" }}
+      >
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+          title={title || "EastCondos Video Walkthrough"}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="absolute inset-0 w-full h-full border-0"
+        />
+      </div>
+      {caption && (
+        <figcaption className="mt-3 pt-2.5 border-t border-dotted border-[#c9bfa3] flex items-start justify-between gap-4">
+          <span className="flex-1 text-[12px] sm:text-[13px] italic font-serif text-gray-600 leading-snug">
+            {caption}
+          </span>
+          <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.22em] text-amber-deep font-medium flex-shrink-0 pt-0.5">
+            Video Walkthrough
+          </span>
+        </figcaption>
+      )}
+    </figure>
+  );
 }
 
 function FaqBlock({
