@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free HDB-to-Condo Planner",
     description:
-      "See if your HDB flat can really pay for a condo. Free Google Sheet, sent to your WhatsApp.",
+      "See if your HDB flat can pay for a condo. Free Google Sheet, sent to your WhatsApp.",
     type: "website",
     url: "https://eastcondos.sg/hdb-to-condo-planner",
   },

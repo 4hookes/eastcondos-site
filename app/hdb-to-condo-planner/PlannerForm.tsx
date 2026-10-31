@@ -72,40 +72,41 @@ export default function PlannerForm({ id }: { id: string }) {
     );
   }
 
+  const field =
+    "w-full bg-charcoal-light text-cream caret-amber text-[18px] px-4 py-3.5 transition-colors duration-200 hover:bg-[#37374f] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-amber";
+
   return (
-    <form onSubmit={submit} className="bg-charcoal p-6 sm:p-8">
-      <div>
-        <label htmlFor={`${id}-name`} className="block text-[16px] text-cream mb-2">
-          Your name
-        </label>
-        <input
-          id={`${id}-name`}
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-          autoComplete="name"
-          maxLength={80}
-          className="w-full bg-cream text-charcoal-deep text-[18px] px-4 py-3.5 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-amber"
-        />
-      </div>
-      <div className="mt-5">
-        <label htmlFor={`${id}-phone`} className="block text-[16px] text-cream mb-2">
-          Your WhatsApp number
-        </label>
-        <input
-          id={`${id}-phone`}
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-          type="tel"
-          inputMode="tel"
-          autoComplete="tel"
-          aria-describedby={`${id}-phone-note`}
-          className="w-full bg-cream text-charcoal-deep text-[18px] px-4 py-3.5 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-amber"
-        />
-        <p id={`${id}-phone-note`} className="mt-2 text-[14px] text-[#CBC8C0]">
-          Singapore mobile numbers only.
-        </p>
+    <form onSubmit={submit}>
+      <div className="grid sm:grid-cols-2 gap-x-3 gap-y-5">
+        <div>
+          <label htmlFor={`${id}-name`} className="block text-[16px] text-cream mb-2">
+            Your name
+          </label>
+          <input
+            id={`${id}-name`}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            autoComplete="name"
+            maxLength={80}
+            className={field}
+          />
+        </div>
+        <div>
+          <label htmlFor={`${id}-phone`} className="block text-[16px] text-cream mb-2">
+            Your WhatsApp number
+          </label>
+          <input
+            id={`${id}-phone`}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+            type="tel"
+            inputMode="tel"
+            autoComplete="tel"
+            className={field}
+          />
+        </div>
       </div>
       {/* Honeypot: hidden from people, filled by bots. */}
       <div aria-hidden="true" className="absolute left-[-9999px] opacity-0">
@@ -123,16 +124,16 @@ export default function PlannerForm({ id }: { id: string }) {
           {error}
         </p>
       )}
-      <button type="submit" disabled={busy} className="btn-square w-full mt-6 disabled:opacity-70">
+      <button
+        type="submit"
+        disabled={busy}
+        className="w-full mt-4 bg-amber text-charcoal-deep font-sans text-[18px] font-semibold px-7 py-4 transition-[background-color,transform] duration-200 hover:bg-amber-light active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-70"
+      >
         {busy ? "Sending..." : "Send me the planner"}
       </button>
       <p className="mt-4 text-[14px] leading-[1.5] text-[#CBC8C0]">
         By tapping, you agree that EastCondos can message you on WhatsApp about this planner and
-        your home plans. Read our{" "}
-        <a href="/privacy" className="underline text-cream">
-          privacy policy
-        </a>
-        .
+        your home plans.
       </p>
     </form>
   );

@@ -3,6 +3,7 @@ import { Public_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SiteChrome from "@/components/SiteChrome";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MotionProvider from "@/components/motion/MotionProvider";
 import MetaPixel from "@/components/analytics/MetaPixel";
@@ -74,9 +75,9 @@ export default function RootLayout({
           }}
         />
         <MotionProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <SiteChrome nav={<Navbar />} footer={<Footer />}>
+            {children}
+          </SiteChrome>
           <WhatsAppButton />
         </MotionProvider>
         <script
