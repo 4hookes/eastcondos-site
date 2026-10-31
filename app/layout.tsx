@@ -210,7 +210,7 @@ export default function RootLayout({
                     "80% client referral rate",
                   ],
                   sameAs: [
-                    "https://www.instagram.com/elfi.abd",
+                    "https://www.instagram.com/eastcondos.sg",
                   ],
                 },
               ],
