@@ -20,10 +20,10 @@ export default function HdbToCondoPlannerPage() {
 
         <div className="my-auto py-4 lg:py-8">
           <h1 className="font-sans font-extralight text-[36px] sm:text-[56px] xl:text-[64px] 2xl:text-[76px] leading-[1.04] tracking-[-0.035em] [text-wrap:balance]">
-            Can your HDB flat pay for a condo?
+            A condo for $500 cash a month?
           </h1>
           <p className="mt-3 lg:mt-5 lg:max-w-[560px] text-[16px] sm:text-[20px] leading-[1.45]">
-            Find out with our free Google Sheet. We send your own copy on WhatsApp.
+            See if it works for your family, with our free Google Sheet. We send your own copy on WhatsApp.
           </p>
           <div className="mt-4 lg:mt-8 lg:max-w-[600px]">
             <PlannerForm id="planner" />
