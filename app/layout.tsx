@@ -155,7 +155,7 @@ export default function RootLayout({
                         "@type": "Offer",
                         itemOffered: {
                           "@type": "Service",
-                          name: "7-Minute Discovery Call",
+                          name: "7-Minute Fit-Check",
                           serviceType: "Consultation",
                           description:
                             "A 7-minute call to apply the Property by Design (PBD™) framework to your specific numbers and timeline. No pitch, no pressure.",

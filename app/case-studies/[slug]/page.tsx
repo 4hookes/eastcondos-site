@@ -562,7 +562,7 @@ export default async function CaseStudyPage({
             className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
             style={{ color: "rgba(242, 235, 219, 0.7)" }}
           >
-            Run your numbers, then request a 7-minute discovery call. If the math supports a move,
+            Run your numbers, then request a 7-minute Fit-Check. If the math supports a move,
             we&apos;ll talk through how to structure it. If it doesn&apos;t, I&apos;ll tell you
             straight.
           </p>
@@ -577,7 +577,7 @@ export default async function CaseStudyPage({
               href="/discovery"
               className="inline-block bg-transparent text-cream px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-cream hover:bg-cream hover:text-charcoal transition-colors"
             >
-              Request a discovery call
+              Request a Fit-Check
             </Link>
           </div>
         </div>

@@ -231,7 +231,7 @@ export default function CaseStudiesPage() {
             className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
             style={{ color: "rgba(242, 235, 219, 0.7)" }}
           >
-            Every case in this bank started with a calculator run and a 7-minute discovery call.
+            Every case in this bank started with a calculator run and a 7-minute Fit-Check.
             Yours can too.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -245,7 +245,7 @@ export default function CaseStudiesPage() {
               href="/discovery"
               className="inline-block bg-transparent text-cream px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-cream hover:bg-cream hover:text-charcoal transition-colors"
             >
-              Request a discovery call
+              Request a Fit-Check
             </Link>
           </div>
         </div>

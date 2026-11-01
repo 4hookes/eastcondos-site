@@ -7,15 +7,15 @@ export default function CenterCTA() {
         <b>always private.</b>
       </h3>
       <p className="mt-7 text-[17px] leading-[1.75] text-cream/65 max-w-[48ch] mx-auto">
-        Book a 7-minute discovery call. We review your numbers and tell you
-        exactly where you stand &mdash; no obligations, no pressure.
+        Book a 7-minute Fit-Check. Tell us your budget and we tell you which
+        3 East condos pass our test. No obligations, no pressure.
       </p>
       <div className="mt-12 flex flex-wrap gap-6 justify-center items-center">
         <a href="/discovery" className="btn-square">
-          Book a 7-Min Discovery Call
+          Book a 7-Min Fit-Check
         </a>
-        <a href="/safety-meter" className="btn-square-ghost">
-          Run the Safety Meter first
+        <a href="/#deep-dives" className="btn-square-ghost">
+          Watch us check a condo
         </a>
       </div>
     </section>

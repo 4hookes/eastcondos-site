@@ -123,7 +123,7 @@ export default function ProcessPage() {
               className="inline-flex items-center justify-center bg-charcoal text-cream font-sans text-[12px] uppercase font-semibold px-10 py-5 transition-all duration-200 hover:bg-charcoal-light"
               style={{ letterSpacing: "0.24em" }}
             >
-              Book a 7-Min Discovery Call
+              Book a 7-Min Fit-Check
             </a>
           </div>
         </div>

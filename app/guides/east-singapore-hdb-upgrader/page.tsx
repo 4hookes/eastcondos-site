@@ -20,7 +20,7 @@ const faqs: Array<{ question: string; answer: string }> = [
   {
     question: "How much cash do I actually need on top of my HDB sale proceeds?",
     answer:
-      "For most East Singapore upgraders buying a $1.5M–$2M condo, the real cash-on-hand requirement depends on four inputs: remaining CPF balance, outstanding HDB loan, target purchase price, and Buyer's Stamp Duty (BSD). As a rough guide — and this is what our Safety Meter calculates — expect to have liquid cash covering BSD plus legal fees (roughly 3–4% of the purchase price) on top of your HDB net sale proceeds, before considering renovation or reserve funds. The exact number varies case by case.",
+      "For most East Singapore upgraders buying a $1.5M–$2M condo, the real cash-on-hand requirement depends on four inputs: remaining CPF balance, outstanding HDB loan, target purchase price, and Buyer's Stamp Duty (BSD). The exact number varies case by case.",
   },
   {
     question: "Do I need to sell my HDB before I buy a condo?",
@@ -353,8 +353,8 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
             the $7,000+ range — even if the bank approves, the question is whether
             that number crowds out retirement savings, children&rsquo;s education, or
             the ability to absorb a market correction. Our{" "}
-            <Link href="/safety-meter" className="text-amber-deep underline underline-offset-2 hover:text-charcoal">
-              HDB-to-Condo Safety Meter
+            <Link href="/discovery" className="text-amber-deep underline underline-offset-2 hover:text-charcoal">
+              7-minute Fit-Check
             </Link>{" "}
             is built to answer exactly that layer.
           </Prose>
@@ -499,8 +499,8 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
               Approving the monthly without stress-testing the household.
             </strong>{" "}
             The bank says yes at a stress-test rate of 4%. The household budget barely
-            survives at 1.5%. One rate cycle later, there&rsquo;s no reserve. The
-            Safety Meter is designed to catch this before contracts are signed.
+            survives at 1.5%. One rate cycle later, there&rsquo;s no reserve. A
+            Fit-Check is where we catch this before contracts are signed.
           </Prose>
           <Prose>
             <strong className="font-medium text-charcoal">
@@ -587,17 +587,17 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
                 </div>
               </Link>
               <Link
-                href="/safety-meter"
+                href="/#deep-dives"
                 className="block border border-charcoal bg-paper p-5 sm:p-6 hover:bg-amber/10 transition-colors"
               >
                 <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">
-                  Step 2 · Sustainability
+                  Step 2 · See it
                 </div>
                 <div className="font-serif text-charcoal text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Take the Safety Meter
+                  Watch us check a condo
                 </div>
                 <div className="text-[13px] sm:text-[14px] text-body leading-relaxed">
-                  Your 7-tier upgrader archetype in 3 steps.
+                  See how we check a real East condo, flaws and all.
                 </div>
               </Link>
               <Link
@@ -608,7 +608,7 @@ export default function EastSingaporeHdbUpgraderGuidePage() {
                   Step 3 · Plan
                 </div>
                 <div className="font-serif text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Request a 7-Min Discovery Call
+                  Request a 7-Min Fit-Check
                 </div>
                 <div className="text-[13px] sm:text-[14px] leading-relaxed opacity-80">
                   10 minutes. Your numbers, applied.

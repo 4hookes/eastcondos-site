@@ -549,17 +549,17 @@ export default function BuyOrSellFirstGuidePage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
               <Link
-                href="/safety-meter"
+                href="/#deep-dives"
                 className="block border border-charcoal bg-paper p-5 sm:p-6 hover:bg-amber/10 transition-colors"
               >
                 <div className="text-[10px] uppercase tracking-[0.22em] text-amber-deep mb-2">
-                  Step 1 · Sustainability
+                  Step 1 · See it
                 </div>
                 <div className="font-serif text-charcoal text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Take the Safety Meter
+                  Watch us check a condo
                 </div>
                 <div className="text-[13px] sm:text-[14px] text-body leading-relaxed">
-                  Test whether the upgrade math actually survives the monthly.
+                  See how we check a real East condo, flaws and all.
                 </div>
               </Link>
               <Link
@@ -584,7 +584,7 @@ export default function BuyOrSellFirstGuidePage() {
                   Step 3 · Plan
                 </div>
                 <div className="font-serif text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Request a 7-Min Discovery Call
+                  Request a 7-Min Fit-Check
                 </div>
                 <div className="text-[13px] sm:text-[14px] leading-relaxed opacity-80">
                   10 minutes. Your sequence, mapped.

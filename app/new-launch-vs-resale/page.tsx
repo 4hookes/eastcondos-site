@@ -419,7 +419,7 @@ export default function NewLaunchVsResalePage() {
             budget? That&apos;s the conversation.
           </p>
           <Link href="/discovery" className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors">
-            Request a 7-min discovery call
+            Request a 7-min Fit-Check
           </Link>
         </div>
        </div>

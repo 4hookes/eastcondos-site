@@ -846,7 +846,7 @@ export default function D15VsD16VsD18GuidePage() {
                   Step 3 · Plan
                 </div>
                 <div className="font-serif text-[17px] sm:text-[19px] leading-snug mb-2">
-                  Request a 7-Min Discovery Call
+                  Request a 7-Min Fit-Check
                 </div>
                 <div className="text-[13px] sm:text-[14px] leading-relaxed opacity-80">
                   10 minutes. Your district, your numbers, your exit audience —

@@ -268,7 +268,7 @@ export default function ProgressivePaymentCalculatorPage() {
             your downpayment, CPF, and monthly servicing against your timeline before you sign.
           </p>
           <Link href="/discovery" className="inline-block bg-charcoal text-cream px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-charcoal hover:bg-amber hover:text-charcoal hover:border-amber transition-colors">
-            Request a 7-min discovery call
+            Request a 7-min Fit-Check
           </Link>
         </div>
        </div>

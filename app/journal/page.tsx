@@ -229,7 +229,7 @@ export default function JournalIndexPage() {
             </h3>
             <p className="mt-5 text-[16px] leading-[1.75] text-body max-w-[50ch]">
               If a dispatch resonates with your situation, book a 7-minute
-              discovery call. Same frameworks, applied to your numbers.
+              Fit-Check. Same frameworks, applied to your numbers.
             </p>
           </div>
           <div className="shrink-0">
@@ -238,7 +238,7 @@ export default function JournalIndexPage() {
               className="inline-flex items-center justify-center bg-charcoal text-cream font-sans text-[12px] uppercase font-semibold px-10 py-5 transition-all duration-200 hover:bg-charcoal-light"
               style={{ letterSpacing: "0.24em" }}
             >
-              Request a 7-Min Discovery Call
+              Request a 7-Min Fit-Check
             </Link>
           </div>
         </div>

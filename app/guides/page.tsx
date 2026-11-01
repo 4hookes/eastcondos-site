@@ -344,14 +344,13 @@ export default function GuidesIndexPage() {
             className="max-w-[52ch] mx-auto text-[15px] sm:text-[16px] mb-6 sm:mb-8 leading-relaxed"
             style={{ color: "rgba(242, 235, 219, 0.7)" }}
           >
-            If a guide resonates with your situation, book a 7-minute discovery
-            call. Same frameworks, applied to your numbers.
+            If a guide resonates with your situation, book a 7-minute Fit-Check. Same frameworks, applied to your numbers.
           </p>
           <Link
             href="/discovery"
             className="inline-block bg-amber text-charcoal px-6 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-[12px] uppercase tracking-[0.2em] font-medium border border-amber hover:bg-amber-light transition-colors"
           >
-            Request a 7-Min Discovery Call
+            Request a 7-Min Fit-Check
           </Link>
         </div>
        </div>
