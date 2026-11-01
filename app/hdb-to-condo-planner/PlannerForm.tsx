@@ -73,13 +73,13 @@ export default function PlannerForm({ id }: { id: string }) {
   }
 
   const field =
-    "w-full bg-charcoal-light text-cream caret-amber text-[18px] px-4 py-3.5 transition-colors duration-200 hover:bg-[#37374f] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-amber";
+    "w-full bg-charcoal-light text-cream caret-amber text-[18px] px-3 lg:px-4 py-3 lg:py-3.5 transition-colors duration-200 hover:bg-[#37374f] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-amber";
 
   return (
     <form onSubmit={submit}>
-      <div className="grid sm:grid-cols-2 gap-x-3 gap-y-5">
+      <div className="grid grid-cols-2 gap-x-3">
         <div>
-          <label htmlFor={`${id}-name`} className="block text-[16px] text-cream mb-2">
+          <label htmlFor={`${id}-name`} className="block text-[16px] text-cream mb-1.5 lg:mb-2">
             Your name
           </label>
           <input
@@ -93,8 +93,8 @@ export default function PlannerForm({ id }: { id: string }) {
           />
         </div>
         <div>
-          <label htmlFor={`${id}-phone`} className="block text-[16px] text-cream mb-2">
-            Your WhatsApp number
+          <label htmlFor={`${id}-phone`} className="block text-[16px] text-cream mb-1.5 lg:mb-2">
+            WhatsApp number
           </label>
           <input
             id={`${id}-phone`}
@@ -127,11 +127,11 @@ export default function PlannerForm({ id }: { id: string }) {
       <button
         type="submit"
         disabled={busy}
-        className="w-full mt-4 bg-amber text-charcoal-deep font-sans text-[18px] font-semibold px-7 py-4 transition-[background-color,transform] duration-200 hover:bg-amber-light active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-70"
+        className="w-full mt-3 lg:mt-4 bg-amber text-charcoal-deep font-sans text-[18px] font-semibold px-7 py-3.5 lg:py-4 transition-[background-color,transform] duration-200 hover:bg-amber-light active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-70"
       >
         {busy ? "Sending..." : "Send me the planner"}
       </button>
-      <p className="mt-4 text-[14px] leading-[1.5] text-[#CBC8C0]">
+      <p className="mt-2.5 lg:mt-4 text-[14px] leading-[1.4] text-[#CBC8C0]">
         By tapping, you agree that EastCondos can message you on WhatsApp about this planner and
         your home plans.
       </p>
